@@ -1,14 +1,12 @@
+# read the options input file
+source('EFcalculatoR_options.R')
+
 # read the EMEP/EEA data
 df <- read.table("1.A.3.b.i-iv Road transport hot EFs Annex 2018_Dic.csv", sep=',', header=TRUE)
-
-source('EFcalculatoR_lw_options.R')
 
 c_pollutant <- 1
 for (pollutant in pollutants) {
     ef_pol <- c()
-    if (modes[c_pollutant] != '') {
-        df <- subset(df, Mode==modes[c_pollutant])
-    }
     c_category <- 1
     for (category in categories) {
         # initialize the output data table
@@ -26,16 +24,24 @@ for (pollutant in pollutants) {
         Fraction.Technology = numeric(),
         Fraction = numeric()
         )
+        d_pol <- subset(df, Pollutant==pollutant)
+        d_cat <- subset(d_pol, Category==category)
+        if (modes[c_pollutant] != '') {
+            d_cat_mod <- rbind(subset(subset(d_cat, Pollutant==pollutant), Mode==''), subset(d_cat, Pollutant==pollutant & Mode==modes[c_pollutant]))
+        }
+        else {
+            d_cat_mod <- d_cat
+        }
         if (length(segments[[c_category]]) == 0) {
-            segments[[c_category]] <- list() ; segments[[c_category]][[1]] <- unique(subset(df, Category==category)$Segment)
+            segments[[c_category]] <- list() ; segments[[c_category]][[1]] <- unique(subset(d_cat_mod, Category==category)$Segment)
             segments_fraction[[c_category]] <- 1
         }
         if (length(euro_standards[[c_category]]) == 0) {
-            euro_standards[[c_category]] <- list() ; euro_standards[[c_category]][[1]] <- unique(subset(df, Category==category)$Euro.Standard)
+            euro_standards[[c_category]] <- list() ; euro_standards[[c_category]][[1]] <- unique(subset(d_cat_mod, Category==category)$Euro.Standard)
             euro_standards_fraction[[c_category]] <- 1
         }
         if (length(technologies[[c_category]]) == 0) {
-            technologies[[c_category]] <- list() ; technologies[[c_category]][[1]] <- unique(subset(df, Category==category)$Technology)
+            technologies[[c_category]] <- list() ; technologies[[c_category]][[1]] <- unique(subset(d_cat_mod, Category==category)$Technology)
             technologies_fraction[[c_category]] <- 1
         }
         c_fuel <- 1
@@ -46,13 +52,14 @@ for (pollutant in pollutants) {
                 for (euro_standard in euro_standards[[c_category]]) {
                     c_technology <- 1
                     for (technology in technologies[[c_category]]) {
-                        d <- subset(df,
-                            Pollutant==pollutant
-                            & Category==category
-                            & Fuel %in% fuel
+                        d <- subset(d_cat_mod,
+                            Fuel %in% fuel
                             & Segment %in% segment
                             & Euro.Standard %in% euro_standard
-                            & Technology %in% technology)
+                            & Technology %in% technology
+                            & Road.Slope %in% slope
+                            & Load %in% load
+                            )
                         if (nrow(d)>0) {
                             d$EF <- ( d$Alpha * speed**2 + d$Beta * speed + d$Gamma + d$Delta / speed ) / ( d$Epsilon * speed**2 + d$Zita * speed + d$Hta )
                             outd  <- data.frame(category, fuel, segment, euro_standard, mean(d$EF),
@@ -75,10 +82,22 @@ for (pollutant in pollutants) {
             }
             c_fuel <- c_fuel + 1
         }
-        cat('...', pollutant, 'EF for', category, sum(out$EF*out$Fraction), 'g/Km ... \n')
+        if (!is.na(slope)) {
+            slope_string <- cat('| for slope', slope, '% |')
+        }
+        else {
+            slope_string <- ''
+        }
+        if (!is.na(load)) {
+            slope_string <- cat('| for load', load, '|')
+        }
+        else {
+            load_string <- ''
+        }
+        cat('...', slope_string, load_string, pollutant, 'EF for', category, sum(out$EF*out$Fraction), 'g/Km ... \n')
         ef_pol <- c(ef_pol, sum(out$EF*out$Fraction))
         c_category <- c_category + 1
     }
-    cat(pollutant, 'EF for', categories_name, sum(ef_pol*categories_fraction), 'g/Km \n')
+    cat(slope_string, load_string, pollutant, 'EF for', categories_name, sum(ef_pol*categories_fraction), 'g/Km \n')
     c_pollutant <- c_pollutant + 1
 }

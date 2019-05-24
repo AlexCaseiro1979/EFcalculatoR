@@ -1,6 +1,17 @@
 
-# inser the speed here, in km/h
+# insert the speed here, in km/h
 speed <- 120
+
+# insert the slope here. Options are: -0.06, -0.04, -0.02, 0.00, 0.02, 0.04, 0.06
+# this only makes sense for categories Heavy Duty Trucks and Buses
+# keep NA for categories Passenger Cars and Light Commercial Vehicles
+# keep NA for pollutants CH4, NH3 and N2O within categories Heavy Duty Trucks and Buses
+slope <- c(NA)
+
+# insert the slope here. Options are: 0.0, 0.5, 1.0
+# this only makes sense for categories Heavy Duty Trucks and Buses
+# keep NA for categories Passenger Cars and Light Commercial Vehicles
+load <- c(NA)
 
 # insert the pollutans here. Options: CO, NOx, VOC, PM Exhaust, FC, CH4
 # this vector cannot be left empty
@@ -8,7 +19,8 @@ pollutants <- c('CO', 'NOx')
 
 # insert the categories to be discriminated here. Options: Passenger Cars, Light Commercial Vehicles
 # this vector cannot be left empty
-categories <- c('Passenger Cars', 'Light Commercial Vehicles')
+categories <- c('Passenger Cars',
+                'Light Commercial Vehicles')
 categories_fraction <- c(0.814, 0.187)
 # give a name for the group of categories, e.g. Light Vehicles
 categories_name <- c('Light Vehicles')
@@ -49,7 +61,11 @@ technologies_fraction[[1]] <- list()
 technologies[[2]] <- list()
 technologies_fraction[[2]] <- list()
 
-# insert here the driving modes to be discriminated here. This only makes sense for PM Exhaust and CH4. Options: Urban Peak, Urban Off Peak, Rural, Highway
-# if the pollutant is other than PM Exhaust or CH4, keep an empty vector. If so, modes_fraction has no consequence
+# insert here the driving modes to be discriminated here.
+# categories Passenger Cars and Light Commercial Vehicles:
+# this only makes sense for pollutants PM Exhaust and CH4. Options: Urban Peak, Urban Off Peak, Rural, Highway
+# categories Heavy Duty Trucks and Buses:
+# this only makes sense for pollutants CH4, NH3 and N2O
+# if not needed, keep an empty vector. If so, modes_fraction has no consequence
 modes <- c('', '')
 modes_fraction <- c()
