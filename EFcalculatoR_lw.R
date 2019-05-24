@@ -1,7 +1,7 @@
 # read the EMEP/EEA data
 df <- read.table("1.A.3.b.i-iv Road transport hot EFs Annex 2018_Dic.csv", sep=',', header=TRUE)
 
-source('EFcalculatoR_options.R')
+source('EFcalculatoR_lw_options.R')
 
 c_pollutant <- 1
 for (pollutant in pollutants) {
