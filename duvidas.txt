@@ -4,3 +4,11 @@ Ligeiros:
 - é preciso testar face à folha de cálculo anterior e ver se os valores fazem sentido
 - onde entram os motociclos?
 - temos dados de distribuição por cilindrada para 8 categorias. Podíamos usar maior detalhe da variável "Segment"
+
+
+Ficheiros de teste:
+Test01:
+Test02:
+Test03:
+Test04:
+Test05: pesados de mercadorias, 1 poluente

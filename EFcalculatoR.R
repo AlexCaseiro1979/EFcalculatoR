@@ -83,21 +83,21 @@ for (pollutant in pollutants) {
             c_fuel <- c_fuel + 1
         }
         if (!is.na(slope)) {
-            slope_string <- cat('| for slope', slope, '% |')
+            slope_string <- c('| for slope', slope, '%')
         }
         else {
-            slope_string <- ''
+            slope_string <- c('')
         }
         if (!is.na(load)) {
-            slope_string <- cat('| for load', load, '|')
+            load_string <- c('and for load', load, '|')
         }
         else {
-            load_string <- ''
+            load_string <- c('')
         }
-        cat('...', slope_string, load_string, pollutant, 'EF for', category, sum(out$EF*out$Fraction), 'g/Km ... \n')
+        cat('...', pollutant, 'EF for', category, sum(out$EF*out$Fraction), 'g/Km', slope_string, load_string, '... \n')
         ef_pol <- c(ef_pol, sum(out$EF*out$Fraction))
         c_category <- c_category + 1
     }
-    cat(slope_string, load_string, pollutant, 'EF for', categories_name, sum(ef_pol*categories_fraction), 'g/Km \n')
+    cat(pollutant, 'EF for', categories_name, sum(ef_pol*categories_fraction), 'g/Km', slope_string, load_string, '\n')
     c_pollutant <- c_pollutant + 1
 }
