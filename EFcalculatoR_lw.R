@@ -5,6 +5,7 @@ source('EFcalculatoR_options.R')
 
 c_pollutant <- 1
 for (pollutant in pollutants) {
+    ef_pol <- c()
     if (modes[c_pollutant] != '') {
         df <- subset(df, Mode==modes[c_pollutant])
     }
@@ -74,8 +75,10 @@ for (pollutant in pollutants) {
             }
             c_fuel <- c_fuel + 1
         }
-        cat(pollutant, 'EF for', category, sum(out$EF*out$Fraction), 'g/Km \n')
+        cat('...', pollutant, 'EF for', category, sum(out$EF*out$Fraction), 'g/Km ... \n')
+        ef_pol <- c(ef_pol, sum(out$EF*out$Fraction))
         c_category <- c_category + 1
     }
+    cat(pollutant, 'EF for', categories_name, sum(ef_pol*categories_fraction), 'g/Km \n')
     c_pollutant <- c_pollutant + 1
 }

@@ -10,6 +10,8 @@ pollutants <- c('CO', 'NOx')
 # this vector cannot be left empty
 categories <- c('Passenger Cars', 'Light Commercial Vehicles')
 categories_fraction <- c(0.814, 0.187)
+# give a name for the group of categories, e.g. Light Vehicles
+categories_name <- c('Light Vehicles')
 
 # Insert the fuels to be discriminated here. Options: Petrol, Diesel, Petrol Hybrid, LPG Bifuel ~ LPG, LPG Bifuel ~ Petrol, CNG Bifuel ~ CNG, CNG Bifuel ~ Petrol
 # this vector cannot be left empty
