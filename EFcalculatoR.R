@@ -1,8 +1,8 @@
-# read the options input file
-source('EFcalculatoR_options.R')
 
-# read the EMEP/EEA data
-df <- read.table("1.A.3.b.i-iv Road transport hot EFs Annex 2018_Dic.csv", sep=',', header=TRUE)
+# this function is run for a given fleet distribution and a given roadway (the roadway is defined by a speed, a slope, a load and a mode)
+EFfunc <- function(roadway, speed, slope, load, pollutants, modes, distFile){
+
+source(distFile)
 
 c_pollutant <- 1
 for (pollutant in pollutants) {
@@ -94,10 +94,18 @@ for (pollutant in pollutants) {
         else {
             load_string <- c('')
         }
-        cat('...', pollutant, 'EF for', category, sum(out$EF*out$Fraction), 'g/Km', slope_string, load_string, '... \n')
+        #cat('...', pollutant, 'EF for', category, sum(out$EF*out$Fraction), 'g/Km', slope_string, load_string, '... \n')
         ef_pol <- c(ef_pol, sum(out$EF*out$Fraction))
         c_category <- c_category + 1
     }
-    cat(pollutant, 'EF for', categories_name, sum(ef_pol*categories_fraction), 'g/Km', slope_string, load_string, '\n')
+    cat(roadway, ':', pollutant, 'EF for', categories_name, sum(ef_pol*categories_fraction), 'g/Km', slope_string, load_string, '\n')
     c_pollutant <- c_pollutant + 1
 }
+
+}
+
+# read the EMEP/EEA data
+df <- read.table("1.A.3.b.i-iv Road transport hot EFs Annex 2018_Dic.csv", sep=',', header=TRUE)
+
+# read the options input file
+source('EFcalculatoR_options.R')

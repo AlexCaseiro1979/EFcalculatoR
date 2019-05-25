@@ -1,55 +1,26 @@
-
-# insert the speed here, in km/h
-speed <- 80
-
-# insert the slope here. Options are: -0.06, -0.04, -0.02, 0.00, 0.02, 0.04, 0.06
-# this only makes sense for categories Heavy Duty Trucks and Buses
-# keep NA for categories Passenger Cars and Light Commercial Vehicles
-# keep NA for pollutants CH4, NH3 and N2O within categories Heavy Duty Trucks and Buses
-slope <- c(0.02)
-
-# insert the slope here. Options are: 0.0, 0.5, 1.0
-# this only makes sense for categories Heavy Duty Trucks and Buses
-# keep NA for categories Passenger Cars and Light Commercial Vehicles
-load <- c(0.5)
-
-# insert the pollutans here
-# Options for Passenger Cars and Light Commercial Vehicles:
-#       CO, NOx, VOC, PM Exhaust, FC, CH4
-# Options for Heavy Duty Trucks and Buses:
-#       CO, NOx, VOC, FC, CH4, NH3, N2O, PM Exhaust
-# this vector cannot be left empty
-pollutants <- c('CO', 'NOx', 'PM Exhaust')
-
-# insert here the driving modes to be discriminated here.
-# discrimination by pollutant
-# categories Passenger Cars and Light Commercial Vehicles:
-#   this only makes sense for pollutants PM Exhaust and CH4.
-#   Options: Urban Peak, Urban Off Peak, Rural, Highway
-# categories Heavy Duty Trucks and Buses:
-#   this only makes sense for pollutants CH4, NH3 and N2O
-#   Options: Urban Peak, Urban Off Peak, Rural, Highway
-# if not needed, keep an empty vector.
-modes <- c('', '', 'Highway')
+# This is the lightweight fleet distribution file for Portugal.
 
 # insert the categories to be discriminated here. Options: Passenger Cars, Light Commercial Vehicles, Heavy Duty Trucks, Buses
 # this vector cannot be left empty
-categories <- c('Heavy Duty Trucks')
-categories_fraction <- c(1)
-# give a name for the group of categories, e.g. Light Vehicles, Trucks, Buses
-categories_name <- c('Trucks')
+categories <- c('Passenger Cars',
+                'Light Commercial Vehicles')
+categories_fraction <- c(0.814, 0.187)
+# give a name for the group of categories, e.g. Light Vehicles
+categories_name <- c('Light Vehicles')
 
 # insert the fuels to be discriminated here.
 # # discrimination by categories
 # Options for Passenger Cars, Light Commercial Vehicles:
-#       Petrol, Diesel, Petrol Hybrid, LPG Bifuel ~ LPG, LPG Bifuel ~ Petrol, CNG Bifuel ~ CNG, CNG Bifuel ~ Petrol
+# Petrol, Diesel, Petrol Hybrid, LPG Bifuel ~ LPG, LPG Bifuel ~ Petrol, CNG Bifuel ~ CNG, CNG Bifuel ~ Petrol
 # Options for Heavy Duty Trucks: Petrol, Diesel
 # Options for Buses: Diesel, CNG, Biodiesel
 # this vector cannot be left empty
 # one distribution per category
 fuels <- list() ; fuels_fraction <- list()
-fuels[[1]] <- c('Diesel')
-fuels_fraction[[1]] <- c(1)
+fuels[[1]] <- c('Petrol', 'Diesel', 'LPG Bifuel ~ LPG')
+fuels_fraction[[1]] <- c(0.34, 0.64, 0.008)
+fuels[[2]] <- c('Petrol', 'Diesel')
+fuels_fraction[[2]] <- c(0, 1)
 
 # insert the segments to be discriminated here.
 # discrimination by categories
@@ -61,12 +32,10 @@ fuels_fraction[[1]] <- c(1)
 #       Urban CNG Buses, Urban Biodiesel Buses
 # the vector can be left empy. If so, segments_fraction has no consequence
 segments <- list() ; segments_fraction <- list()
-segments[[1]] <- c('Rigid <=7,5 t', 'Rigid 7,5 - 12 t', 'Rigid 12 - 14 t', 'Rigid 14 - 20 t', 'Rigid 20 - 26 t', 'Rigid 26 - 28 t', 'Rigid 28 - 32 t', 'Rigid >32 t',
-                   'Articulated 14 - 20 t', 'Articulated 20 - 28 t', 'Articulated 28 - 34 t', 'Articulated 34 - 40 t', 'Articulated 40 - 50 t', 'Articulated 50 - 60 t'
-                   )
-segments_fraction[[1]] <- c(0.085453486, 0.026218683, 0.013206448, 0.05156341, 0.001359487, 0.010973004, 0, 0.373664789,
-                            0.05156341, 0.012332492, 0.006409011, 0, 0.367255778, 0
-                           )
+segments[[1]] <- c('Small', 'Medium', 'Large-SUV-Executive')
+segments_fraction[[1]] <- c(0.55, 0.394, 0.056)
+segments[[2]] <- list()
+segments_fraction[[2]] <- list()
 
 # insert the euro standards to be discriminated here.
 # discrimination by categories
@@ -78,9 +47,12 @@ segments_fraction[[1]] <- c(0.085453486, 0.026218683, 0.013206448, 0.05156341, 0
 # Options for Buses: Conventional, Euro I, Euro II, Euro III, Euro IV, Euro V, Euro VI, EEV
 # the vector can be left empy. If so, euro_standards_fraction has no consequence
 euro_standards <- list() ; euro_standards_fraction <- list()
-euro_standards[[1]] <- c('Conventional', 'Euro I', 'Euro II', 'Euro III', 'Euro IV', 'Euro V', 'Euro IV')
-euro_standards_fraction[[1]] <- c(0, 0, 0.159, 0.264, 0.204, 0.119, 0.096+0.048)
+euro_standards[[1]] <- c('Conventional', 'Euro 1', 'Euro 2', 'Euro 3', 'Euro 4', 'Euro 5', 'Euro 6 up to 2016', 'Euro 6 2017-2019', 'Euro 6 2020+')
+euro_standards_fraction[[1]] <- c(0, 0, 0.152, 0.254, 0.191, 0.109, 0.078, 0.029, 0)
 euro_standards_fraction[[1]] <- euro_standards_fraction[[1]]/sum(euro_standards_fraction[[1]])
+euro_standards[[2]] <- c('Conventional', 'Euro 1', 'Euro 2', 'Euro 3', 'Euro 4', 'Euro 5', 'Euro 6 up to 2016', 'Euro 6 2017-2019', 'Euro 6 2020+')
+euro_standards_fraction[[2]] <- c(0, 0, 0.035, 0.058, 0.044, 0.025, 0.018, 0.067, 0)
+euro_standards_fraction[[2]] <- euro_standards_fraction[[2]]/sum(euro_standards_fraction[[2]])
 # The division by the sum is to express the distribution up to 100% within each category
 
 # Insert the technologies to be discriminated here.

@@ -1,32 +1,4 @@
 
-# insert the speed here, in km/h
-speed <- 80
-
-# insert the slope here. Options are: -0.06, -0.04, -0.02, 0.00, 0.02, 0.04, 0.06
-# this only makes sense for categories Heavy Duty Trucks and Buses
-# keep NA for categories Passenger Cars and Light Commercial Vehicles
-# keep NA for pollutants CH4, NH3 and N2O within categories Heavy Duty Trucks and Buses
-slope <- c(0.02)
-
-# insert the slope here. Options are: 0.0, 0.5, 1.0
-# this only makes sense for categories Heavy Duty Trucks and Buses
-# keep NA for categories Passenger Cars and Light Commercial Vehicles
-load <- c(0.5)
-
-# insert the pollutans here
-# Options: CO, NOx, VOC, PM Exhaust, FC, CH4 for categories Passenger Cars and Light Commercial Vehicles
-# this vector cannot be left empty
-pollutants <- c('CO', 'NOx')
-
-# insert here the driving modes to be discriminated here.
-# discrimination by pollutant
-# categories Passenger Cars and Light Commercial Vehicles:
-# this only makes sense for pollutants PM Exhaust and CH4. Options: Urban Peak, Urban Off Peak, Rural, Highway
-# categories Heavy Duty Trucks and Buses:
-# this only makes sense for pollutants CH4, NH3 and N2O
-# if not needed, keep an empty vector.
-modes <- c('', '')
-
 # insert the categories to be discriminated here. Options: Passenger Cars, Light Commercial Vehicles, Heavy Duty Trucks, Buses
 # this vector cannot be left empty
 categories <- c('Heavy Duty Trucks')
@@ -37,7 +9,7 @@ categories_name <- c('Trucks')
 # insert the fuels to be discriminated here.
 # # discrimination by categories
 # Options for Passenger Cars, Light Commercial Vehicles:
-# Petrol, Diesel, Petrol Hybrid, LPG Bifuel ~ LPG, LPG Bifuel ~ Petrol, CNG Bifuel ~ CNG, CNG Bifuel ~ Petrol
+#       Petrol, Diesel, Petrol Hybrid, LPG Bifuel ~ LPG, LPG Bifuel ~ Petrol, CNG Bifuel ~ CNG, CNG Bifuel ~ Petrol
 # Options for Heavy Duty Trucks: Petrol, Diesel
 # Options for Buses: Diesel, CNG, Biodiesel
 # this vector cannot be left empty
@@ -86,5 +58,3 @@ euro_standards_fraction[[1]] <- euro_standards_fraction[[1]]/sum(euro_standards_
 technologies <- list() ; technologies_fraction <- list()
 technologies[[1]] <- list()
 technologies_fraction[[1]] <- list()
-technologies[[2]] <- list()
-technologies_fraction[[2]] <- list()
