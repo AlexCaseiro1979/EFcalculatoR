@@ -1,6 +1,6 @@
 
 # this function is run for a given fleet distribution and a given roadway (the roadway is defined by a speed, a slope, a load and a mode)
-EFfunc <- function(roadway, speed, slope, load, pollutants, modes, distFile){
+EFfunc <- function(roadway, speed, length, slope, load, pollutants, modes, distFile){
 
 source(distFile)
 
@@ -98,7 +98,11 @@ for (pollutant in pollutants) {
         ef_pol <- c(ef_pol, sum(out$EF*out$Fraction))
         c_category <- c_category + 1
     }
-    cat(roadway, ':', pollutant, 'EF for', categories_name, sum(ef_pol*categories_fraction), 'g/Km', slope_string, load_string, '\n')
+    time = length / speed * (60*60)
+    sum(ef_pol*categories_fraction) * length / time
+    cat(roadway, ':', pollutant, 'EF for', categories_name, sum(ef_pol*categories_fraction), 'g/Km or ',
+        sum(ef_pol*categories_fraction) * length / time, 'g/s',
+        slope_string, load_string, '\n')
     c_pollutant <- c_pollutant + 1
 }
 

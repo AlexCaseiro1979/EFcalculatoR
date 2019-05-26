@@ -6,7 +6,7 @@ Ligeiros:
 - temos dados de distribuição por cilindrada para 8 categorias. Podíamos usar maior detalhe da variável "Segment"
 
 
-Ficheiros de teste:
+Ficheiro exemplo:
 Test01: ligeiros (passageiros e mercadorias), 2 poluentes (CO e NOx)
 Test02: ligeiros (passageiros e mercadorias), 3 poluentes (CO, NOx e PM)
 Test03: ligeiros (passageiros e mercadorias), 4 poluentes (CO, NOx, PM e VOC)
