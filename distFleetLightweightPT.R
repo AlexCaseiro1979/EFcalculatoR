@@ -30,7 +30,7 @@ fuels_fraction[[2]] <- c(0, 1)
 #       Articulated 14 - 20 t, Articulated 20 - 28 t, Articulated 28 - 34 t, Articulated 34 - 40 t, Articulated 40 - 50 t, Articulated 50 - 60 t
 # Options for Buses: Urban Buses Midi <=15 t, Urban Buses Standard 15 - 18 t, Urban Buses Articulated >18 t, Coaches Standard <=18 t, Coaches Articulated >18 t
 #       Urban CNG Buses, Urban Biodiesel Buses
-# the vector can be left empy. If so, segments_fraction has no consequence
+# the vector can be left empy. If so, segments_fraction has no consequence and the EFs are averaged through the segments
 segments <- list() ; segments_fraction <- list()
 segments[[1]] <- c('Small', 'Medium', 'Large-SUV-Executive')
 segments_fraction[[1]] <- c(0.55, 0.394, 0.056)
@@ -45,7 +45,7 @@ segments_fraction[[2]] <- list()
 #       Euro 6 up to 2017, Euro 6 2018-2020, Euro 6 2021+
 # Options for Heavy Duty Trucks: Conventional, Euro I, Euro II, Euro III, Euro IV, Euro V, Euro VI
 # Options for Buses: Conventional, Euro I, Euro II, Euro III, Euro IV, Euro V, Euro VI, EEV
-# the vector can be left empy. If so, euro_standards_fraction has no consequence
+# the vector can be left empy. If so, euro_standards_fraction has no consequence and the EFs are averaged through the Euro standards
 euro_standards <- list() ; euro_standards_fraction <- list()
 euro_standards[[1]] <- c('Conventional', 'Euro 1', 'Euro 2', 'Euro 3', 'Euro 4', 'Euro 5', 'Euro 6 up to 2016', 'Euro 6 2017-2019', 'Euro 6 2020+')
 euro_standards_fraction[[1]] <- c(0, 0, 0.152, 0.254, 0.191, 0.109, 0.078, 0.029, 0)
@@ -59,7 +59,7 @@ euro_standards_fraction[[2]] <- euro_standards_fraction[[2]]/sum(euro_standards_
 # discrimination by categories
 # Options for Passenger Cars and for Light Commercial Vehicles: GDI, PFI, GDI+GPF, DPF, DPF+SCR, LNT+DPF
 # Options for Heavy Duty Trucks and for Buses : SCR, EGR, DPF+SCR
-# the vector can be left empy. If so, technologies_fraction has no consequence
+# the vector can be left empy. If so, technologies_fraction has no consequence and the EFs are averaged through the technologies
 technologies <- list() ; technologies_fraction <- list()
 technologies[[1]] <- list()
 technologies_fraction[[1]] <- list()
