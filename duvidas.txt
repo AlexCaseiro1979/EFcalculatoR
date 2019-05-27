@@ -1,10 +1,12 @@
 dúvidas:
 
 Ligeiros:
-- é preciso testar face à folha de cálculo anterior e ver se os valores fazem sentido
+- é preciso testar face à folha de cálculo anterior e ver se os valores fazem sentido.
 - onde entram os motociclos?
-- temos dados de distribuição por cilindrada para 8 categorias. Podíamos usar maior detalhe da variável "Segment"
-
+- temos dados de distribuição por cilindrada para 8 categorias. Podíamos usar maior detalhe da variável "Segment" para os ligeiros.
+- o que acontece com as cold emissions? não consideramos?
+- o ficheiro de distribuição da frota dos pesados considera que para taras identicas, os pesados de mercadorias são distribuidos de forma igual entre rígidos e articulados.
+- o ficheiro de distribuição da frota dos pesados para Portugal considera a distribuição por categorias que se assume no documento do EMEP/EEA (pg 67).
 
 Ficheiro exemplo:
 Test01: ligeiros (passageiros e mercadorias), 2 poluentes (CO e NOx)
