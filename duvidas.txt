@@ -8,6 +8,8 @@ Ligeiros:
 - o ficheiro de distribuição da frota dos pesados considera que para taras identicas, os pesados de mercadorias são distribuidos de forma igual entre rígidos e articulados.
 - o ficheiro de distribuição da frota dos pesados para Portugal considera a distribuição por categorias que se assume no documento do EMEP/EEA (pg 67).
 
+- no ficheiro EFcalculatoR_options.R há exemplos como usar a função.
+
 Ficheiro exemplo:
 Test01: ligeiros (passageiros e mercadorias), 2 poluentes (CO e NOx)
 Test02: ligeiros (passageiros e mercadorias), 3 poluentes (CO, NOx e PM)
