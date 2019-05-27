@@ -56,5 +56,7 @@ euro_standards_fraction[[1]] <- euro_standards_fraction[[1]]/sum(euro_standards_
 # Options for Heavy Duty Trucks and for Buses : SCR, EGR, DPF+SCR
 # the vector can be left empy. If so, technologies_fraction has no consequence
 technologies <- list() ; technologies_fraction <- list()
-technologies[[1]] <- list()
-technologies_fraction[[1]] <- list()
+#technologies[[1]] <- list()
+#technologies_fraction[[1]] <- list()
+technologies[[1]] <- c('SCR', 'EGR')
+technologies_fraction[[1]] <- c(0.75, 0.25)
