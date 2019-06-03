@@ -1,0 +1,103 @@
+Category,Fuel,Euro Standard,Concept,Pollutant,EF_ug_km
+# Petrol, E85, CNG passenger cars
+Passenger Cars,Petrol,Conventional,,benzo(a)pyrene,0.48
+Passenger Cars,Petrol,Euro 1,,benzo(a)pyrene,0.32
+Passenger Cars,Petrol,Euro 2,,benzo(a)pyrene,0.32
+Passenger Cars,Petrol,Euro 3,,benzo(a)pyrene,0.32
+Passenger Cars,Petrol,Euro 4,,benzo(a)pyrene,0.32
+Passenger Cars,Petrol,Euro 5,,benzo(a)pyrene,0.32
+Passenger Cars,Petrol,Euro 6 up to 2016,,benzo(a)pyrene,0.32
+Passenger Cars,Petrol,Euro 6 2017-2019,,benzo(a)pyrene,0.32
+Passenger Cars,Petrol,Euro 6 2020+,,benzo(a)pyrene,0.32
+Passenger Cars,E85,Conventional,,benzo(a)pyrene,0.48
+Passenger Cars,E85,Euro 1,,benzo(a)pyrene,0.32
+Passenger Cars,E85,Euro 2,,benzo(a)pyrene,0.32
+Passenger Cars,E85,Euro 3,,benzo(a)pyrene,0.32
+Passenger Cars,E85,Euro 4,,benzo(a)pyrene,0.32
+Passenger Cars,E85,Euro 5,,benzo(a)pyrene,0.32
+Passenger Cars,E85,Euro 6 up to 2016,,benzo(a)pyrene,0.32
+Passenger Cars,E85,Euro 6 2017-2019,,benzo(a)pyrene,0.32
+Passenger Cars,E85,Euro 6 2020+,,benzo(a)pyrene,0.32
+Passenger Cars,CNG,Conventional,,benzo(a)pyrene,0.48
+Passenger Cars,CNG,Euro 1,,benzo(a)pyrene,0.32
+Passenger Cars,CNG,Euro 2,,benzo(a)pyrene,0.32
+Passenger Cars,CNG,Euro 3,,benzo(a)pyrene,0.32
+Passenger Cars,CNG,Euro 4,,benzo(a)pyrene,0.32
+Passenger Cars,CNG,Euro 5,,benzo(a)pyrene,0.32
+Passenger Cars,CNG,Euro 6 up to 2016,,benzo(a)pyrene,0.32
+Passenger Cars,CNG,Euro 6 2017-2019,,benzo(a)pyrene,0.32
+Passenger Cars,CNG,Euro 6 2020+,,benzo(a)pyrene,0.32
+# Petrol, E85, CNG Light Commercial Vehicles
+Light Commercial Vehicles,Petrol,Conventional,,benzo(a)pyrene,0.48
+Light Commercial Vehicles,Petrol,Euro 1,,benzo(a)pyrene,0.32
+Light Commercial Vehicles,Petrol,Euro 2,,benzo(a)pyrene,0.32
+Light Commercial Vehicles,Petrol,Euro 3,,benzo(a)pyrene,0.32
+Light Commercial Vehicles,Petrol,Euro 4,,benzo(a)pyrene,0.32
+Light Commercial Vehicles,Petrol,Euro 5,,benzo(a)pyrene,0.32
+Light Commercial Vehicles,Petrol,Euro 6 up to 2016,,benzo(a)pyrene,0.32
+Light Commercial Vehicles,Petrol,Euro 6 2017-2019,,benzo(a)pyrene,0.32
+Light Commercial Vehicles,Petrol,Euro 6 2020+,,benzo(a)pyrene,0.32
+Light Commercial Vehicles,E85,Conventional,,benzo(a)pyrene,0.48
+Light Commercial Vehicles,E85,Euro 1,,benzo(a)pyrene,0.32
+Light Commercial Vehicles,E85,Euro 2,,benzo(a)pyrene,0.32
+Light Commercial Vehicles,E85,Euro 3,,benzo(a)pyrene,0.32
+Light Commercial Vehicles,E85,Euro 4,,benzo(a)pyrene,0.32
+Light Commercial Vehicles,E85,Euro 5,,benzo(a)pyrene,0.32
+Light Commercial Vehicles,E85,Euro 6 up to 2016,,benzo(a)pyrene,0.32
+Light Commercial Vehicles,E85,Euro 6 2017-2019,,benzo(a)pyrene,0.32
+Light Commercial Vehicles,E85,Euro 6 2020+,,benzo(a)pyrene,0.32
+Light Commercial Vehicles,CNG,Conventional,,benzo(a)pyrene,0.48
+Light Commercial Vehicles,CNG,Euro 1,,benzo(a)pyrene,0.32
+Light Commercial Vehicles,CNG,Euro 2,,benzo(a)pyrene,0.32
+Light Commercial Vehicles,CNG,Euro 3,,benzo(a)pyrene,0.32
+Light Commercial Vehicles,CNG,Euro 4,,benzo(a)pyrene,0.32
+Light Commercial Vehicles,CNG,Euro 5,,benzo(a)pyrene,0.32
+Light Commercial Vehicles,CNG,Euro 6 up to 2016,,benzo(a)pyrene,0.32
+Light Commercial Vehicles,CNG,Euro 6 2017-2019,,benzo(a)pyrene,0.32
+Light Commercial Vehicles,CNG,Euro 6 2020+,,benzo(a)pyrene,0.32
+# Diesel Passenger Cars
+Passenger Cars,Diesel,Conventional,DI,benzo(a)pyrene,0.63
+Passenger Cars,Diesel,Conventional,IDI,benzo(a)pyrene,2.85
+Passenger Cars,Diesel,Euro 1,DI,benzo(a)pyrene,0.63
+Passenger Cars,Diesel,Euro 1,IDI,benzo(a)pyrene,2.85
+Passenger Cars,Diesel,Euro 2,DI,benzo(a)pyrene,0.63
+Passenger Cars,Diesel,Euro 2,IDI,benzo(a)pyrene,2.85
+Passenger Cars,Diesel,Euro 3,DI,benzo(a)pyrene,0.63
+Passenger Cars,Diesel,Euro 3,IDI,benzo(a)pyrene,2.85
+Passenger Cars,Diesel,Euro 4,DI,benzo(a)pyrene,0.63
+Passenger Cars,Diesel,Euro 4,IDI,benzo(a)pyrene,2.85
+Passenger Cars,Diesel,Euro 5,DI,benzo(a)pyrene,0.63
+Passenger Cars,Diesel,Euro 5,IDI,benzo(a)pyrene,2.85
+Passenger Cars,Diesel,Euro 6 up to 2016,DI,benzo(a)pyrene,0.63
+Passenger Cars,Diesel,Euro 6 up to 2016,IDI,benzo(a)pyrene,2.85
+Passenger Cars,Diesel,Euro 6 2017-2019,DI,benzo(a)pyrene,0.63
+Passenger Cars,Diesel,Euro 6 2017-2019,IDI,benzo(a)pyrene,2.85
+Passenger Cars,Diesel,Euro 6 2020+,DI,benzo(a)pyrene,0.63
+Passenger Cars,Diesel,Euro 6 2020+,IDI,benzo(a)pyrene,2.85
+# Diesel Light Commercial Vehicles
+Light Commercial Vehicles,Diesel,Conventional,DI,benzo(a)pyrene,0.63
+Light Commercial Vehicles,Diesel,Conventional,IDI,benzo(a)pyrene,2.85
+Light Commercial Vehicles,Diesel,Euro 1,DI,benzo(a)pyrene,0.63
+Light Commercial Vehicles,Diesel,Euro 1,IDI,benzo(a)pyrene,2.85
+Light Commercial Vehicles,Diesel,Euro 2,DI,benzo(a)pyrene,0.63
+Light Commercial Vehicles,Diesel,Euro 2,IDI,benzo(a)pyrene,2.85
+Light Commercial Vehicles,Diesel,Euro 3,DI,benzo(a)pyrene,0.63
+Light Commercial Vehicles,Diesel,Euro 3,IDI,benzo(a)pyrene,2.85
+Light Commercial Vehicles,Diesel,Euro 4,DI,benzo(a)pyrene,0.63
+Light Commercial Vehicles,Diesel,Euro 4,IDI,benzo(a)pyrene,2.85
+Light Commercial Vehicles,Diesel,Euro 5,DI,benzo(a)pyrene,0.63
+Light Commercial Vehicles,Diesel,Euro 5,IDI,benzo(a)pyrene,2.85
+Light Commercial Vehicles,Diesel,Euro 6 up to 2016,DI,benzo(a)pyrene,0.63
+Light Commercial Vehicles,Diesel,Euro 6 up to 2016,IDI,benzo(a)pyrene,2.85
+Light Commercial Vehicles,Diesel,Euro 6 2017-2019,DI,benzo(a)pyrene,0.63
+Light Commercial Vehicles,Diesel,Euro 6 2017-2019,IDI,benzo(a)pyrene,2.85
+Light Commercial Vehicles,Diesel,Euro 6 2020+,DI,benzo(a)pyrene,0.63
+Light Commercial Vehicles,Diesel,Euro 6 2020+,IDI,benzo(a)pyrene,2.85
+# Heavy Duty Trucks
+Heavy Duty Trucks,Diesel,Conventional,DI,benzo(a)pyrene,0.90
+Heavy Duty Trucks,Diesel,Euro I,DI,benzo(a)pyrene,0.90
+Heavy Duty Trucks,Diesel,Euro II,DI,benzo(a)pyrene,0.90
+Heavy Duty Trucks,Diesel,Euro III,DI,benzo(a)pyrene,0.90
+Heavy Duty Trucks,Diesel,Euro IV,DI,benzo(a)pyrene,0.90
+Heavy Duty Trucks,Diesel,Euro V,DI,benzo(a)pyrene,0.90
+Heavy Duty Trucks,Diesel,Euro VI,DI,benzo(a)pyrene,0.90

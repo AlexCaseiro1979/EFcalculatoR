@@ -1,6 +1,11 @@
+#######################################################################################
+
+# FUNCTION FOR GROUP 1 POLLUTANTS
+
 # the first variable for the function is the roadway name
 
-# the second variable for the function is the speed, in km/h
+# the second variable for the function are the speeds, in km/h
+# one speed for each category in the fleet distribution file
 
 # the third variable for the function is the length of the roadway, in km
 
@@ -34,31 +39,75 @@
 
 # the eighth variable is the fleet distribution file
 
-EFfunc('Test01', 120, 2, NA, NA,
+EF_Group1('Test01',
+        c(120,110),
+        2, NA, NA,
         c('CO', 'NOx'),
         c('', ''),
-        'distLightweight.R')
-EFfunc('Test02', 120, 2, NA, NA,
+        'distFleetLightweightPT.R')
+EF_Group1('Test02',
+        c(120,110),
+        2, NA, NA,
         c('CO', 'NOx', 'PM Exhaust'),
         c('', '', 'Highway'),
-        'distLightweight.R')
-EFfunc('Test03', 120, 2, NA, NA,
+        'distFleetLightweightPT.R')
+EF_Group1('Test03',
+        c(120,110),
+        2, NA, NA,
         c('CO', 'NOx', 'PM Exhaust', 'VOC'),
         c('', '', 'Highway', ''),
-        'distLightweight.R')
-EFfunc('Test04', 120, 2, NA, NA,
+        'distFleetLightweightPT.R')
+EF_Group1('Test04',
+        c(120,110),
+        2, NA, NA,
         c('CO', 'NOx', 'PM Exhaust', 'VOC', 'FC', 'CH4'),
         c('', '', 'Highway', '', '', 'Highway'),
-        'distLightweight.R')
-EFfunc('Test05', 80, 2, 0.02, 0.5,
+        'distFleetLightweightPT.R')
+EF_Group1('Test05',
+        c(80),
+        2, 0.02, 0.5,
         c('CO'),
         c(''),
-        'distTrucks.R')
-EFfunc('Test06', 80, 2, 0.02, 0.5,
+        'distFleetTrucksPT.R')
+EF_Group1('Test06',
+        c(80),
+        2, 0.02, 0.5,
         c('CO', 'NOx'),
         c('', ''),
-        'distTrucks.R')
-EFfunc('Test07', 80, 2, 0.02, 0.5,
-        c('CO', 'NOx', 'PM Exhaust'),
-        c('', '', 'Highway'),
-        'distTrucks.R')
+        'distFleetTrucksPT.R')
+EF_Group1('Test07',
+        c(80),
+        2, 0.02, 0.5,
+        c('CO', 'NOx', 'PM Exhaust', 'FC'),
+        c('', '', 'Highway', ''),
+        'distFleetTrucksPT.R')
+
+#######################################################################################
+
+# FUNCTION FOR POLLUTANTS EF AS FUNCTION OF LENGTH TRAVELLED
+
+# the first variable for the function is the roadway name
+
+# the second variable for the function are the speeds, in km/h
+# one speed for each category in the fleet distribution file
+
+# the third variable for the function is the length of the roadway, in km
+
+# the fourth variable for the function are the pollutants
+# Options for Passenger Cars, Light Commercial Vehicles, Heavy Duty Trucks and Buses:
+#       benzo(a)pyrene
+# this vector cannot be left empty
+
+# the fifth variable is the fleet distribution file
+
+EF_perLength('Test08',
+        c(120,110),
+        2,
+        c('benzo(a)pyrene'),
+        'distFleetLightweightPT.R')
+
+EF_perLength('Test09',
+        c(80),
+        2,
+        c('benzo(a)pyrene'),
+        'distFleetTrucksPT.R')

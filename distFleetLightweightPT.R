@@ -60,8 +60,22 @@ euro_standards_fraction[[2]] <- euro_standards_fraction[[2]]/sum(euro_standards_
 # Options for Passenger Cars and for Light Commercial Vehicles: GDI, PFI, GDI+GPF, DPF, DPF+SCR, LNT+DPF
 # Options for Heavy Duty Trucks and for Buses : SCR, EGR, DPF+SCR
 # the vector can be left empy. If so, technologies_fraction has no consequence and the EFs are averaged through the technologies
+# The EMEP/EEA document advises 75% for SCR and 25% for EGR for Heavy duty vehicles
 technologies <- list() ; technologies_fraction <- list()
 technologies[[1]] <- list()
 technologies_fraction[[1]] <- list()
 technologies[[2]] <- list()
 technologies_fraction[[2]] <- list()
+
+# Insert the concepts to be discriminated here.
+# discrimination by categories
+# this only makes sense for Diesel vehicles, relevant only for emission factors per length travelled
+# Options for Diesel lightweight vehicles : Direct Injection (DI) and Indirect Injection (IDI)
+# Options for  Heavy Duty Trucks and for Buses : Direct Injection (DI)
+# the vector can be left empy. If so, concepts_fraction has no consequence and the EFs are averaged through the concepts
+# The EMEP/EEA document advises 50% for DI and 50% for IDI
+concepts <- list() ; concepts_fraction <- list()
+concepts[[1]] <- list()
+concepts_fraction[[1]] <- list()
+concepts[[2]] <- c('DI', 'IDI')
+concepts_fraction[[2]] <- c(0.5, 0.5)
