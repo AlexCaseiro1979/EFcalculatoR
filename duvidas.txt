@@ -1,24 +1,23 @@
-anotações:
+dúvidas em aberto, primeira prioridade:
 
-
-dúvidas em aberto:
-
-- é preciso testar face à folha de cálculo anterior e ver se os valores fazem sentido.
+- é preciso continnuar testar face à folha de cálculo anterior e ver se os valores fazem sentido.
 - onde entram os motociclos?
-- o que acontece com as cold emissions? não consideramos? Pensar em como modelá-las.
 - o peso dos pesados dado no documento do EMEP/EEA é o peso bruto (pg 73), nós usamos a tara.
-- falta umm ficheiro de distribuição para os Buses e pôr os Buses no ficheiro EFperLength.csv
+
+dúvidas em aberto, segunda prioridade:
+- o que acontece com as cold emissions? Pensar em como modelá-las.
 
 anotações importantes:
 - o ficheiro de distribuição da frota dos pesados considera que para taras identicas, os pesados de mercadorias são distribuidos de forma igual entre rígidos e articulados.
 - o ficheiro de distribuição da frota dos pesados para Portugal considera a distribuição por categorias que se assume no documento do EMEP/EEA (pg 67).
 
 adições a realizar:
-- temos dados de distribuição por cilindrada para 8 categorias. Podíamos usar maior detalhe da variável "Segment" para os ligeiros.
-Usar o máximo detalhe possível.
+- Adicionar o SO2
+- temos dados de distribuição por cilindrada para 8 categorias. Podíamos usar maior detalhe da variável "Segment" para os ligeiros. Usar o máximo detalhe possível.
 - adicionar uma função para calcular os EFs em função do tráfego variável numa mesma via.
 - incluir as emissões associadas ao desgaste de travões+pneus+estrada (Mod. 019)
 - vias não pavimentadas, AP42
+- falta umm ficheiro de distribuição para os Buses e pôr os Buses nos ficheiros EFperLength.csv e EFperFuel.csv
 
 Ficheiro exemplo:
 - no ficheiro EFcalculatoR_options.R há exemplos como usar as funções.
@@ -35,3 +34,7 @@ Test07: pesados de mercadorias, 2 poluentes (CO, NOx e PM)
 Função para os poluentes cujo EF é dado em massa por cumprimento do segmento:
 Test08: ligeiros, benzo(a)pireno
 Test09: pesados de mercadorias, benzo(a)pireno
+
+Função para os poluentes cujo EF é dado por massa por consumo de combustível:
+Test10: ligeiros, metais (Pb, Cd, As, Ni)
+Test11: pesados de mercadorias, metais (Pb, Cd, As, Ni)

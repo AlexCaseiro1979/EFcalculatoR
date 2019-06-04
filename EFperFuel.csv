@@ -1,0 +1,64 @@
+Category,Fuel,Pollutant,k_mg_kgFuel
+# Pb
+Passenger Cars,Petrol,Pb,0.0016
+Passenger Cars,Diesel,Pb,0.0005
+Light Commercial Vehicles,Petrol,Pb,0.0016
+Light Commercial Vehicles,Diesel,Pb,0.0005
+Heavy Duty Trucks,Petrol,Pb,0.0016
+Heavy Duty Trucks,Diesel,Pb,0.0005
+# Cd
+Passenger Cars,Petrol,Cd,0.0002
+Passenger Cars,Diesel,Cd,5e-5
+Light Commercial Vehicles,Petrol,Cd,0.0002
+Light Commercial Vehicles,Diesel,Cd,5e-5
+Heavy Duty Trucks,Petrol,Cd,0.0002
+Heavy Duty Trucks,Diesel,Cd,5e-5
+# Cu
+Passenger Cars,Petrol,Cu,0.0045
+Passenger Cars,Diesel,Cu,0.0057
+Light Commercial Vehicles,Petrol,Cu,0.0045
+Light Commercial Vehicles,Diesel,Cu,0.0057
+Heavy Duty Trucks,Petrol,Cu,0.0045
+Heavy Duty Trucks,Diesel,Cu,0.0057
+# Cr
+Passenger Cars,Petrol,Cr,0.0063
+Passenger Cars,Diesel,Cr,0.0085
+Light Commercial Vehicles,Petrol,Cr,0.0063
+Light Commercial Vehicles,Diesel,Cr,0.0085
+Heavy Duty Trucks,Petrol,Cr,0.0063
+Heavy Duty Trucks,Diesel,Cr,0.0085
+# Ni
+Passenger Cars,Petrol,Ni,0.0023
+Passenger Cars,Diesel,Ni,0.0002
+Light Commercial Vehicles,Petrol,Ni,0.0023
+Light Commercial Vehicles,Diesel,Ni,0.0002
+Heavy Duty Trucks,Petrol,Ni,0.0023
+Heavy Duty Trucks,Diesel,Ni,0.0002
+# Se
+Passenger Cars,Petrol,Se,0.0002
+Passenger Cars,Diesel,Se,0.0001
+Light Commercial Vehicles,Petrol,Se,0.0002
+Light Commercial Vehicles,Diesel,Se,0.0001
+Heavy Duty Trucks,Petrol,Se,0.0002
+Heavy Duty Trucks,Diesel,Se,0.0001
+# Zn
+Passenger Cars,Petrol,Zn,0.033
+Passenger Cars,Diesel,Zn,0.018
+Light Commercial Vehicles,Petrol,Zn,0.033
+Light Commercial Vehicles,Diesel,Zn,0.018
+Heavy Duty Trucks,Petrol,Zn,0.033
+Heavy Duty Trucks,Diesel,Zn,0.018
+# Hg
+Passenger Cars,Petrol,Hg,0.0087
+Passenger Cars,Diesel,Hg,0.0053
+Light Commercial Vehicles,Petrol,Hg,0.0087
+Light Commercial Vehicles,Diesel,Hg,0.0053
+Heavy Duty Trucks,Petrol,Hg,0.0087
+Heavy Duty Trucks,Diesel,Hg,0.0053
+# As
+Passenger Cars,Petrol,As,0.0003
+Passenger Cars,Diesel,As,0.0001
+Light Commercial Vehicles,Petrol,As,0.0003
+Light Commercial Vehicles,Diesel,As,0.0001
+Heavy Duty Trucks,Petrol,As,0.0003
+Heavy Duty Trucks,Diesel,As,0.0001

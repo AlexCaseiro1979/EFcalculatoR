@@ -111,3 +111,29 @@ EF_perLength('Test09',
         2,
         c('benzo(a)pyrene'),
         'distFleetTrucksPT.R')
+
+
+#######################################################################################
+
+# FUNCTION FOR POLLUTANTS EF AS FUNCTION OF FUEL CONSUMED
+
+# options 1, 2, 3, 4, 5 and 8 are the same as for the function EF_Group1
+
+# the sixth variable for the function are the pollutants
+# Options are:
+#   Pb, Cd, Cu, Cr, Ni, Se, Zn, Hg, As
+
+# the seventh variable for the function is to be left empty
+
+EF_perFuel('Test10',
+        c(120,110),
+        2, NA, NA,
+        c('Pb', 'As', 'Cd', 'Ni'),
+        c(),
+        'distFleetLightweightPT.R')
+EF_perFuel('Test11',
+        c(80),
+        2, 0.02, 0.5,
+        c('Pb', 'As', 'Cd', 'Ni'),
+        c(),
+        'distFleetTrucksPT.R')
