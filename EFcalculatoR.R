@@ -6,6 +6,7 @@ source(distFile)
 
 c_pollutant <- 1
 for (pollutant in pollutants) {
+    cat("\n")
     # initialize the FC output data table
     if (pollutant=='FC') {
         outfc_names <- c('Roadway', 'Pollutant', 'Category', 'Fuel', 'FC_MJ_km_vehic')
@@ -98,7 +99,7 @@ for (pollutant in pollutants) {
                 }
                 c_segment <- c_segment + 1
             }
-            cat("\t", roadway, pollutant, category, fuel, sum(out$EF*out$Fraction), "\n")
+            cat("\n\t", roadway, pollutant, category, fuel, sum(out$EF*out$Fraction))
                 if (pollutant=='FC') {
                     outfcd <- data.frame(roadway, pollutant, category, fuel, sum(out$EF*out$Fraction))
                     names(outfcd) <- outfc_names ; outfc <- rbind(outfc, outfcd)
@@ -135,9 +136,9 @@ for (pollutant in pollutants) {
     # end the strings for the output
     # the output
     time = length / speed * (60*60)
-    cat(roadway, ':', pol_string, categories_name, sum(ef_pol*categories_fraction), umass_string,
+    cat("\n", roadway, ':', pol_string, categories_name, sum(ef_pol*categories_fraction), umass_string,
         sum(ef_pol*categories_fraction) * length / time, utime_string,
-        slope_string, load_string, "\n\n")
+        slope_string, load_string)
     c_pollutant <- c_pollutant + 1
 }
 
@@ -221,9 +222,8 @@ for (pollutant in pollutants) {
     # end the strings for the output
     # the output
     time = length / speed * (60*60)
-    cat(roadway, ':', pol_string, categories_name, sum(ef_pol*categories_fraction), umass_string,
-        sum(ef_pol*categories_fraction) * length / time, utime_string,
-        "\n\n")
+    cat("\n\n", roadway, ':', pol_string, categories_name, sum(ef_pol*categories_fraction), umass_string,
+        sum(ef_pol*categories_fraction) * length / time, utime_string)
     c_pollutant <- c_pollutant + 1
 }
 
@@ -235,9 +235,8 @@ source(distFile)
 df_specEnergy <- read.table('SpecificEnergy.csv', sep=',', header=TRUE, comment.char='#')
 
 # get the fuel consumption with the function EF_Group1
-cat('----------- computing the Fuel consumption...', "\n")
 fuelComp <- EF_Group1(roadway, speeds, length, slope, load, c('FC'), c(''), distFile)
-cat('----------- finished computing the Fuel consumption...', "\n")
+cat("\n", roadway, '----------------------------- finished computing the Fuel consumption...')
 
 c_pollutant <- 1
 for (pollutant in pollutants) {
@@ -279,9 +278,8 @@ for (pollutant in pollutants) {
     # end the strings for the output
     # the output
     time = length / speed * (60*60)
-    cat(roadway, ':', pol_string, categories_name, sum(ef_pol*categories_fraction), umass_string,
-        sum(ef_pol*categories_fraction) * length / time, utime_string,
-        "\n\n")
+    cat("\n", roadway, ':', pol_string, categories_name, sum(ef_pol*categories_fraction), umass_string,
+        sum(ef_pol*categories_fraction) * length / time, utime_string)
     c_pollutant <- c_pollutant + 1
 }
 
