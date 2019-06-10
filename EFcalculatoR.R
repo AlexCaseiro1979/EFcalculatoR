@@ -1,5 +1,5 @@
 
-# this function is run for a given fleet distribution and a given roadway (the roadway is defined by a speed, a slope, a load and a mode)
+# this function is run for a given fleet distribution and a given roadway (the roadway is defined by a speed, a length, a slope, a load and a mode)
 EF_Group1 <- function(roadway, speeds, length, slope, load, pollutants, modes, distFile){
 
 source(distFile)
@@ -7,15 +7,27 @@ source(distFile)
 c_pollutant <- 1
 for (pollutant in pollutants) {
     cat("\n")
-    # initialize the FC output data table
+    # initialize the FC, VOC or CH4 output data table (needed by other functions)
     if (pollutant=='FC') {
-        outfc_names <- c('Roadway', 'Pollutant', 'Category', 'Fuel', 'FC_MJ_km_vehic')
-        outfc <- data.frame(
+        outaux_names <- c('Roadway', 'Pollutant', 'Category', 'Fuel', 'FC_MJ_km_vehic')
+        outaux <- data.frame(
         Roadway = character(),
         Pollutant = character(),
         Category = character(),
         Fuel = character(),
         FC_MJ_km_vehic = numeric()
+        )
+    }
+    if (pollutant %in% c('VOC', 'CH4')) {
+        outaux_names <- c('Roadway', 'Pollutant', 'Category', 'Fuel', 'Segment', 'Euro.Standard', 'EF')
+        outaux <- data.frame(
+        Roadway = character(),
+        Pollutant = character(),
+        Category = character(),
+        Fuel = character(),
+        Segment = character(),
+        Euro.Standard = character(),
+        EF = numeric()
         )
     }
     # end of the FC output data table initialization
@@ -95,14 +107,18 @@ for (pollutant in pollutants) {
                         }
                         c_technology <- c_technology + 1
                     }
+                    if (pollutant %in% c('VOC', 'CH4')) {
+                        outauxd <- data.frame(roadway, pollutant, category, fuel, segment, euro_standard, sum(out$EF*out$Fraction))
+                        names(outauxd) <- outaux_names ; outaux <- rbind(outaux, outauxd)
+                    }
                     c_euro_standard <- c_euro_standard + 1
                 }
                 c_segment <- c_segment + 1
             }
             cat("\n\t", roadway, pollutant, category, fuel, sum(out$EF*out$Fraction))
-                if (pollutant=='FC') {
-                    outfcd <- data.frame(roadway, pollutant, category, fuel, sum(out$EF*out$Fraction))
-                    names(outfcd) <- outfc_names ; outfc <- rbind(outfc, outfcd)
+                if (pollutant %in% c('FC')) {
+                    outauxd <- data.frame(roadway, pollutant, category, fuel, sum(out$EF*out$Fraction))
+                    names(outauxd) <- outaux_names ; outaux <- rbind(outaux, outauxd)
                 }
             c_fuel <- c_fuel + 1
         }
@@ -142,8 +158,8 @@ for (pollutant in pollutants) {
     c_pollutant <- c_pollutant + 1
 }
 
-if (pollutant=='FC') {
-    return(outfc)
+if (pollutant %in% c('FC', 'VOC', 'CH4')) {
+    return(outaux)
 }
 
 }
@@ -285,10 +301,86 @@ for (pollutant in pollutants) {
 
 }
 
+EF_perVOC <- function(roadway, speeds, length, slope, load, pollutants, modes, distFile){
+
+source(distFile)
+
+# get the VOCs and CH$ EF with the function EF_Group1
+efVOC <- EF_Group1(roadway, speeds, length, slope, load, c('VOC'), c(''), distFile)
+efCH4 <- EF_Group1(roadway, speeds, length, slope, load, c('CH4'), modes, distFile)
+cat("\n", roadway, '----------------------------- finished computing the VOCs and CH4 EF...')
+
+c_pollutant <- 1
+for (pollutant in pollutants) {
+    ef_pol <- c()
+    c_category <- 1
+    for (category in categories) {
+        # initialize the output data table
+        out_names <- c('Category', 'Fuel', 'Euro.Standard', 'EF',
+                       'Fraction.Fuel', 'Fraction.Euro.Standard', 'Fraction')
+        out <- data.frame(
+        Category = character(),
+        Fuel = character(),
+        Euro.Standard = character(),
+        EF = numeric(),
+        Fraction.Fuel = numeric(),
+        Fraction.Euro.Standard = numeric(),
+        Fraction = numeric()
+        )
+        # end of the output data table
+        speed <- speeds[c_category]
+        # first subsettings: pollutant and category
+        d_pol <- subset(df_perVOC, Pollutant==pollutant)
+        d_cat <- subset(d_pol, Category==category)
+        # continue the subsetting
+        c_fuel <- 1
+        for (fuel in fuels[[c_category]]) {
+            c_euro_standard <- 1
+            for (euro_standard in euro_standards[[c_category]]) {
+                d <- subset(d_cat,
+                            Fuel %in% fuel
+                            & Euro.Standard %in% euro_standard
+                            )
+                if (nrow(d)>0) {
+                    EF <- mean(d$percent_wt_NMVOC) / 100
+                          ( mean(subset(efVOC, Category==category & Fuel==fuel & Euro.Standard == euro_standard )$EF) # VOCs
+                          - mean(subset(efCH4, Category==category & Fuel==fuel & Euro.Standard == euro_standard )$EF) # minus CH4
+                          )
+                    outd  <- data.frame(category, fuel, euro_standard, EF,
+                                        fuels_fraction[[c_category]][c_fuel],
+                                        euro_standards_fraction[[c_category]][c_euro_standard],
+                                        fuels_fraction[[c_category]][c_fuel] * euro_standards_fraction[[c_category]][c_euro_standard]
+                                        )
+                    names(outd) <- out_names ; out <- rbind(out, outd)
+                }
+                c_euro_standard <- c_euro_standard + 1
+            }
+            c_fuel <- c_fuel + 1
+        }
+        # end the subsetting
+        ef_pol <- c(ef_pol, sum(out$EF*out$Fraction))
+        c_category <- c_category + 1
+    }
+    # create the strings for the output
+    pol_string <- c(pollutant, 'EF for')
+    umass_string <- c('g/(Km.vehicle) or ')
+    utime_string <- c('g/(s.vehicle)')
+    # end the strings for the output
+    # the output
+    time = length / speed * (60*60)
+    cat("\n", roadway, ':', pol_string, categories_name, sum(ef_pol*categories_fraction), umass_string,
+        sum(ef_pol*categories_fraction) * length / time, utime_string)
+    c_pollutant <- c_pollutant + 1
+}
+
+}
+
 # read the EMEP/EEA data
 df_Group1 <- read.table("1.A.3.b.i-iv Road transport hot EFs Annex 2018_Dic.csv", sep=',', header=TRUE)
 df_perLength <- read.table('EFperLength.csv', sep=',', header=TRUE, comment.char='#')
 df_perFuel <- read.table('EFperFuel.csv', sep=',', header=TRUE, comment.char='#')
+df_perVOC <- read.table('EFperVOC.csv', sep=',', header=TRUE, comment.char='#')
+
 
 # read the options input file
 source('EFcalculatoR_options.R')

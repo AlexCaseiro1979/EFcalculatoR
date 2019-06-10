@@ -1,9 +1,10 @@
+
 dúvidas em aberto, primeira prioridade:
-- é preciso continuar testar face à folha de cálculo anterior e ver se os valores fazem sentido.
-- é preciso validar
+- é preciso continuar testar face à folha de cálculo anterior e ver se os valores fazem sentido + é preciso validar
 - usar a função de correção das emissões? (ver pg 94)
 - onde entram os motociclos?
 - o peso dos pesados dado no documento do EMEP/EEA é o peso bruto (pg 73), nós usamos a tara.
+- metais pesados: o que fazer com a emissão proveniente do lubrificante? (pg 94)
 
 dúvidas em aberto, segunda prioridade:
 - o que acontece com as cold emissions? Pensar em como modelá-las.
@@ -30,12 +31,16 @@ Test03: ligeiros (passageiros e mercadorias), 4 poluentes (CO, NOx, PM e VOC)
 Test04: ligeiros (passageiros e mercadorias), 6 poluentes (CO, NOx, PM, VOC, FC e CH4)
 Test05: pesados de mercadorias, 1 poluente (CO)
 Test06: pesados de mercadorias, 2 poluentes (CO e NOx)
-Test07: pesados de mercadorias, 2 poluentes (CO, NOx e PM)
+Test07: pesados de mercadorias, 4 poluentes (CO, NOx, PM e CH4)
 
 Função para os poluentes cujo EF é dado em massa por cumprimento do segmento:
 Test08: ligeiros, benzo(a)pireno
 Test09: pesados de mercadorias, benzo(a)pireno
 
 Função para os poluentes cujo EF é dado por massa por consumo de combustível:
-Test10: ligeiros, metais (Pb, Cd, As, Ni)
-Test11: pesados de mercadorias, metais (Pb, Cd, As, Ni)
+Test10: ligeiros, metais (Pb, Cd, As, Ni e SO2)
+Test11: pesados de mercadorias, metais (Pb, Cd, As, Ni e SO2)
+
+Função para os poluentes calculados como fração dos VOCs:
+Test12: ligeiros, 3 poluentes: tolueno, m,p-xileno e o-xileno
+Test13: pesados, 3 poluentes: tolueno, m,p-xileno e o-xileno

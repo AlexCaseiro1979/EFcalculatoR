@@ -78,8 +78,8 @@ EF_Group1('Test06',
 EF_Group1('Test07',
         c(80),
         2, 0.02, 0.5,
-        c('CO', 'NOx', 'PM Exhaust', 'FC'),
-        c('', '', 'Highway', ''),
+        c('CO', 'NOx', 'PM Exhaust', 'FC', 'CH4'),
+        c('', '', 'Highway', '', 'Highway'),
         'distFleetTrucksPT.R')
 
 #######################################################################################
@@ -121,19 +121,46 @@ EF_perLength('Test09',
 
 # the sixth variable for the function are the pollutants
 # Options are:
-#   Pb, Cd, Cu, Cr, Ni, Se, Zn, Hg, As
+#   Pb, Cd, Cu, Cr, Ni, Se, Zn, Hg, As and SO2
 
 # the seventh variable for the function is to be left empty
 
 EF_perFuel('Test10',
         c(120,110),
         2, NA, NA,
-        c('Pb', 'As', 'Cd', 'Ni'),
+        c('Pb', 'As', 'Cd', 'Ni', 'SO2'),
         c(),
         'distFleetLightweightPT.R')
 EF_perFuel('Test11',
         c(80),
         2, 0.02, 0.5,
-        c('Pb', 'As', 'Cd', 'Ni'),
+        c('Pb', 'As', 'Cd', 'Ni', 'SO2'),
         c(),
+        'distFleetTrucksPT.R')
+
+
+#######################################################################################
+
+# FUNCTION FOR POLLUTANTS EF AS FUNCTION OF FUEL CONSUMED
+
+# options 1, 2, 3, 4, 5, 7 and 8 are the same as for the function EF_Group1
+
+# Since there is the need to compute the EF of VOCs and CH4,
+# option 7 (driving modes) should not be left empty.
+
+# the sixth variable for the function are the pollutants
+# Options are:
+#   toluene, mp-xylene, o-xylene
+
+EF_perVOC('Test12',
+        c(120,110),
+        2, NA, NA,
+        c('toluene', 'mp-xylene', 'o-xylene'),
+        c('Highway', 'Highway', 'Highway'),
+        'distFleetLightweightPT.R')
+EF_perVOC('Test13',
+        c(80),
+        2, 0.02, 0.5,
+        c('toluene', 'mp-xylene', 'o-xylene'),
+        c('Highway', 'Highway', 'Highway'),
         'distFleetTrucksPT.R')

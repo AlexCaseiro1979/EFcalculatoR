@@ -1,0 +1,187 @@
+Category,Fuel,Euro Standard,Pollutant,percent_wt_NMVOC
+# toluene
+Passenger Cars,Petrol,Conventional,toluene,12.84
+Passenger Cars,Petrol,Euro 1,toluene,10.98
+Passenger Cars,Petrol,Euro 2,toluene,10.98
+Passenger Cars,Petrol,Euro 3,toluene,10.98
+Passenger Cars,Petrol,Euro 4,toluene,10.98
+Passenger Cars,Petrol,Euro 5,toluene,10.98
+Passenger Cars,Petrol,Euro 6 up to 2016,toluene,10.98
+Passenger Cars,Petrol,Euro 6 2017-2019,toluene,10.98
+Passenger Cars,Petrol,Euro 6 2020+,toluene,10.98
+Light Commercial Vehicles,Petrol,Conventional,toluene,12.84
+Light Commercial Vehicles,Petrol,Euro 1,toluene,10.98
+Light Commercial Vehicles,Petrol,Euro 2,toluene,10.98
+Light Commercial Vehicles,Petrol,Euro 3,toluene,10.98
+Light Commercial Vehicles,Petrol,Euro 4,toluene,10.98
+Light Commercial Vehicles,Petrol,Euro 5,toluene,10.98
+Light Commercial Vehicles,Petrol,Euro 6 up to 2016,toluene,10.98
+Light Commercial Vehicles,Petrol,Euro 6 2017-2019,toluene,10.98
+Light Commercial Vehicles,Petrol,Euro 6 2020+,toluene,10.98
+Passenger Cars,Diesel,Conventional,toluene,0.69
+Passenger Cars,Diesel,Euro 1,toluene,0.69
+Passenger Cars,Diesel,Euro 2,toluene,0.69
+Passenger Cars,Diesel,Euro 3,toluene,0.69
+Passenger Cars,Diesel,Euro 4,toluene,0.69
+Passenger Cars,Diesel,Euro 5,toluene,0.69
+Passenger Cars,Diesel,Euro 6 up to 2016,toluene,0.69
+Passenger Cars,Diesel,Euro 6 2017-2019,toluene,0.69
+Passenger Cars,Diesel,Euro 6 2020+,toluene,0.69
+Light Commercial Vehicles,Diesel,Conventional,toluene,0.69
+Light Commercial Vehicles,Diesel,Euro 1,toluene,0.69
+Light Commercial Vehicles,Diesel,Euro 2,toluene,0.69
+Light Commercial Vehicles,Diesel,Euro 3,toluene,0.69
+Light Commercial Vehicles,Diesel,Euro 4,toluene,0.69
+Light Commercial Vehicles,Diesel,Euro 5,toluene,0.69
+Light Commercial Vehicles,Diesel,Euro 6 up to 2016,toluene,0.69
+Light Commercial Vehicles,Diesel,Euro 6 2017-2019,toluene,0.69
+Light Commercial Vehicles,Diesel,Euro 6 2020+,toluene,0.69
+Passenger Cars,LPG Bifuel ~ LPG,Conventional,toluene,1.22
+Passenger Cars,LPG Bifuel ~ LPG,Euro 1,toluene,1.22
+Passenger Cars,LPG Bifuel ~ LPG,Euro 2,toluene,1.22
+Passenger Cars,LPG Bifuel ~ LPG,Euro 3,toluene,1.22
+Passenger Cars,LPG Bifuel ~ LPG,Euro 4,toluene,1.22
+Passenger Cars,LPG Bifuel ~ LPG,Euro 5,toluene,1.22
+Passenger Cars,LPG Bifuel ~ LPG,Euro 6 up to 2016,toluene,1.22
+Passenger Cars,LPG Bifuel ~ LPG,Euro 6 2017-2019,toluene,1.22
+Passenger Cars,LPG Bifuel ~ LPG,Euro 6 2020+,toluene,1.22
+Light Commercial Vehicles,LPG Bifuel ~ LPG,Conventional,toluene,1.22
+Light Commercial Vehicles,LPG Bifuel ~ LPG,Euro 1,toluene,1.22
+Light Commercial Vehicles,LPG Bifuel ~ LPG,Euro 2,toluene,1.22
+Light Commercial Vehicles,LPG Bifuel ~ LPG,Euro 3,toluene,1.22
+Light Commercial Vehicles,LPG Bifuel ~ LPG,Euro 4,toluene,1.22
+Light Commercial Vehicles,LPG Bifuel ~ LPG,Euro 5,toluene,1.22
+Light Commercial Vehicles,LPG Bifuel ~ LPG,Euro 6 up to 2016,toluene,1.22
+Light Commercial Vehicles,LPG Bifuel ~ LPG,Euro 6 2017-2019,toluene,1.22
+Light Commercial Vehicles,LPG Bifuel ~ LPG,Euro 6 2020+,toluene,1.22
+Heavy Duty Trucks,Diesel,Conventional,toluene,0.01
+Heavy Duty Trucks,Diesel,Euro I,toluene,0.01
+Heavy Duty Trucks,Diesel,Euro II,toluene,0.01
+Heavy Duty Trucks,Diesel,Euro III,toluene,0.01
+Heavy Duty Trucks,Diesel,Euro IV,toluene,0.01
+Heavy Duty Trucks,Diesel,Euro V,toluene,0.01
+Heavy Duty Trucks,Diesel,Euro VI,toluene,0.01
+# mp-xylene
+Passenger Cars,Petrol,Conventional,mp-xylene,6.66
+Passenger Cars,Petrol,Euro 1,mp-xylene,5.43
+Passenger Cars,Petrol,Euro 2,mp-xylene,5.43
+Passenger Cars,Petrol,Euro 3,mp-xylene,5.43
+Passenger Cars,Petrol,Euro 4,mp-xylene,5.43
+Passenger Cars,Petrol,Euro 5,mp-xylene,5.43
+Passenger Cars,Petrol,Euro 6 up to 2016,mp-xylene,5.43
+Passenger Cars,Petrol,Euro 6 2017-2019,mp-xylene,5.43
+Passenger Cars,Petrol,Euro 6 2020+,mp-xylene,5.43
+Light Commercial Vehicles,Petrol,Conventional,mp-xylene,6.66
+Light Commercial Vehicles,Petrol,Euro 1,mp-xylene,5.43
+Light Commercial Vehicles,Petrol,Euro 2,mp-xylene,5.43
+Light Commercial Vehicles,Petrol,Euro 3,mp-xylene,5.43
+Light Commercial Vehicles,Petrol,Euro 4,mp-xylene,5.43
+Light Commercial Vehicles,Petrol,Euro 5,mp-xylene,5.43
+Light Commercial Vehicles,Petrol,Euro 6 up to 2016,mp-xylene,5.43
+Light Commercial Vehicles,Petrol,Euro 6 2017-2019,mp-xylene,5.43
+Light Commercial Vehicles,Petrol,Euro 6 2020+,mp-xylene,5.43
+Passenger Cars,Diesel,Conventional,mp-xylene,0.61
+Passenger Cars,Diesel,Euro 1,mp-xylene,0.61
+Passenger Cars,Diesel,Euro 2,mp-xylene,0.61
+Passenger Cars,Diesel,Euro 3,mp-xylene,0.61
+Passenger Cars,Diesel,Euro 4,mp-xylene,0.61
+Passenger Cars,Diesel,Euro 5,mp-xylene,0.61
+Passenger Cars,Diesel,Euro 6 up to 2016,mp-xylene,0.61
+Passenger Cars,Diesel,Euro 6 2017-2019,mp-xylene,0.61
+Passenger Cars,Diesel,Euro 6 2020+,mp-xylene,0.61
+Light Commercial Vehicles,Diesel,Conventional,mp-xylene,0.61
+Light Commercial Vehicles,Diesel,Euro 1,mp-xylene,0.61
+Light Commercial Vehicles,Diesel,Euro 2,mp-xylene,0.61
+Light Commercial Vehicles,Diesel,Euro 3,mp-xylene,0.61
+Light Commercial Vehicles,Diesel,Euro 4,mp-xylene,0.61
+Light Commercial Vehicles,Diesel,Euro 5,mp-xylene,0.61
+Light Commercial Vehicles,Diesel,Euro 6 up to 2016,mp-xylene,0.61
+Light Commercial Vehicles,Diesel,Euro 6 2017-2019,mp-xylene,0.61
+Light Commercial Vehicles,Diesel,Euro 6 2020+,mp-xylene,0.61
+Passenger Cars,LPG Bifuel ~ LPG,Conventional,mp-xylene,0.75
+Passenger Cars,LPG Bifuel ~ LPG,Euro 1,mp-xylene,0.75
+Passenger Cars,LPG Bifuel ~ LPG,Euro 2,mp-xylene,0.75
+Passenger Cars,LPG Bifuel ~ LPG,Euro 3,mp-xylene,0.75
+Passenger Cars,LPG Bifuel ~ LPG,Euro 4,mp-xylene,0.75
+Passenger Cars,LPG Bifuel ~ LPG,Euro 5,mp-xylene,0.75
+Passenger Cars,LPG Bifuel ~ LPG,Euro 6 up to 2016,mp-xylene,0.75
+Passenger Cars,LPG Bifuel ~ LPG,Euro 6 2017-2019,mp-xylene,0.75
+Passenger Cars,LPG Bifuel ~ LPG,Euro 6 2020+,mp-xylene,0.75
+Light Commercial Vehicles,LPG Bifuel ~ LPG,Conventional,mp-xylene,0.75
+Light Commercial Vehicles,LPG Bifuel ~ LPG,Euro 1,mp-xylene,0.75
+Light Commercial Vehicles,LPG Bifuel ~ LPG,Euro 2,mp-xylene,0.75
+Light Commercial Vehicles,LPG Bifuel ~ LPG,Euro 3,mp-xylene,0.75
+Light Commercial Vehicles,LPG Bifuel ~ LPG,Euro 4,mp-xylene,0.75
+Light Commercial Vehicles,LPG Bifuel ~ LPG,Euro 5,mp-xylene,0.75
+Light Commercial Vehicles,LPG Bifuel ~ LPG,Euro 6 up to 2016,mp-xylene,0.75
+Light Commercial Vehicles,LPG Bifuel ~ LPG,Euro 6 2017-2019,mp-xylene,0.75
+Light Commercial Vehicles,LPG Bifuel ~ LPG,Euro 6 2020+,mp-xylene,0.75
+Heavy Duty Trucks,Diesel,Conventional,mp-xylene,0.98
+Heavy Duty Trucks,Diesel,Euro I,mp-xylene,0.98
+Heavy Duty Trucks,Diesel,Euro II,mp-xylene,0.98
+Heavy Duty Trucks,Diesel,Euro III,mp-xylene,0.98
+Heavy Duty Trucks,Diesel,Euro IV,mp-xylene,0.98
+Heavy Duty Trucks,Diesel,Euro V,mp-xylene,0.98
+Heavy Duty Trucks,Diesel,Euro VI,mp-xylene,0.98
+# o-xylene
+Passenger Cars,Petrol,Conventional,o-xylene,4.52
+Passenger Cars,Petrol,Euro 1,o-xylene,2.26
+Passenger Cars,Petrol,Euro 2,o-xylene,2.26
+Passenger Cars,Petrol,Euro 3,o-xylene,2.26
+Passenger Cars,Petrol,Euro 4,o-xylene,2.26
+Passenger Cars,Petrol,Euro 5,o-xylene,2.26
+Passenger Cars,Petrol,Euro 6 up to 2016,o-xylene,2.26
+Passenger Cars,Petrol,Euro 6 2017-2019,o-xylene,2.26
+Passenger Cars,Petrol,Euro 6 2020+,o-xylene,2.26
+Light Commercial Vehicles,Petrol,Conventional,o-xylene,4.52
+Light Commercial Vehicles,Petrol,Euro 1,o-xylene,2.26
+Light Commercial Vehicles,Petrol,Euro 2,o-xylene,2.26
+Light Commercial Vehicles,Petrol,Euro 3,o-xylene,2.26
+Light Commercial Vehicles,Petrol,Euro 4,o-xylene,2.26
+Light Commercial Vehicles,Petrol,Euro 5,o-xylene,2.26
+Light Commercial Vehicles,Petrol,Euro 6 up to 2016,o-xylene,2.26
+Light Commercial Vehicles,Petrol,Euro 6 2017-2019,o-xylene,2.26
+Light Commercial Vehicles,Petrol,Euro 6 2020+,o-xylene,2.26
+Passenger Cars,Diesel,Conventional,o-xylene,0.27
+Passenger Cars,Diesel,Euro 1,o-xylene,0.27
+Passenger Cars,Diesel,Euro 2,o-xylene,0.27
+Passenger Cars,Diesel,Euro 3,o-xylene,0.27
+Passenger Cars,Diesel,Euro 4,o-xylene,0.27
+Passenger Cars,Diesel,Euro 5,o-xylene,0.27
+Passenger Cars,Diesel,Euro 6 up to 2016,o-xylene,0.27
+Passenger Cars,Diesel,Euro 6 2017-2019,o-xylene,0.27
+Passenger Cars,Diesel,Euro 6 2020+,o-xylene,0.27
+Light Commercial Vehicles,Diesel,Conventional,o-xylene,0.27
+Light Commercial Vehicles,Diesel,Euro 1,o-xylene,0.27
+Light Commercial Vehicles,Diesel,Euro 2,o-xylene,0.27
+Light Commercial Vehicles,Diesel,Euro 3,o-xylene,0.27
+Light Commercial Vehicles,Diesel,Euro 4,o-xylene,0.27
+Light Commercial Vehicles,Diesel,Euro 5,o-xylene,0.27
+Light Commercial Vehicles,Diesel,Euro 6 up to 2016,o-xylene,0.27
+Light Commercial Vehicles,Diesel,Euro 6 2017-2019,o-xylene,0.27
+Light Commercial Vehicles,Diesel,Euro 6 2020+,o-xylene,0.27
+Passenger Cars,LPG Bifuel ~ LPG,Conventional,o-xylene,0.26
+Passenger Cars,LPG Bifuel ~ LPG,Euro 1,o-xylene,0.26
+Passenger Cars,LPG Bifuel ~ LPG,Euro 2,o-xylene,0.26
+Passenger Cars,LPG Bifuel ~ LPG,Euro 3,o-xylene,0.26
+Passenger Cars,LPG Bifuel ~ LPG,Euro 4,o-xylene,0.26
+Passenger Cars,LPG Bifuel ~ LPG,Euro 5,o-xylene,0.26
+Passenger Cars,LPG Bifuel ~ LPG,Euro 6 up to 2016,o-xylene,0.26
+Passenger Cars,LPG Bifuel ~ LPG,Euro 6 2017-2019,o-xylene,0.26
+Passenger Cars,LPG Bifuel ~ LPG,Euro 6 2020+,o-xylene,0.26
+Light Commercial Vehicles,LPG Bifuel ~ LPG,Conventional,o-xylene,0.26
+Light Commercial Vehicles,LPG Bifuel ~ LPG,Euro 1,o-xylene,0.26
+Light Commercial Vehicles,LPG Bifuel ~ LPG,Euro 2,o-xylene,0.26
+Light Commercial Vehicles,LPG Bifuel ~ LPG,Euro 3,o-xylene,0.26
+Light Commercial Vehicles,LPG Bifuel ~ LPG,Euro 4,o-xylene,0.26
+Light Commercial Vehicles,LPG Bifuel ~ LPG,Euro 5,o-xylene,0.26
+Light Commercial Vehicles,LPG Bifuel ~ LPG,Euro 6 up to 2016,o-xylene,0.26
+Light Commercial Vehicles,LPG Bifuel ~ LPG,Euro 6 2017-2019,o-xylene,0.26
+Light Commercial Vehicles,LPG Bifuel ~ LPG,Euro 6 2020+,o-xylene,0.26
+Heavy Duty Trucks,Diesel,Conventional,o-xylene,0.40
+Heavy Duty Trucks,Diesel,Euro I,o-xylene,0.40
+Heavy Duty Trucks,Diesel,Euro II,o-xylene,0.40
+Heavy Duty Trucks,Diesel,Euro III,o-xylene,0.40
+Heavy Duty Trucks,Diesel,Euro IV,o-xylene,0.40
+Heavy Duty Trucks,Diesel,Euro V,o-xylene,0.40
+Heavy Duty Trucks,Diesel,Euro VI,o-xylene,0.40

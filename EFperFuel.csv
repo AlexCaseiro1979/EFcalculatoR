@@ -62,3 +62,10 @@ Light Commercial Vehicles,Petrol,As,0.0003
 Light Commercial Vehicles,Diesel,As,0.0001
 Heavy Duty Trucks,Petrol,As,0.0003
 Heavy Duty Trucks,Diesel,As,0.0001
+# S, given as SO2 (2 times the content of S2)
+Passenger Cars,Petrol,SO2,10
+Passenger Cars,Diesel,SO2,6
+Light Commercial Vehicles,Petrol,SO2,10
+Light Commercial Vehicles,Diesel,SO2,6
+Heavy Duty Trucks,Petrol,SO2,10
+Heavy Duty Trucks,Diesel,SO2,6
