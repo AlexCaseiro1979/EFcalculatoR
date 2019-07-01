@@ -240,3 +240,139 @@ Heavy Duty Trucks,Diesel,Euro IV,DI,PCDF,38e-6
 Heavy Duty Trucks,Diesel,Euro V,DI,PCDF,0.45e-6
 Heavy Duty Trucks,Diesel,Euro VI,DI,PCDF,0.24e-6
 ############################################################################
+### PM Breaks
+# Petrol passenger cars
+Passenger Cars,Petrol,Conventional,,PM Breaks,59.0e3
+Passenger Cars,Petrol,Euro 1,,PM Breaks,59.0e3
+Passenger Cars,Petrol,Euro 2,,PM Breaks,59.0e3
+Passenger Cars,Petrol,Euro 3,,PM Breaks,59.0e3
+Passenger Cars,Petrol,Euro 4,,PM Breaks,59.0e3
+Passenger Cars,Petrol,Euro 5,,PM Breaks,59.0e3
+Passenger Cars,Petrol,Euro 6 up to 2016,,PM Breaks,59.0e3
+Passenger Cars,Petrol,Euro 6 2017-2019,,PM Breaks,59.0e3
+Passenger Cars,Petrol,Euro 6 2020+,,PM Breaks,59.0e3
+# Petrol Light Commercial Vehicles
+Light Commercial Vehicles,Petrol,Conventional,,PM Breaks,59.0e3
+Light Commercial Vehicles,Petrol,Euro 1,,PM Breaks,59.0e3
+Light Commercial Vehicles,Petrol,Euro 2,,PM Breaks,59.0e3
+Light Commercial Vehicles,Petrol,Euro 3,,PM Breaks,59.0e3
+Light Commercial Vehicles,Petrol,Euro 4,,PM Breaks,59.0e3
+Light Commercial Vehicles,Petrol,Euro 5,,PM Breaks,59.0e3
+Light Commercial Vehicles,Petrol,Euro 6 up to 2016,,PM Breaks,59.0e3
+Light Commercial Vehicles,Petrol,Euro 6 2017-2019,,PM Breaks,59.0e3
+Light Commercial Vehicles,Petrol,Euro 6 2020+,,PM Breaks,59.0e3
+# Diesel Passenger Cars
+Passenger Cars,Diesel,Conventional,DI,PM Breaks,59.0e3
+Passenger Cars,Diesel,Conventional,IDI,PM Breaks,59.0e3
+Passenger Cars,Diesel,Euro 1,DI,PM Breaks,59.0e3
+Passenger Cars,Diesel,Euro 1,IDI,PM Breaks,59.0e3
+Passenger Cars,Diesel,Euro 2,DI,PM Breaks,59.0e3
+Passenger Cars,Diesel,Euro 2,IDI,PM Breaks,59.0e3
+Passenger Cars,Diesel,Euro 3,DI,PM Breaks,59.0e3
+Passenger Cars,Diesel,Euro 3,IDI,PM Breaks,59.0e3
+Passenger Cars,Diesel,Euro 4,DI,PM Breaks,59.0e3
+Passenger Cars,Diesel,Euro 4,IDI,PM Breaks,59.0e3
+Passenger Cars,Diesel,Euro 5,DI,PM Breaks,59.0e3
+Passenger Cars,Diesel,Euro 5,IDI,PM Breaks,59.0e3
+Passenger Cars,Diesel,Euro 6 up to 2016,DI,PM Breaks,59.0e3
+Passenger Cars,Diesel,Euro 6 up to 2016,IDI,PM Breaks,59.0e3
+Passenger Cars,Diesel,Euro 6 2017-2019,DI,PM Breaks,59.0e3
+Passenger Cars,Diesel,Euro 6 2017-2019,IDI,PM Breaks,59.0e3
+Passenger Cars,Diesel,Euro 6 2020+,DI,PM Breaks,59.0e3
+Passenger Cars,Diesel,Euro 6 2020+,IDI,PM Breaks,59.0e3
+# Diesel Light Commercial Vehicles
+Light Commercial Vehicles,Diesel,Conventional,DI,PM Breaks,59.0e3
+Light Commercial Vehicles,Diesel,Conventional,IDI,PM Breaks,59.0e3
+Light Commercial Vehicles,Diesel,Euro 1,DI,PM Breaks,59.0e3
+Light Commercial Vehicles,Diesel,Euro 1,IDI,PM Breaks,59.0e3
+Light Commercial Vehicles,Diesel,Euro 2,DI,PM Breaks,59.0e3
+Light Commercial Vehicles,Diesel,Euro 2,IDI,PM Breaks,59.0e3
+Light Commercial Vehicles,Diesel,Euro 3,DI,PM Breaks,59.0e3
+Light Commercial Vehicles,Diesel,Euro 3,IDI,PM Breaks,59.0e3
+Light Commercial Vehicles,Diesel,Euro 4,DI,PM Breaks,59.0e3
+Light Commercial Vehicles,Diesel,Euro 4,IDI,PM Breaks,59.0e3
+Light Commercial Vehicles,Diesel,Euro 5,DI,PM Breaks,59.0e3
+Light Commercial Vehicles,Diesel,Euro 5,IDI,PM Breaks,59.0e3
+Light Commercial Vehicles,Diesel,Euro 6 up to 2016,DI,PM Breaks,59.0e3
+Light Commercial Vehicles,Diesel,Euro 6 up to 2016,IDI,PM Breaks,59.0e3
+Light Commercial Vehicles,Diesel,Euro 6 2017-2019,DI,PM Breaks,59.0e3
+Light Commercial Vehicles,Diesel,Euro 6 2017-2019,IDI,PM Breaks,59.0e3
+Light Commercial Vehicles,Diesel,Euro 6 2020+,DI,PM Breaks,59.0e3
+Light Commercial Vehicles,Diesel,Euro 6 2020+,IDI,PM Breaks,59.0e3
+# Heavy Duty Trucks
+Heavy Duty Trucks,Diesel,Conventional,DI,PM Breaks,59.0e3
+Heavy Duty Trucks,Diesel,Euro I,DI,PM Breaks,59.0e3
+Heavy Duty Trucks,Diesel,Euro II,DI,PM Breaks,59.0e3
+Heavy Duty Trucks,Diesel,Euro III,DI,PM Breaks,59.0e3
+Heavy Duty Trucks,Diesel,Euro IV,DI,PM Breaks,59.0e3
+Heavy Duty Trucks,Diesel,Euro V,DI,PM Breaks,59.0e3
+Heavy Duty Trucks,Diesel,Euro VI,DI,PM Breaks,59.0e3
+############################################################################
+### PM Road paved
+# Petrol passenger cars
+Passenger Cars,Petrol,Conventional,,PM Road paved,38.0e3
+Passenger Cars,Petrol,Euro 1,,PM Road paved,38.0e3
+Passenger Cars,Petrol,Euro 2,,PM Road paved,38.0e3
+Passenger Cars,Petrol,Euro 3,,PM Road paved,38.0e3
+Passenger Cars,Petrol,Euro 4,,PM Road paved,38.0e3
+Passenger Cars,Petrol,Euro 5,,PM Road paved,38.0e3
+Passenger Cars,Petrol,Euro 6 up to 2016,,PM Road paved,38.0e3
+Passenger Cars,Petrol,Euro 6 2017-2019,,PM Road paved,38.0e3
+Passenger Cars,Petrol,Euro 6 2020+,,PM Road paved,38.0e3
+# Petrol Light Commercial Vehicles
+Light Commercial Vehicles,Petrol,Conventional,,PM Road paved,38.0e3
+Light Commercial Vehicles,Petrol,Euro 1,,PM Road paved,38.0e3
+Light Commercial Vehicles,Petrol,Euro 2,,PM Road paved,38.0e3
+Light Commercial Vehicles,Petrol,Euro 3,,PM Road paved,38.0e3
+Light Commercial Vehicles,Petrol,Euro 4,,PM Road paved,38.0e3
+Light Commercial Vehicles,Petrol,Euro 5,,PM Road paved,38.0e3
+Light Commercial Vehicles,Petrol,Euro 6 up to 2016,,PM Road paved,38.0e3
+Light Commercial Vehicles,Petrol,Euro 6 2017-2019,,PM Road paved,38.0e3
+Light Commercial Vehicles,Petrol,Euro 6 2020+,,PM Road paved,38.0e3
+# Diesel Passenger Cars
+Passenger Cars,Diesel,Conventional,DI,PM Road paved,38.0e3
+Passenger Cars,Diesel,Conventional,IDI,PM Road paved,38.0e3
+Passenger Cars,Diesel,Euro 1,DI,PM Road paved,38.0e3
+Passenger Cars,Diesel,Euro 1,IDI,PM Road paved,38.0e3
+Passenger Cars,Diesel,Euro 2,DI,PM Road paved,38.0e3
+Passenger Cars,Diesel,Euro 2,IDI,PM Road paved,38.0e3
+Passenger Cars,Diesel,Euro 3,DI,PM Road paved,38.0e3
+Passenger Cars,Diesel,Euro 3,IDI,PM Road paved,38.0e3
+Passenger Cars,Diesel,Euro 4,DI,PM Road paved,38.0e3
+Passenger Cars,Diesel,Euro 4,IDI,PM Road paved,38.0e3
+Passenger Cars,Diesel,Euro 5,DI,PM Road paved,38.0e3
+Passenger Cars,Diesel,Euro 5,IDI,PM Road paved,38.0e3
+Passenger Cars,Diesel,Euro 6 up to 2016,DI,PM Road paved,38.0e3
+Passenger Cars,Diesel,Euro 6 up to 2016,IDI,PM Road paved,38.0e3
+Passenger Cars,Diesel,Euro 6 2017-2019,DI,PM Road paved,38.0e3
+Passenger Cars,Diesel,Euro 6 2017-2019,IDI,PM Road paved,38.0e3
+Passenger Cars,Diesel,Euro 6 2020+,DI,PM Road paved,38.0e3
+Passenger Cars,Diesel,Euro 6 2020+,IDI,PM Road paved,38.0e3
+# Diesel Light Commercial Vehicles
+Light Commercial Vehicles,Diesel,Conventional,DI,PM Road paved,38.0e3
+Light Commercial Vehicles,Diesel,Conventional,IDI,PM Road paved,38.0e3
+Light Commercial Vehicles,Diesel,Euro 1,DI,PM Road paved,38.0e3
+Light Commercial Vehicles,Diesel,Euro 1,IDI,PM Road paved,38.0e3
+Light Commercial Vehicles,Diesel,Euro 2,DI,PM Road paved,38.0e3
+Light Commercial Vehicles,Diesel,Euro 2,IDI,PM Road paved,38.0e3
+Light Commercial Vehicles,Diesel,Euro 3,DI,PM Road paved,38.0e3
+Light Commercial Vehicles,Diesel,Euro 3,IDI,PM Road paved,38.0e3
+Light Commercial Vehicles,Diesel,Euro 4,DI,PM Road paved,38.0e3
+Light Commercial Vehicles,Diesel,Euro 4,IDI,PM Road paved,38.0e3
+Light Commercial Vehicles,Diesel,Euro 5,DI,PM Road paved,38.0e3
+Light Commercial Vehicles,Diesel,Euro 5,IDI,PM Road paved,38.0e3
+Light Commercial Vehicles,Diesel,Euro 6 up to 2016,DI,PM Road paved,38.0e3
+Light Commercial Vehicles,Diesel,Euro 6 up to 2016,IDI,PM Road paved,38.0e3
+Light Commercial Vehicles,Diesel,Euro 6 2017-2019,DI,PM Road paved,38.0e3
+Light Commercial Vehicles,Diesel,Euro 6 2017-2019,IDI,PM Road paved,38.0e3
+Light Commercial Vehicles,Diesel,Euro 6 2020+,DI,PM Road paved,38.0e3
+Light Commercial Vehicles,Diesel,Euro 6 2020+,IDI,PM Road paved,38.0e3
+# Heavy Duty Trucks
+Heavy Duty Trucks,Diesel,Conventional,DI,PM Road paved,38.0e3
+Heavy Duty Trucks,Diesel,Euro I,DI,PM Road paved,38.0e3
+Heavy Duty Trucks,Diesel,Euro II,DI,PM Road paved,38.0e3
+Heavy Duty Trucks,Diesel,Euro III,DI,PM Road paved,38.0e3
+Heavy Duty Trucks,Diesel,Euro IV,DI,PM Road paved,38.0e3
+Heavy Duty Trucks,Diesel,Euro V,DI,PM Road paved,38.0e3
+Heavy Duty Trucks,Diesel,Euro VI,DI,PM Road paved,38.0e3
+############################################################################

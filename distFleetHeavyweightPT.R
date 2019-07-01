@@ -39,7 +39,7 @@ segments_fraction[[1]] <- c(0.085453486, 0.026218683, 0.013206448, 0.05156341, 0
 segments[[2]] <- c('Urban Buses Midi <=15 t', 'Urban Buses Standard 15 - 18 t', 'Urban Buses Articulated >18 t', 'Coaches Standard <=18 t', 'Coaches Articulated >18 t',
                    'Urban CNG Buses', 'Urban Biodiesel Buses'
                   )
-segments_fraction[[2]] <- c(
+segments_fraction[[2]] <- c(0.07040202, 0.008156924, 0.421441057, 0.078558943, 0.421441057
                            )
 
 # insert the euro standards to be discriminated here.

@@ -95,7 +95,7 @@ EF_Group1('Test07',
 
 # the fourth variable for the function are the pollutants
 # Options for Passenger Cars, Light Commercial Vehicles, Heavy Duty Trucks and Buses:
-#       benzo(a)pyrene, PCDD, PCDF
+#       benzo(a)pyrene, PCDD, PCDF, PM Breaks, PM Road paved
 # this vector cannot be left empty
 
 # the fifth variable is the fleet distribution file
@@ -103,13 +103,13 @@ EF_Group1('Test07',
 EF_perLength('Test08',
         c(120,110),
         2,
-        c('benzo(a)pyrene', 'PCDD', 'PCDF'),
+        c('benzo(a)pyrene', 'PCDD', 'PCDF', 'PM Breaks', 'PM Road paved'),
         'distFleetLightweightPT.R')
 
 EF_perLength('Test09',
         c(80),
         2,
-        c('benzo(a)pyrene', 'PCDD', 'PCDF'),
+        c('benzo(a)pyrene', 'PCDD', 'PCDF', 'PM Breaks', 'PM Road paved'),
         'distFleetTrucksPT.R')
 
 

@@ -4,7 +4,6 @@ dúvidas em aberto, primeira prioridade:
 - usar a função de correção das emissões? (ver pg 94)
 - onde entram os motociclos?
 - o peso dos pesados dado no documento do EMEP/EEA é o peso bruto (pg 73), nós usamos a tara.
-- metais pesados: o que fazer com a emissão proveniente do lubrificante? (pg 94)
 
 dúvidas em aberto, segunda prioridade:
 - o que acontece com as cold emissions? Pensar em como modelá-las.
@@ -17,8 +16,10 @@ adições a realizar:
 - adicionar uma função para calcular os EFs em função do tráfego variável numa mesma via.
 - incluir as emissões associadas ao desgaste de travões+pneus+estrada (Mod. 019)
 - vias não pavimentadas, AP42
-- falta um ficheiro de distribuição para os Buses e pôr os Buses nos ficheiros EFperLength.csv e EFperFuel.csv
+- falta pôr os Buses nos ficheiros EFperLength.csv e EFperFuel.csv
 - temos dados de distribuição por cilindrada para 8 categorias. Podíamos usar maior detalhe da variável "Segment" para os ligeiros. Usar o máximo detalhe possível.
+
+######################################################################
 
 Ficheiro exemplo:
 - no ficheiro EFcalculatoR_options.R há exemplos como usar as funções.
@@ -33,8 +34,8 @@ Test06: pesados de mercadorias, 2 poluentes (CO e NOx)
 Test07: pesados de mercadorias, 4 poluentes (CO, NOx, PM e CH4)
 
 Função para os poluentes cujo EF é dado em massa por cumprimento do segmento:
-Test08: ligeiros, benzo(a)pireno
-Test09: pesados de mercadorias, benzo(a)pireno
+Test08: ligeiros, benzo(a)pireno, dioxinas (PCDD), furanos (PCDF)
+Test09: pesados de mercadorias, benzo(a)pireno, dioxinas (PCDD), furanos (PCDF)
 
 Função para os poluentes cujo EF é dado por massa por consumo de combustível:
 Test10: ligeiros, metais (Pb, Cd, As, Ni e SO2)
@@ -43,3 +44,11 @@ Test11: pesados de mercadorias, metais (Pb, Cd, As, Ni e SO2)
 Função para os poluentes calculados como fração dos VOCs:
 Test12: ligeiros, 3 poluentes: tolueno, m,p-xileno e o-xileno
 Test13: pesados, 3 poluentes: tolueno, m,p-xileno e o-xileno
+
+######################################################################
+
+dúvidas resolvidas:
+- Autocarros adicionados à distribuição dos pesados (distFleetLightweightPT.R). A fração de autocarros nos pesados pode ser ajusatada projeto a projeto.
+Atenção! a distribuição por taras dos pesados foi usada para caracterizar os autocarros. Isto não será muito preciso!
+- metais pesados: o que fazer com a emissão proveniente do lubrificante? (pg 94)
+Estas emissões só são relevantes para veículos "two-strokes"
