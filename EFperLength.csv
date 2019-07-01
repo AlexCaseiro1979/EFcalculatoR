@@ -1,4 +1,6 @@
 Category,Fuel,Euro Standard,Concept,Pollutant,EF_ug_km
+############################################################################
+### benzo(a)pyrene
 # Petrol, E85, CNG passenger cars
 Passenger Cars,Petrol,Conventional,,benzo(a)pyrene,0.48
 Passenger Cars,Petrol,Euro 1,,benzo(a)pyrene,0.32
@@ -101,3 +103,140 @@ Heavy Duty Trucks,Diesel,Euro III,DI,benzo(a)pyrene,0.90
 Heavy Duty Trucks,Diesel,Euro IV,DI,benzo(a)pyrene,0.90
 Heavy Duty Trucks,Diesel,Euro V,DI,benzo(a)pyrene,0.90
 Heavy Duty Trucks,Diesel,Euro VI,DI,benzo(a)pyrene,0.90
+############################################################################
+### PCDD
+# Petrol passenger cars
+Passenger Cars,Petrol,Conventional,,PCDD,10.3e-6
+Passenger Cars,Petrol,Euro 1,,PCDD,13e-6
+Passenger Cars,Petrol,Euro 2,,PCDD,13e-6
+Passenger Cars,Petrol,Euro 3,,PCDD,2.7e-6
+Passenger Cars,Petrol,Euro 4,,PCDD,2.7e-6
+Passenger Cars,Petrol,Euro 5,,PCDD,2.7e-6
+Passenger Cars,Petrol,Euro 6 up to 2016,,PCDD,2.7e-6
+Passenger Cars,Petrol,Euro 6 2017-2019,,PCDD,2.7e-6
+Passenger Cars,Petrol,Euro 6 2020+,,PCDD,2.7e-6
+# Petrol Light Commercial Vehicles
+Light Commercial Vehicles,Petrol,Conventional,,PCDD,10.3e-6
+Light Commercial Vehicles,Petrol,Euro 1,,PCDD,13e-6
+Light Commercial Vehicles,Petrol,Euro 2,,PCDD,13e-6
+Light Commercial Vehicles,Petrol,Euro 3,,PCDD,2.7e-6
+Light Commercial Vehicles,Petrol,Euro 4,,PCDD,2.7e-6
+Light Commercial Vehicles,Petrol,Euro 5,,PCDD,2.7e-6
+Light Commercial Vehicles,Petrol,Euro 6 up to 2016,,PCDD,2.7e-6
+Light Commercial Vehicles,Petrol,Euro 6 2017-2019,,PCDD,2.7e-6
+Light Commercial Vehicles,Petrol,Euro 6 2020+,,PCDD,2.7e-6
+# Diesel Passenger Cars
+Passenger Cars,Diesel,Conventional,DI,PCDD,0.5e-6
+Passenger Cars,Diesel,Conventional,IDI,PCDD,0.5e-6
+Passenger Cars,Diesel,Euro 1,DI,PCDD,24.5e-6
+Passenger Cars,Diesel,Euro 1,IDI,PCDD,24.5e-6
+Passenger Cars,Diesel,Euro 2,DI,PCDD,24.5e-6
+Passenger Cars,Diesel,Euro 2,IDI,PCDD,24.5e-6
+Passenger Cars,Diesel,Euro 3,DI,PCDD,24.5e-6
+Passenger Cars,Diesel,Euro 3,IDI,PCDD,24.5e-6
+Passenger Cars,Diesel,Euro 4,DI,PCDD,24.5e-6
+Passenger Cars,Diesel,Euro 4,IDI,PCDD,24.5e-6
+Passenger Cars,Diesel,Euro 5,DI,PCDD,0.3e-6
+Passenger Cars,Diesel,Euro 5,IDI,PCDD,0.3e-6
+Passenger Cars,Diesel,Euro 6 up to 2016,DI,PCDD,0.3e-6
+Passenger Cars,Diesel,Euro 6 up to 2016,IDI,PCDD,0.3e-6
+Passenger Cars,Diesel,Euro 6 2017-2019,DI,PCDD,0.3e-6
+Passenger Cars,Diesel,Euro 6 2017-2019,IDI,PCDD,0.3e-6
+Passenger Cars,Diesel,Euro 6 2020+,DI,PCDD,0.3e-6
+Passenger Cars,Diesel,Euro 6 2020+,IDI,PCDD,0.3e-6
+# Diesel Light Commercial Vehicles
+Light Commercial Vehicles,Diesel,Conventional,DI,PCDD,0.5e-6
+Light Commercial Vehicles,Diesel,Conventional,IDI,PCDD,0.5e-6
+Light Commercial Vehicles,Diesel,Euro 1,DI,PCDD,24.5e-6
+Light Commercial Vehicles,Diesel,Euro 1,IDI,PCDD,24.5e-6
+Light Commercial Vehicles,Diesel,Euro 2,DI,PCDD,24.5e-6
+Light Commercial Vehicles,Diesel,Euro 2,IDI,PCDD,24.5e-6
+Light Commercial Vehicles,Diesel,Euro 3,DI,PCDD,24.5e-6
+Light Commercial Vehicles,Diesel,Euro 3,IDI,PCDD,24.5e-6
+Light Commercial Vehicles,Diesel,Euro 4,DI,PCDD,24.5e-6
+Light Commercial Vehicles,Diesel,Euro 4,IDI,PCDD,24.5e-6
+Light Commercial Vehicles,Diesel,Euro 5,DI,PCDD,0.3e-6
+Light Commercial Vehicles,Diesel,Euro 5,IDI,PCDD,0.3e-6
+Light Commercial Vehicles,Diesel,Euro 6 up to 2016,DI,PCDD,0.3e-6
+Light Commercial Vehicles,Diesel,Euro 6 up to 2016,IDI,PCDD,0.3e-6
+Light Commercial Vehicles,Diesel,Euro 6 2017-2019,DI,PCDD,0.3e-6
+Light Commercial Vehicles,Diesel,Euro 6 2017-2019,IDI,PCDD,0.3e-6
+Light Commercial Vehicles,Diesel,Euro 6 2020+,DI,PCDD,0.3e-6
+Light Commercial Vehicles,Diesel,Euro 6 2020+,IDI,PCDD,0.3e-6
+# Heavy Duty Trucks
+Heavy Duty Trucks,Diesel,Conventional,DI,PCDD,25e-6
+Heavy Duty Trucks,Diesel,Euro I,DI,PCDD,25e-6
+Heavy Duty Trucks,Diesel,Euro II,DI,PCDD,25e-6
+Heavy Duty Trucks,Diesel,Euro III,DI,PCDD,25e-6
+Heavy Duty Trucks,Diesel,Euro IV,DI,PCDD,25e-6
+Heavy Duty Trucks,Diesel,Euro V,DI,PCDD,0.31e-6
+Heavy Duty Trucks,Diesel,Euro VI,DI,PCDD,0.16e-6
+############################################################################
+### PCDF
+# Petrol passenger cars
+Passenger Cars,Petrol,Conventional,,PCDF,21.2e-6
+Passenger Cars,Petrol,Euro 1,,PCDF,19e-6
+Passenger Cars,Petrol,Euro 2,,PCDF,19e-6
+Passenger Cars,Petrol,Euro 3,,PCDF,4.1e-6
+Passenger Cars,Petrol,Euro 4,,PCDF,4.1e-6
+Passenger Cars,Petrol,Euro 5,,PCDF,4.1e-6
+Passenger Cars,Petrol,Euro 6 up to 2016,,PCDF,4.1e-6
+Passenger Cars,Petrol,Euro 6 2017-2019,,PCDF,4.1e-6
+Passenger Cars,Petrol,Euro 6 2020+,,PCDF,4.1e-6
+# Petrol Light Commercial Vehicles
+Light Commercial Vehicles,Petrol,Conventional,,PCDF,21.2e-6
+Light Commercial Vehicles,Petrol,Euro 1,,PCDF,19e-6
+Light Commercial Vehicles,Petrol,Euro 2,,PCDF,19e-6
+Light Commercial Vehicles,Petrol,Euro 3,,PCDF,4.1e-6
+Light Commercial Vehicles,Petrol,Euro 4,,PCDF,4.1e-6
+Light Commercial Vehicles,Petrol,Euro 5,,PCDF,4.1e-6
+Light Commercial Vehicles,Petrol,Euro 6 up to 2016,,PCDF,4.1e-6
+Light Commercial Vehicles,Petrol,Euro 6 2017-2019,,PCDF,4.1e-6
+Light Commercial Vehicles,Petrol,Euro 6 2020+,,PCDF,4.1e-6
+# Diesel Passenger Cars
+Passenger Cars,Diesel,Conventional,DI,PCDF,1.0e-6
+Passenger Cars,Diesel,Conventional,IDI,PCDF,1.0e-6
+Passenger Cars,Diesel,Euro 1,DI,PCDF,36.5e-6
+Passenger Cars,Diesel,Euro 1,IDI,PCDF,36.5e-6
+Passenger Cars,Diesel,Euro 2,DI,PCDF,36.5e-6
+Passenger Cars,Diesel,Euro 2,IDI,PCDF,36.5e-6
+Passenger Cars,Diesel,Euro 3,DI,PCDF,36.5e-6
+Passenger Cars,Diesel,Euro 3,IDI,PCDF,36.5e-6
+Passenger Cars,Diesel,Euro 4,DI,PCDF,36.5e-6
+Passenger Cars,Diesel,Euro 4,IDI,PCDF,36.5e-6
+Passenger Cars,Diesel,Euro 5,DI,PCDF,0.44e-6
+Passenger Cars,Diesel,Euro 5,IDI,PCDF,0.44e-6
+Passenger Cars,Diesel,Euro 6 up to 2016,DI,PCDF,0.44e-6
+Passenger Cars,Diesel,Euro 6 up to 2016,IDI,PCDF,0.44e-6
+Passenger Cars,Diesel,Euro 6 2017-2019,DI,PCDF,0.44e-6
+Passenger Cars,Diesel,Euro 6 2017-2019,IDI,PCDF,0.44e-6
+Passenger Cars,Diesel,Euro 6 2020+,DI,PCDF,0.44e-6
+Passenger Cars,Diesel,Euro 6 2020+,IDI,PCDF,0.44e-6
+# Diesel Light Commercial Vehicles
+Light Commercial Vehicles,Diesel,Conventional,DI,PCDF,1.0e-6
+Light Commercial Vehicles,Diesel,Conventional,IDI,PCDF,1.0e-6
+Light Commercial Vehicles,Diesel,Euro 1,DI,PCDF,36.5e-6
+Light Commercial Vehicles,Diesel,Euro 1,IDI,PCDF,36.5e-6
+Light Commercial Vehicles,Diesel,Euro 2,DI,PCDF,36.5e-6
+Light Commercial Vehicles,Diesel,Euro 2,IDI,PCDF,36.5e-6
+Light Commercial Vehicles,Diesel,Euro 3,DI,PCDF,36.5e-6
+Light Commercial Vehicles,Diesel,Euro 3,IDI,PCDF,36.5e-6
+Light Commercial Vehicles,Diesel,Euro 4,DI,PCDF,36.5e-6
+Light Commercial Vehicles,Diesel,Euro 4,IDI,PCDF,36.5e-6
+Light Commercial Vehicles,Diesel,Euro 5,DI,PCDF,0.44e-6
+Light Commercial Vehicles,Diesel,Euro 5,IDI,PCDF,0.44e-6
+Light Commercial Vehicles,Diesel,Euro 6 up to 2016,DI,PCDF,0.44e-6
+Light Commercial Vehicles,Diesel,Euro 6 up to 2016,IDI,PCDF,0.44e-6
+Light Commercial Vehicles,Diesel,Euro 6 2017-2019,DI,PCDF,0.44e-6
+Light Commercial Vehicles,Diesel,Euro 6 2017-2019,IDI,PCDF,0.44e-6
+Light Commercial Vehicles,Diesel,Euro 6 2020+,DI,PCDF,0.44e-6
+Light Commercial Vehicles,Diesel,Euro 6 2020+,IDI,PCDF,0.44e-6
+# Heavy Duty Trucks
+Heavy Duty Trucks,Diesel,Conventional,DI,PCDF,38e-6
+Heavy Duty Trucks,Diesel,Euro I,DI,PCDF,38e-6
+Heavy Duty Trucks,Diesel,Euro II,DI,PCDF,38e-6
+Heavy Duty Trucks,Diesel,Euro III,DI,PCDF,38e-6
+Heavy Duty Trucks,Diesel,Euro IV,DI,PCDF,38e-6
+Heavy Duty Trucks,Diesel,Euro V,DI,PCDF,0.45e-6
+Heavy Duty Trucks,Diesel,Euro VI,DI,PCDF,0.24e-6
+############################################################################

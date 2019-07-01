@@ -14,7 +14,6 @@ anotações importantes:
 - o ficheiro de distribuição da frota dos pesados para Portugal considera a distribuição por categorias que se assume no documento do EMEP/EEA (pg 67).
 
 adições a realizar:
-- Adicionar o SO2, tolueno e xileno
 - adicionar uma função para calcular os EFs em função do tráfego variável numa mesma via.
 - incluir as emissões associadas ao desgaste de travões+pneus+estrada (Mod. 019)
 - vias não pavimentadas, AP42

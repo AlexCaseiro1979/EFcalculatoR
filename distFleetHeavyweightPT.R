@@ -1,8 +1,8 @@
 
 # insert the categories to be discriminated here. Options: Passenger Cars, Light Commercial Vehicles, Heavy Duty Trucks, Buses
 # this vector cannot be left empty
-categories <- c('Heavy Duty Trucks')
-categories_fraction <- c(1)
+categories <- c('Heavy Duty Trucks', 'Buses')
+categories_fraction <- c(1, 0)
 # give a name for the group of categories, e.g. Light Vehicles, Trucks, Buses
 categories_name <- c('Heavy Vehicles')
 
@@ -17,6 +17,8 @@ categories_name <- c('Heavy Vehicles')
 fuels <- list() ; fuels_fraction <- list()
 fuels[[1]] <- c('Diesel')
 fuels_fraction[[1]] <- c(1)
+fuels[[2]] <- c('Diesel')
+fuels_fraction[[2]] <- c(1)
 
 # insert the segments to be discriminated here.
 # discrimination by categories
@@ -30,9 +32,14 @@ fuels_fraction[[1]] <- c(1)
 segments <- list() ; segments_fraction <- list()
 segments[[1]] <- c('Rigid <=7,5 t', 'Rigid 7,5 - 12 t', 'Rigid 12 - 14 t', 'Rigid 14 - 20 t', 'Rigid 20 - 26 t', 'Rigid 26 - 28 t', 'Rigid 28 - 32 t', 'Rigid >32 t',
                    'Articulated 14 - 20 t', 'Articulated 20 - 28 t', 'Articulated 28 - 34 t', 'Articulated 34 - 40 t', 'Articulated 40 - 50 t', 'Articulated 50 - 60 t'
-                   )
+                  )
 segments_fraction[[1]] <- c(0.085453486, 0.026218683, 0.013206448, 0.05156341, 0.001359487, 0.010973004, 0, 0.373664789,
                             0.05156341, 0.012332492, 0.006409011, 0, 0.367255778, 0
+                           )
+segments[[2]] <- c('Urban Buses Midi <=15 t', 'Urban Buses Standard 15 - 18 t', 'Urban Buses Articulated >18 t', 'Coaches Standard <=18 t', 'Coaches Articulated >18 t',
+                   'Urban CNG Buses', 'Urban Biodiesel Buses'
+                  )
+segments_fraction[[2]] <- c(
                            )
 
 # insert the euro standards to be discriminated here.
@@ -49,6 +56,9 @@ euro_standards[[1]] <- c('Conventional', 'Euro I', 'Euro II', 'Euro III', 'Euro 
 euro_standards_fraction[[1]] <- c(0, 0, 0.159, 0.264, 0.204, 0.119, 0.096+0.048)
 euro_standards_fraction[[1]] <- euro_standards_fraction[[1]]/sum(euro_standards_fraction[[1]])
 # The division by the sum is to express the distribution up to 100% within each category
+euro_standards[[2]] <- c('Conventional', 'Euro I', 'Euro II', 'Euro III', 'Euro IV', 'Euro V', 'Euro IV', 'EEV')
+euro_standards_fraction[[2]] <- c(0, 0, 0.021, 0.034, 0.027, 0.016, 0.0126+0.0062)
+euro_standards_fraction[[2]] <- euro_standards_fraction[[2]]/sum(euro_standards_fraction[[2]])
 
 # Insert the technologies to be discriminated here.
 # discrimination by categories
@@ -61,6 +71,8 @@ technologies <- list() ; technologies_fraction <- list()
 #technologies_fraction[[1]] <- list()
 technologies[[1]] <- c('SCR', 'EGR')
 technologies_fraction[[1]] <- c(0.75, 0.25)
+technologies[[2]] <- c('SCR', 'EGR')
+technologies_fraction[[2]] <- c(0.75, 0.25)
 
 # Insert the concepts to be discriminated here.
 # discrimination by categories
@@ -72,3 +84,5 @@ technologies_fraction[[1]] <- c(0.75, 0.25)
 concepts <- list() ; concepts_fraction <- list()
 concepts[[1]] <- list()
 concepts_fraction[[1]] <- list()
+concepts[[2]] <- list()
+concepts_fraction[[2]] <- list()
