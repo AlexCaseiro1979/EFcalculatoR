@@ -1,14 +1,13 @@
-# This is the lightweight fleet distribution file for Portugal.
+# This is the mopeds fleet distribution file for Portugal.
 
 # insert the categories to be discriminated here. Options: Passenger Cars, Light Commercial Vehicles, Heavy Duty Trucks, Buses, L-Category
 # this vector cannot be left empty
-categories <- c('Passenger Cars',
-                'Light Commercial Vehicles'
+categories <- c('L-Category'
                )
-categories_fraction <- c(0.726, 0.167)
+categories_fraction <- c(1)
 categories_fraction <- categories_fraction / sum(categories_fraction)
 # give a name for the group of categories, e.g. Light Vehicles
-categories_name <- c('Light Vehicles')
+categories_name <- c('Mopeds')
 
 # insert the fuels to be discriminated here.
 # # discrimination by categories
@@ -20,10 +19,8 @@ categories_name <- c('Light Vehicles')
 # this vector cannot be left empty
 # one distribution per category
 fuels <- list() ; fuels_fraction <- list()
-fuels[[1]] <- c('Petrol', 'Diesel', 'LPG Bifuel ~ LPG')
-fuels_fraction[[1]] <- c(0.34, 0.64, 0.008)
-fuels[[2]] <- c('Petrol', 'Diesel')
-fuels_fraction[[2]] <- c(0, 1.0)
+fuels[[1]] <- c('Petrol', 'Diesel')
+fuels_fraction[[1]] <- c(1.0, 0)
 
 # insert the segments to be discriminated here.
 # discrimination by categories
@@ -37,10 +34,8 @@ fuels_fraction[[2]] <- c(0, 1.0)
 #       Motorcycles 4-stroke 250 - 750 cm\374, Motorcycles 4-stroke >750 cm\374, Quad & ATVs, Micro-car
 # the vector can be left empy. If so, segments_fraction has no consequence and the EFs are averaged through the segments
 segments <- list() ; segments_fraction <- list()
-segments[[1]] <- c('Small', 'Medium', 'Large-SUV-Executive')
-segments_fraction[[1]] <- c(0.55, 0.394, 0.056)
-segments[[2]] <- list()
-segments_fraction[[2]] <- list()
+segments[[1]] <- c('Mopeds 2-stroke <50 cm\374', 'Mopeds 4-stroke <50 cm\374')
+segments_fraction[[1]] <- c(0.5, 0.5)
 
 # insert the euro standards to be discriminated here.
 # discrimination by categories
@@ -53,13 +48,9 @@ segments_fraction[[2]] <- list()
 # Options for L-Category: Conventional, Euro 1, Euro 2, Euro 3, Euro 4, Euro 5
 # the vector can be left empy. If so, euro_standards_fraction has no consequence and the EFs are averaged through the Euro standards
 euro_standards <- list() ; euro_standards_fraction <- list()
-euro_standards[[1]] <- c('Conventional', 'Euro 1', 'Euro 2', 'Euro 3', 'Euro 4', 'Euro 5', 'Euro 6 up to 2016', 'Euro 6 2017-2019', 'Euro 6 2020+')
-euro_standards_fraction[[1]] <- c(0, 0, 0.152, 0.254, 0.191, 0.109, 0.078, 0.029, 0)
+euro_standards[[1]] <- c('Conventional', 'Euro 1', 'Euro 2', 'Euro 3', 'Euro 4', 'Euro 5')
+euro_standards_fraction[[1]] <- c(0, 0, 0.242, 0.403, 0.233, 0.081+0.029+0.012)
 euro_standards_fraction[[1]] <- euro_standards_fraction[[1]]/sum(euro_standards_fraction[[1]])
-euro_standards[[2]] <- c('Conventional', 'Euro 1', 'Euro 2', 'Euro 3', 'Euro 4', 'Euro 5', 'Euro 6 up to 2016', 'Euro 6 2017-2019', 'Euro 6 2020+')
-euro_standards_fraction[[2]] <- c(0, 0, 0.035, 0.058, 0.044, 0.025, 0.018, 0.067, 0)
-euro_standards_fraction[[2]] <- euro_standards_fraction[[2]]/sum(euro_standards_fraction[[2]])
-euro_standards[[3]] <- c('Conventional', 'Euro 1', 'Euro 2', 'Euro 3', 'Euro 4', 'Euro 5')
 # The division by the sum is to express the distribution up to 100% within each category
 
 # Insert the technologies to be discriminated here.
@@ -71,9 +62,6 @@ euro_standards[[3]] <- c('Conventional', 'Euro 1', 'Euro 2', 'Euro 3', 'Euro 4',
 # The EMEP/EEA document advises 75% for SCR and 25% for EGR for Heavy duty vehicles
 technologies <- list() ; technologies_fraction <- list()
 technologies[[1]] <- list()
-technologies_fraction[[1]] <- list()
-technologies[[2]] <- list()
-technologies_fraction[[2]] <- list()
 
 # Insert the concepts to be discriminated here.
 # discrimination by categories
@@ -86,5 +74,3 @@ technologies_fraction[[2]] <- list()
 concepts <- list() ; concepts_fraction <- list()
 concepts[[1]] <- list()
 concepts_fraction[[1]] <- list()
-concepts[[2]] <- c('DI', 'IDI')
-concepts_fraction[[2]] <- c(0.5, 0.5)

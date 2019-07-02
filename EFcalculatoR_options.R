@@ -12,13 +12,13 @@
 # the fourth variable for the function is the slope
 # Options are: -0.06, -0.04, -0.02, 0.00, 0.02, 0.04, 0.06
 # this only makes sense for categories Heavy Duty Trucks and Buses
-# keep NA for categories Passenger Cars and Light Commercial Vehicles
+# keep NA for categories Passenger Cars, Light Commercial Vehicles and L-category
 # keep NA for pollutants CH4, NH3 and N2O within categories Heavy Duty Trucks and Buses
 
 # the fifth variable for the function is the load
 # Options are: 0.0, 0.5, 1.0
 # this only makes sense for categories Heavy Duty Trucks and Buses
-# keep NA for categories Passenger Cars and Light Commercial Vehicles
+# keep NA for categories Passenger Cars, Light Commercial Vehicles and L-category
 
 # the sixth variable for the function are the pollutants
 # Options for Passenger Cars and Light Commercial Vehicles:
@@ -35,34 +35,48 @@
 # categories Heavy Duty Trucks and Buses:
 #   this only makes sense for pollutants CH4, NH3 and N2O
 #   Options: Urban Peak, Urban Off Peak, Rural, Highway
+# L-Categories:
+#   for Mopeds: all pollutants; for Motorcycles:
 # if not needed, keep an empty vector.
 
 # the eighth variable is the fleet distribution file
 
 EF_Group1('Test01',
-        c(120,110,100),
+        c(120,110),
         2, NA, NA,
         c('CO', 'NOx'),
         c('', ''),
         'distFleetLightweightPT.R')
 EF_Group1('Test02',
-        c(120,110,100),
+        c(120,110),
         2, NA, NA,
         c('CO', 'NOx', 'PM Exhaust'),
         c('', '', 'Highway'),
         'distFleetLightweightPT.R')
 EF_Group1('Test03',
-        c(120,110,100),
+        c(120,110),
         2, NA, NA,
         c('CO', 'NOx', 'PM Exhaust', 'VOC'),
         c('', '', 'Highway', ''),
         'distFleetLightweightPT.R')
 EF_Group1('Test04',
-        c(120,110,100),
+        c(120,110),
         2, NA, NA,
         c('CO', 'NOx', 'PM Exhaust', 'VOC', 'FC', 'CH4'),
         c('', '', 'Highway', '', '', 'Highway'),
         'distFleetLightweightPT.R')
+EF_Group1('Test04b',
+          c(80),
+          2, NA, NA,
+          c('CO', 'NOx', 'PM Exhaust', 'VOC', 'FC', 'CH4'),
+          c('Highway', 'Highway', 'Highway', 'Highway', '', 'Highway'),
+          'distFleetMopedsPT.R')
+EF_Group1('Test04c',
+          c(80),
+          2, NA, NA,
+          c('CO', 'NOx', 'PM Exhaust', 'VOC', 'FC', 'CH4'),
+          c('Highway', 'Highway', 'Highway', 'Highway', '', 'Highway'),
+          'distFleetMotorcyclesPT.R')
 EF_Group1('Test05',
         c(80),
         2, 0.02, 0.5,
@@ -101,7 +115,7 @@ EF_Group1('Test07',
 # the fifth variable is the fleet distribution file
 
 EF_perLength('Test08',
-        c(120,110,100),
+        c(120,110,90),
         2,
         c('benzo(a)pyrene', 'PCDD', 'PCDF', 'PM Breaks', 'PM Road paved'),
         'distFleetLightweightPT.R')
@@ -126,7 +140,7 @@ EF_perLength('Test09',
 # the seventh variable for the function is to be left empty
 
 EF_perFuel('Test10',
-        c(120,110,100),
+        c(120,110,90),
         2, NA, NA,
         c('Pb', 'As', 'Cd', 'Ni', 'SO2'),
         c(),
@@ -153,7 +167,7 @@ EF_perFuel('Test11',
 #   toluene, mp-xylene, o-xylene
 
 EF_perVOC('Test12',
-        c(120,110,100),
+        c(120,110,90),
         2, NA, NA,
         c('toluene', 'mp-xylene', 'o-xylene'),
         c('Highway', 'Highway', 'Highway'),

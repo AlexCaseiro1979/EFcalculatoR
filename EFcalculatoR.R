@@ -108,16 +108,19 @@ for (pollutant in pollutants) {
                         c_technology <- c_technology + 1
                     }
                     if (pollutant %in% c('VOC', 'CH4')) {
-                        outauxd <- data.frame(roadway, pollutant, category, fuel, segment, euro_standard, sum(out$EF*out$Fraction))
+                        #outauxd <- data.frame(roadway, pollutant, category, fuel, segment, euro_standard, sum(out$EF*out$Fraction))
+                        outauxd <- data.frame(roadway, pollutant, category, fuel, segment, euro_standard, sum(subset(out, Fuel==fuel)$EF * subset(out, Fuel==fuel)$Fraction))
                         names(outauxd) <- outaux_names ; outaux <- rbind(outaux, outauxd)
                     }
                     c_euro_standard <- c_euro_standard + 1
                 }
                 c_segment <- c_segment + 1
             }
-            cat("\n\t", roadway, pollutant, category, fuel, sum(out$EF*out$Fraction))
+            #cat("\n\t", roadway, pollutant, category, fuel, sum(out$EF*out$Fraction))
+            cat("\n\t", roadway, pollutant, category, fuel, sum(subset(out, Fuel==fuel)$EF * subset(out, Fuel==fuel)$Fraction))
                 if (pollutant %in% c('FC')) {
-                    outauxd <- data.frame(roadway, pollutant, category, fuel, sum(out$EF*out$Fraction))
+                    #outauxd <- data.frame(roadway, pollutant, category, fuel, sum(out$EF*out$Fraction))
+                    outauxd <- data.frame(roadway, pollutant, category, fuel, sum(subset(out, Fuel==fuel)$EF * subset(out, Fuel==fuel)$Fraction))
                     names(outauxd) <- outaux_names ; outaux <- rbind(outaux, outauxd)
                 }
             c_fuel <- c_fuel + 1
