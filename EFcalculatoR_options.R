@@ -36,7 +36,7 @@
 #   this only makes sense for pollutants CH4, NH3 and N2O
 #   Options: Urban Peak, Urban Off Peak, Rural, Highway
 # L-Categories:
-#   for Mopeds: all pollutants; for Motorcycles:
+#   for Mopeds: all pollutants; for Motorcycles: PM Exhaust, CH4, NH3, N2O
 # if not needed, keep an empty vector.
 
 # the eighth variable is the fleet distribution file
@@ -75,7 +75,7 @@ EF_Group1('Test04c',
           c(80),
           2, NA, NA,
           c('CO', 'NOx', 'PM Exhaust', 'VOC', 'FC', 'CH4'),
-          c('Highway', 'Highway', 'Highway', 'Highway', '', 'Highway'),
+          c('', '', 'Highway', '', '', 'Highway'),
           'distFleetMotorcyclesPT.R')
 EF_Group1('Test05',
         c(80),
