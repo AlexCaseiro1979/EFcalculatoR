@@ -55,8 +55,8 @@ for (pollutant in pollutants) {
         d_pol <- subset(df_Group1, Pollutant==pollutant)
         d_cat <- subset(d_pol, Category==category)
         # take care of discriminations that can be left empy
-        if (modes[c_pollutant] != '') {
-            d_cat_mod <- rbind(subset(subset(d_cat, Pollutant==pollutant), Mode==''), subset(d_cat, Pollutant==pollutant & Mode==modes[c_pollutant]))
+        if (modes[[c_category]][c_pollutant] != '') {
+            d_cat_mod <- rbind(subset(d_cat, Pollutant==pollutant & Mode==''), subset(d_cat, Pollutant==pollutant & Mode==modes[[c_category]][c_pollutant]))
         }
         else {
             d_cat_mod <- d_cat

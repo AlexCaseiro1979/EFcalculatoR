@@ -28,7 +28,7 @@
 # this vector cannot be left empty
 
 # the seventh variable for the function are the driving modes to be discriminated here.
-# discrimination by pollutant
+# discrimination by pollutant within discrimination by category
 # categories Passenger Cars and Light Commercial Vehicles:
 #   this only makes sense for pollutants PM Exhaust and CH4.
 #   Options: Urban Peak, Urban Off Peak, Rural, Highway
@@ -41,60 +41,22 @@
 
 # the eighth variable is the fleet distribution file
 
-EF_Group1('Test01',
-        c(120,110),
-        2, NA, NA,
-        c('CO', 'NOx'),
-        c('', ''),
-        'distFleetLightweightPT.R')
-EF_Group1('Test02',
-        c(120,110),
-        2, NA, NA,
-        c('CO', 'NOx', 'PM Exhaust'),
-        c('', '', 'Highway'),
-        'distFleetLightweightPT.R')
-EF_Group1('Test03',
-        c(120,110),
-        2, NA, NA,
-        c('CO', 'NOx', 'PM Exhaust', 'VOC'),
-        c('', '', 'Highway', ''),
-        'distFleetLightweightPT.R')
-EF_Group1('Test04',
-        c(120,110),
+EF_Group1('Test01a',
+        c(120,110,80),
         2, NA, NA,
         c('CO', 'NOx', 'PM Exhaust', 'VOC', 'FC', 'CH4'),
-        c('', '', 'Highway', '', '', 'Highway'),
+        list(c('', '', 'Highway', '', '', 'Highway'),
+             c('', '', 'Highway', '', '', 'Highway'),
+             c('Highway', 'Highway', 'Highway', 'Highway', 'Highway', 'Highway')),
         'distFleetLightweightPT.R')
-EF_Group1('Test04b',
-          c(80),
-          2, NA, NA,
-          c('CO', 'NOx', 'PM Exhaust', 'VOC', 'FC', 'CH4'),
-          c('Highway', 'Highway', 'Highway', 'Highway', '', 'Highway'),
-          'distFleetMopedsPT.R')
-EF_Group1('Test04c',
-          c(80),
-          2, NA, NA,
-          c('CO', 'NOx', 'PM Exhaust', 'VOC', 'FC', 'CH4'),
-          c('', '', 'Highway', '', '', 'Highway'),
-          'distFleetMotorcyclesPT.R')
-EF_Group1('Test05',
-        c(80),
+
+EF_Group1('Test01b',
+        c(80,90),
         2, 0.02, 0.5,
-        c('CO'),
-        c(''),
-        'distFleetTrucksPT.R')
-EF_Group1('Test06',
-        c(80),
-        2, 0.02, 0.5,
-        c('CO', 'NOx'),
-        c('', ''),
-        'distFleetTrucksPT.R')
-EF_Group1('Test07',
-        c(80),
-        2, 0.02, 0.5,
-        c('CO', 'NOx', 'PM Exhaust', 'FC', 'CH4'),
-        c('', '', 'Highway', '', 'Highway'),
-        'distFleetTrucksPT.R')
+        c('CO', 'NOx', 'PM Exhaust', 'VOC', 'FC', 'CH4', 'NH3', 'N2O'),
+        list(c('', '', '', '', '', 'Highway', 'Highway', 'Highway'),
+             c('', '', '', '', '', 'Highway', 'Highway', 'Highway')),
+        'distFleetHeavyweightPT.R')
 
 #######################################################################################
 
@@ -114,17 +76,17 @@ EF_Group1('Test07',
 
 # the fifth variable is the fleet distribution file
 
-EF_perLength('Test08',
+EF_perLength('Test02a',
         c(120,110,90),
         2,
         c('benzo(a)pyrene', 'PCDD', 'PCDF', 'PM Breaks', 'PM Road paved'),
         'distFleetLightweightPT.R')
 
-EF_perLength('Test09',
-        c(80),
+EF_perLength('Test02b',
+        c(80,90),
         2,
         c('benzo(a)pyrene', 'PCDD', 'PCDF', 'PM Breaks', 'PM Road paved'),
-        'distFleetTrucksPT.R')
+        'distFleetHeavyweightPT.R')
 
 
 #######################################################################################
@@ -139,18 +101,19 @@ EF_perLength('Test09',
 
 # the seventh variable for the function is to be left empty
 
-EF_perFuel('Test10',
+EF_perFuel('Test03a',
         c(120,110,90),
         2, NA, NA,
         c('Pb', 'As', 'Cd', 'Ni', 'SO2'),
         c(),
         'distFleetLightweightPT.R')
-EF_perFuel('Test11',
-        c(80),
+
+EF_perFuel('Test03b',
+        c(80,90),
         2, 0.02, 0.5,
         c('Pb', 'As', 'Cd', 'Ni', 'SO2'),
         c(),
-        'distFleetTrucksPT.R')
+        'distFleetHeavyweightPT.R')
 
 
 #######################################################################################
@@ -166,18 +129,19 @@ EF_perFuel('Test11',
 # Options are:
 #   toluene, mp-xylene, o-xylene
 
-EF_perVOC('Test12',
+EF_perVOC('Test04a',
         c(120,110,90),
         2, NA, NA,
         c('toluene', 'mp-xylene', 'o-xylene'),
         c('Highway', 'Highway', 'Highway'),
         'distFleetLightweightPT.R')
-EF_perVOC('Test13',
-        c(80),
+
+EF_perVOC('Test04b',
+        c(80,90),
         2, 0.02, 0.5,
         c('toluene', 'mp-xylene', 'o-xylene'),
         c('Highway', 'Highway', 'Highway'),
-        'distFleetTrucksPT.R')
+        'distFleetHeavyweightPT.R')
 
 
 #######################################################################################
@@ -189,7 +153,7 @@ EF_perVOC('Test13',
 # the third variable is the distribuition (sum=1) for the different categories
 # the fourth variable is the surface material silt content (%)
 
-EF_rd_unpaved_ind('Test13',
+EF_rd_unpaved_ind('Test05a',
         c(10, 15, 20),
         c(0.2, 0.6, 0.1),
         10)

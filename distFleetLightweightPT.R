@@ -3,9 +3,10 @@
 # insert the categories to be discriminated here. Options: Passenger Cars, Light Commercial Vehicles, Heavy Duty Trucks, Buses, L-Category
 # this vector cannot be left empty
 categories <- c('Passenger Cars',
-                'Light Commercial Vehicles'
+                'Light Commercial Vehicles',
+                'L-Category'
                )
-categories_fraction <- c(0.726, 0.167)
+categories_fraction <- c(0.726, 0.167, 0.039+0.048)
 categories_fraction <- categories_fraction / sum(categories_fraction)
 # give a name for the group of categories, e.g. Light Vehicles
 categories_name <- c('Light Vehicles')
@@ -23,7 +24,9 @@ fuels <- list() ; fuels_fraction <- list()
 fuels[[1]] <- c('Petrol', 'Diesel', 'LPG Bifuel ~ LPG')
 fuels_fraction[[1]] <- c(0.34, 0.64, 0.008)
 fuels[[2]] <- c('Petrol', 'Diesel')
-fuels_fraction[[2]] <- c(0, 1.0)
+fuels_fraction[[2]] <- c(0, 1)
+fuels[[3]] <- c('Petrol', 'Diesel')
+fuels_fraction[[3]] <- c(1, 0)
 
 # insert the segments to be discriminated here.
 # discrimination by categories
@@ -34,13 +37,16 @@ fuels_fraction[[2]] <- c(0, 1.0)
 # Options for Buses: Urban Buses Midi <=15 t, Urban Buses Standard 15 - 18 t, Urban Buses Articulated >18 t, Coaches Standard <=18 t, Coaches Articulated >18 t
 #       Urban CNG Buses, Urban Biodiesel Buses
 # Options for L-Category: Mopeds 2-stroke <50 cm\374, Mopeds 4-stroke <50 cm\374, Motorcycles 2-stroke >50 cm\374, Motorcycles 4-stroke <250 cm\374
-#       Motorcycles 4-stroke 250 - 750 cm\374, Motorcycles 4-stroke >750 cm\374, Quad & ATVs, Micro-car
+#       Motorcycles 4-stroke 250 - 750 cm\374, Motorcycles 4-stroke >750 cm\374, Quad & ATVs
 # the vector can be left empy. If so, segments_fraction has no consequence and the EFs are averaged through the segments
 segments <- list() ; segments_fraction <- list()
 segments[[1]] <- c('Small', 'Medium', 'Large-SUV-Executive')
 segments_fraction[[1]] <- c(0.55, 0.394, 0.056)
 segments[[2]] <- list()
 segments_fraction[[2]] <- list()
+segments[[3]] <- c('Mopeds 2-stroke <50 cm\374', 'Mopeds 4-stroke <50 cm\374', 'Motorcycles 2-stroke >50 cm\374', 'Motorcycles 4-stroke <250 cm\374',
+                   'Motorcycles 4-stroke 250 - 750 cm\374', 'Motorcycles 4-stroke >750 cm\374', 'Quad & ATVs', 'Micro-car')
+segments_fraction[[3]] <- c(0.22, 0.22, 0.306, 0.015, 0.061, 0.173, 0.002, 0.003)
 
 # insert the euro standards to be discriminated here.
 # discrimination by categories
@@ -60,6 +66,8 @@ euro_standards[[2]] <- c('Conventional', 'Euro 1', 'Euro 2', 'Euro 3', 'Euro 4',
 euro_standards_fraction[[2]] <- c(0, 0, 0.035, 0.058, 0.044, 0.025, 0.018, 0.067, 0)
 euro_standards_fraction[[2]] <- euro_standards_fraction[[2]]/sum(euro_standards_fraction[[2]])
 euro_standards[[3]] <- c('Conventional', 'Euro 1', 'Euro 2', 'Euro 3', 'Euro 4', 'Euro 5')
+euro_standards_fraction[[3]] <- c(0, 0, 0.191, 0.318, 0.228, 0.127+0.092+0.044)
+euro_standards_fraction[[3]] <- euro_standards_fraction[[3]]/sum(euro_standards_fraction[[3]])
 # The division by the sum is to express the distribution up to 100% within each category
 
 # Insert the technologies to be discriminated here.
@@ -74,6 +82,8 @@ technologies[[1]] <- list()
 technologies_fraction[[1]] <- list()
 technologies[[2]] <- list()
 technologies_fraction[[2]] <- list()
+technologies[[3]] <- list()
+technologies_fraction[[3]] <- list()
 
 # Insert the concepts to be discriminated here.
 # discrimination by categories
@@ -88,3 +98,5 @@ concepts[[1]] <- list()
 concepts_fraction[[1]] <- list()
 concepts[[2]] <- c('DI', 'IDI')
 concepts_fraction[[2]] <- c(0.5, 0.5)
+concepts[[3]] <- list()
+concepts_fraction[[3]] <- list()

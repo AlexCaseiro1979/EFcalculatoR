@@ -103,6 +103,21 @@ Heavy Duty Trucks,Diesel,Euro III,DI,benzo(a)pyrene,0.90
 Heavy Duty Trucks,Diesel,Euro IV,DI,benzo(a)pyrene,0.90
 Heavy Duty Trucks,Diesel,Euro V,DI,benzo(a)pyrene,0.90
 Heavy Duty Trucks,Diesel,Euro VI,DI,benzo(a)pyrene,0.90
+# Buses
+Buses,Diesel,Conventional,DI,benzo(a)pyrene,0.90
+Buses,Diesel,Euro I,DI,benzo(a)pyrene,0.90
+Buses,Diesel,Euro II,DI,benzo(a)pyrene,0.90
+Buses,Diesel,Euro III,DI,benzo(a)pyrene,0.90
+Buses,Diesel,Euro IV,DI,benzo(a)pyrene,0.90
+Buses,Diesel,Euro V,DI,benzo(a)pyrene,0.90
+Buses,Diesel,Euro VI,DI,benzo(a)pyrene,0.90
+# L-Category
+L-Category,Petrol,Conventional,,benzo(a)pyrene,0.48
+L-Category,Petrol,Euro 1,,benzo(a)pyrene,0.32
+L-Category,Petrol,Euro 2,,benzo(a)pyrene,0.32
+L-Category,Petrol,Euro 3,,benzo(a)pyrene,0.32
+L-Category,Petrol,Euro 4,,benzo(a)pyrene,0.32
+L-Category,Petrol,Euro 5,,benzo(a)pyrene,0.32
 ############################################################################
 ### PCDD
 # Petrol passenger cars
@@ -171,6 +186,21 @@ Heavy Duty Trucks,Diesel,Euro III,DI,PCDD,25e-6
 Heavy Duty Trucks,Diesel,Euro IV,DI,PCDD,25e-6
 Heavy Duty Trucks,Diesel,Euro V,DI,PCDD,0.31e-6
 Heavy Duty Trucks,Diesel,Euro VI,DI,PCDD,0.16e-6
+# Buses
+Buses,Diesel,Conventional,DI,PCDD,25e-6
+Buses,Diesel,Euro I,DI,PCDD,25e-6
+Buses,Diesel,Euro II,DI,PCDD,25e-6
+Buses,Diesel,Euro III,DI,PCDD,25e-6
+Buses,Diesel,Euro IV,DI,PCDD,25e-6
+Buses,Diesel,Euro V,DI,PCDD,0.31e-6
+Buses,Diesel,Euro VI,DI,PCDD,0.16e-6
+# L-Category
+L-Category,Petrol,Conventional,,PCDD,10.3e-6
+L-Category,Petrol,Euro 1,,PCDD,13e-6
+L-Category,Petrol,Euro 2,,PCDD,13e-6
+L-Category,Petrol,Euro 3,,PCDD,2.7e-6
+L-Category,Petrol,Euro 4,,PCDD,2.7e-6
+L-Category,Petrol,Euro 5,,PCDD,2.7e-6
 ############################################################################
 ### PCDF
 # Petrol passenger cars
@@ -239,6 +269,21 @@ Heavy Duty Trucks,Diesel,Euro III,DI,PCDF,38e-6
 Heavy Duty Trucks,Diesel,Euro IV,DI,PCDF,38e-6
 Heavy Duty Trucks,Diesel,Euro V,DI,PCDF,0.45e-6
 Heavy Duty Trucks,Diesel,Euro VI,DI,PCDF,0.24e-6
+# Buses
+Buses,Diesel,Conventional,DI,PCDF,38e-6
+Buses,Diesel,Euro I,DI,PCDF,38e-6
+Buses,Diesel,Euro II,DI,PCDF,38e-6
+Buses,Diesel,Euro III,DI,PCDF,38e-6
+Buses,Diesel,Euro IV,DI,PCDF,38e-6
+Buses,Diesel,Euro V,DI,PCDF,0.45e-6
+Buses,Diesel,Euro VI,DI,PCDF,0.24e-6
+# L-Category
+L-Category,Petrol,Conventional,,PCDF,21.2e-6
+L-Category,Petrol,Euro 1,,PCDF,19e-6
+L-Category,Petrol,Euro 2,,PCDF,19e-6
+L-Category,Petrol,Euro 3,,PCDF,4.1e-6
+L-Category,Petrol,Euro 4,,PCDF,4.1e-6
+L-Category,Petrol,Euro 5,,PCDF,4.1e-6
 ############################################################################
 ### PM Breaks
 # Petrol passenger cars
@@ -307,6 +352,14 @@ Heavy Duty Trucks,Diesel,Euro III,DI,PM Breaks,59.0e3
 Heavy Duty Trucks,Diesel,Euro IV,DI,PM Breaks,59.0e3
 Heavy Duty Trucks,Diesel,Euro V,DI,PM Breaks,59.0e3
 Heavy Duty Trucks,Diesel,Euro VI,DI,PM Breaks,59.0e3
+# Buses
+Buses,Diesel,Conventional,DI,PM Breaks,59.0e3
+Buses,Diesel,Euro I,DI,PM Breaks,59.0e3
+Buses,Diesel,Euro II,DI,PM Breaks,59.0e3
+Buses,Diesel,Euro III,DI,PM Breaks,59.0e3
+Buses,Diesel,Euro IV,DI,PM Breaks,59.0e3
+Buses,Diesel,Euro V,DI,PM Breaks,59.0e3
+Buses,Diesel,Euro VI,DI,PM Breaks,59.0e3
 ############################################################################
 ### PM Road paved
 # Petrol passenger cars
@@ -375,4 +428,12 @@ Heavy Duty Trucks,Diesel,Euro III,DI,PM Road paved,38.0e3
 Heavy Duty Trucks,Diesel,Euro IV,DI,PM Road paved,38.0e3
 Heavy Duty Trucks,Diesel,Euro V,DI,PM Road paved,38.0e3
 Heavy Duty Trucks,Diesel,Euro VI,DI,PM Road paved,38.0e3
+# Buses
+Buses,Diesel,Conventional,DI,PM Road paved,38.0e3
+Buses,Diesel,Euro I,DI,PM Road paved,38.0e3
+Buses,Diesel,Euro II,DI,PM Road paved,38.0e3
+Buses,Diesel,Euro III,DI,PM Road paved,38.0e3
+Buses,Diesel,Euro IV,DI,PM Road paved,38.0e3
+Buses,Diesel,Euro V,DI,PM Road paved,38.0e3
+Buses,Diesel,Euro VI,DI,PM Road paved,38.0e3
 ############################################################################

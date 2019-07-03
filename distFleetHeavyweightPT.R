@@ -1,7 +1,8 @@
 
 # insert the categories to be discriminated here. Options: Passenger Cars, Light Commercial Vehicles, Heavy Duty Trucks, Buses
 # this vector cannot be left empty
-categories <- c('Heavy Duty Trucks', 'Buses')
+categories <- c('Heavy Duty Trucks',
+                'Buses')
 categories_fraction <- c(1, 0)
 # give a name for the group of categories, e.g. Light Vehicles, Trucks, Buses
 categories_name <- c('Heavy Vehicles')
