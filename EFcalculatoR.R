@@ -254,7 +254,7 @@ source(distFile)
 df_specEnergy <- read.table('SpecificEnergy.csv', sep=',', header=TRUE, comment.char='#')
 
 # get the fuel consumption with the function EF_Group1
-fuelComp <- EF_Group1(roadway, speeds, length, slope, load, c('FC'), c(''), distFile)
+fuelComp <- EF_Group1(roadway, speeds, length, slope, load, c('FC'), modes, distFile)
 cat("\n", roadway, '----------------------------- finished computing the Fuel consumption...')
 
 c_pollutant <- 1
@@ -304,13 +304,13 @@ for (pollutant in pollutants) {
 
 }
 
-EF_perVOC <- function(roadway, speeds, length, slope, load, pollutants, modes, distFile){
+EF_perVOC <- function(roadway, speeds, length, slope, load, pollutants, modesVOC, modesCH4, distFile){
 
 source(distFile)
 
 # get the VOCs and CH$ EF with the function EF_Group1
-efVOC <- EF_Group1(roadway, speeds, length, slope, load, c('VOC'), c(''), distFile)
-efCH4 <- EF_Group1(roadway, speeds, length, slope, load, c('CH4'), modes, distFile)
+efVOC <- EF_Group1(roadway, speeds, length, slope, load, c('VOC'), modesVOC, distFile)
+efCH4 <- EF_Group1(roadway, speeds, length, slope, load, c('CH4'), modesCH4, distFile)
 cat("\n", roadway, '----------------------------- finished computing the VOCs and CH4 EF...')
 
 c_pollutant <- 1
@@ -374,6 +374,29 @@ for (pollutant in pollutants) {
     cat("\n", roadway, ':', pol_string, categories_name, sum(ef_pol*categories_fraction), umass_string,
         sum(ef_pol*categories_fraction) * length / time, utime_string)
     c_pollutant <- c_pollutant + 1
+}
+
+}
+
+EF_rd_unpaved_ind <- function(roadway, weights, speeds, fractions, silt, length){
+
+PM <- list()
+PM[[1]] <- c('PM10', 1.5, 0.9, 0.45) # pollutant, k, a, b
+PM[[2]] <- c('PM2.5', 0.15, 0.9, 0.45) # pollutant, k, a, b
+cat("\n")
+for (j in seq(length(PM))) {
+    EFs_mass <- c()
+    EFs_time <- c()
+    for (i in length(weights)) {
+        EF_mass <- as.numeric(PM[[j]][2]) * (speeds[i]*1.6/12)**as.numeric(PM[[j]][3]) * (weights[i]/3)**as.numeric(PM[[j]][4]) * 281.9 # in g/(Km.vehicle)
+        time = length / speeds[i] * (60*60)
+        EF_time <- EF_mass * length / time # in g/(s.vehicle)
+        EFs_mass <- c(EFs_mass, EF_mass)
+        EFs_time <- c(EFs_time, EF_time)
+    }
+    umass_string <- c('g/(Km.vehicle) or ')
+    utime_string <- c('g/(s.vehicle)')
+    cat("\n", roadway, ':', PM[[j]][1], 'for unpaved road', sum(EFs_mass), umass_string, sum(EFs_time), utime_string)
 }
 
 }

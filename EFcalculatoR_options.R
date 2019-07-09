@@ -99,20 +99,21 @@ EF_perLength('Test02b',
 # Options are:
 #   Pb, Cd, Cu, Cr, Ni, Se, Zn, Hg, As and SO2
 
-# the seventh variable for the function is to be left empty
+# the seventh variable for the function is to be left as one empty string
+# for each category in the fleet distribution file, within a list
 
 EF_perFuel('Test03a',
         c(120,110,90),
         2, NA, NA,
         c('Pb', 'As', 'Cd', 'Ni', 'SO2'),
-        c(),
+        list(c(''),c(''),c('')),
         'distFleetLightweightPT.R')
 
 EF_perFuel('Test03b',
         c(80,90),
         2, 0.02, 0.5,
         c('Pb', 'As', 'Cd', 'Ni', 'SO2'),
-        c(),
+        list(c(''),c('')),
         'distFleetHeavyweightPT.R')
 
 
@@ -120,10 +121,12 @@ EF_perFuel('Test03b',
 
 # FUNCTION FOR POLLUTANTS EF AS FUNCTION OF FUEL CONSUMED
 
-# options 1, 2, 3, 4, 5, 7 and 8 are the same as for the function EF_Group1
+# options 1, 2, 3, 4, 5, 7 and 9 are the same as for the function EF_Group1
 
 # Since there is the need to compute the EF of VOCs and CH4,
-# option 7 (driving modes) should not be left empty.
+# option 7 (driving modes for VOCs) is to be left as one empty string
+# for each category in the fleet distribution file, within a list
+# option 8 (driving modes) should not be left empty for CH4.
 
 # the sixth variable for the function are the pollutants
 # Options are:
@@ -133,6 +136,7 @@ EF_perVOC('Test04a',
         c(120,110,90),
         2, NA, NA,
         c('toluene', 'mp-xylene', 'o-xylene'),
+        list(c(''),c(''),c('')),
         c('Highway', 'Highway', 'Highway'),
         'distFleetLightweightPT.R')
 
@@ -140,6 +144,7 @@ EF_perVOC('Test04b',
         c(80,90),
         2, 0.02, 0.5,
         c('toluene', 'mp-xylene', 'o-xylene'),
+        list(c(''),c('')),
         c('Highway', 'Highway', 'Highway'),
         'distFleetHeavyweightPT.R')
 
@@ -150,13 +155,17 @@ EF_perVOC('Test04b',
 
 # the first variable for the function is the roadway name
 # the second variable is the average vehicle weight for the different categories considered (tons)
-# the third variable is the distribuition (sum=1) for the different categories
-# the fourth variable is the surface material silt content (%)
+# the third variable is the mean vehichle speed (km/h) for the different categories
+# the fourth variable is the distribuition (sum=1) for the different categories
+# the fifth variable is the surface material silt content (%)
+# the sixth variable is the length of the roadway
 
 EF_rd_unpaved_ind('Test05a',
         c(10, 15, 20),
+        c(25, 25, 25),
         c(0.2, 0.6, 0.1),
-        10)
+        10,
+        2)
 
 
 #######################################################################################
