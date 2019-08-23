@@ -1,5 +1,14 @@
 #######################################################################################
 
+# define the rootname of the output files
+fileOut <- 'ProjectTest'
+# initiate the ouptut
+fileOut_csv <- paste(fileOut,'.csv', sep='')
+writeOutputTable('roadway', 'pollutant', 'category', 'EF', 'unit', 'init')
+
+
+#######################################################################################
+
 # FUNCTION FOR GROUP 1 POLLUTANTS
 
 # the first variable for the function is the roadway name
@@ -164,7 +173,7 @@ EF_rd_unpaved_ind('Test05a',
         c(10, 15, 20),
         c(25, 25, 25),
         c(0.2, 0.6, 0.1),
-        10,
+        0.094,
         2)
 
 

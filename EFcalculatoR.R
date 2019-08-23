@@ -1,3 +1,19 @@
+# this function produces a csv file with the EF discriminated by roadway, pollutant, category
+writeOutputTable <- function(roadway, pollutant, category, EF, unit, data){
+
+globalOut_names <- c('Roadway', 'Pollutant', 'Category', 'EF', 'Unit')
+
+# initialize the output file
+if (data=='init'){
+    cat('Roadway', 'Pollutant', 'Category', 'EF', paste('unit', "\n", sep=''), sep=',', file = fileOut_csv)
+}
+# end of the output data table initialization
+
+else {
+    cat(roadway, pollutant, category, EF, paste(unit, "\n", sep=''), sep=',', file = fileOut_csv, append=TRUE)
+}
+
+}
 
 # this function is run for a given fleet distribution and a given roadway (the roadway is defined by a speed, a length, a slope, a load and a mode)
 EF_Group1 <- function(roadway, speeds, length, slope, load, pollutants, modes, distFile){
@@ -158,6 +174,7 @@ for (pollutant in pollutants) {
     cat("\n", roadway, ':', pol_string, categories_name, sum(ef_pol*categories_fraction), umass_string,
         sum(ef_pol*categories_fraction) * length / time, utime_string,
         slope_string, load_string)
+    writeOutputTable(roadway, pollutant, categories_name, sum(ef_pol*categories_fraction) * length / time, utime_string, 'data')
     c_pollutant <- c_pollutant + 1
 }
 
@@ -243,6 +260,7 @@ for (pollutant in pollutants) {
     time = length / speed * (60*60)
     cat("\n\n", roadway, ':', pol_string, categories_name, sum(ef_pol*categories_fraction), umass_string,
         sum(ef_pol*categories_fraction) * length / time, utime_string)
+    writeOutputTable(roadway, pollutant, categories_name, sum(ef_pol*categories_fraction) * length / time, utime_string, 'data')
     c_pollutant <- c_pollutant + 1
 }
 
@@ -299,6 +317,7 @@ for (pollutant in pollutants) {
     time = length / speed * (60*60)
     cat("\n", roadway, ':', pol_string, categories_name, sum(ef_pol*categories_fraction), umass_string,
         sum(ef_pol*categories_fraction) * length / time, utime_string)
+    writeOutputTable(roadway, pollutant, categories_name, sum(ef_pol*categories_fraction) * length / time, utime_string, 'data')
     c_pollutant <- c_pollutant + 1
 }
 
@@ -373,6 +392,7 @@ for (pollutant in pollutants) {
     time = length / speed * (60*60)
     cat("\n", roadway, ':', pol_string, categories_name, sum(ef_pol*categories_fraction), umass_string,
         sum(ef_pol*categories_fraction) * length / time, utime_string)
+    writeOutputTable(roadway, pollutant, categories_name, sum(ef_pol*categories_fraction) * length / time, utime_string, 'data')
     c_pollutant <- c_pollutant + 1
 }
 
@@ -388,7 +408,7 @@ for (j in seq(length(PM))) {
     EFs_mass <- c()
     EFs_time <- c()
     for (i in length(weights)) {
-        EF_mass <- as.numeric(PM[[j]][2]) * (speeds[i]*1.6/12)**as.numeric(PM[[j]][3]) * (weights[i]/3)**as.numeric(PM[[j]][4]) * 281.9 # in g/(Km.vehicle)
+        EF_mass <- as.numeric(PM[[j]][2]) * (silt/12)**as.numeric(PM[[j]][3]) * (weights[i]/3)**as.numeric(PM[[j]][4]) * 281.9 # in g/(Km.vehicle)
         time = length / speeds[i] * (60*60)
         EF_time <- EF_mass * length / time # in g/(s.vehicle)
         EFs_mass <- c(EFs_mass, EF_mass)
@@ -397,7 +417,14 @@ for (j in seq(length(PM))) {
     umass_string <- c('g/(Km.vehicle) or ')
     utime_string <- c('g/(s.vehicle)')
     cat("\n", roadway, ':', PM[[j]][1], 'for unpaved road', sum(EFs_mass), umass_string, sum(EFs_time), utime_string)
+    writeOutputTable(roadway, PM[[j]][1], 'category', sum(EFs_mass), utime_string, 'data')
 }
+
+}
+
+EF_rd_unpaved_pub <- function(){
+
+
 
 }
 
