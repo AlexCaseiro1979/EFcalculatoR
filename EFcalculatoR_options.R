@@ -1,11 +1,16 @@
 #######################################################################################
 
-# define the rootname of the output files
-fileOut <- 'ProjectTest'
-# initiate the ouptut
-fileOut_csv <- paste(fileOut,'.csv', sep='')
-writeOutputTable('roadway', 'pollutant', 'category', 'EF', 'unit', 'init')
+# FUNCTION TO INITIATE THE OUTPUT
 
+# define the rootname of the output files
+
+fileOut <- 'ProjectTest'
+
+# this produces a csv file with the following fields:
+# Roadway, Pollutant, Category, EF, unit
+# do not modify the following two lines
+fileOut_csv <- paste(fileOut,'_EF.csv', sep='')
+writeOutputTable('roadway', 'pollutant', 'category', 'EF', 'unit', 'init')
 
 #######################################################################################
 
@@ -59,7 +64,7 @@ EF_Group1('Test01a',
              c('Highway', 'Highway', 'Highway', 'Highway', 'Highway', 'Highway')),
         'distFleetLightweightPT.R')
 
-EF_Group1('Test01b',
+EF_Group1('Test01a',
         c(80,90),
         2, 0.02, 0.5,
         c('CO', 'NOx', 'PM Exhaust', 'VOC', 'FC', 'CH4', 'NH3', 'N2O'),
@@ -91,7 +96,7 @@ EF_perLength('Test02a',
         c('benzo(a)pyrene', 'PCDD', 'PCDF', 'PM Breaks', 'PM Road paved'),
         'distFleetLightweightPT.R')
 
-EF_perLength('Test02b',
+EF_perLength('Test02a',
         c(80,90),
         2,
         c('benzo(a)pyrene', 'PCDD', 'PCDF', 'PM Breaks', 'PM Road paved'),
@@ -118,7 +123,7 @@ EF_perFuel('Test03a',
         list(c(''),c(''),c('')),
         'distFleetLightweightPT.R')
 
-EF_perFuel('Test03b',
+EF_perFuel('Test03a',
         c(80,90),
         2, 0.02, 0.5,
         c('Pb', 'As', 'Cd', 'Ni', 'SO2'),
@@ -149,7 +154,7 @@ EF_perVOC('Test04a',
         c('Highway', 'Highway', 'Highway'),
         'distFleetLightweightPT.R')
 
-EF_perVOC('Test04b',
+EF_perVOC('Test04a',
         c(80,90),
         2, 0.02, 0.5,
         c('toluene', 'mp-xylene', 'o-xylene'),
@@ -178,3 +183,11 @@ EF_rd_unpaved_ind('Test05a',
 
 
 #######################################################################################
+
+# FUNCTION TO PRODUCE THE FINAL TABLES
+
+# this produces a csv file per roadway per pollutant per fleet
+# the files have the following fields:
+# Roadway, Fleet, Hour, activity, EF, unit, Emission, unit
+activity_csv <- 'activity.csv'
+writeEmissionTables(fileOut_csv, activity_csv)
