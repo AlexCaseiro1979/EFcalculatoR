@@ -89,7 +89,8 @@ Heavy Duty Trucks,Diesel,As,0.0001
 Buses,Petrol,As,0.0003
 Buses,Diesel,As,0.0001
 L-Category,Petrol,As,0.0003
-# S, given as SO2 (2 times the content of S2)
+# S
+# given as SO2 (2 times the content of S2)
 Passenger Cars,Petrol,SO2,10
 Passenger Cars,Diesel,SO2,6
 Light Commercial Vehicles,Petrol,SO2,10
@@ -99,3 +100,39 @@ Heavy Duty Trucks,Diesel,SO2,6
 Buses,Petrol,SO2,10
 Buses,Diesel,SO2,6
 L-Category,Petrol,SO2,10
+# CO2 fuel
+# Assuming that all the petrol consumed is E10
+# and all the diesel consumed is B7
+Passenger Cars,Petrol,CO2 fuel,2.694e6
+Passenger Cars,Diesel,CO2 fuel,3.144e6
+Light Commercial Vehicles,Petrol,CO2 fuel,2.694e6
+Light Commercial Vehicles,Diesel,CO2 fuel,3.144e6
+Heavy Duty Trucks,Petrol,CO2 fuel,2.694e6
+Heavy Duty Trucks,Diesel,CO2 fuel,3.144e6
+Buses,Petrol,CO2 fuel,2.694e6
+Buses,Diesel,CO2 fuel,3.144e6
+L-Category,Petrol,CO2 fuel,2.694e6
+# NH3 lightweight
+# Tier 1, for Lightweight vehicles only
+Passenger Cars,Petrol,NH3 lightweight,1.106e3
+Passenger Cars,Diesel,NH3 lightweight,0.065e3
+Passenger Cars,LPG Bifuel ~ LPG,NH3 lightweight,0.08e3
+Light Commercial Vehicles,Petrol,NH3 lightweight,0.667e3
+Light Commercial Vehicles,Diesel,NH3 lightweight,0.038e3
+Heavy Duty Trucks,Petrol,NH3 lightweight,0
+Heavy Duty Trucks,Diesel,NH3 lightweight,0
+Buses,Petrol,NH3 lightweight,0
+Buses,Diesel,NH3 lightweight,0
+L-Category,Petrol,NH3 lightweight,0.05e3
+# N2O lightweight
+# Tier 1, for Lightweight vehicles only
+Passenger Cars,Petrol,N2O lightweight,0.206e3
+Passenger Cars,Diesel,N2O lightweight,0.087e3
+Passenger Cars,LPG Bifuel ~ LPG,N2O lightweight,0.089e3
+Light Commercial Vehicles,Petrol,N2O lightweight,0.186e3
+Light Commercial Vehicles,Diesel,N2O lightweight,0.056e3
+Heavy Duty Trucks,Petrol,N2O lightweight,0
+Heavy Duty Trucks,Diesel,N2O lightweight,0
+Buses,Petrol,N2O lightweight,0
+Buses,Diesel,N2O lightweight,0
+L-Category,Petrol,N2O lightweight,0.059e3

@@ -3,7 +3,7 @@
 # this vector cannot be left empty
 categories <- c('Heavy Duty Trucks',
                 'Buses')
-categories_fraction <- c(1, 0)
+categories_fraction <- c(0.95, 0.05)
 # give a name for the group of categories, e.g. Light Vehicles, Trucks, Buses
 categories_name <- c('Heavy Vehicles')
 

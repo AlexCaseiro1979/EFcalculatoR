@@ -4,7 +4,7 @@
 
 # define the rootname of the output files
 
-fileOut <- 'ProjectTest'
+fileOut <- 'NH3NO2Test'
 
 # this produces a csv file with the following fields:
 # Roadway, Pollutant, Category, EF, unit
@@ -55,22 +55,43 @@ writeOutputTable('roadway', 'pollutant', 'category', 'EF', 'unit', 'init')
 
 # the eighth variable is the fleet distribution file
 
-EF_Group1('Test01a',
+EF_Group1('via01',
         c(120,110,80),
         2, NA, NA,
         c('CO', 'NOx', 'PM Exhaust', 'VOC', 'FC', 'CH4'),
         list(c('', '', 'Highway', '', '', 'Highway'),
              c('', '', 'Highway', '', '', 'Highway'),
              c('Highway', 'Highway', 'Highway', 'Highway', 'Highway', 'Highway')),
-        'distFleetLightweightPT.R')
+        'distFleetLightweightPT.R',
+        'write')
 
-EF_Group1('Test01a',
+EF_Group1('via01',
         c(80,90),
         2, 0.02, 0.5,
         c('CO', 'NOx', 'PM Exhaust', 'VOC', 'FC', 'CH4', 'NH3', 'N2O'),
         list(c('', '', '', '', '', 'Highway', 'Highway', 'Highway'),
              c('', '', '', '', '', 'Highway', 'Highway', 'Highway')),
-        'distFleetHeavyweightPT.R')
+        'distFleetHeavyweightPT.R',
+        'write')
+
+EF_Group1('via02',
+        c(60,60,50),
+        2, NA, NA,
+        c('CO', 'NOx', 'PM Exhaust', 'VOC', 'FC', 'CH4'),
+        list(c('', '', 'Highway', '', '', 'Highway'),
+             c('', '', 'Highway', '', '', 'Highway'),
+             c('Highway', 'Highway', 'Highway', 'Highway', 'Highway', 'Highway')),
+        'distFleetLightweightPT.R',
+        'write')
+
+EF_Group1('via02',
+        c(50,50),
+        3, 0.04, 0.5,
+        c('CO', 'NOx', 'PM Exhaust', 'VOC', 'FC', 'CH4', 'NH3', 'N2O'),
+        list(c('', '', '', '', '', 'Highway', 'Highway', 'Highway'),
+             c('', '', '', '', '', 'Highway', 'Highway', 'Highway')),
+        'distFleetHeavyweightPT.R',
+        'write')
 
 #######################################################################################
 
@@ -85,23 +106,38 @@ EF_Group1('Test01a',
 
 # the fourth variable for the function are the pollutants
 # Options for Passenger Cars, Light Commercial Vehicles, Heavy Duty Trucks and Buses:
-#       benzo(a)pyrene, PCDD, PCDF, PM Breaks, PM Road paved
+#       benzo(a)pyrene, PCDD, PCDF, PM Brakes, PM Road paved, PM Tyres, CO2 lubricant
 # this vector cannot be left empty
 
 # the fifth variable is the fleet distribution file
 
-EF_perLength('Test02a',
+EF_perLength('via01',
         c(120,110,90),
         2,
-        c('benzo(a)pyrene', 'PCDD', 'PCDF', 'PM Breaks', 'PM Road paved'),
-        'distFleetLightweightPT.R')
+        c('benzo(a)pyrene', 'PCDD', 'PCDF', 'PM Brakes', 'PM Road paved', 'PM Tyres', 'CO2 lubricant'),
+        'distFleetLightweightPT.R',
+        'write')
 
-EF_perLength('Test02a',
+EF_perLength('via01',
         c(80,90),
         2,
-        c('benzo(a)pyrene', 'PCDD', 'PCDF', 'PM Breaks', 'PM Road paved'),
-        'distFleetHeavyweightPT.R')
+        c('benzo(a)pyrene', 'PCDD', 'PCDF', 'PM Brakes', 'PM Road paved', 'PM Tyres', 'CO2 lubricant'),
+        'distFleetHeavyweightPT.R',
+        'write')
 
+EF_perLength('via02',
+        c(60,60,50),
+        2,
+        c('benzo(a)pyrene', 'PCDD', 'PCDF', 'PM Brakes', 'PM Road paved', 'PM Tyres', 'CO2 lubricant'),
+        'distFleetLightweightPT.R',
+        'write')
+
+EF_perLength('via02',
+        c(50,50),
+        2,
+        c('benzo(a)pyrene', 'PCDD', 'PCDF', 'PM Brakes', 'PM Road paved', 'PM Tyres', 'CO2 lubricant'),
+        'distFleetHeavyweightPT.R',
+        'write')
 
 #######################################################################################
 
@@ -111,29 +147,48 @@ EF_perLength('Test02a',
 
 # the sixth variable for the function are the pollutants
 # Options are:
-#   Pb, Cd, Cu, Cr, Ni, Se, Zn, Hg, As and SO2
+#   Pb, Cd, Cu, Cr, Ni, Se, Zn, Hg, As, SO2 and CO2 fuel
+#   NH3 lightweigth and N2O lightweigth for Lightweight vehicles (Tier 1 calculation)
 
 # the seventh variable for the function is to be left as one empty string
 # for each category in the fleet distribution file, within a list
 
-EF_perFuel('Test03a',
+EF_perFuel('via01',
         c(120,110,90),
         2, NA, NA,
-        c('Pb', 'As', 'Cd', 'Ni', 'SO2'),
+        c('Pb', 'As', 'Cd', 'Ni', 'SO2', 'CO2 fuel', 'NH3 lightweigth', 'N2O lightweigth'),
         list(c(''),c(''),c('')),
-        'distFleetLightweightPT.R')
+        'distFleetLightweightPT.R',
+        'write')
 
-EF_perFuel('Test03a',
+EF_perFuel('via01',
         c(80,90),
         2, 0.02, 0.5,
-        c('Pb', 'As', 'Cd', 'Ni', 'SO2'),
+        c('Pb', 'As', 'Cd', 'Ni', 'SO2', 'CO2 fuel'),
         list(c(''),c('')),
-        'distFleetHeavyweightPT.R')
+        'distFleetHeavyweightPT.R',
+        'write')
+
+EF_perFuel('via02',
+        c(60,60,50),
+        2, NA, NA,
+        c('Pb', 'As', 'Cd', 'Ni', 'SO2', 'CO2 fuel', 'NH3 lightweigth', 'N2O lightweigth'),
+        list(c(''),c(''),c('')),
+        'distFleetLightweightPT.R',
+        'write')
+
+EF_perFuel('via02',
+        c(50,50),
+        2, 0.04, 0.5,
+        c('Pb', 'As', 'Cd', 'Ni', 'SO2', 'CO2 fuel'),
+        list(c(''),c('')),
+        'distFleetHeavyweightPT.R',
+        'write')
 
 
 #######################################################################################
 
-# FUNCTION FOR POLLUTANTS EF AS FUNCTION OF FUEL CONSUMED
+# FUNCTION FOR POLLUTANTS EF AS FUNCTION OF VOCS PRODUCED
 
 # options 1, 2, 3, 4, 5, 7 and 9 are the same as for the function EF_Group1
 
@@ -144,23 +199,43 @@ EF_perFuel('Test03a',
 
 # the sixth variable for the function are the pollutants
 # Options are:
-#   toluene, mp-xylene, o-xylene
+#   toluene, mp-xylene, o-xylene, benzene
 
-EF_perVOC('Test04a',
+EF_perVOC('via01',
         c(120,110,90),
         2, NA, NA,
-        c('toluene', 'mp-xylene', 'o-xylene'),
-        list(c(''),c(''),c('')),
-        c('Highway', 'Highway', 'Highway'),
-        'distFleetLightweightPT.R')
+        c('toluene', 'mp-xylene', 'o-xylene', 'benzene'),
+        list(c(''),c(''),c(''),c('')),
+        c('Highway', 'Highway', 'Highway', 'Highway'),
+        'distFleetLightweightPT.R',
+        'write')
 
-EF_perVOC('Test04a',
+EF_perVOC('via01',
         c(80,90),
         2, 0.02, 0.5,
-        c('toluene', 'mp-xylene', 'o-xylene'),
-        list(c(''),c('')),
-        c('Highway', 'Highway', 'Highway'),
-        'distFleetHeavyweightPT.R')
+        c('toluene', 'mp-xylene', 'o-xylene', 'benzene'),
+        list(c(''),c(''),c(''),c('')),
+        c('Highway', 'Highway', 'Highway', 'Highway'),
+        'distFleetHeavyweightPT.R',
+        'write')
+
+EF_perVOC('via02',
+        c(60,60,50),
+        2, NA, NA,
+        c('toluene', 'mp-xylene', 'o-xylene', 'benzene'),
+        list(c(''),c(''),c(''),c('')),
+        c('Highway', 'Highway', 'Highway', 'Highway'),
+        'distFleetLightweightPT.R',
+        'write')
+
+EF_perVOC('via02',
+        c(50,50),
+        2, 0.04, 0.5,
+        c('toluene', 'mp-xylene', 'o-xylene', 'benzene'),
+        list(c(''),c(''),c(''),c('')),
+        c('Highway', 'Highway', 'Highway', 'Highway'),
+        'distFleetHeavyweightPT.R',
+        'write')
 
 
 #######################################################################################
@@ -172,22 +247,31 @@ EF_perVOC('Test04a',
 # the third variable is the mean vehichle speed (km/h) for the different categories
 # the fourth variable is the distribuition (sum=1) for the different categories
 # the fifth variable is the surface material silt content (%)
-# the sixth variable is the length of the roadway
+# the sixth variable is the length of the roadway in km
 
-EF_rd_unpaved_ind('Test05a',
-        c(10, 15, 20),
-        c(25, 25, 25),
-        c(0.2, 0.6, 0.1),
-        0.094,
-        2)
+# EF_rd_unpaved_ind('Test05a',
+#         c(10, 15, 20),
+#         c(25, 25, 25),
+#         c(0.2, 0.6, 0.1),
+#         0.094,
+#         2,
+#         'write')
 
 
 #######################################################################################
 
-# FUNCTION TO PRODUCE THE FINAL TABLES
+# FUNCTIONS TO PRODUCE THE FINAL TABLES
 
 # this produces a csv file per roadway per pollutant per fleet
 # the files have the following fields:
-# Roadway, Fleet, Hour, activity, EF, unit, Emission, unit
+# Roadway, Fleet, Hour, activity, EF, unit
 activity_csv <- 'activity.csv'
 writeEmissionTables(fileOut_csv, activity_csv)
+pollutantGroups <- c('PM10', 'xylene', 'Dioxins+Furans', 'CO2', 'NH3_all', 'N2O_all')
+pollutantsInGroups <- list(c('PM Exhaust', 'PM Tyres', 'PM Brakes', 'PM Road paved'),
+                           c('o-xylene', 'mp-xylene'),
+                           c('PCDD', 'PCDF'),
+                           c('CO2 fuel', 'CO2 lubricant'),
+                           c('NH3', 'NH3 lightweight'),
+                           c('N2O', 'N2O lightweight'))
+writeEmissionTablesGroups()

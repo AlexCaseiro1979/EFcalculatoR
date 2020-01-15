@@ -185,3 +185,65 @@ Heavy Duty Trucks,Diesel,Euro III,o-xylene,0.40
 Heavy Duty Trucks,Diesel,Euro IV,o-xylene,0.40
 Heavy Duty Trucks,Diesel,Euro V,o-xylene,0.40
 Heavy Duty Trucks,Diesel,Euro VI,o-xylene,0.40
+# benzene
+Passenger Cars,Petrol,Conventional,benzene,6.83
+Passenger Cars,Petrol,Euro 1,benzene,5.61
+Passenger Cars,Petrol,Euro 2,benzene,5.61
+Passenger Cars,Petrol,Euro 3,benzene,5.61
+Passenger Cars,Petrol,Euro 4,benzene,5.61
+Passenger Cars,Petrol,Euro 5,benzene,5.61
+Passenger Cars,Petrol,Euro 6 up to 2016,benzene,5.61
+Passenger Cars,Petrol,Euro 6 2017-2019,benzene,5.61
+Passenger Cars,Petrol,Euro 6 2020+,benzene,5.61
+Light Commercial Vehicles,Petrol,Conventional,benzene,6.83
+Light Commercial Vehicles,Petrol,Euro 1,benzene,5.61
+Light Commercial Vehicles,Petrol,Euro 2,benzene,5.61
+Light Commercial Vehicles,Petrol,Euro 3,benzene,5.61
+Light Commercial Vehicles,Petrol,Euro 4,benzene,5.61
+Light Commercial Vehicles,Petrol,Euro 5,benzene,5.61
+Light Commercial Vehicles,Petrol,Euro 6 up to 2016,benzene,5.61
+Light Commercial Vehicles,Petrol,Euro 6 2017-2019,benzene,5.61
+Light Commercial Vehicles,Petrol,Euro 6 2020+,benzene,5.61
+Passenger Cars,Diesel,Conventional,benzene,1.98
+Passenger Cars,Diesel,Euro 1,benzene,1.98
+Passenger Cars,Diesel,Euro 2,benzene,1.98
+Passenger Cars,Diesel,Euro 3,benzene,1.98
+Passenger Cars,Diesel,Euro 4,benzene,1.98
+Passenger Cars,Diesel,Euro 5,benzene,1.98
+Passenger Cars,Diesel,Euro 6 up to 2016,benzene,1.98
+Passenger Cars,Diesel,Euro 6 2017-2019,benzene,1.98
+Passenger Cars,Diesel,Euro 6 2020+,benzene,1.98
+Light Commercial Vehicles,Diesel,Conventional,benzene,1.98
+Light Commercial Vehicles,Diesel,Euro 1,benzene,1.98
+Light Commercial Vehicles,Diesel,Euro 2,benzene,1.98
+Light Commercial Vehicles,Diesel,Euro 3,benzene,1.98
+Light Commercial Vehicles,Diesel,Euro 4,benzene,1.98
+Light Commercial Vehicles,Diesel,Euro 5,benzene,1.98
+Light Commercial Vehicles,Diesel,Euro 6 up to 2016,benzene,1.98
+Light Commercial Vehicles,Diesel,Euro 6 2017-2019,benzene,1.98
+Light Commercial Vehicles,Diesel,Euro 6 2020+,benzene,1.98
+Passenger Cars,LPG Bifuel ~ LPG,Conventional,benzene,0.63
+Passenger Cars,LPG Bifuel ~ LPG,Euro 1,benzene,0.63
+Passenger Cars,LPG Bifuel ~ LPG,Euro 2,benzene,0.63
+Passenger Cars,LPG Bifuel ~ LPG,Euro 3,benzene,0.63
+Passenger Cars,LPG Bifuel ~ LPG,Euro 4,benzene,0.63
+Passenger Cars,LPG Bifuel ~ LPG,Euro 5,benzene,0.63
+Passenger Cars,LPG Bifuel ~ LPG,Euro 6 up to 2016,benzene,0.63
+Passenger Cars,LPG Bifuel ~ LPG,Euro 6 2017-2019,benzene,0.63
+Passenger Cars,LPG Bifuel ~ LPG,Euro 6 2020+,benzene,0.63
+Light Commercial Vehicles,LPG Bifuel ~ LPG,Conventional,benzene,0.63
+Light Commercial Vehicles,LPG Bifuel ~ LPG,Euro 1,benzene,0.63
+Light Commercial Vehicles,LPG Bifuel ~ LPG,Euro 2,benzene,0.63
+Light Commercial Vehicles,LPG Bifuel ~ LPG,Euro 3,benzene,0.63
+Light Commercial Vehicles,LPG Bifuel ~ LPG,Euro 4,benzene,0.63
+Light Commercial Vehicles,LPG Bifuel ~ LPG,Euro 5,benzene,0.63
+Light Commercial Vehicles,LPG Bifuel ~ LPG,Euro 6 up to 2016,benzene,0.63
+Light Commercial Vehicles,LPG Bifuel ~ LPG,Euro 6 2017-2019,benzene,0.63
+Light Commercial Vehicles,LPG Bifuel ~ LPG,Euro 6 2020+,benzene,0.63
+Heavy Duty Trucks,Diesel,Conventional,benzene,0.07
+Heavy Duty Trucks,Diesel,Euro I,benzene,0.07
+Heavy Duty Trucks,Diesel,Euro II,benzene,0.07
+Heavy Duty Trucks,Diesel,Euro III,benzene,0.07
+Heavy Duty Trucks,Diesel,Euro IV,benzene,0.07
+Heavy Duty Trucks,Diesel,Euro V,benzene,0.07
+Heavy Duty Trucks,Diesel,Euro VI,benzene,0.07

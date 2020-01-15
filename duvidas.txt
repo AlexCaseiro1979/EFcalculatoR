@@ -1,50 +1,25 @@
 
 dúvidas em aberto, primeira prioridade:
-- é preciso continuar testar face à folha de cálculo anterior e ver se os valores fazem sentido + é preciso validar.
+- é preciso continuar a testar face à folha de cálculo anterior e ver se os valores fazem sentido + é preciso validar.
 - usar a função de correção das emissões? (ver pg 94)
-- o peso dos pesados dado no documento do EMEP/EEA é o peso bruto (pg 73), nós usamos a tara no ficheiro de distribuição da frota distFleetHeavyweightPT.
-(o Alex ficou de resolver isto) Estimar a capacidade em relação à tara para alguns modelos (~30) e aplicar a distribuição/média.
-- clarificar a categorização para o cálculo da emissao de particulas em estradas industriais nao pavimentadas. Essa metodologia vem do AP-42 e é preciso ajustar a distribuicao da frota em categorias para fazer sentido com o EMEP, que é a base do resto do programa. (funcao EF_rd_unpaved_ind, Test05a)
+- clarificar a categorização para o cálculo da emissao de particulas em estradas industriais nao pavimentadas.
+Essa metodologia vem do AP-42 e é preciso ajustar a distribuicao da frota em categorias para fazer sentido com o EMEP, que é a base do resto do programa. (funcao EF_rd_unpaved_ind, Test05a)
 
 dúvidas em aberto, segunda prioridade:
 - o que acontece com as cold emissions? Pensar em como modelá-las.
-- emissões associadas ao desgaste de travões+pneus+estrada (Mod. 019): os valores parecem-me muito altos.
-Podemos reformular usado o documento do EMEP: 1-a-3-b-vi_Automobile tyre and brake wear.pdf
 
 adições a realizar:
 - temos dados de distribuição por cilindrada para 8 categorias. Podíamos usar maior detalhe da variável "Segment" para os ligeiros. Usar o máximo detalhe possível.
-- adicionar emissões de CO2
 
-######################################################################
-
-Ficheiro exemplo:
-- no ficheiro EFcalculatoR_options.R há exemplos como usar as funções.
-
-Função para poluentes do grupo 1:
-Test01a: ligeiros (passageiros, mercadorias, ciclomotores&motociclos), 6 poluentes (CO, NOx, PM, VOC, FC e CH4)
-Test01a: pesados, 8 poluentes (CO, NOx, PM Exhaust, VOC, FC, CH4, NH3, N2O)
-
-Função para os poluentes cujo EF é dado em massa por cumprimento do segmento:
-Test02a: ligeiros, benzo(a)pireno, dioxinas (PCDD), furanos (PCDF)
-Test02a: pesados de mercadorias, benzo(a)pireno, dioxinas (PCDD), furanos (PCDF)
-
-Função para os poluentes cujo EF é dado por massa por consumo de combustível:
-Test03a: ligeiros, metais (Pb, Cd, As, Ni e SO2)
-Test03a: pesados de mercadorias, metais (Pb, Cd, As, Ni e SO2)
-
-Função para os poluentes calculados como fração dos VOCs:
-Test04a: ligeiros, 3 poluentes: tolueno, m,p-xileno e o-xileno
-Test04a: pesados, 3 poluentes: tolueno, m,p-xileno e o-xileno
-
-Função para as poeiras emitidas em estradas não pavimentadas (AP42)
-Test05b
 
 ######################################################################
 
 dúvidas resolvidas e anotações importantes:
 - Autocarros adicionados à distribuição dos pesados (distFleetHeavyweightPT.R). A fração de autocarros nos pesados pode ser ajusatada projeto a projeto.
-Atenção! a distribuição por taras dos pesados foi usada para caracterizar os autocarros. Isto não será muito preciso!
 - metais pesados: o que fazer com a emissão proveniente do lubrificante? (pg 94)
 Estas emissões só são relevantes para veículos "two-strokes", que são uma parte pequena dos L-Category
 - o ficheiro de distribuição da frota dos pesados para Portugal considera que para taras identicas, os pesados de mercadorias são distribuidos de forma igual entre rígidos e articulados.
 - o ficheiro de distribuição da frota dos pesados para Portugal considera a distribuição por categorias que se assume no documento do EMEP/EEA (pg 67).
+- as emissoes de PM para "brake wear", "tyre wear" e "road surface wear" foram calculadas usando o documento 1.A.3.b.vi / 1.A.3.b.vii - Road transport: Automobile tyre and brake wear / Road transport: Automobile road abrasion.
+Para as fontes "brake wear" e "tyre wear" assume-se um load factor de 0.5 e um número de eixos igual a 4.
+- no ficheiro Excel do Mod.019 o separados onde se faz a análise do peso dos pesados refere-se à tara, mas a coluna tem o nome de Peso Bruto. Assumi que é de facto o peso bruto.
