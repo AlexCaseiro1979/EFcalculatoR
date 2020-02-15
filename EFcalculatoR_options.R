@@ -4,7 +4,7 @@
 
 # define the rootname of the output files
 
-fileOut <- 'NH3NO2Test'
+fileOut <- 'TestAll'
 
 # this produces a csv file with the following fields:
 # Roadway, Pollutant, Category, EF, unit
@@ -55,7 +55,7 @@ writeOutputTable('roadway', 'pollutant', 'category', 'EF', 'unit', 'init')
 
 # the eighth variable is the fleet distribution file
 
-EF_Group1('via01',
+EF_Group1_pre('via01',
         c(120,110,80),
         2, NA, NA,
         c('CO', 'NOx', 'PM Exhaust', 'VOC', 'FC', 'CH4'),
@@ -65,7 +65,7 @@ EF_Group1('via01',
         'distFleetLightweightPT.R',
         'write')
 
-EF_Group1('via01',
+EF_Group1_pre('via01',
         c(80,90),
         2, 0.02, 0.5,
         c('CO', 'NOx', 'PM Exhaust', 'VOC', 'FC', 'CH4', 'NH3', 'N2O'),
@@ -74,7 +74,7 @@ EF_Group1('via01',
         'distFleetHeavyweightPT.R',
         'write')
 
-EF_Group1('via02',
+EF_Group1_pre('via02',
         c(60,60,50),
         2, NA, NA,
         c('CO', 'NOx', 'PM Exhaust', 'VOC', 'FC', 'CH4'),
@@ -84,7 +84,7 @@ EF_Group1('via02',
         'distFleetLightweightPT.R',
         'write')
 
-EF_Group1('via02',
+EF_Group1_pre('via02',
         c(50,50),
         3, 0.04, 0.5,
         c('CO', 'NOx', 'PM Exhaust', 'VOC', 'FC', 'CH4', 'NH3', 'N2O'),
@@ -143,7 +143,7 @@ EF_perLength('via02',
 
 # FUNCTION FOR POLLUTANTS EF AS FUNCTION OF FUEL CONSUMED
 
-# options 1, 2, 3, 4, 5 and 8 are the same as for the function EF_Group1
+# options 1, 2, 3, 4, 5 and 8 are the same as for the function EF_Group1_pre
 
 # the sixth variable for the function are the pollutants
 # Options are:
@@ -153,7 +153,7 @@ EF_perLength('via02',
 # the seventh variable for the function is to be left as one empty string
 # for each category in the fleet distribution file, within a list
 
-EF_perFuel('via01',
+EF_perFuel_pre('via01',
         c(120,110,90),
         2, NA, NA,
         c('Pb', 'As', 'Cd', 'Ni', 'SO2', 'CO2 fuel', 'NH3 lightweigth', 'N2O lightweigth'),
@@ -161,7 +161,7 @@ EF_perFuel('via01',
         'distFleetLightweightPT.R',
         'write')
 
-EF_perFuel('via01',
+EF_perFuel_pre('via01',
         c(80,90),
         2, 0.02, 0.5,
         c('Pb', 'As', 'Cd', 'Ni', 'SO2', 'CO2 fuel'),
@@ -169,7 +169,7 @@ EF_perFuel('via01',
         'distFleetHeavyweightPT.R',
         'write')
 
-EF_perFuel('via02',
+EF_perFuel_pre('via02',
         c(60,60,50),
         2, NA, NA,
         c('Pb', 'As', 'Cd', 'Ni', 'SO2', 'CO2 fuel', 'NH3 lightweigth', 'N2O lightweigth'),
@@ -177,7 +177,7 @@ EF_perFuel('via02',
         'distFleetLightweightPT.R',
         'write')
 
-EF_perFuel('via02',
+EF_perFuel_pre('via02',
         c(50,50),
         2, 0.04, 0.5,
         c('Pb', 'As', 'Cd', 'Ni', 'SO2', 'CO2 fuel'),
@@ -190,7 +190,7 @@ EF_perFuel('via02',
 
 # FUNCTION FOR POLLUTANTS EF AS FUNCTION OF VOCS PRODUCED
 
-# options 1, 2, 3, 4, 5, 7 and 9 are the same as for the function EF_Group1
+# options 1, 2, 3, 4, 5, 7 and 9 are the same as for the function EF_Group1_pre
 
 # Since there is the need to compute the EF of VOCs and CH4,
 # option 7 (driving modes for VOCs) is to be left as one empty string
@@ -201,7 +201,7 @@ EF_perFuel('via02',
 # Options are:
 #   toluene, mp-xylene, o-xylene, benzene
 
-EF_perVOC('via01',
+EF_perVOC_pre('via01',
         c(120,110,90),
         2, NA, NA,
         c('toluene', 'mp-xylene', 'o-xylene', 'benzene'),
@@ -210,7 +210,7 @@ EF_perVOC('via01',
         'distFleetLightweightPT.R',
         'write')
 
-EF_perVOC('via01',
+EF_perVOC_pre('via01',
         c(80,90),
         2, 0.02, 0.5,
         c('toluene', 'mp-xylene', 'o-xylene', 'benzene'),
@@ -219,7 +219,7 @@ EF_perVOC('via01',
         'distFleetHeavyweightPT.R',
         'write')
 
-EF_perVOC('via02',
+EF_perVOC_pre('via02',
         c(60,60,50),
         2, NA, NA,
         c('toluene', 'mp-xylene', 'o-xylene', 'benzene'),
@@ -228,7 +228,7 @@ EF_perVOC('via02',
         'distFleetLightweightPT.R',
         'write')
 
-EF_perVOC('via02',
+EF_perVOC_pre('via02',
         c(50,50),
         2, 0.04, 0.5,
         c('toluene', 'mp-xylene', 'o-xylene', 'benzene'),
@@ -267,6 +267,7 @@ EF_perVOC('via02',
 # Roadway, Fleet, Hour, activity, EF, unit
 activity_csv <- 'activity.csv'
 writeEmissionTables(fileOut_csv, activity_csv)
+
 pollutantGroups <- c('PM10', 'xylene', 'Dioxins+Furans', 'CO2', 'NH3_all', 'N2O_all')
 pollutantsInGroups <- list(c('PM Exhaust', 'PM Tyres', 'PM Brakes', 'PM Road paved'),
                            c('o-xylene', 'mp-xylene'),

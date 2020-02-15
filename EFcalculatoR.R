@@ -35,24 +35,24 @@ for (roadway in as.character(unique(activity$Roadway))) {
     for (category in as.character(unique(sub_ef_pollutant$Category))) {
       cat("\t\t", category, "\n")
       sub_ef_category <- subset(sub_ef_pollutant, Category==category)
-      # this last subset should have a unique line
+      # this last subset should have one or two lines, depending on the slope
       # the output table for this category can now be made
       sub_activity <- subset(activity, Roadway==roadway & Category==category)
       emission_table <- sub_activity
       emission_table$Pollutant <- pollutant
       # the EF comes in g/vehicle
-      emission_table$EF <- sub_ef_category$EF
-      emission_table$EF_unit <- sub_ef_category$unit
+      emission_table$EF <- mean(sub_ef_category$EF)
+      emission_table$EF_unit <- unique(sub_ef_category$unit)
       # Emission in mass emitted by all vehicles along the whole roadway per second during the integration IntegrationTime
       emission_table$Emission <- emission_table$EF * emission_table$n_vehicles / (emission_table$IntegrationTime*60*60)
       # set the unit
-      unit_chars <- strsplit(as.character(sub_ef_category$unit), split="\\(|\\)|\\.|\\/")[[1]]
+      unit_chars <- strsplit(as.character(unique(sub_ef_category$unit)), split="\\(|\\)|\\.|\\/")[[1]]
       emission_field_name <- paste(category, '_E_', unit_chars[1], '/s', sep='')
       colnames(emission_table)[which(colnames(emission_table)=='Emission')] <- emission_field_name
       emission_table$Category <- NULL
       colnames(emission_table)[which(colnames(emission_table)=='n_vehicles')] <- category
       emission_table$EF_unit <- NULL
-      EF_unit <-paste(category, 'EF', as.character(sub_ef_category$unit), sep='_')
+      EF_unit <-paste(category, 'EF', as.character(unique(sub_ef_category$unit)), sep='_')
       colnames(emission_table)[which(colnames(emission_table)=='EF')] <- EF_unit
       category_emission_dfs[[i]] <- as.data.frame(emission_table)
       i <- i+1
@@ -102,6 +102,15 @@ for (i in seq(length(pollutantGroups))) {
 
 
 # this function is run for a given fleet distribution and a given roadway (the roadway is defined by a speed, a length, a slope, a load and a mode)
+EF_Group1_pre <- function(roadway, speeds, length, slope, load, pollutants, modes, distFile, writeOrNot){
+  if (slope != 0 || is.na(slope)) {
+    slopes <- c(-slope, slope)
+    for (s in slopes) {
+      EF_Group1(roadway, speeds, length, s, load, pollutants, modes, distFile, writeOrNot)
+    }
+  }
+}
+
 EF_Group1 <- function(roadway, speeds, length, slope, load, pollutants, modes, distFile, writeOrNot){
 
 source(distFile)
@@ -358,6 +367,15 @@ for (pollutant in pollutants) {
 
 }
 
+EF_perFuel_pre <- function(roadway, speeds, length, slope, load, pollutants, modes, distFile, writeOrNot){
+  if (slope != 0 || is.na(slope)) {
+    slopes <- c(-slope, slope)
+    for (s in slopes) {
+      EF_perFuel(roadway, speeds, length, s, load, pollutants, modes, distFile, writeOrNot)
+    }
+  }
+}
+
 EF_perFuel <- function(roadway, speeds, length, slope, load, pollutants, modes, distFile, writeOrNot){
 
 source(distFile)
@@ -413,6 +431,15 @@ for (pollutant in pollutants) {
     c_pollutant <- c_pollutant + 1
 }
 
+}
+
+EF_perVOC_pre <- function(roadway, speeds, length, slope, load, pollutants, modesVOC, modesCH4, distFile, writeOrNot){
+  if (slope != 0 || is.na(slope)) {
+    slopes <- c(-slope, slope)
+    for (s in slopes) {
+      EF_perVOC(roadway, speeds, length, s, load, pollutants, modesVOC, modesCH4, distFile, writeOrNot)
+    }
+  }
 }
 
 EF_perVOC <- function(roadway, speeds, length, slope, load, pollutants, modesVOC, modesCH4, distFile, writeOrNot){
