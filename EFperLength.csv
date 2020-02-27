@@ -671,7 +671,7 @@ Heavy Duty Trucks,Diesel,Euro IV,DI,CO2 lubricant,1.56e5
 Heavy Duty Trucks,Diesel,Euro V,DI,CO2 lubricant,1.56e5
 Heavy Duty Trucks,Diesel,Euro VI,DI,CO2 lubricant,1.56e5
 # Buses
-# average buses and coaches (Tabe 3-30, pg 52)
+# average buses and coaches (Table 3-30, pg 52)
 Buses,Diesel,Conventional,DI,CO2 lubricant,5.205e5
 Buses,Diesel,Euro I,DI,CO2 lubricant,5.205e5
 Buses,Diesel,Euro II,DI,CO2 lubricant,5.205e5

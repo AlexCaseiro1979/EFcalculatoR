@@ -253,7 +253,7 @@ for (pollutant in pollutants) {
     }
     if (pollutant != 'FC') {
         pol_string <- c(pollutant, 'EF for')
-        umass_string <- c('g/vehicle')
+        umass_string <- c('g/vehicle') # unchanged EF from the 1.A.3.b.i-iv Road transport hot EFs Annex 2018_Dic.csv document is in g/km
     }
     else {
         pol_string <- c('Fuel consumption for')
@@ -307,8 +307,8 @@ for (pollutant in pollutants) {
          }
         if (pollutant == 'PM Brakes') {
           if (speed<40) {speed_corr_factor <- 1.67}
-          if (speed>=40 & speed<=90) {speed_corr_factor <- -0.027*speed+2.75}
-          if (speed>90) {speed_corr_factor <- 0.185}
+          if (speed>=40 & speed<=95) {speed_corr_factor <- -0.027*speed+2.75}
+          if (speed>95) {speed_corr_factor <- 0.185}
          }
         if (pollutant != 'PM Tyres' & pollutant != 'PM Brakes') {speed_corr_factor <- 1}
         # first subsettings: pollutant and category
@@ -333,7 +333,7 @@ for (pollutant in pollutants) {
                         & Euro.Standard %in% euro_standard
                         )
                     if (nrow(d)>0) {
-                        outd  <- data.frame(category, fuel, concept, euro_standard, mean(d$EF_ug_km)*speed_corr_factor,
+                        outd  <- data.frame(category, fuel, concept, euro_standard, mean(d$EF_ug_km)*1e-6*speed_corr_factor, # convert from ug to g
                                             fuels_fraction[[c_category]][c_fuel],
                                             concepts_fraction[[c_category]][c_concept],
                                             euro_standards_fraction[[c_category]][c_euro_standard],
@@ -355,7 +355,7 @@ for (pollutant in pollutants) {
     }
     # create the strings for the output
     pol_string <- c(pollutant, 'EF for')
-    umass_string <- c('g/vehicle')
+    umass_string <- c('g/vehicle') # EF from the EFperLength.csv document: from ug/km to g/km
     # end the strings for the output
     # the output
     cat("\n\n", roadway, ':', pol_string, categories_name, sum(ef_pol*categories_fraction)*length, umass_string)

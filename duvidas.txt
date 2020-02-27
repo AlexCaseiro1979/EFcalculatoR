@@ -4,6 +4,7 @@ dúvidas em aberto, primeira prioridade:
 - usar a função de correção das emissões? (ver pg 94)
 - clarificar a categorização para o cálculo da emissao de particulas em estradas industriais nao pavimentadas.
 Essa metodologia vem do AP-42 e é preciso ajustar a distribuicao da frota em categorias para fazer sentido com o EMEP, que é a base do resto do programa. (funcao EF_rd_unpaved_ind, Test05a)
+Aconselho não se usar essa função.
 
 dúvidas em aberto, segunda prioridade:
 - o que acontece com as cold emissions? Pensar em como modelá-las.
