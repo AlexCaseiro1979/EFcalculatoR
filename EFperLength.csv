@@ -575,7 +575,7 @@ Buses,Diesel,Euro VI,DI,PM Tyres,26.964e3
 ############################################################################
 ### CO2 lubricant
 # Petrol L-Category
-# only ATV are Petrol L-Category (Tabe 3-30, pg 52)
+# only ATV are Petrol L-Category (Table 3-30, pg 52)
 L-Category,Petrol,Conventional,,CO2 lubricant,0.43e5
 L-Category,Petrol,Euro 1,,CO2 lubricant,0.43e5
 L-Category,Petrol,Euro 2,,CO2 lubricant,0.43e5
@@ -584,7 +584,7 @@ L-Category,Petrol,Euro 4,,CO2 lubricant,0.43e5
 L-Category,Petrol,Euro 5,,CO2 lubricant,0.43e5
 # Petrol passenger cars
 # old: <= Euro 4
-# new: >= Euro 5 (Tabe 3-30, pg 52)
+# new: >= Euro 5 (Table 3-30, pg 52)
 Passenger Cars,Petrol,Conventional,,CO2 lubricant,1.45e5
 Passenger Cars,Petrol,Euro 1,,CO2 lubricant,1.45e5
 Passenger Cars,Petrol,Euro 2,,CO2 lubricant,1.45e5
@@ -596,7 +596,7 @@ Passenger Cars,Petrol,Euro 6 2017-2019,,CO2 lubricant,1.28e5
 Passenger Cars,Petrol,Euro 6 2020+,,CO2 lubricant,1.28e5
 # Petrol Light Commercial Vehicles
 # old: <= Euro 4
-# new: >= Euro 5 (Tabe 3-30, pg 52)
+# new: >= Euro 5 (Table 3-30, pg 52)
 Light Commercial Vehicles,Petrol,Conventional,,CO2 lubricant,1.45e5
 Light Commercial Vehicles,Petrol,Euro 1,,CO2 lubricant,1.45e5
 Light Commercial Vehicles,Petrol,Euro 2,,CO2 lubricant,1.45e5
@@ -607,7 +607,7 @@ Light Commercial Vehicles,Petrol,Euro 6 up to 2016,,CO2 lubricant,1.28e5
 Light Commercial Vehicles,Petrol,Euro 6 2017-2019,,CO2 lubricant,1.28e5
 Light Commercial Vehicles,Petrol,Euro 6 2020+,,CO2 lubricant,1.28e5
 # Diesel L-Category
-# maximum of Mopeds, Motorcycles and Mini-cars (Tabe 3-30, pg 52)
+# maximum of Mopeds, Motorcycles and Mini-cars (Table 3-30, pg 52)
 L-Category,Diesel,Conventional,DI,CO2 lubricant,10.2e5
 L-Category,Diesel,Conventional,IDI,CO2 lubricant,10.2e5
 L-Category,Diesel,Euro 2,DI,CO2 lubricant,10.2e5
@@ -622,7 +622,7 @@ L-Category,Diesel,Euro 5,DI,CO2 lubricant,10.2e5
 L-Category,Diesel,Euro 5,IDI,CO2 lubricant,10.2e5
 # Diesel Passenger Cars
 # old: <= Euro 4
-# new: >= Euro 5 (Tabe 3-30, pg 52)
+# new: >= Euro 5 (Table 3-30, pg 52)
 Passenger Cars,Diesel,Conventional,DI,CO2 lubricant,1.49e5
 Passenger Cars,Diesel,Conventional,IDI,CO2 lubricant,1.49e5
 Passenger Cars,Diesel,Euro 1,DI,CO2 lubricant,1.49e5
@@ -643,7 +643,7 @@ Passenger Cars,Diesel,Euro 6 2020+,DI,CO2 lubricant,1.28e5
 Passenger Cars,Diesel,Euro 6 2020+,IDI,CO2 lubricant,1.28e5
 # Diesel Light Commercial Vehicles
 # old: <= Euro 4
-# new: >= Euro 5 (Tabe 3-30, pg 52)
+# new: >= Euro 5 (Table 3-30, pg 52)
 Light Commercial Vehicles,Diesel,Conventional,DI,CO2 lubricant,1.49e5
 Light Commercial Vehicles,Diesel,Conventional,IDI,CO2 lubricant,1.49e5
 Light Commercial Vehicles,Diesel,Euro 1,DI,CO2 lubricant,1.49e5
