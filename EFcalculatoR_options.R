@@ -240,26 +240,6 @@ EF_perVOC_pre('via02',
 
 #######################################################################################
 
-# FUNCTION FOR PM from unpaved road (road dust from unpaved road), industrial sites
-
-# the first variable for the function is the roadway name
-# the second variable is the average vehicle weight for the different categories considered (tons)
-# the third variable is the mean vehichle speed (km/h) for the different categories
-# the fourth variable is the distribuition (sum=1) for the different categories
-# the fifth variable is the surface material silt content (%)
-# the sixth variable is the length of the roadway in km
-
-# EF_rd_unpaved_ind('Test05a',
-#         c(10, 15, 20),
-#         c(25, 25, 25),
-#         c(0.2, 0.6, 0.1),
-#         0.094,
-#         2,
-#         'write')
-
-
-#######################################################################################
-
 # FUNCTIONS TO PRODUCE THE FINAL TABLES
 
 # this produces a csv file per roadway per pollutant per fleet

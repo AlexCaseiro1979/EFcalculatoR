@@ -518,33 +518,6 @@ for (pollutant in pollutants) {
 
 }
 
-EF_rd_unpaved_ind <- function(roadway, weights, speeds, fractions, silt, length, writeOrNot){
-
-PM <- list()
-PM[[1]] <- c('PM10', 1.5, 0.9, 0.45) # pollutant, k, a, b
-PM[[2]] <- c('PM2.5', 0.15, 0.9, 0.45) # pollutant, k, a, b
-cat("\n")
-for (j in seq(length(PM))) {
-    EFs_mass <- c()
-    for (i in length(weights)) {
-        EF_mass <- as.numeric(PM[[j]][2]) * (silt/12)**as.numeric(PM[[j]][3]) * (weights[i]/3)**as.numeric(PM[[j]][4]) * 281.9 # in g/(Km.vehicle)
-        EFs_mass <- c(EFs_mass, EF_mass)
-    }
-    umass_string <- c('g/vehicle')
-    cat("\n", roadway, ':', PM[[j]][1], 'for unpaved road', sum(EFs_mass)*length, umass_string)
-    if (writeOrNot != 'noWrite') {
-      writeOutputTable(roadway, PM[[j]][1], 'category', sum(EFs_mass)*length, umass_string, 'data')
-    }
-}
-
-}
-
-EF_rd_unpaved_pub <- function(){
-
-
-
-}
-
 # read the EMEP/EEA data
 df_Group1 <- read.table("1.A.3.b.i-iv Road transport hot EFs Annex 2018_Dic.csv", sep=',', header=TRUE)
 df_perLength <- read.table('EFperLength.csv', sep=',', header=TRUE, comment.char='#')
