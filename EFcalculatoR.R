@@ -35,7 +35,8 @@ for (roadway in as.character(unique(activity$Roadway))) {
     for (category in as.character(unique(sub_ef_pollutant$Category))) {
       cat("\t\t", category, "\n")
       sub_ef_category <- subset(sub_ef_pollutant, Category==category)
-      # this last subset should have one or two lines, depending on the slope
+      # this last subset should have two lines: positive and negative slope
+      # or one line if the slope is 0
       # the output table for this category can now be made
       sub_activity <- subset(activity, Roadway==roadway & Category==category)
       emission_table <- sub_activity
@@ -103,11 +104,14 @@ for (i in seq(length(pollutantGroups))) {
 
 # this function is run for a given fleet distribution and a given roadway (the roadway is defined by a speed, a length, a slope, a load and a mode)
 EF_Group1_pre <- function(roadway, speeds, length, slope, load, pollutants, modes, distFile, writeOrNot){
-  if (slope != 0 || is.na(slope)) {
+  if (!(slope == 0 || is.na(slope))) {
     slopes <- c(-slope, slope)
-    for (s in slopes) {
-      EF_Group1(roadway, speeds, length, s, load, pollutants, modes, distFile, writeOrNot)
-    }
+  }
+  else {
+    slopes <- slope
+  }
+  for (s in slopes) {
+    EF_Group1(roadway, speeds, length, s, load, pollutants, modes, distFile, writeOrNot)
   }
 }
 
@@ -220,22 +224,23 @@ for (pollutant in pollutants) {
                         c_technology <- c_technology + 1
                     }
                     if (pollutant %in% c('VOC', 'CH4')) {
-                        outauxd <- data.frame(roadway, pollutant, category, fuel, segment, euro_standard, sum(subset(out, Fuel==fuel)$EF * subset(out, Fuel==fuel)$Fraction))
+                        outauxd <- data.frame(roadway, pollutant, category, fuel, segment, euro_standard, sum(subset(out, Fuel==fuel)$EF * subset(out, Fuel==fuel)$Fraction)/sum(subset(out, Fuel==fuel)$Fraction))
                         names(outauxd) <- outaux_names ; outaux <- rbind(outaux, outauxd)
                     }
                     c_euro_standard <- c_euro_standard + 1
                 }
                 c_segment <- c_segment + 1
             }
-            cat("\n\t", roadway, pollutant, category, fuel, sum(subset(out, Fuel==fuel)$EF * subset(out, Fuel==fuel)$Fraction))
-                if (pollutant %in% c('FC')) {
-                    outauxd <- data.frame(roadway, pollutant, category, fuel, sum(subset(out, Fuel==fuel)$EF * subset(out, Fuel==fuel)$Fraction))
-                    names(outauxd) <- outaux_names ; outaux <- rbind(outaux, outauxd)
-                }
+            cat("\n\t", roadway, pollutant, category, fuel, sum(subset(out, Fuel==fuel)$EF * subset(out, Fuel==fuel)$Fraction)/sum(subset(out, Fuel==fuel)$Fraction), 'g/km/vehicle')
+            if (pollutant %in% c('FC')) {
+                outauxd <- data.frame(roadway, pollutant, category, fuel, sum(subset(out, Fuel==fuel)$EF * subset(out, Fuel==fuel)$Fraction)/sum(subset(out, Fuel==fuel)$Fraction))
+                names(outauxd) <- outaux_names ; outaux <- rbind(outaux, outauxd)
+            }
             c_fuel <- c_fuel + 1
         }
         # end the subsetting
-        ef_pol <- c(ef_pol, sum(out$EF*out$Fraction))
+        cat("\n\t\t", roadway, pollutant, category, sum(out$EF*out$Fraction/sum(out$Fraction)), 'g/km/vehicle')
+        ef_pol <- c(ef_pol, sum(out$EF*out$Fraction/sum(out$Fraction)))
         c_category <- c_category + 1
     }
     # create the strings for the output
@@ -368,11 +373,14 @@ for (pollutant in pollutants) {
 }
 
 EF_perFuel_pre <- function(roadway, speeds, length, slope, load, pollutants, modes, distFile, writeOrNot){
-  if (slope != 0 || is.na(slope)) {
+  if (!(slope == 0 || is.na(slope))) {
     slopes <- c(-slope, slope)
-    for (s in slopes) {
+  }
+  else {
+    slopes <- slope
+  }
+  for (s in slopes) {
       EF_perFuel(roadway, speeds, length, s, load, pollutants, modes, distFile, writeOrNot)
-    }
   }
 }
 
@@ -434,11 +442,14 @@ for (pollutant in pollutants) {
 }
 
 EF_perVOC_pre <- function(roadway, speeds, length, slope, load, pollutants, modesVOC, modesCH4, distFile, writeOrNot){
-  if (slope != 0 || is.na(slope)) {
+  if (!(slope == 0 || is.na(slope))) {
     slopes <- c(-slope, slope)
-    for (s in slopes) {
+  }
+  else {
+    slopes <- slope
+  }
+  for (s in slopes) {
       EF_perVOC(roadway, speeds, length, s, load, pollutants, modesVOC, modesCH4, distFile, writeOrNot)
-    }
   }
 }
 

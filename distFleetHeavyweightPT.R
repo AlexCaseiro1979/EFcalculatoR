@@ -83,7 +83,7 @@ technologies_fraction[[2]] <- c(0.75, 0.25)
 # the vector can be left empy. If so, concepts_fraction has no consequence and the EFs are averaged through the concepts
 # The EMEP/EEA document advises 50% for DI and 50% for IDI
 concepts <- list() ; concepts_fraction <- list()
-concepts[[1]] <- list()
-concepts_fraction[[1]] <- list()
-concepts[[2]] <- list()
-concepts_fraction[[2]] <- list()
+concepts[[1]] <- c('DI')
+concepts_fraction[[1]] <- c(1)
+concepts[[2]] <- c('DI')
+concepts_fraction[[2]] <- c(1)

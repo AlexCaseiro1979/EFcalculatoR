@@ -6,7 +6,7 @@ categories <- c('Passenger Cars',
                 'Light Commercial Vehicles',
                 'L-Category'
                )
-categories_fraction <- c(0.726, 0.167, 0.039+0.048)
+categories_fraction <- c(0.726, 0.167, 0.049+0.058)
 categories_fraction <- categories_fraction / sum(categories_fraction)
 # give a name for the group of categories, e.g. Light Vehicles
 categories_name <- c('Light Vehicles')
@@ -22,7 +22,7 @@ categories_name <- c('Light Vehicles')
 # one distribution per category
 fuels <- list() ; fuels_fraction <- list()
 fuels[[1]] <- c('Petrol', 'Diesel', 'LPG Bifuel ~ LPG')
-fuels_fraction[[1]] <- c(0.34, 0.64, 0.008)
+fuels_fraction[[1]] <- c(0.34, 0.64, 0.02)
 fuels[[2]] <- c('Petrol', 'Diesel')
 fuels_fraction[[2]] <- c(0, 1)
 fuels[[3]] <- c('Petrol', 'Diesel')
@@ -42,8 +42,8 @@ fuels_fraction[[3]] <- c(1, 0)
 segments <- list() ; segments_fraction <- list()
 segments[[1]] <- c('Small', 'Medium', 'Large-SUV-Executive')
 segments_fraction[[1]] <- c(0.55, 0.394, 0.056)
-segments[[2]] <- list()
-segments_fraction[[2]] <- list()
+segments[[2]] <- c('N1-I', 'N1-II', 'N1-III')
+segments_fraction[[2]] <- c(0.33, 0.34, 0.33)
 segments[[3]] <- c('Mopeds 2-stroke <50 cm\374', 'Mopeds 4-stroke <50 cm\374', 'Motorcycles 2-stroke >50 cm\374', 'Motorcycles 4-stroke <250 cm\374',
                    'Motorcycles 4-stroke 250 - 750 cm\374', 'Motorcycles 4-stroke >750 cm\374', 'Quad & ATVs', 'Micro-car')
 segments_fraction[[3]] <- c(0.22, 0.22, 0.306, 0.015, 0.061, 0.173, 0.002, 0.003)
