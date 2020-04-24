@@ -53,11 +53,11 @@ segments_fraction[[2]] <- c(0.07040202, 0.008156924, 0.421441057, 0.078558943, 0
 # Options for Buses: Conventional, Euro I, Euro II, Euro III, Euro IV, Euro V, Euro VI, EEV
 # the vector can be left empy. If so, euro_standards_fraction has no consequence and the EFs are averaged through the Euro standards
 euro_standards <- list() ; euro_standards_fraction <- list()
-euro_standards[[1]] <- c('Conventional', 'Euro I', 'Euro II', 'Euro III', 'Euro IV', 'Euro V', 'Euro IV')
+euro_standards[[1]] <- c('Conventional', 'Euro I', 'Euro II', 'Euro III', 'Euro IV', 'Euro V', 'Euro VI')
 euro_standards_fraction[[1]] <- c(0, 0, 0.159, 0.264, 0.204, 0.119, 0.096+0.048)
 euro_standards_fraction[[1]] <- euro_standards_fraction[[1]]/sum(euro_standards_fraction[[1]])
 # The division by the sum is to express the distribution up to 100% within each category
-euro_standards[[2]] <- c('Conventional', 'Euro I', 'Euro II', 'Euro III', 'Euro IV', 'Euro V', 'Euro IV', 'EEV')
+euro_standards[[2]] <- c('Conventional', 'Euro I', 'Euro II', 'Euro III', 'Euro IV', 'Euro V', 'Euro VI', 'EEV')
 euro_standards_fraction[[2]] <- c(0, 0, 0.021, 0.034, 0.027, 0.016, 0.0126+0.0062)
 euro_standards_fraction[[2]] <- euro_standards_fraction[[2]]/sum(euro_standards_fraction[[2]])
 

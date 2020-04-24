@@ -189,7 +189,7 @@ for (pollutant in pollutants) {
             technologies_fraction[[c_category]] <- 1
         }
         # end of the discriminations that can be left empy
-        # continue the subsetting
+	# continue the subsetting
         c_fuel <- 1
         for (fuel in fuels[[c_category]]) {
             c_segment <- 1
@@ -203,23 +203,31 @@ for (pollutant in pollutants) {
                             & Segment %in% segment
                             & Euro.Standard %in% euro_standard
                             & Technology %in% technology
-                            & Road.Slope %in% slope
-                            & Load %in% load
+                            #& Road.Slope %in% slope
+                            #& Load %in% load
                             )
                         if (nrow(d)>0) {
-                            # Emission factor computed in g/(Km.vehicle)
+			     if (!is.na(unique(d$Load))) {
+			        d <- subset(d, Load==load)
+			    }
+			    if (!is.na(unique(d$Road.Slope))) {
+			        d <- subset(d, Road.Slope==slope)
+			    }
+			    # if the set speed is larger than the max speed in the CORINAIR document, keep the max speed of the CORINAIR document:
+			    if ( speed > min(d$Max.Speed..km.h., na.rm=TRUE) )
+			    	{ speed <- min(d$Max.Speed..km.h., na.rm=TRUE) }
+                            # Emission factor computed in g/(Km.vehicle):
                             d$EF <- ( d$Alpha * speed**2 + d$Beta * speed + d$Gamma + d$Delta / speed ) / ( d$Epsilon * speed**2 + d$Zita * speed + d$Hta )
+			    d$EF[d$EF<0] <- 0
+			    fractiond <- fuels_fraction[[c_category]][c_fuel] * segments_fraction[[c_category]][c_segment] * euro_standards_fraction[[c_category]][c_euro_standard] * technologies_fraction[[c_category]][c_technology]
                             outd  <- data.frame(category, fuel, segment, euro_standard, mean(d$EF),
                                                 fuels_fraction[[c_category]][c_fuel],
                                                 segments_fraction[[c_category]][c_segment],
                                                 euro_standards_fraction[[c_category]][c_euro_standard],
                                                 technologies_fraction[[c_category]][c_fuel],
-                                                fuels_fraction[[c_category]][c_fuel]
-                                                    * segments_fraction[[c_category]][c_segment]
-                                                    * euro_standards_fraction[[c_category]][c_euro_standard]
-                                                    * technologies_fraction[[c_category]][c_technology]
-                                                )
+                                                fractiond)
                             names(outd) <- out_names ; out <- rbind(out, outd)
+			    #cat("\n+++", roadway, '--', pollutant, '--', category, '--', fuel, '--', segment, '--', euro_standard, '--', technology, '--', slope, '%: ', mean(d$EF), 'g/km/vehicle, fraction: ', fractiond)
                         }
                         c_technology <- c_technology + 1
                     }
@@ -416,6 +424,7 @@ for (pollutant in pollutants) {
         for (fuel in fuels[[c_category]]) {
             d <- subset(d_cat,Fuel %in% fuel)
             if (nrow(d)>0) {
+		cat("\n", pollutant, category, fuel, mean(d$k_mg_kgFuel))
                 EF <- mean(d$k_mg_kgFuel) * subset(fuelComp, Category==category & Fuel==fuel)$FC_MJ_km_vehic / subset(df_specEnergy, Fuel==fuel)$Specific_Energy_MJ_Kg
                 EF <- EF * 1e-3 # from mg to g
                 outd  <- data.frame(category, fuel, EF, fuels_fraction[[c_category]][c_fuel])
@@ -424,7 +433,7 @@ for (pollutant in pollutants) {
             c_fuel <- c_fuel + 1
         }
         # end the subsetting
-        ef_pol <- c(ef_pol, sum(out$EF*out$Fraction))
+        ef_pol <- c(ef_pol, sum(out$EF*out$Fraction, na.rm=TRUE))
         c_category <- c_category + 1
     }
     # create the strings for the output
