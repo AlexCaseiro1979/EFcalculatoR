@@ -424,7 +424,6 @@ for (pollutant in pollutants) {
         for (fuel in fuels[[c_category]]) {
             d <- subset(d_cat,Fuel %in% fuel)
             if (nrow(d)>0) {
-		cat("\n", pollutant, category, fuel, mean(d$k_mg_kgFuel))
                 EF <- mean(d$k_mg_kgFuel) * subset(fuelComp, Category==category & Fuel==fuel)$FC_MJ_km_vehic / subset(df_specEnergy, Fuel==fuel)$Specific_Energy_MJ_Kg
                 EF <- EF * 1e-3 # from mg to g
                 outd  <- data.frame(category, fuel, EF, fuels_fraction[[c_category]][c_fuel])

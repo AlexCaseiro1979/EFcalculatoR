@@ -148,7 +148,7 @@ EF_perLength('via02',
 # the sixth variable for the function are the pollutants
 # Options are:
 #   Pb, Cd, Cu, Cr, Ni, Se, Zn, Hg, As, SO2 and CO2 fuel
-#   NH3 lightweigth and N2O lightweigth for Lightweight vehicles (Tier 1 calculation)
+#   NH3 lightweight and N2O lightweight for Lightweight vehicles (Tier 1 calculation)
 
 # the seventh variable for the function is to be left as one empty string
 # for each category in the fleet distribution file, within a list
@@ -156,7 +156,7 @@ EF_perLength('via02',
 EF_perFuel_pre('via01',
         c(120,110,90),
         2, NA, NA,
-        c('Pb', 'As', 'Cd', 'Ni', 'SO2', 'CO2 fuel', 'NH3 lightweigth', 'N2O lightweigth'),
+        c('Pb', 'As', 'Cd', 'Ni', 'SO2', 'CO2 fuel', 'NH3 lightweight', 'N2O lightweight'),
         list(c(''),c(''),c('')),
         'distFleetLightweightPT.R',
         'write')
@@ -172,7 +172,7 @@ EF_perFuel_pre('via01',
 EF_perFuel_pre('via02',
         c(60,60,50),
         2, NA, NA,
-        c('Pb', 'As', 'Cd', 'Ni', 'SO2', 'CO2 fuel', 'NH3 lightweigth', 'N2O lightweigth'),
+        c('Pb', 'As', 'Cd', 'Ni', 'SO2', 'CO2 fuel', 'NH3 lightweight', 'N2O lightweight'),
         list(c(''),c(''),c('')),
         'distFleetLightweightPT.R',
         'write')
