@@ -1,3 +1,5 @@
+
+
 # this function produces a csv file with the EF discriminated by roadway, pollutant, category
 writeOutputTable <- function(roadway, pollutant, category, EF, unit, data){
 
@@ -15,6 +17,7 @@ else {
 
 }
 
+
 # this function produces a csv table per roadway, per pollutant and per fleet and computes the emissions per hour
 writeEmissionTables <- function(file_EF, file_activity) {
 
@@ -22,18 +25,18 @@ EF <- read.csv(file_EF)
 activity <- read.csv(file_activity, comment.char = '#')
 
 for (roadway in as.character(unique(activity$Roadway))) {
-  cat("\n\n", 'writing emission tables for ', roadway, "\n")
+  cat_no_cat(paste("\n\n", 'writing emission tables for ', roadway, "\n", sep=''),2)
   # subset the EF table for the roadway
   sub_ef_roadway <- subset(EF, Roadway==roadway)
   # for each pollutant in the EF table for a given roadway
   for (pollutant in unique(sub_ef_roadway$Pollutant)) {
-    cat("\t", pollutant, "\n")
+    cat_no_cat(paste("\t", pollutant, "\n", sep=''),2)
     sub_ef_pollutant <- subset(sub_ef_roadway, Pollutant==pollutant)
     category_emission_dfs <- list()
     # for each category in the EF table for a given roadway and a given pollutant
     i <- 1 # counter for the list of data.frames
     for (category in as.character(unique(sub_ef_pollutant$Category))) {
-      cat("\t\t", category, "\n")
+      cat_no_cat(paste("\t\t", category, "\n", sep=''),2)
       sub_ef_category <- subset(sub_ef_pollutant, Category==category)
       # this last subset should have two lines: positive and negative slope
       # or one line if the slope is 0
@@ -75,7 +78,7 @@ for (roadway in as.character(unique(activity$Roadway))) {
 # for the grouped pollutants
 writeEmissionTablesGroups <- function() {
 for (i in seq(length(pollutantGroups))) {
-  cat(paste("\n\n\tGrouping (summing) EFs for group", pollutantGroups[i], "\n"))
+  cat_no_cat(paste("\n\n\tGrouping (summing) EFs for group", pollutantGroups[i], "\n"),2)
   listpolfiles <- c()
   for (pollutant in pollutantsInGroups[i][[1]]) {listpolfiles <- c(listpolfiles, list.files(pattern=pollutant))}
   polfilesToProcess <- c()
@@ -121,7 +124,7 @@ source(distFile)
 
 c_pollutant <- 1
 for (pollutant in pollutants) {
-    cat("\n")
+    cat_no_cat("\n",1)
     # initialize the FC, VOC or CH4 output data table (needed by other functions)
     if (pollutant=='FC') {
         outaux_names <- c('Roadway', 'Pollutant', 'Category', 'Fuel', 'FC_MJ_km_vehic')
@@ -207,10 +210,10 @@ for (pollutant in pollutants) {
                             #& Load %in% load
                             )
                         if (nrow(d)>0) {
-			     if (!is.na(unique(d$Load))) {
+			     if (length(unique(d$Load))>1 && !is.na(unique(d$Load))) {
 			        d <- subset(d, Load==load)
 			    }
-			    if (!is.na(unique(d$Road.Slope))) {
+			    if (length(unique(d$Road.Slope))>1 && !is.na(unique(d$Road.Slope))) {
 			        d <- subset(d, Road.Slope==slope)
 			    }
 			    # if the set speed is larger than the max speed in the CORINAIR document, keep the max speed of the CORINAIR document:
@@ -227,7 +230,7 @@ for (pollutant in pollutants) {
                                                 technologies_fraction[[c_category]][c_fuel],
                                                 fractiond)
                             names(outd) <- out_names ; out <- rbind(out, outd)
-			    #cat("\n+++", roadway, '--', pollutant, '--', category, '--', fuel, '--', segment, '--', euro_standard, '--', technology, '--', slope, '%: ', mean(d$EF), 'g/km/vehicle, fraction: ', fractiond)
+			    cat_no_cat(paste("\n+++", roadway, '--', pollutant, '--', category, '--', fuel, '--', segment, '--', euro_standard, '--', technology, '--', slope, '%: ', mean(d$EF), 'g/km/vehicle, fraction: ', fractiond),2)
                         }
                         c_technology <- c_technology + 1
                     }
@@ -239,7 +242,7 @@ for (pollutant in pollutants) {
                 }
                 c_segment <- c_segment + 1
             }
-            cat("\n\t", roadway, pollutant, category, fuel, sum(subset(out, Fuel==fuel)$EF * subset(out, Fuel==fuel)$Fraction)/sum(subset(out, Fuel==fuel)$Fraction), 'g/km/vehicle')
+            cat_no_cat(paste("\n\t", roadway, pollutant, category, fuel, sum(subset(out, Fuel==fuel)$EF * subset(out, Fuel==fuel)$Fraction)/sum(subset(out, Fuel==fuel)$Fraction), 'g/km/vehicle'),1)
             if (pollutant %in% c('FC')) {
                 outauxd <- data.frame(roadway, pollutant, category, fuel, sum(subset(out, Fuel==fuel)$EF * subset(out, Fuel==fuel)$Fraction)/sum(subset(out, Fuel==fuel)$Fraction))
                 names(outauxd) <- outaux_names ; outaux <- rbind(outaux, outauxd)
@@ -247,7 +250,7 @@ for (pollutant in pollutants) {
             c_fuel <- c_fuel + 1
         }
         # end the subsetting
-        cat("\n\t\t", roadway, pollutant, category, sum(out$EF*out$Fraction/sum(out$Fraction)), 'g/km/vehicle')
+        cat_no_cat(paste("\n\t\t", roadway, pollutant, category, sum(out$EF*out$Fraction/sum(out$Fraction)), 'g/km/vehicle'),1)
         ef_pol <- c(ef_pol, sum(out$EF*out$Fraction/sum(out$Fraction)))
         c_category <- c_category + 1
     }
@@ -275,7 +278,7 @@ for (pollutant in pollutants) {
     # end the strings for the output
     # the output
     time = length / speed * (60*60)
-    cat("\n", roadway, ':', pol_string, categories_name, sum(ef_pol*categories_fraction)*length, umass_string, slope_string, load_string)
+    cat_no_cat(c("\n", roadway, ':', pol_string, categories_name, sum(ef_pol*categories_fraction)*length, umass_string, slope_string, load_string),1)
     if (writeOrNot != 'noWrite') {
       writeOutputTable(roadway, pollutant, categories_name, sum(ef_pol*categories_fraction)*length, umass_string, 'data')
     }
@@ -371,7 +374,7 @@ for (pollutant in pollutants) {
     umass_string <- c('g/vehicle') # EF from the EFperLength.csv document: from ug/km to g/km
     # end the strings for the output
     # the output
-    cat("\n\n", roadway, ':', pol_string, categories_name, sum(ef_pol*categories_fraction)*length, umass_string)
+    cat_no_cat(paste("\n\n", roadway, ':', pol_string, categories_name, sum(ef_pol*categories_fraction)*length, umass_string),1)
     if (writeOrNot != 'noWrite') {
       writeOutputTable(roadway, pollutant, categories_name, sum(ef_pol*categories_fraction)*length, umass_string, 'data')
     }
@@ -399,7 +402,7 @@ df_specEnergy <- read.table('SpecificEnergy.csv', sep=',', header=TRUE, comment.
 
 # get the fuel consumption with the function EF_Group1
 fuelComp <- EF_Group1(roadway, speeds, length, slope, load, c('FC'), modes, distFile, 'noWrite')
-cat("\n", roadway, '----------------------------- finished computing the Fuel consumption...')
+cat_no_cat(paste("\n", roadway, '----------------------------- finished computing the Fuel consumption...'),1)
 
 c_pollutant <- 1
 for (pollutant in pollutants) {
@@ -440,7 +443,7 @@ for (pollutant in pollutants) {
     umass_string <- c('g/vehicle')
     # end the strings for the output
     # the output
-    cat("\n", roadway, ':', pol_string, categories_name, sum(ef_pol*categories_fraction)*length, umass_string)
+    cat_no_cat(paste("\n", roadway, ':', pol_string, categories_name, sum(ef_pol*categories_fraction)*length, umass_string),1)
     if (writeOrNot != 'noWrite') {
       writeOutputTable(roadway, pollutant, categories_name, sum(ef_pol*categories_fraction)*length, umass_string, 'data')
     }
@@ -468,7 +471,7 @@ source(distFile)
 # get the VOCs and CH$ EF with the function EF_Group1
 efVOC <- EF_Group1(roadway, speeds, length, slope, load, c('VOC'), modesVOC, distFile, 'noWrite')
 efCH4 <- EF_Group1(roadway, speeds, length, slope, load, c('CH4'), modesCH4, distFile, 'noWrite')
-cat("\n", roadway, '----------------------------- finished computing the VOCs and CH4 EF...')
+cat_no_cat(paste("\n", roadway, '----------------------------- finished computing the VOCs and CH4 EF...'),1)
 
 c_pollutant <- 1
 for (pollutant in pollutants) {
@@ -528,7 +531,7 @@ for (pollutant in pollutants) {
     # end the strings for the output
     # the output
     time = length / speed * (60*60)
-    cat("\n", roadway, ':', pol_string, categories_name, sum(ef_pol*categories_fraction)*length, umass_string)
+    cat_no_cat(paste("\n", roadway, ':', pol_string, categories_name, sum(ef_pol*categories_fraction)*length, umass_string),1)
     if (writeOrNot != 'noWrite') {
       writeOutputTable(roadway, pollutant, categories_name, sum(ef_pol*categories_fraction)*length, umass_string, 'data')
     }
@@ -546,3 +549,245 @@ df_perVOC <- read.table('EFperVOC.csv', sep=',', header=TRUE, comment.char='#')
 
 # read the options input file
 source('EFcalculatoR_options.R')
+
+
+# for the verbosity output:
+if (verbosity_out=='file') {
+verbosity_file <- paste(fileOut, '.log', sep='')
+}
+
+# functions for the output
+
+output_console <- function(output_string) {
+cat(output_string)
+}
+
+output_file <- function(output_string) {
+cat(output_string, file=verbosity_file, append=TRUE)
+}
+
+if (verbosity_out == 'file') {
+cat_out <- output_file
+} else {
+cat_out <- output_console
+}
+
+cat_no_cat <- function(output_string, output_level) {
+if (verbosity_level >= output_level) {
+cat_out(output_string)
+}
+else {
+cat_out('')
+}
+}
+
+# this produces a csv file with the following fields:
+# Roadway, Pollutant, Category, EF, unit
+fileOut_csv <- paste(fileOut,'_EF.csv', sep='')
+writeOutputTable('roadway', 'pollutant', 'category', 'EF', 'unit', 'init')
+
+
+#######################################################################################
+
+EF_preMain <- function(roadway_name,
+		       speed_PC, speed_LCV, speed_LCat, speed_HDV, speed_Buses,
+		       length_km, roadway_slope, load_HDV, driving_mode,
+		       dist_fleet_light, dist_fleet_heavy)
+	      {
+
+# FUNCTION FOR GROUP 1 POLLUTANTS
+
+# the first variable for the function is the roadway name
+
+# the second variable for the function are the speeds, in km/h
+# one speed for each category in the fleet distribution file
+
+# the third variable for the function is the length of the roadway, in km
+
+# the fourth variable for the function is the slope
+# Options are: -0.06, -0.04, -0.02, 0.00, 0.02, 0.04, 0.06
+# this only makes sense for categories Heavy Duty Trucks and Buses
+# keep NA for categories Passenger Cars, Light Commercial Vehicles and L-category
+# keep NA for pollutants CH4, NH3 and N2O within categories Heavy Duty Trucks and Buses
+
+# the fifth variable for the function is the load
+# Options are: 0.0, 0.5, 1.0
+# this only makes sense for categories Heavy Duty Trucks and Buses
+# keep NA for categories Passenger Cars, Light Commercial Vehicles and L-category
+
+# the sixth variable for the function are the pollutants
+# Options for Passenger Cars and Light Commercial Vehicles:
+#       CO, NOx, VOC, PM Exhaust, FC, CH4
+# Options for Heavy Duty Trucks and Buses:
+#       CO, NOx, VOC, FC, CH4, NH3, N2O, PM Exhaust
+# this vector cannot be left empty
+
+# the seventh variable for the function are the driving modes to be discriminated here.
+# discrimination by pollutant within discrimination by category
+# categories Passenger Cars and Light Commercial Vehicles:
+#   this only makes sense for pollutants PM Exhaust and CH4.
+#   Options: Urban Peak, Urban Off Peak, Rural, Highway
+# categories Heavy Duty Trucks and Buses:
+#   this only makes sense for pollutants CH4, NH3 and N2O
+#   Options: Urban Peak, Urban Off Peak, Rural, Highway
+# L-Categories:
+#   for Mopeds: all pollutants; for Motorcycles: PM Exhaust, CH4, NH3, N2O
+# if not needed, keep an empty vector.
+
+# the eighth variable is the fleet distribution file
+
+EF_Group1_pre(roadway_name,
+        c(speed_PC, speed_LCV, speed_LCat),
+        length_km, NA, NA,
+        c('CO', 'NOx', 'PM Exhaust', 'VOC', 'FC', 'CH4'),
+        list(c('', '', driving_mode, '', '', driving_mode),
+             c('', '', driving_mode, '', '', driving_mode),
+             c(driving_mode, driving_mode, driving_mode, driving_mode, driving_mode, driving_mode)),
+        dist_fleet_light,
+        'write')
+
+EF_Group1_pre(roadway_name,
+        c(speed_HDV, speed_Buses),
+        length_km, roadway_slope, load_HDV,
+        c('CO', 'NOx', 'VOC', 'FC', 'CH4', 'NH3', 'N2O', 'PM Exhaust'),
+        list(c('', '', '', '', driving_mode, driving_mode, driving_mode, ''),
+             c('', '', '', '', driving_mode, driving_mode, driving_mode, '')),
+        dist_fleet_heavy,
+        'write')
+
+
+#######################################################################################
+
+# FUNCTION FOR POLLUTANTS EF AS FUNCTION OF LENGTH TRAVELLED
+
+# the first variable for the function is the roadway name
+
+# the second variable for the function are the speeds, in km/h
+# one speed for each category in the fleet distribution file
+
+# the third variable for the function is the length of the roadway, in km
+
+# the fourth variable for the function are the pollutants
+# Options for Passenger Cars, Light Commercial Vehicles, Heavy Duty Trucks and Buses:
+#       benzo(a)pyrene, PCDD, PCDF, PM Brakes, PM Road paved, PM Tyres, CO2 lubricant
+# this vector cannot be left empty
+
+# the fifth variable is the fleet distribution file
+
+EF_perLength(roadway_name,
+        c(speed_PC, speed_LCV, speed_LCat),
+        length_km,
+        c('benzo(a)pyrene', 'PCDD', 'PCDF', 'PM Brakes', 'PM Road paved', 'PM Tyres', 'CO2 lubricant'),
+        dist_fleet_light,
+        'write')
+
+EF_perLength(roadway_name,
+        c(speed_HDV, speed_Buses),
+        length_km,
+        c('benzo(a)pyrene', 'PCDD', 'PCDF', 'PM Brakes', 'PM Road paved', 'PM Tyres', 'CO2 lubricant'),
+        dist_fleet_heavy,
+        'write')
+
+
+#######################################################################################
+
+# FUNCTION FOR POLLUTANTS EF AS FUNCTION OF FUEL CONSUMED
+
+# options 1, 2, 3, 4, 5 and 8 are the same as for the function EF_Group1_pre
+
+# the sixth variable for the function are the pollutants
+# Options are:
+#   Pb, Cd, Cu, Cr, Ni, Se, Zn, Hg, As, SO2 and CO2 fuel
+#   NH3 lightweight and N2O lightweight for Lightweight vehicles (Tier 1 calculation)
+
+# the seventh variable for the function is to be left as one empty string
+# for each category in the fleet distribution file, within a list
+
+EF_perFuel_pre(roadway_name,
+        c(speed_PC, speed_LCV, speed_LCat),
+        length_km, NA, NA,
+        c('Pb', 'As', 'Cd', 'Ni', 'SO2', 'CO2 fuel', 'NH3 lightweight', 'N2O lightweight'),
+        list(c(''),c(''),c('')),
+        dist_fleet_light,
+        'write')
+
+EF_perFuel_pre(roadway_name,
+        c(speed_HDV, speed_Buses),
+       	length_km, roadway_slope, load_HDV,
+        c('Pb', 'As', 'Cd', 'Ni', 'SO2', 'CO2 fuel', 'NH3 lightweight', 'N2O lightweight'),
+        list(c(''),c('')),
+        dist_fleet_heavy,
+        'write')
+
+
+#######################################################################################
+
+# FUNCTION FOR POLLUTANTS EF AS FUNCTION OF VOCS PRODUCED
+
+# options 1, 2, 3, 4, 5, 7 and 9 are the same as for the function EF_Group1_pre
+
+# Since there is the need to compute the EF of VOCs and CH4,
+# option 7 (driving modes for VOCs) is to be left as one empty string
+# for each category in the fleet distribution file, within a list
+# option 8 (driving modes) should not be left empty for CH4.
+
+# the sixth variable for the function are the pollutants
+# Options are:
+#   toluene, mp-xylene, o-xylene, benzene
+
+EF_perVOC_pre(roadway_name,
+        c(speed_PC, speed_LCV, speed_LCat),
+        length_km, NA, NA,
+        c('toluene', 'mp-xylene', 'o-xylene', 'benzene'),
+        list(c(''),c(''),c(''),c('')),
+        c(driving_mode, driving_mode, driving_mode, driving_mode),
+        dist_fleet_light,
+        'write')
+
+EF_perVOC_pre(roadway_name,
+        c(speed_HDV, speed_Buses),
+       	length_km, roadway_slope, load_HDV,
+        c('toluene', 'mp-xylene', 'o-xylene', 'benzene'),
+        list(c(''),c(''),c('')),
+        c(driving_mode, driving_mode, driving_mode, driving_mode),
+        dist_fleet_heavy,
+        'write')
+
+
+#######################################################################################
+
+}
+
+# read the roadways file
+roadways <- read.table(roadways_file, header=TRUE, sep=',', stringsAsFactors=FALSE)
+
+for (row in seq(1, nrow(roadways))) {
+    EF_preMain(roadways[row,1], # the roadway name
+	       roadways[row,2], roadways[row,3], roadways[row,4], roadways[row,5], roadways[row,6], # the speeds
+	       roadways[row,7], roadways[row,8], roadways[row,9], roadways[row,10], # length, slope, load of HDV, mode
+	       dist_fleet_light, dist_fleet_heavy # the fleet distribution files
+               ) 
+}
+
+
+#######################################################################################
+
+# PRODUCE THE FINAL TABLES
+
+# this produces a csv file per roadway per pollutant per fleet
+# the files have the following fields:
+# Roadway, Fleet, Hour, activity, EF, unit
+
+writeEmissionTables(fileOut_csv, activity_csv)
+
+pollutantGroups <- c('PM10', 'xylene', 'Dioxins+Furans', 'CO2', 'NH3_all', 'N2O_all')
+pollutantsInGroups <- list(c('PM Exhaust', 'PM Tyres', 'PM Brakes', 'PM Road paved'),
+                           c('o-xylene', 'mp-xylene'),
+                           c('PCDD', 'PCDF'),
+                           c('CO2 fuel', 'CO2 lubricant'),
+                           c('NH3', 'NH3 lightweight'),
+                           c('N2O', 'N2O lightweight'))
+writeEmissionTablesGroups()
+
+
+cat_no_cat("\n",0)
