@@ -1,13 +1,6 @@
 
 dúvidas em aberto, primeira prioridade:
-- é preciso continuar a testar face à folha de cálculo anterior e ver se os valores fazem sentido + é preciso validar.
 - usar a função de correção das emissões? (ver pg 94)
-- clarificar a categorização para o cálculo da emissao de particulas em estradas industriais nao pavimentadas.
-Essa metodologia vem do AP-42 e é preciso ajustar a distribuicao da frota em categorias para fazer sentido com o EMEP, que é a base do resto do programa.
-Essa funcionalidade não se encontra contemplada de momento.
-
-dúvidas em aberto, segunda prioridade:
-- o que acontece com as cold emissions? Pensar em como modelá-las.
 
 adições a realizar:
 - temos dados de distribuição por cilindrada para 8 categorias. Podíamos usar maior detalhe da variável "Segment" para os ligeiros. Usar o máximo detalhe possível.
@@ -16,6 +9,9 @@ adições a realizar:
 ######################################################################
 
 dúvidas resolvidas e anotações importantes:
+- clarificar a categorização para o cálculo da emissao de particulas em estradas industriais nao pavimentadas.
+Essa metodologia vem do AP-42 e é preciso ajustar a distribuicao da frota em categorias para fazer sentido com o EMEP, que é a base do resto do programa.
+Essa funcionalidade não se encontra contemplada de momento.
 - Autocarros adicionados à distribuição dos pesados (distFleetHeavyweightPT.R). A fração de autocarros nos pesados pode ser ajusatada projeto a projeto.
 - metais pesados: o que fazer com a emissão proveniente do lubrificante? (pg 94)
 Estas emissões só são relevantes para veículos "two-strokes", que são uma parte pequena dos L-Category
