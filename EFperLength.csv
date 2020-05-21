@@ -1,682 +1,923 @@
-Category,Fuel,Euro Standard,Concept,Pollutant,EF_ug_km
+# Set empty fields to NA
+Category,Fuel,Segment,Euro Standard,Concept,Pollutant,EF_ug_km
 ############################################################################
+### NH3 lightweight
+# Passenger Cars, Petrol, Mini
+Passenger Cars,Petrol,Mini,Euro 4,NA,NH3 lightweight,0.0339e6
+Passenger Cars,Petrol,Mini,Euro 5,NA,NH3 lightweight,0.0123e6
+Passenger Cars,Petrol,Mini,Euro 6 up to 2016,NA,NH3 lightweight,0.0123e6
+Passenger Cars,Petrol,Mini,Euro 6 2017-2019,NA,NH3 lightweight,0.0123e6
+Passenger Cars,Petrol,Mini,Euro 6 2020+,NA,NH3 lightweight,0.0123e6
+# Passenger Cars, Petrol, Small
+Passenger Cars,Petrol,Small,PRE ECE,NA,NH3 lightweight,0.0020e6
+Passenger Cars,Petrol,Small,ECE 15/00-01,NA,NH3 lightweight,0.0020e6
+Passenger Cars,Petrol,Small,ECE 15/02,NA,NH3 lightweight,0.0020e6
+Passenger Cars,Petrol,Small,ECE 15/03,NA,NH3 lightweight,0.0020e6
+Passenger Cars,Petrol,Small,ECE 15/04,NA,NH3 lightweight,0.0020e6
+Passenger Cars,Petrol,Small,Open Loop,NA,NH3 lightweight,0.0020e6
+Passenger Cars,Petrol,Small,Euro 1,NA,NH3 lightweight,0.0922e6
+Passenger Cars,Petrol,Small,Euro 2,NA,NH3 lightweight,0.1043e6
+Passenger Cars,Petrol,Small,Euro 3,NA,NH3 lightweight,0.0342e6
+Passenger Cars,Petrol,Small,Euro 4,NA,NH3 lightweight,0.0341e6
+Passenger Cars,Petrol,Small,Euro 5,NA,NH3 lightweight,0.0123e6
+Passenger Cars,Petrol,Small,Euro 6 up to 2016,NA,NH3 lightweight,0.0123e6
+Passenger Cars,Petrol,Small,Euro 6 2017-2019,NA,NH3 lightweight,0.0123e6
+Passenger Cars,Petrol,Small,Euro 6 2020+,NA,NH3 lightweight,0.0123e6
+# Passenger Cars, Petrol, Medium
+Passenger Cars,Petrol,Medium,PRE ECE,NA,NH3 lightweight,0.0020e6
+Passenger Cars,Petrol,Medium,ECE 15/00-01,NA,NH3 lightweight,0.0020e6
+Passenger Cars,Petrol,Medium,ECE 15/02,NA,NH3 lightweight,0.0020e6
+Passenger Cars,Petrol,Medium,ECE 15/03,NA,NH3 lightweight,0.0020e6
+Passenger Cars,Petrol,Medium,ECE 15/04,NA,NH3 lightweight,0.0020e6
+Passenger Cars,Petrol,Medium,Open Loop,NA,NH3 lightweight,0.0020e6
+Passenger Cars,Petrol,Medium,Euro 1,NA,NH3 lightweight,0.0922e6
+Passenger Cars,Petrol,Medium,Euro 2,NA,NH3 lightweight,0.1043e6
+Passenger Cars,Petrol,Medium,Euro 3,NA,NH3 lightweight,0.0342e6
+Passenger Cars,Petrol,Medium,Euro 4,NA,NH3 lightweight,0.0342e6
+Passenger Cars,Petrol,Medium,Euro 5,NA,NH3 lightweight,0.0123e6
+Passenger Cars,Petrol,Medium,Euro 6 up to 2016,NA,NH3 lightweight,0.0123e6
+Passenger Cars,Petrol,Medium,Euro 6 2017-2019,NA,NH3 lightweight,0.0123e6
+Passenger Cars,Petrol,Medium,Euro 6 2020+,NA,NH3 lightweight,0.0123e6
+# Passenger Cars, Petrol, Large-SUV-Executive
+Passenger Cars,Petrol,Large-SUV-Executive,PRE ECE,NA,NH3 lightweight,0.0020e6
+Passenger Cars,Petrol,Large-SUV-Executive,ECE 15/00-01,NA,NH3 lightweight,0.0020e6
+Passenger Cars,Petrol,Large-SUV-Executive,ECE 15/02,NA,NH3 lightweight,0.0020e6
+Passenger Cars,Petrol,Large-SUV-Executive,ECE 15/03,NA,NH3 lightweight,0.0020e6
+Passenger Cars,Petrol,Large-SUV-Executive,ECE 15/04,NA,NH3 lightweight,0.0020e6
+Passenger Cars,Petrol,Large-SUV-Executive,Open Loop,NA,NH3 lightweight,0.0020e6
+Passenger Cars,Petrol,Large-SUV-Executive,Euro 1,NA,NH3 lightweight,0.0922e6
+Passenger Cars,Petrol,Large-SUV-Executive,Euro 2,NA,NH3 lightweight,0.1043e6
+Passenger Cars,Petrol,Large-SUV-Executive,Euro 3,NA,NH3 lightweight,0.0342e6
+Passenger Cars,Petrol,Large-SUV-Executive,Euro 4,NA,NH3 lightweight,0.0343e6
+Passenger Cars,Petrol,Large-SUV-Executive,Euro 5,NA,NH3 lightweight,0.0123e6
+Passenger Cars,Petrol,Large-SUV-Executive,Euro 6 up to 2016,NA,NH3 lightweight,0.0123e6
+Passenger Cars,Petrol,Large-SUV-Executive,Euro 6 2017-2019,NA,NH3 lightweight,0.0123e6
+Passenger Cars,Petrol,Large-SUV-Executive,Euro 6 2020+,NA,NH3 lightweight,0.0123e6
+# Passenger Cars, Diesel, Small
+Passenger Cars,Diesel,Small,Euro 4,NA,NH3 lightweight,0.0010e6
+Passenger Cars,Diesel,Small,Euro 5,NA,NH3 lightweight,0.0019e6
+Passenger Cars,Diesel,Small,Euro 6 up to 2016,NA,NH3 lightweight,0.0019e6
+Passenger Cars,Diesel,Small,Euro 6 2017-2019,NA,NH3 lightweight,0.0019e6
+Passenger Cars,Diesel,Small,Euro 6 2020+,NA,NH3 lightweight,0.0019e6
+# Passenger Cars, Diesel, Medium
+Passenger Cars,Diesel,Medium,Conventional,NA,NH3 lightweight,0.0010e6
+Passenger Cars,Diesel,Medium,Euro 1,NA,NH3 lightweight,0.0010e6
+Passenger Cars,Diesel,Medium,Euro 2,NA,NH3 lightweight,0.0010e6
+Passenger Cars,Diesel,Medium,Euro 3,NA,NH3 lightweight,0.0010e6
+Passenger Cars,Diesel,Medium,Euro 4,NA,NH3 lightweight,0.0010e6
+Passenger Cars,Diesel,Medium,Euro 5,NA,NH3 lightweight,0.0019e6
+Passenger Cars,Diesel,Medium,Euro 6 up to 2016,NA,NH3 lightweight,0.0019e6
+Passenger Cars,Diesel,Medium,Euro 6 2017-2019,NA,NH3 lightweight,0.0019e6
+Passenger Cars,Diesel,Medium,Euro 6 2020+,NA,NH3 lightweight,0.0019e6
+# Passenger Cars, Diesel, Large-SUV-Executive
+Passenger Cars,Diesel,Large-SUV-Executive,Conventional,NA,NH3 lightweight,0.0010e6
+Passenger Cars,Diesel,Large-SUV-Executive,Euro 1,NA,NH3 lightweight,0.0010e6
+Passenger Cars,Diesel,Large-SUV-Executive,Euro 2,NA,NH3 lightweight,0.0010e6
+Passenger Cars,Diesel,Large-SUV-Executive,Euro 3,NA,NH3 lightweight,0.0010e6
+Passenger Cars,Diesel,Large-SUV-Executive,Euro 4,NA,NH3 lightweight,0.0010e6
+Passenger Cars,Diesel,Large-SUV-Executive,Euro 5,NA,NH3 lightweight,0.0019e6
+Passenger Cars,Diesel,Large-SUV-Executive,Euro 6 up to 2016,NA,NH3 lightweight,0.0019e6
+Passenger Cars,Diesel,Large-SUV-Executive,Euro 6 2017-2019,NA,NH3 lightweight,0.0019e6
+Passenger Cars,Diesel,Large-SUV-Executive,Euro 6 2020+,NA,NH3 lightweight,0.0019e6
+# Passenger Cars, LPG Bifuel ~ LPG
+Passenger Cars,LPG Bifuel ~ LPG,NA,Conventional,NA,NH3 lightweight,0.0020e6
+Passenger Cars,LPG Bifuel ~ LPG,NA,Euro 1,NA,NH3 lightweight,0.0880e6
+Passenger Cars,LPG Bifuel ~ LPG,NA,Euro 2,NA,NH3 lightweight,0.1007e6
+Passenger Cars,LPG Bifuel ~ LPG,NA,Euro 3,NA,NH3 lightweight,0.0338e6
+Passenger Cars,LPG Bifuel ~ LPG,NA,Euro 4,NA,NH3 lightweight,0.0338e6
+Passenger Cars,LPG Bifuel ~ LPG,NA,Euro 5,NA,NH3 lightweight,0.0338e6
+Passenger Cars,LPG Bifuel ~ LPG,NA,Euro 6 up to 2016,NA,NH3 lightweight,0.0338e6
+Passenger Cars,LPG Bifuel ~ LPG,NA,Euro 6 2017-2019,NA,NH3 lightweight,0.0338e6
+Passenger Cars,LPG Bifuel ~ LPG,NA,Euro 6 2020+,NA,NH3 lightweight,0.0338e6
+# Passenger Cars, 2-Stroke
+Passenger Cars,NA,2-Stroke,Conventional,NA,NH3 lightweight,0.0015e6
+# Passenger Cars, Petrol Hybrid, Small
+Passenger Cars,Petrol Hybrid,Small,Euro 4,NA,NH3 lightweight,0.0328e6
+Passenger Cars,Petrol Hybrid,Small,Euro 5,NA,NH3 lightweight,0.0328e6
+Passenger Cars,Petrol Hybrid,Small,Euro 6 up to 2016,NA,NH3 lightweight,0.0328e6
+Passenger Cars,Petrol Hybrid,Small,Euro 6 2017-2019,NA,NH3 lightweight,0.0328e6
+Passenger Cars,Petrol Hybrid,Small,Euro 6 2020+,NA,NH3 lightweight,0.0328e6
+# Passenger Cars, Petrol Hybrid, Medium
+Passenger Cars,Petrol Hybrid,Medium,Euro 4,NA,NH3 lightweight,0.0327e6
+Passenger Cars,Petrol Hybrid,Medium,Euro 5,NA,NH3 lightweight,0.0327e6
+Passenger Cars,Petrol Hybrid,Medium,Euro 6 up to 2016,NA,NH3 lightweight,0.0327e6
+Passenger Cars,Petrol Hybrid,Medium,Euro 6 2017-2019,NA,NH3 lightweight,0.0327e6
+Passenger Cars,Petrol Hybrid,Medium,Euro 6 2020+,NA,NH3 lightweight,0.0327e6
+# Passenger Cars, Petrol Hybrid, Large-SUV-Executive
+Passenger Cars,Petrol Hybrid,Large-SUV-Executive,Euro 4,NA,NH3 lightweight,0.0327e6
+Passenger Cars,Petrol Hybrid,Large-SUV-Executive,Euro 5,NA,NH3 lightweight,0.0327e6
+Passenger Cars,Petrol Hybrid,Large-SUV-Executive,Euro 6 up to 2016,NA,NH3 lightweight,0.0327e6
+Passenger Cars,Petrol Hybrid,Large-SUV-Executive,Euro 6 2017-2019,NA,NH3 lightweight,0.0327e6
+Passenger Cars,Petrol Hybrid,Large-SUV-Executive,Euro 6 2020+,NA,NH3 lightweight,0.0327e6
+# Passenger Cars, E85
+Passenger Cars,E85,NA,Euro 4,NA,NH3 lightweight,0.0339e6
+Passenger Cars,E85,NA,Euro 5,NA,NH3 lightweight,0.0339e6
+Passenger Cars,E85,NA,Euro 6 up to 2016,NA,NH3 lightweight,0.0339e6
+Passenger Cars,E85,NA,Euro 6 2017-2019,NA,NH3 lightweight,0.0339e6
+Passenger Cars,E85,NA,Euro 6 2020+,NA,NH3 lightweight,0.0339e6
+# Passenger Cars, CNG Bifuel ~ CNG
+Passenger Cars,CNG Bifuel ~ CNG,NA,Euro 4,NA,NH3 lightweight,0.0339e6
+Passenger Cars,CNG Bifuel ~ CNG,NA,Euro 5,NA,NH3 lightweight,0.0339e6
+Passenger Cars,CNG Bifuel ~ CNG,NA,Euro 6 up to 2016,NA,NH3 lightweight,0.0339e6
+Passenger Cars,CNG Bifuel ~ CNG,NA,Euro 6 2017-2019,NA,NH3 lightweight,0.0339e6
+Passenger Cars,CNG Bifuel ~ CNG,NA,Euro 6 2020+,NA,NH3 lightweight,0.0339e6
+### N2O lightweight
+# Passenger Cars, Petrol, Mini
+Passenger Cars,Petrol,Mini,Euro 4,NA,N2O lightweight,0.002e6
+Passenger Cars,Petrol,Mini,Euro 5,NA,N2O lightweight,0.0013e6
+Passenger Cars,Petrol,Mini,Euro 6 up to 2016,NA,N2O lightweight,0.0013e6
+Passenger Cars,Petrol,Mini,Euro 6 2017-2019,NA,N2O lightweight,0.0013e6
+Passenger Cars,Petrol,Mini,Euro 6 2020+,NA,N2O lightweight,0.0013e6
+# Passenger Cars, Petrol, Small
+Passenger Cars,Petrol,Small,PRE ECE,NA,N2O lightweight,0.01e6
+Passenger Cars,Petrol,Small,ECE 15/00-01,NA,N2O lightweight,0.01e6
+Passenger Cars,Petrol,Small,ECE 15/02,NA,N2O lightweight,0.01e6
+Passenger Cars,Petrol,Small,ECE 15/03,NA,N2O lightweight,0.01e6
+Passenger Cars,Petrol,Small,ECE 15/04,NA,N2O lightweight,0.01e6
+Passenger Cars,Petrol,Small,Open Loop,NA,N2O lightweight,0.01e6
+Passenger Cars,Petrol,Small,Euro 1,NA,N2O lightweight,0.01e6
+Passenger Cars,Petrol,Small,Euro 2,NA,N2O lightweight,0.006e6
+Passenger Cars,Petrol,Small,Euro 3,NA,N2O lightweight,0.002e6
+Passenger Cars,Petrol,Small,Euro 4,NA,N2O lightweight,0.002e6
+Passenger Cars,Petrol,Small,Euro 5,NA,N2O lightweight,0.0013e6
+Passenger Cars,Petrol,Small,Euro 6 up to 2016,NA,N2O lightweight,0.0013e6
+Passenger Cars,Petrol,Small,Euro 6 2017-2019,NA,N2O lightweight,0.0013e6
+Passenger Cars,Petrol,Small,Euro 6 2020+,NA,N2O lightweight,0.0013e6
+# Passenger Cars, Petrol, Medium
+Passenger Cars,Petrol,Medium,PRE ECE,NA,N2O lightweight,0.01e6
+Passenger Cars,Petrol,Medium,ECE 15/00-01,NA,N2O lightweight,0.01e6
+Passenger Cars,Petrol,Medium,ECE 15/02,NA,N2O lightweight,0.01e6
+Passenger Cars,Petrol,Medium,ECE 15/03,NA,N2O lightweight,0.01e6
+Passenger Cars,Petrol,Medium,ECE 15/04,NA,N2O lightweight,0.01e6
+Passenger Cars,Petrol,Medium,Open Loop,NA,N2O lightweight,0.01e6
+Passenger Cars,Petrol,Medium,Euro 1,NA,N2O lightweight,0.01e6
+Passenger Cars,Petrol,Medium,Euro 2,NA,N2O lightweight,0.006e6
+Passenger Cars,Petrol,Medium,Euro 3,NA,N2O lightweight,0.002e6
+Passenger Cars,Petrol,Medium,Euro 4,NA,N2O lightweight,0.002e6
+Passenger Cars,Petrol,Medium,Euro 5,NA,N2O lightweight,0.0013e6
+Passenger Cars,Petrol,Medium,Euro 6 up to 2016,NA,N2O lightweight,0.0013e6
+Passenger Cars,Petrol,Medium,Euro 6 2017-2019,NA,N2O lightweight,0.0013e6
+Passenger Cars,Petrol,Medium,Euro 6 2020+,NA,N2O lightweight,0.0013e6
+# Passenger Cars, Petrol, Large-SUV-Executive
+Passenger Cars,Petrol,Large-SUV-Executive,PRE ECE,NA,N2O lightweight,0.01e6
+Passenger Cars,Petrol,Large-SUV-Executive,ECE 15/00-01,NA,N2O lightweight,0.01e6
+Passenger Cars,Petrol,Large-SUV-Executive,ECE 15/02,NA,N2O lightweight,0.01e6
+Passenger Cars,Petrol,Large-SUV-Executive,ECE 15/03,NA,N2O lightweight,0.01e6
+Passenger Cars,Petrol,Large-SUV-Executive,ECE 15/04,NA,N2O lightweight,0.01e6
+Passenger Cars,Petrol,Large-SUV-Executive,Open Loop,NA,N2O lightweight,0.01e6
+Passenger Cars,Petrol,Large-SUV-Executive,Euro 1,NA,N2O lightweight,0.011e6
+Passenger Cars,Petrol,Large-SUV-Executive,Euro 2,NA,N2O lightweight,0.006e6
+Passenger Cars,Petrol,Large-SUV-Executive,Euro 3,NA,N2O lightweight,0.002e6
+Passenger Cars,Petrol,Large-SUV-Executive,Euro 4,NA,N2O lightweight,0.002e6
+Passenger Cars,Petrol,Large-SUV-Executive,Euro 5,NA,N2O lightweight,0.0013e6
+Passenger Cars,Petrol,Large-SUV-Executive,Euro 6 up to 2016,NA,N2O lightweight,0.0013e6
+Passenger Cars,Petrol,Large-SUV-Executive,Euro 6 2017-2019,NA,N2O lightweight,0.0013e6
+Passenger Cars,Petrol,Large-SUV-Executive,Euro 6 2020+,NA,N2O lightweight,0.0013e6
+# Passenger Cars, Diesel, Small
+Passenger Cars,Diesel,Small,Euro 4,NA,N2O lightweight,0.010e6
+Passenger Cars,Diesel,Small,Euro 5,NA,N2O lightweight,0.004e6
+Passenger Cars,Diesel,Small,Euro 6 up to 2016,NA,N2O lightweight,0.004e6
+Passenger Cars,Diesel,Small,Euro 6 2017-2019,NA,N2O lightweight,0.004e6
+Passenger Cars,Diesel,Small,Euro 6 2020+,NA,N2O lightweight,0.004e6
+# Passenger Cars, Diesel, Medium
+Passenger Cars,Diesel,Medium,Conventional,NA,N2O lightweight,0.00e6
+Passenger Cars,Diesel,Medium,Euro 1,NA,N2O lightweight,0.003e6
+Passenger Cars,Diesel,Medium,Euro 2,NA,N2O lightweight,0.005e6
+Passenger Cars,Diesel,Medium,Euro 3,NA,N2O lightweight,0.007e6
+Passenger Cars,Diesel,Medium,Euro 4,NA,N2O lightweight,0.01e6
+Passenger Cars,Diesel,Medium,Euro 5,NA,N2O lightweight,0.004e6
+Passenger Cars,Diesel,Medium,Euro 6 up to 2016,NA,N2O lightweight,0.004e6
+Passenger Cars,Diesel,Medium,Euro 6 2017-2019,NA,N2O lightweight,0.004e6
+Passenger Cars,Diesel,Medium,Euro 6 2020+,NA,N2O lightweight,0.004e6
+# Passenger Cars, Diesel, Large-SUV-Executive
+Passenger Cars,Diesel,Large-SUV-Executive,Conventional,NA,N2O lightweight,0.00e6
+Passenger Cars,Diesel,Large-SUV-Executive,Euro 1,NA,N2O lightweight,0.003e6
+Passenger Cars,Diesel,Large-SUV-Executive,Euro 2,NA,N2O lightweight,0.005e6
+Passenger Cars,Diesel,Large-SUV-Executive,Euro 3,NA,N2O lightweight,0.01e6
+Passenger Cars,Diesel,Large-SUV-Executive,Euro 4,NA,N2O lightweight,0.01e6
+Passenger Cars,Diesel,Large-SUV-Executive,Euro 5,NA,N2O lightweight,0.004e6
+Passenger Cars,Diesel,Large-SUV-Executive,Euro 6 up to 2016,NA,N2O lightweight,0.004e6
+Passenger Cars,Diesel,Large-SUV-Executive,Euro 6 2017-2019,NA,N2O lightweight,0.004e6
+Passenger Cars,Diesel,Large-SUV-Executive,Euro 6 2020+,NA,N2O lightweight,0.004e6
+# Passenger Cars, LPG Bifuel ~ LPG
+Passenger Cars,LPG Bifuel ~ LPG,NA,Conventional,NA,N2O lightweight,0.00e6
+Passenger Cars,LPG Bifuel ~ LPG,NA,Euro 1,NA,N2O lightweight,0.02e6
+Passenger Cars,LPG Bifuel ~ LPG,NA,Euro 2,NA,N2O lightweight,0.008e6
+Passenger Cars,LPG Bifuel ~ LPG,NA,Euro 3,NA,N2O lightweight,0.004e6
+Passenger Cars,LPG Bifuel ~ LPG,NA,Euro 4,NA,N2O lightweight,0.004e6
+Passenger Cars,LPG Bifuel ~ LPG,NA,Euro 5,NA,N2O lightweight,0.004e6
+Passenger Cars,LPG Bifuel ~ LPG,NA,Euro 6 up to 2016,NA,N2O lightweight,0.004e6
+Passenger Cars,LPG Bifuel ~ LPG,NA,Euro 6 2017-2019,NA,N2O lightweight,0.004e6
+Passenger Cars,LPG Bifuel ~ LPG,NA,Euro 6 2020+,NA,N2O lightweight,0.004e6
+# Passenger Cars, 2-Stroke
+Passenger Cars,NA,2-Stroke,Conventional,NA,N2O lightweight,0.005e6
+# Passenger Cars, Petrol Hybrid, Small
+Passenger Cars,Petrol Hybrid,Small,Euro 4,NA,N2O lightweight,0.0002e6
+Passenger Cars,Petrol Hybrid,Small,Euro 5,NA,N2O lightweight,0.0002e6
+Passenger Cars,Petrol Hybrid,Small,Euro 6 up to 2016,NA,N2O lightweight,0.0002e6
+Passenger Cars,Petrol Hybrid,Small,Euro 6 2017-2019,NA,N2O lightweight,0.0002e6
+Passenger Cars,Petrol Hybrid,Small,Euro 6 2020+,NA,N2O lightweight,0.0002e6
+# Passenger Cars, Petrol Hybrid, Medium
+Passenger Cars,Petrol Hybrid,Medium,Euro 4,NA,N2O lightweight,0.0002e6
+Passenger Cars,Petrol Hybrid,Medium,Euro 5,NA,N2O lightweight,0.0002e6
+Passenger Cars,Petrol Hybrid,Medium,Euro 6 up to 2016,NA,N2O lightweight,0.0002e6
+Passenger Cars,Petrol Hybrid,Medium,Euro 6 2017-2019,NA,N2O lightweight,0.0002e6
+Passenger Cars,Petrol Hybrid,Medium,Euro 6 2020+,NA,N2O lightweight,0.0002e6
+# Passenger Cars, Petrol Hybrid, Large-SUV-Executive
+Passenger Cars,Petrol Hybrid,Large-SUV-Executive,Euro 4,NA,N2O lightweight,0.0002e6
+Passenger Cars,Petrol Hybrid,Large-SUV-Executive,Euro 5,NA,N2O lightweight,0.0002e6
+Passenger Cars,Petrol Hybrid,Large-SUV-Executive,Euro 6 up to 2016,NA,N2O lightweight,0.0002e6
+Passenger Cars,Petrol Hybrid,Large-SUV-Executive,Euro 6 2017-2019,NA,N2O lightweight,0.0002e6
+Passenger Cars,Petrol Hybrid,Large-SUV-Executive,Euro 6 2020+,NA,N2O lightweight,0.0002e6
+# Passenger Cars, E85
+Passenger Cars,E85,NA,Euro 4,NA,N2O lightweight,0.002e6
+Passenger Cars,E85,NA,Euro 5,NA,N2O lightweight,0.002e6
+Passenger Cars,E85,NA,Euro 6 up to 2016,NA,N2O lightweight,0.002e6
+Passenger Cars,E85,NA,Euro 6 2017-2019,NA,N2O lightweight,0.002e6
+Passenger Cars,E85,NA,Euro 6 2020+,NA,N2O lightweight,0.002e6
+# Passenger Cars, CNG Bifuel ~ CNG
+Passenger Cars,CNG Bifuel ~ CNG,NA,Euro 4,NA,N2O lightweight,0.001e6
+Passenger Cars,CNG Bifuel ~ CNG,NA,Euro 5,NA,N2O lightweight,0.001e6
+Passenger Cars,CNG Bifuel ~ CNG,NA,Euro 6 up to 2016,NA,N2O lightweight,0.001e6
+Passenger Cars,CNG Bifuel ~ CNG,NA,Euro 6 2017-2019,NA,N2O lightweight,0.001e6
+Passenger Cars,CNG Bifuel ~ CNG,NA,Euro 6 2020+,NA,N2O lightweight,0.001e6
 ### benzo(a)pyrene
 # Petrol, E85, CNG passenger cars
-Passenger Cars,Petrol,Conventional,,benzo(a)pyrene,0.48
-Passenger Cars,Petrol,Euro 1,,benzo(a)pyrene,0.32
-Passenger Cars,Petrol,Euro 2,,benzo(a)pyrene,0.32
-Passenger Cars,Petrol,Euro 3,,benzo(a)pyrene,0.32
-Passenger Cars,Petrol,Euro 4,,benzo(a)pyrene,0.32
-Passenger Cars,Petrol,Euro 5,,benzo(a)pyrene,0.32
-Passenger Cars,Petrol,Euro 6 up to 2016,,benzo(a)pyrene,0.32
-Passenger Cars,Petrol,Euro 6 2017-2019,,benzo(a)pyrene,0.32
-Passenger Cars,Petrol,Euro 6 2020+,,benzo(a)pyrene,0.32
-Passenger Cars,E85,Conventional,,benzo(a)pyrene,0.48
-Passenger Cars,E85,Euro 1,,benzo(a)pyrene,0.32
-Passenger Cars,E85,Euro 2,,benzo(a)pyrene,0.32
-Passenger Cars,E85,Euro 3,,benzo(a)pyrene,0.32
-Passenger Cars,E85,Euro 4,,benzo(a)pyrene,0.32
-Passenger Cars,E85,Euro 5,,benzo(a)pyrene,0.32
-Passenger Cars,E85,Euro 6 up to 2016,,benzo(a)pyrene,0.32
-Passenger Cars,E85,Euro 6 2017-2019,,benzo(a)pyrene,0.32
-Passenger Cars,E85,Euro 6 2020+,,benzo(a)pyrene,0.32
-Passenger Cars,CNG,Conventional,,benzo(a)pyrene,0.48
-Passenger Cars,CNG,Euro 1,,benzo(a)pyrene,0.32
-Passenger Cars,CNG,Euro 2,,benzo(a)pyrene,0.32
-Passenger Cars,CNG,Euro 3,,benzo(a)pyrene,0.32
-Passenger Cars,CNG,Euro 4,,benzo(a)pyrene,0.32
-Passenger Cars,CNG,Euro 5,,benzo(a)pyrene,0.32
-Passenger Cars,CNG,Euro 6 up to 2016,,benzo(a)pyrene,0.32
-Passenger Cars,CNG,Euro 6 2017-2019,,benzo(a)pyrene,0.32
-Passenger Cars,CNG,Euro 6 2020+,,benzo(a)pyrene,0.32
+Passenger Cars,Petrol,NA,Conventional,NA,benzo(a)pyrene,0.48
+Passenger Cars,Petrol,NA,Euro 1,NA,benzo(a)pyrene,0.32
+Passenger Cars,Petrol,NA,Euro 2,NA,benzo(a)pyrene,0.32
+Passenger Cars,Petrol,NA,Euro 3,NA,benzo(a)pyrene,0.32
+Passenger Cars,Petrol,NA,Euro 4,NA,benzo(a)pyrene,0.32
+Passenger Cars,Petrol,NA,Euro 5,NA,benzo(a)pyrene,0.32
+Passenger Cars,Petrol,NA,Euro 6 up to 2016,NA,benzo(a)pyrene,0.32
+Passenger Cars,Petrol,NA,Euro 6 2017-2019,NA,benzo(a)pyrene,0.32
+Passenger Cars,Petrol,NA,Euro 6 2020+,NA,benzo(a)pyrene,0.32
+Passenger Cars,E85,NA,Conventional,NA,benzo(a)pyrene,0.48
+Passenger Cars,E85,NA,Euro 1,NA,benzo(a)pyrene,0.32
+Passenger Cars,E85,NA,Euro 2,NA,benzo(a)pyrene,0.32
+Passenger Cars,E85,NA,Euro 3,NA,benzo(a)pyrene,0.32
+Passenger Cars,E85,NA,Euro 4,NA,benzo(a)pyrene,0.32
+Passenger Cars,E85,NA,Euro 5,NA,benzo(a)pyrene,0.32
+Passenger Cars,E85,NA,Euro 6 up to 2016,NA,benzo(a)pyrene,0.32
+Passenger Cars,E85,NA,Euro 6 2017-2019,NA,benzo(a)pyrene,0.32
+Passenger Cars,E85,NA,Euro 6 2020+,NA,benzo(a)pyrene,0.32
+Passenger Cars,CNG,NA,Conventional,NA,benzo(a)pyrene,0.48
+Passenger Cars,CNG,NA,Euro 1,NA,benzo(a)pyrene,0.32
+Passenger Cars,CNG,NA,Euro 2,NA,benzo(a)pyrene,0.32
+Passenger Cars,CNG,NA,Euro 3,NA,benzo(a)pyrene,0.32
+Passenger Cars,CNG,NA,Euro 4,NA,benzo(a)pyrene,0.32
+Passenger Cars,CNG,NA,Euro 5,NA,benzo(a)pyrene,0.32
+Passenger Cars,CNG,NA,Euro 6 up to 2016,NA,benzo(a)pyrene,0.32
+Passenger Cars,CNG,NA,Euro 6 2017-2019,NA,benzo(a)pyrene,0.32
+Passenger Cars,CNG,NA,Euro 6 2020+,NA,benzo(a)pyrene,0.32
 # Petrol, E85, CNG Light Commercial Vehicles
-Light Commercial Vehicles,Petrol,Conventional,,benzo(a)pyrene,0.48
-Light Commercial Vehicles,Petrol,Euro 1,,benzo(a)pyrene,0.32
-Light Commercial Vehicles,Petrol,Euro 2,,benzo(a)pyrene,0.32
-Light Commercial Vehicles,Petrol,Euro 3,,benzo(a)pyrene,0.32
-Light Commercial Vehicles,Petrol,Euro 4,,benzo(a)pyrene,0.32
-Light Commercial Vehicles,Petrol,Euro 5,,benzo(a)pyrene,0.32
-Light Commercial Vehicles,Petrol,Euro 6 up to 2016,,benzo(a)pyrene,0.32
-Light Commercial Vehicles,Petrol,Euro 6 2017-2019,,benzo(a)pyrene,0.32
-Light Commercial Vehicles,Petrol,Euro 6 2020+,,benzo(a)pyrene,0.32
-Light Commercial Vehicles,E85,Conventional,,benzo(a)pyrene,0.48
-Light Commercial Vehicles,E85,Euro 1,,benzo(a)pyrene,0.32
-Light Commercial Vehicles,E85,Euro 2,,benzo(a)pyrene,0.32
-Light Commercial Vehicles,E85,Euro 3,,benzo(a)pyrene,0.32
-Light Commercial Vehicles,E85,Euro 4,,benzo(a)pyrene,0.32
-Light Commercial Vehicles,E85,Euro 5,,benzo(a)pyrene,0.32
-Light Commercial Vehicles,E85,Euro 6 up to 2016,,benzo(a)pyrene,0.32
-Light Commercial Vehicles,E85,Euro 6 2017-2019,,benzo(a)pyrene,0.32
-Light Commercial Vehicles,E85,Euro 6 2020+,,benzo(a)pyrene,0.32
-Light Commercial Vehicles,CNG,Conventional,,benzo(a)pyrene,0.48
-Light Commercial Vehicles,CNG,Euro 1,,benzo(a)pyrene,0.32
-Light Commercial Vehicles,CNG,Euro 2,,benzo(a)pyrene,0.32
-Light Commercial Vehicles,CNG,Euro 3,,benzo(a)pyrene,0.32
-Light Commercial Vehicles,CNG,Euro 4,,benzo(a)pyrene,0.32
-Light Commercial Vehicles,CNG,Euro 5,,benzo(a)pyrene,0.32
-Light Commercial Vehicles,CNG,Euro 6 up to 2016,,benzo(a)pyrene,0.32
-Light Commercial Vehicles,CNG,Euro 6 2017-2019,,benzo(a)pyrene,0.32
-Light Commercial Vehicles,CNG,Euro 6 2020+,,benzo(a)pyrene,0.32
-# Diesel Passenger Cars
-Passenger Cars,Diesel,Conventional,DI,benzo(a)pyrene,0.63
-Passenger Cars,Diesel,Conventional,IDI,benzo(a)pyrene,2.85
-Passenger Cars,Diesel,Euro 1,DI,benzo(a)pyrene,0.63
-Passenger Cars,Diesel,Euro 1,IDI,benzo(a)pyrene,2.85
-Passenger Cars,Diesel,Euro 2,DI,benzo(a)pyrene,0.63
-Passenger Cars,Diesel,Euro 2,IDI,benzo(a)pyrene,2.85
-Passenger Cars,Diesel,Euro 3,DI,benzo(a)pyrene,0.63
-Passenger Cars,Diesel,Euro 3,IDI,benzo(a)pyrene,2.85
-Passenger Cars,Diesel,Euro 4,DI,benzo(a)pyrene,0.63
-Passenger Cars,Diesel,Euro 4,IDI,benzo(a)pyrene,2.85
-Passenger Cars,Diesel,Euro 5,DI,benzo(a)pyrene,0.63
-Passenger Cars,Diesel,Euro 5,IDI,benzo(a)pyrene,2.85
-Passenger Cars,Diesel,Euro 6 up to 2016,DI,benzo(a)pyrene,0.63
-Passenger Cars,Diesel,Euro 6 up to 2016,IDI,benzo(a)pyrene,2.85
-Passenger Cars,Diesel,Euro 6 2017-2019,DI,benzo(a)pyrene,0.63
-Passenger Cars,Diesel,Euro 6 2017-2019,IDI,benzo(a)pyrene,2.85
-Passenger Cars,Diesel,Euro 6 2020+,DI,benzo(a)pyrene,0.63
-Passenger Cars,Diesel,Euro 6 2020+,IDI,benzo(a)pyrene,2.85
-# Diesel Light Commercial Vehicles
-Light Commercial Vehicles,Diesel,Conventional,DI,benzo(a)pyrene,0.63
-Light Commercial Vehicles,Diesel,Conventional,IDI,benzo(a)pyrene,2.85
-Light Commercial Vehicles,Diesel,Euro 1,DI,benzo(a)pyrene,0.63
-Light Commercial Vehicles,Diesel,Euro 1,IDI,benzo(a)pyrene,2.85
-Light Commercial Vehicles,Diesel,Euro 2,DI,benzo(a)pyrene,0.63
-Light Commercial Vehicles,Diesel,Euro 2,IDI,benzo(a)pyrene,2.85
-Light Commercial Vehicles,Diesel,Euro 3,DI,benzo(a)pyrene,0.63
-Light Commercial Vehicles,Diesel,Euro 3,IDI,benzo(a)pyrene,2.85
-Light Commercial Vehicles,Diesel,Euro 4,DI,benzo(a)pyrene,0.63
-Light Commercial Vehicles,Diesel,Euro 4,IDI,benzo(a)pyrene,2.85
-Light Commercial Vehicles,Diesel,Euro 5,DI,benzo(a)pyrene,0.63
-Light Commercial Vehicles,Diesel,Euro 5,IDI,benzo(a)pyrene,2.85
-Light Commercial Vehicles,Diesel,Euro 6 up to 2016,DI,benzo(a)pyrene,0.63
-Light Commercial Vehicles,Diesel,Euro 6 up to 2016,IDI,benzo(a)pyrene,2.85
-Light Commercial Vehicles,Diesel,Euro 6 2017-2019,DI,benzo(a)pyrene,0.63
-Light Commercial Vehicles,Diesel,Euro 6 2017-2019,IDI,benzo(a)pyrene,2.85
-Light Commercial Vehicles,Diesel,Euro 6 2020+,DI,benzo(a)pyrene,0.63
-Light Commercial Vehicles,Diesel,Euro 6 2020+,IDI,benzo(a)pyrene,2.85
+Light Commercial Vehicles,Petrol,NA,Conventional,NA,benzo(a)pyrene,0.48
+Light Commercial Vehicles,Petrol,NA,Euro 1,NA,benzo(a)pyrene,0.32
+Light Commercial Vehicles,Petrol,NA,Euro 2,NA,benzo(a)pyrene,0.32
+Light Commercial Vehicles,Petrol,NA,Euro 3,NA,benzo(a)pyrene,0.32
+Light Commercial Vehicles,Petrol,NA,Euro 4,NA,benzo(a)pyrene,0.32
+Light Commercial Vehicles,Petrol,NA,Euro 5,NA,benzo(a)pyrene,0.32
+Light Commercial Vehicles,Petrol,NA,Euro 6 up to 2016,NA,benzo(a)pyrene,0.32
+Light Commercial Vehicles,Petrol,NA,Euro 6 2017-2019,NA,benzo(a)pyrene,0.32
+Light Commercial Vehicles,Petrol,NA,Euro 6 2020+,NA,benzo(a)pyrene,0.32
+Light Commercial Vehicles,E85,NA,Conventional,NA,benzo(a)pyrene,0.48
+Light Commercial Vehicles,E85,NA,Euro 1,NA,benzo(a)pyrene,0.32
+Light Commercial Vehicles,E85,NA,Euro 2,NA,benzo(a)pyrene,0.32
+Light Commercial Vehicles,E85,NA,Euro 3,NA,benzo(a)pyrene,0.32
+Light Commercial Vehicles,E85,NA,Euro 4,NA,benzo(a)pyrene,0.32
+Light Commercial Vehicles,E85,NA,Euro 5,NA,benzo(a)pyrene,0.32
+Light Commercial Vehicles,E85,NA,Euro 6 up to 2016,NA,benzo(a)pyrene,0.32
+Light Commercial Vehicles,E85,NA,Euro 6 2017-2019,NA,benzo(a)pyrene,0.32
+Light Commercial Vehicles,E85,NA,Euro 6 2020+,NA,benzo(a)pyrene,0.32
+Light Commercial Vehicles,CNG,NA,Conventional,NA,benzo(a)pyrene,0.48
+Light Commercial Vehicles,CNG,NA,Euro 1,NA,benzo(a)pyrene,0.32
+Light Commercial Vehicles,CNG,NA,Euro 2,NA,benzo(a)pyrene,0.32
+Light Commercial Vehicles,CNG,NA,Euro 3,NA,benzo(a)pyrene,0.32
+Light Commercial Vehicles,CNG,NA,Euro 4,NA,benzo(a)pyrene,0.32
+Light Commercial Vehicles,CNG,NA,Euro 5,NA,benzo(a)pyrene,0.32
+Light Commercial Vehicles,CNG,NA,Euro 6 up to 2016,NA,benzo(a)pyrene,0.32
+Light Commercial Vehicles,CNG,NA,Euro 6 2017-2019,NA,benzo(a)pyrene,0.32
+Light Commercial Vehicles,CNG,NA,Euro 6 2020+,NA,benzo(a)pyrene,0.32
+# Diesel, Passenger Cars
+Passenger Cars,Diesel,NA,Conventional,DI,benzo(a)pyrene,0.63
+Passenger Cars,Diesel,NA,Conventional,IDI,benzo(a)pyrene,2.85
+Passenger Cars,Diesel,NA,Euro 1,DI,benzo(a)pyrene,0.63
+Passenger Cars,Diesel,NA,Euro 1,IDI,benzo(a)pyrene,2.85
+Passenger Cars,Diesel,NA,Euro 2,DI,benzo(a)pyrene,0.63
+Passenger Cars,Diesel,NA,Euro 2,IDI,benzo(a)pyrene,2.85
+Passenger Cars,Diesel,NA,Euro 3,DI,benzo(a)pyrene,0.63
+Passenger Cars,Diesel,NA,Euro 3,IDI,benzo(a)pyrene,2.85
+Passenger Cars,Diesel,NA,Euro 4,DI,benzo(a)pyrene,0.63
+Passenger Cars,Diesel,NA,Euro 4,IDI,benzo(a)pyrene,2.85
+Passenger Cars,Diesel,NA,Euro 5,DI,benzo(a)pyrene,0.63
+Passenger Cars,Diesel,NA,Euro 5,IDI,benzo(a)pyrene,2.85
+Passenger Cars,Diesel,NA,Euro 6 up to 2016,DI,benzo(a)pyrene,0.63
+Passenger Cars,Diesel,NA,Euro 6 up to 2016,IDI,benzo(a)pyrene,2.85
+Passenger Cars,Diesel,NA,Euro 6 2017-2019,DI,benzo(a)pyrene,0.63
+Passenger Cars,Diesel,NA,Euro 6 2017-2019,IDI,benzo(a)pyrene,2.85
+Passenger Cars,Diesel,NA,Euro 6 2020+,DI,benzo(a)pyrene,0.63
+Passenger Cars,Diesel,NA,Euro 6 2020+,IDI,benzo(a)pyrene,2.85
+# Diesel, Light Commercial Vehicles
+Light Commercial Vehicles,Diesel,NA,Conventional,DI,benzo(a)pyrene,0.63
+Light Commercial Vehicles,Diesel,NA,Conventional,IDI,benzo(a)pyrene,2.85
+Light Commercial Vehicles,Diesel,NA,Euro 1,DI,benzo(a)pyrene,0.63
+Light Commercial Vehicles,Diesel,NA,Euro 1,IDI,benzo(a)pyrene,2.85
+Light Commercial Vehicles,Diesel,NA,Euro 2,DI,benzo(a)pyrene,0.63
+Light Commercial Vehicles,Diesel,NA,Euro 2,IDI,benzo(a)pyrene,2.85
+Light Commercial Vehicles,Diesel,NA,Euro 3,DI,benzo(a)pyrene,0.63
+Light Commercial Vehicles,Diesel,NA,Euro 3,IDI,benzo(a)pyrene,2.85
+Light Commercial Vehicles,Diesel,NA,Euro 4,DI,benzo(a)pyrene,0.63
+Light Commercial Vehicles,Diesel,NA,Euro 4,IDI,benzo(a)pyrene,2.85
+Light Commercial Vehicles,Diesel,NA,Euro 5,DI,benzo(a)pyrene,0.63
+Light Commercial Vehicles,Diesel,NA,Euro 5,IDI,benzo(a)pyrene,2.85
+Light Commercial Vehicles,Diesel,NA,Euro 6 up to 2016,DI,benzo(a)pyrene,0.63
+Light Commercial Vehicles,Diesel,NA,Euro 6 up to 2016,IDI,benzo(a)pyrene,2.85
+Light Commercial Vehicles,Diesel,NA,Euro 6 2017-2019,DI,benzo(a)pyrene,0.63
+Light Commercial Vehicles,Diesel,NA,Euro 6 2017-2019,IDI,benzo(a)pyrene,2.85
+Light Commercial Vehicles,Diesel,NA,Euro 6 2020+,DI,benzo(a)pyrene,0.63
+Light Commercial Vehicles,Diesel,NA,Euro 6 2020+,IDI,benzo(a)pyrene,2.85
 # Heavy Duty Trucks
-Heavy Duty Trucks,Diesel,Conventional,DI,benzo(a)pyrene,0.90
-Heavy Duty Trucks,Diesel,Euro I,DI,benzo(a)pyrene,0.90
-Heavy Duty Trucks,Diesel,Euro II,DI,benzo(a)pyrene,0.90
-Heavy Duty Trucks,Diesel,Euro III,DI,benzo(a)pyrene,0.90
-Heavy Duty Trucks,Diesel,Euro IV,DI,benzo(a)pyrene,0.90
-Heavy Duty Trucks,Diesel,Euro V,DI,benzo(a)pyrene,0.90
-Heavy Duty Trucks,Diesel,Euro VI,DI,benzo(a)pyrene,0.90
+Heavy Duty Trucks,Diesel,NA,Conventional,DI,benzo(a)pyrene,0.90
+Heavy Duty Trucks,Diesel,NA,Euro I,DI,benzo(a)pyrene,0.90
+Heavy Duty Trucks,Diesel,NA,Euro II,DI,benzo(a)pyrene,0.90
+Heavy Duty Trucks,Diesel,NA,Euro III,DI,benzo(a)pyrene,0.90
+Heavy Duty Trucks,Diesel,NA,Euro IV,DI,benzo(a)pyrene,0.90
+Heavy Duty Trucks,Diesel,NA,Euro V,DI,benzo(a)pyrene,0.90
+Heavy Duty Trucks,Diesel,NA,Euro VI,DI,benzo(a)pyrene,0.90
 # Buses
-Buses,Diesel,Conventional,DI,benzo(a)pyrene,0.90
-Buses,Diesel,Euro I,DI,benzo(a)pyrene,0.90
-Buses,Diesel,Euro II,DI,benzo(a)pyrene,0.90
-Buses,Diesel,Euro III,DI,benzo(a)pyrene,0.90
-Buses,Diesel,Euro IV,DI,benzo(a)pyrene,0.90
-Buses,Diesel,Euro V,DI,benzo(a)pyrene,0.90
-Buses,Diesel,Euro VI,DI,benzo(a)pyrene,0.90
+Buses,Diesel,NA,Conventional,DI,benzo(a)pyrene,0.90
+Buses,Diesel,NA,Euro I,DI,benzo(a)pyrene,0.90
+Buses,Diesel,NA,Euro II,DI,benzo(a)pyrene,0.90
+Buses,Diesel,NA,Euro III,DI,benzo(a)pyrene,0.90
+Buses,Diesel,NA,Euro IV,DI,benzo(a)pyrene,0.90
+Buses,Diesel,NA,Euro V,DI,benzo(a)pyrene,0.90
+Buses,Diesel,NA,Euro VI,DI,benzo(a)pyrene,0.90
 # L-Category
-L-Category,Petrol,Conventional,,benzo(a)pyrene,0.48
-L-Category,Petrol,Euro 1,,benzo(a)pyrene,0.32
-L-Category,Petrol,Euro 2,,benzo(a)pyrene,0.32
-L-Category,Petrol,Euro 3,,benzo(a)pyrene,0.32
-L-Category,Petrol,Euro 4,,benzo(a)pyrene,0.32
-L-Category,Petrol,Euro 5,,benzo(a)pyrene,0.32
+L-Category,Petrol,NA,Conventional,NA,benzo(a)pyrene,0.48
+L-Category,Petrol,NA,Euro 1,NA,benzo(a)pyrene,0.32
+L-Category,Petrol,NA,Euro 2,NA,benzo(a)pyrene,0.32
+L-Category,Petrol,NA,Euro 3,NA,benzo(a)pyrene,0.32
+L-Category,Petrol,NA,Euro 4,NA,benzo(a)pyrene,0.32
+L-Category,Petrol,NA,Euro 5,NA,benzo(a)pyrene,0.32
 ############################################################################
 ### PCDD
-# Petrol passenger cars
-Passenger Cars,Petrol,Conventional,,PCDD,10.3e-6
-Passenger Cars,Petrol,Euro 1,,PCDD,13e-6
-Passenger Cars,Petrol,Euro 2,,PCDD,13e-6
-Passenger Cars,Petrol,Euro 3,,PCDD,2.7e-6
-Passenger Cars,Petrol,Euro 4,,PCDD,2.7e-6
-Passenger Cars,Petrol,Euro 5,,PCDD,2.7e-6
-Passenger Cars,Petrol,Euro 6 up to 2016,,PCDD,2.7e-6
-Passenger Cars,Petrol,Euro 6 2017-2019,,PCDD,2.7e-6
-Passenger Cars,Petrol,Euro 6 2020+,,PCDD,2.7e-6
-# Petrol Light Commercial Vehicles
-Light Commercial Vehicles,Petrol,Conventional,,PCDD,10.3e-6
-Light Commercial Vehicles,Petrol,Euro 1,,PCDD,13e-6
-Light Commercial Vehicles,Petrol,Euro 2,,PCDD,13e-6
-Light Commercial Vehicles,Petrol,Euro 3,,PCDD,2.7e-6
-Light Commercial Vehicles,Petrol,Euro 4,,PCDD,2.7e-6
-Light Commercial Vehicles,Petrol,Euro 5,,PCDD,2.7e-6
-Light Commercial Vehicles,Petrol,Euro 6 up to 2016,,PCDD,2.7e-6
-Light Commercial Vehicles,Petrol,Euro 6 2017-2019,,PCDD,2.7e-6
-Light Commercial Vehicles,Petrol,Euro 6 2020+,,PCDD,2.7e-6
-# Diesel Passenger Cars
-Passenger Cars,Diesel,Conventional,DI,PCDD,0.5e-6
-Passenger Cars,Diesel,Conventional,IDI,PCDD,0.5e-6
-Passenger Cars,Diesel,Euro 1,DI,PCDD,24.5e-6
-Passenger Cars,Diesel,Euro 1,IDI,PCDD,24.5e-6
-Passenger Cars,Diesel,Euro 2,DI,PCDD,24.5e-6
-Passenger Cars,Diesel,Euro 2,IDI,PCDD,24.5e-6
-Passenger Cars,Diesel,Euro 3,DI,PCDD,24.5e-6
-Passenger Cars,Diesel,Euro 3,IDI,PCDD,24.5e-6
-Passenger Cars,Diesel,Euro 4,DI,PCDD,24.5e-6
-Passenger Cars,Diesel,Euro 4,IDI,PCDD,24.5e-6
-Passenger Cars,Diesel,Euro 5,DI,PCDD,0.3e-6
-Passenger Cars,Diesel,Euro 5,IDI,PCDD,0.3e-6
-Passenger Cars,Diesel,Euro 6 up to 2016,DI,PCDD,0.3e-6
-Passenger Cars,Diesel,Euro 6 up to 2016,IDI,PCDD,0.3e-6
-Passenger Cars,Diesel,Euro 6 2017-2019,DI,PCDD,0.3e-6
-Passenger Cars,Diesel,Euro 6 2017-2019,IDI,PCDD,0.3e-6
-Passenger Cars,Diesel,Euro 6 2020+,DI,PCDD,0.3e-6
-Passenger Cars,Diesel,Euro 6 2020+,IDI,PCDD,0.3e-6
-# Diesel Light Commercial Vehicles
-Light Commercial Vehicles,Diesel,Conventional,DI,PCDD,0.5e-6
-Light Commercial Vehicles,Diesel,Conventional,IDI,PCDD,0.5e-6
-Light Commercial Vehicles,Diesel,Euro 1,DI,PCDD,24.5e-6
-Light Commercial Vehicles,Diesel,Euro 1,IDI,PCDD,24.5e-6
-Light Commercial Vehicles,Diesel,Euro 2,DI,PCDD,24.5e-6
-Light Commercial Vehicles,Diesel,Euro 2,IDI,PCDD,24.5e-6
-Light Commercial Vehicles,Diesel,Euro 3,DI,PCDD,24.5e-6
-Light Commercial Vehicles,Diesel,Euro 3,IDI,PCDD,24.5e-6
-Light Commercial Vehicles,Diesel,Euro 4,DI,PCDD,24.5e-6
-Light Commercial Vehicles,Diesel,Euro 4,IDI,PCDD,24.5e-6
-Light Commercial Vehicles,Diesel,Euro 5,DI,PCDD,0.3e-6
-Light Commercial Vehicles,Diesel,Euro 5,IDI,PCDD,0.3e-6
-Light Commercial Vehicles,Diesel,Euro 6 up to 2016,DI,PCDD,0.3e-6
-Light Commercial Vehicles,Diesel,Euro 6 up to 2016,IDI,PCDD,0.3e-6
-Light Commercial Vehicles,Diesel,Euro 6 2017-2019,DI,PCDD,0.3e-6
-Light Commercial Vehicles,Diesel,Euro 6 2017-2019,IDI,PCDD,0.3e-6
-Light Commercial Vehicles,Diesel,Euro 6 2020+,DI,PCDD,0.3e-6
-Light Commercial Vehicles,Diesel,Euro 6 2020+,IDI,PCDD,0.3e-6
+# Petrol, passenger cars
+Passenger Cars,Petrol,NA,Conventional,NA,PCDD,10.3e-6
+Passenger Cars,Petrol,NA,Euro 1,NA,PCDD,13e-6
+Passenger Cars,Petrol,NA,Euro 2,NA,PCDD,13e-6
+Passenger Cars,Petrol,NA,Euro 3,NA,PCDD,2.7e-6
+Passenger Cars,Petrol,NA,Euro 4,NA,PCDD,2.7e-6
+Passenger Cars,Petrol,NA,Euro 5,NA,PCDD,2.7e-6
+Passenger Cars,Petrol,NA,Euro 6 up to 2016,NA,PCDD,2.7e-6
+Passenger Cars,Petrol,NA,Euro 6 2017-2019,NA,PCDD,2.7e-6
+Passenger Cars,Petrol,NA,Euro 6 2020+,NA,PCDD,2.7e-6
+# Petrol, Light Commercial Vehicles
+Light Commercial Vehicles,Petrol,NA,Conventional,NA,PCDD,10.3e-6
+Light Commercial Vehicles,Petrol,NA,Euro 1,NA,PCDD,13e-6
+Light Commercial Vehicles,Petrol,NA,Euro 2,NA,PCDD,13e-6
+Light Commercial Vehicles,Petrol,NA,Euro 3,NA,PCDD,2.7e-6
+Light Commercial Vehicles,Petrol,NA,Euro 4,NA,PCDD,2.7e-6
+Light Commercial Vehicles,Petrol,NA,Euro 5,NA,PCDD,2.7e-6
+Light Commercial Vehicles,Petrol,NA,Euro 6 up to 2016,NA,PCDD,2.7e-6
+Light Commercial Vehicles,Petrol,NA,Euro 6 2017-2019,NA,PCDD,2.7e-6
+Light Commercial Vehicles,Petrol,NA,Euro 6 2020+,NA,PCDD,2.7e-6
+# Diesel, Passenger Cars
+Passenger Cars,Diesel,NA,Conventional,DI,PCDD,0.5e-6
+Passenger Cars,Diesel,NA,Conventional,IDI,PCDD,0.5e-6
+Passenger Cars,Diesel,NA,Euro 1,DI,PCDD,24.5e-6
+Passenger Cars,Diesel,NA,Euro 1,IDI,PCDD,24.5e-6
+Passenger Cars,Diesel,NA,Euro 2,DI,PCDD,24.5e-6
+Passenger Cars,Diesel,NA,Euro 2,IDI,PCDD,24.5e-6
+Passenger Cars,Diesel,NA,Euro 3,DI,PCDD,24.5e-6
+Passenger Cars,Diesel,NA,Euro 3,IDI,PCDD,24.5e-6
+Passenger Cars,Diesel,NA,Euro 4,DI,PCDD,24.5e-6
+Passenger Cars,Diesel,NA,Euro 4,IDI,PCDD,24.5e-6
+Passenger Cars,Diesel,NA,Euro 5,DI,PCDD,0.3e-6
+Passenger Cars,Diesel,NA,Euro 5,IDI,PCDD,0.3e-6
+Passenger Cars,Diesel,NA,Euro 6 up to 2016,DI,PCDD,0.3e-6
+Passenger Cars,Diesel,NA,Euro 6 up to 2016,IDI,PCDD,0.3e-6
+Passenger Cars,Diesel,NA,Euro 6 2017-2019,DI,PCDD,0.3e-6
+Passenger Cars,Diesel,NA,Euro 6 2017-2019,IDI,PCDD,0.3e-6
+Passenger Cars,Diesel,NA,Euro 6 2020+,DI,PCDD,0.3e-6
+Passenger Cars,Diesel,NA,Euro 6 2020+,IDI,PCDD,0.3e-6
+# Diesel, Light Commercial Vehicles
+Light Commercial Vehicles,Diesel,NA,Conventional,DI,PCDD,0.5e-6
+Light Commercial Vehicles,Diesel,NA,Conventional,IDI,PCDD,0.5e-6
+Light Commercial Vehicles,Diesel,NA,Euro 1,DI,PCDD,24.5e-6
+Light Commercial Vehicles,Diesel,NA,Euro 1,IDI,PCDD,24.5e-6
+Light Commercial Vehicles,Diesel,NA,Euro 2,DI,PCDD,24.5e-6
+Light Commercial Vehicles,Diesel,NA,Euro 2,IDI,PCDD,24.5e-6
+Light Commercial Vehicles,Diesel,NA,Euro 3,DI,PCDD,24.5e-6
+Light Commercial Vehicles,Diesel,NA,Euro 3,IDI,PCDD,24.5e-6
+Light Commercial Vehicles,Diesel,NA,Euro 4,DI,PCDD,24.5e-6
+Light Commercial Vehicles,Diesel,NA,Euro 4,IDI,PCDD,24.5e-6
+Light Commercial Vehicles,Diesel,NA,Euro 5,DI,PCDD,0.3e-6
+Light Commercial Vehicles,Diesel,NA,Euro 5,IDI,PCDD,0.3e-6
+Light Commercial Vehicles,Diesel,NA,Euro 6 up to 2016,DI,PCDD,0.3e-6
+Light Commercial Vehicles,Diesel,NA,Euro 6 up to 2016,IDI,PCDD,0.3e-6
+Light Commercial Vehicles,Diesel,NA,Euro 6 2017-2019,DI,PCDD,0.3e-6
+Light Commercial Vehicles,Diesel,NA,Euro 6 2017-2019,IDI,PCDD,0.3e-6
+Light Commercial Vehicles,Diesel,NA,Euro 6 2020+,DI,PCDD,0.3e-6
+Light Commercial Vehicles,Diesel,NA,Euro 6 2020+,IDI,PCDD,0.3e-6
 # Heavy Duty Trucks
-Heavy Duty Trucks,Diesel,Conventional,DI,PCDD,25e-6
-Heavy Duty Trucks,Diesel,Euro I,DI,PCDD,25e-6
-Heavy Duty Trucks,Diesel,Euro II,DI,PCDD,25e-6
-Heavy Duty Trucks,Diesel,Euro III,DI,PCDD,25e-6
-Heavy Duty Trucks,Diesel,Euro IV,DI,PCDD,25e-6
-Heavy Duty Trucks,Diesel,Euro V,DI,PCDD,0.31e-6
-Heavy Duty Trucks,Diesel,Euro VI,DI,PCDD,0.16e-6
+Heavy Duty Trucks,Diesel,NA,Conventional,DI,PCDD,25e-6
+Heavy Duty Trucks,Diesel,NA,Euro I,DI,PCDD,25e-6
+Heavy Duty Trucks,Diesel,NA,Euro II,DI,PCDD,25e-6
+Heavy Duty Trucks,Diesel,NA,Euro III,DI,PCDD,25e-6
+Heavy Duty Trucks,Diesel,NA,Euro IV,DI,PCDD,25e-6
+Heavy Duty Trucks,Diesel,NA,Euro V,DI,PCDD,0.31e-6
+Heavy Duty Trucks,Diesel,NA,Euro VI,DI,PCDD,0.16e-6
 # Buses
-Buses,Diesel,Conventional,DI,PCDD,25e-6
-Buses,Diesel,Euro I,DI,PCDD,25e-6
-Buses,Diesel,Euro II,DI,PCDD,25e-6
-Buses,Diesel,Euro III,DI,PCDD,25e-6
-Buses,Diesel,Euro IV,DI,PCDD,25e-6
-Buses,Diesel,Euro V,DI,PCDD,0.31e-6
-Buses,Diesel,Euro VI,DI,PCDD,0.16e-6
+Buses,Diesel,NA,Conventional,DI,PCDD,25e-6
+Buses,Diesel,NA,Euro I,DI,PCDD,25e-6
+Buses,Diesel,NA,Euro II,DI,PCDD,25e-6
+Buses,Diesel,NA,Euro III,DI,PCDD,25e-6
+Buses,Diesel,NA,Euro IV,DI,PCDD,25e-6
+Buses,Diesel,NA,Euro V,DI,PCDD,0.31e-6
+Buses,Diesel,NA,Euro VI,DI,PCDD,0.16e-6
 # L-Category
-L-Category,Petrol,Conventional,,PCDD,10.3e-6
-L-Category,Petrol,Euro 1,,PCDD,13e-6
-L-Category,Petrol,Euro 2,,PCDD,13e-6
-L-Category,Petrol,Euro 3,,PCDD,2.7e-6
-L-Category,Petrol,Euro 4,,PCDD,2.7e-6
-L-Category,Petrol,Euro 5,,PCDD,2.7e-6
+L-Category,Petrol,NA,Conventional,NA,PCDD,10.3e-6
+L-Category,Petrol,NA,Euro 1,NA,PCDD,13e-6
+L-Category,Petrol,NA,Euro 2,NA,PCDD,13e-6
+L-Category,Petrol,NA,Euro 3,NA,PCDD,2.7e-6
+L-Category,Petrol,NA,Euro 4,NA,PCDD,2.7e-6
+L-Category,Petrol,NA,Euro 5,NA,PCDD,2.7e-6
 ############################################################################
 ### PCDF
-# Petrol passenger cars
-Passenger Cars,Petrol,Conventional,,PCDF,21.2e-6
-Passenger Cars,Petrol,Euro 1,,PCDF,19e-6
-Passenger Cars,Petrol,Euro 2,,PCDF,19e-6
-Passenger Cars,Petrol,Euro 3,,PCDF,4.1e-6
-Passenger Cars,Petrol,Euro 4,,PCDF,4.1e-6
-Passenger Cars,Petrol,Euro 5,,PCDF,4.1e-6
-Passenger Cars,Petrol,Euro 6 up to 2016,,PCDF,4.1e-6
-Passenger Cars,Petrol,Euro 6 2017-2019,,PCDF,4.1e-6
-Passenger Cars,Petrol,Euro 6 2020+,,PCDF,4.1e-6
-# Petrol Light Commercial Vehicles
-Light Commercial Vehicles,Petrol,Conventional,,PCDF,21.2e-6
-Light Commercial Vehicles,Petrol,Euro 1,,PCDF,19e-6
-Light Commercial Vehicles,Petrol,Euro 2,,PCDF,19e-6
-Light Commercial Vehicles,Petrol,Euro 3,,PCDF,4.1e-6
-Light Commercial Vehicles,Petrol,Euro 4,,PCDF,4.1e-6
-Light Commercial Vehicles,Petrol,Euro 5,,PCDF,4.1e-6
-Light Commercial Vehicles,Petrol,Euro 6 up to 2016,,PCDF,4.1e-6
-Light Commercial Vehicles,Petrol,Euro 6 2017-2019,,PCDF,4.1e-6
-Light Commercial Vehicles,Petrol,Euro 6 2020+,,PCDF,4.1e-6
-# Diesel Passenger Cars
-Passenger Cars,Diesel,Conventional,DI,PCDF,1.0e-6
-Passenger Cars,Diesel,Conventional,IDI,PCDF,1.0e-6
-Passenger Cars,Diesel,Euro 1,DI,PCDF,36.5e-6
-Passenger Cars,Diesel,Euro 1,IDI,PCDF,36.5e-6
-Passenger Cars,Diesel,Euro 2,DI,PCDF,36.5e-6
-Passenger Cars,Diesel,Euro 2,IDI,PCDF,36.5e-6
-Passenger Cars,Diesel,Euro 3,DI,PCDF,36.5e-6
-Passenger Cars,Diesel,Euro 3,IDI,PCDF,36.5e-6
-Passenger Cars,Diesel,Euro 4,DI,PCDF,36.5e-6
-Passenger Cars,Diesel,Euro 4,IDI,PCDF,36.5e-6
-Passenger Cars,Diesel,Euro 5,DI,PCDF,0.44e-6
-Passenger Cars,Diesel,Euro 5,IDI,PCDF,0.44e-6
-Passenger Cars,Diesel,Euro 6 up to 2016,DI,PCDF,0.44e-6
-Passenger Cars,Diesel,Euro 6 up to 2016,IDI,PCDF,0.44e-6
-Passenger Cars,Diesel,Euro 6 2017-2019,DI,PCDF,0.44e-6
-Passenger Cars,Diesel,Euro 6 2017-2019,IDI,PCDF,0.44e-6
-Passenger Cars,Diesel,Euro 6 2020+,DI,PCDF,0.44e-6
-Passenger Cars,Diesel,Euro 6 2020+,IDI,PCDF,0.44e-6
-# Diesel Light Commercial Vehicles
-Light Commercial Vehicles,Diesel,Conventional,DI,PCDF,1.0e-6
-Light Commercial Vehicles,Diesel,Conventional,IDI,PCDF,1.0e-6
-Light Commercial Vehicles,Diesel,Euro 1,DI,PCDF,36.5e-6
-Light Commercial Vehicles,Diesel,Euro 1,IDI,PCDF,36.5e-6
-Light Commercial Vehicles,Diesel,Euro 2,DI,PCDF,36.5e-6
-Light Commercial Vehicles,Diesel,Euro 2,IDI,PCDF,36.5e-6
-Light Commercial Vehicles,Diesel,Euro 3,DI,PCDF,36.5e-6
-Light Commercial Vehicles,Diesel,Euro 3,IDI,PCDF,36.5e-6
-Light Commercial Vehicles,Diesel,Euro 4,DI,PCDF,36.5e-6
-Light Commercial Vehicles,Diesel,Euro 4,IDI,PCDF,36.5e-6
-Light Commercial Vehicles,Diesel,Euro 5,DI,PCDF,0.44e-6
-Light Commercial Vehicles,Diesel,Euro 5,IDI,PCDF,0.44e-6
-Light Commercial Vehicles,Diesel,Euro 6 up to 2016,DI,PCDF,0.44e-6
-Light Commercial Vehicles,Diesel,Euro 6 up to 2016,IDI,PCDF,0.44e-6
-Light Commercial Vehicles,Diesel,Euro 6 2017-2019,DI,PCDF,0.44e-6
-Light Commercial Vehicles,Diesel,Euro 6 2017-2019,IDI,PCDF,0.44e-6
-Light Commercial Vehicles,Diesel,Euro 6 2020+,DI,PCDF,0.44e-6
-Light Commercial Vehicles,Diesel,Euro 6 2020+,IDI,PCDF,0.44e-6
+# Petrol, passenger cars
+Passenger Cars,Petrol,NA,Conventional,NA,PCDF,21.2e-6
+Passenger Cars,Petrol,NA,Euro 1,NA,PCDF,19e-6
+Passenger Cars,Petrol,NA,Euro 2,NA,PCDF,19e-6
+Passenger Cars,Petrol,NA,Euro 3,NA,PCDF,4.1e-6
+Passenger Cars,Petrol,NA,Euro 4,NA,PCDF,4.1e-6
+Passenger Cars,Petrol,NA,Euro 5,NA,PCDF,4.1e-6
+Passenger Cars,Petrol,NA,Euro 6 up to 2016,NA,PCDF,4.1e-6
+Passenger Cars,Petrol,NA,Euro 6 2017-2019,NA,PCDF,4.1e-6
+Passenger Cars,Petrol,NA,Euro 6 2020+,NA,PCDF,4.1e-6
+# Petrol, Light Commercial Vehicles
+Light Commercial Vehicles,Petrol,NA,Conventional,NA,PCDF,21.2e-6
+Light Commercial Vehicles,Petrol,NA,Euro 1,NA,PCDF,19e-6
+Light Commercial Vehicles,Petrol,NA,Euro 2,NA,PCDF,19e-6
+Light Commercial Vehicles,Petrol,NA,Euro 3,NA,PCDF,4.1e-6
+Light Commercial Vehicles,Petrol,NA,Euro 4,NA,PCDF,4.1e-6
+Light Commercial Vehicles,Petrol,NA,Euro 5,NA,PCDF,4.1e-6
+Light Commercial Vehicles,Petrol,NA,Euro 6 up to 2016,NA,PCDF,4.1e-6
+Light Commercial Vehicles,Petrol,NA,Euro 6 2017-2019,NA,PCDF,4.1e-6
+Light Commercial Vehicles,Petrol,NA,Euro 6 2020+,NA,PCDF,4.1e-6
+# Diesel, Passenger Cars
+Passenger Cars,Diesel,NA,Conventional,DI,PCDF,1.0e-6
+Passenger Cars,Diesel,NA,Conventional,IDI,PCDF,1.0e-6
+Passenger Cars,Diesel,NA,Euro 1,DI,PCDF,36.5e-6
+Passenger Cars,Diesel,NA,Euro 1,IDI,PCDF,36.5e-6
+Passenger Cars,Diesel,NA,Euro 2,DI,PCDF,36.5e-6
+Passenger Cars,Diesel,NA,Euro 2,IDI,PCDF,36.5e-6
+Passenger Cars,Diesel,NA,Euro 3,DI,PCDF,36.5e-6
+Passenger Cars,Diesel,NA,Euro 3,IDI,PCDF,36.5e-6
+Passenger Cars,Diesel,NA,Euro 4,DI,PCDF,36.5e-6
+Passenger Cars,Diesel,NA,Euro 4,IDI,PCDF,36.5e-6
+Passenger Cars,Diesel,NA,Euro 5,DI,PCDF,0.44e-6
+Passenger Cars,Diesel,NA,Euro 5,IDI,PCDF,0.44e-6
+Passenger Cars,Diesel,NA,Euro 6 up to 2016,DI,PCDF,0.44e-6
+Passenger Cars,Diesel,NA,Euro 6 up to 2016,IDI,PCDF,0.44e-6
+Passenger Cars,Diesel,NA,Euro 6 2017-2019,DI,PCDF,0.44e-6
+Passenger Cars,Diesel,NA,Euro 6 2017-2019,IDI,PCDF,0.44e-6
+Passenger Cars,Diesel,NA,Euro 6 2020+,DI,PCDF,0.44e-6
+Passenger Cars,Diesel,NA,Euro 6 2020+,IDI,PCDF,0.44e-6
+# Diesel, Light Commercial Vehicles
+Light Commercial Vehicles,Diesel,NA,Conventional,DI,PCDF,1.0e-6
+Light Commercial Vehicles,Diesel,NA,Conventional,IDI,PCDF,1.0e-6
+Light Commercial Vehicles,Diesel,NA,Euro 1,DI,PCDF,36.5e-6
+Light Commercial Vehicles,Diesel,NA,Euro 1,IDI,PCDF,36.5e-6
+Light Commercial Vehicles,Diesel,NA,Euro 2,DI,PCDF,36.5e-6
+Light Commercial Vehicles,Diesel,NA,Euro 2,IDI,PCDF,36.5e-6
+Light Commercial Vehicles,Diesel,NA,Euro 3,DI,PCDF,36.5e-6
+Light Commercial Vehicles,Diesel,NA,Euro 3,IDI,PCDF,36.5e-6
+Light Commercial Vehicles,Diesel,NA,Euro 4,DI,PCDF,36.5e-6
+Light Commercial Vehicles,Diesel,NA,Euro 4,IDI,PCDF,36.5e-6
+Light Commercial Vehicles,Diesel,NA,Euro 5,DI,PCDF,0.44e-6
+Light Commercial Vehicles,Diesel,NA,Euro 5,IDI,PCDF,0.44e-6
+Light Commercial Vehicles,Diesel,NA,Euro 6 up to 2016,DI,PCDF,0.44e-6
+Light Commercial Vehicles,Diesel,NA,Euro 6 up to 2016,IDI,PCDF,0.44e-6
+Light Commercial Vehicles,Diesel,NA,Euro 6 2017-2019,DI,PCDF,0.44e-6
+Light Commercial Vehicles,Diesel,NA,Euro 6 2017-2019,IDI,PCDF,0.44e-6
+Light Commercial Vehicles,Diesel,NA,Euro 6 2020+,DI,PCDF,0.44e-6
+Light Commercial Vehicles,Diesel,NA,Euro 6 2020+,IDI,PCDF,0.44e-6
 # Heavy Duty Trucks
-Heavy Duty Trucks,Diesel,Conventional,DI,PCDF,38e-6
-Heavy Duty Trucks,Diesel,Euro I,DI,PCDF,38e-6
-Heavy Duty Trucks,Diesel,Euro II,DI,PCDF,38e-6
-Heavy Duty Trucks,Diesel,Euro III,DI,PCDF,38e-6
-Heavy Duty Trucks,Diesel,Euro IV,DI,PCDF,38e-6
-Heavy Duty Trucks,Diesel,Euro V,DI,PCDF,0.45e-6
-Heavy Duty Trucks,Diesel,Euro VI,DI,PCDF,0.24e-6
+Heavy Duty Trucks,Diesel,NA,Conventional,DI,PCDF,38e-6
+Heavy Duty Trucks,Diesel,NA,Euro I,DI,PCDF,38e-6
+Heavy Duty Trucks,Diesel,NA,Euro II,DI,PCDF,38e-6
+Heavy Duty Trucks,Diesel,NA,Euro III,DI,PCDF,38e-6
+Heavy Duty Trucks,Diesel,NA,Euro IV,DI,PCDF,38e-6
+Heavy Duty Trucks,Diesel,NA,Euro V,DI,PCDF,0.45e-6
+Heavy Duty Trucks,Diesel,NA,Euro VI,DI,PCDF,0.24e-6
 # Buses
-Buses,Diesel,Conventional,DI,PCDF,38e-6
-Buses,Diesel,Euro I,DI,PCDF,38e-6
-Buses,Diesel,Euro II,DI,PCDF,38e-6
-Buses,Diesel,Euro III,DI,PCDF,38e-6
-Buses,Diesel,Euro IV,DI,PCDF,38e-6
-Buses,Diesel,Euro V,DI,PCDF,0.45e-6
-Buses,Diesel,Euro VI,DI,PCDF,0.24e-6
+Buses,Diesel,NA,Conventional,DI,PCDF,38e-6
+Buses,Diesel,NA,Euro I,DI,PCDF,38e-6
+Buses,Diesel,NA,Euro II,DI,PCDF,38e-6
+Buses,Diesel,NA,Euro III,DI,PCDF,38e-6
+Buses,Diesel,NA,Euro IV,DI,PCDF,38e-6
+Buses,Diesel,NA,Euro V,DI,PCDF,0.45e-6
+Buses,Diesel,NA,Euro VI,DI,PCDF,0.24e-6
 # L-Category
-L-Category,Petrol,Conventional,,PCDF,21.2e-6
-L-Category,Petrol,Euro 1,,PCDF,19e-6
-L-Category,Petrol,Euro 2,,PCDF,19e-6
-L-Category,Petrol,Euro 3,,PCDF,4.1e-6
-L-Category,Petrol,Euro 4,,PCDF,4.1e-6
-L-Category,Petrol,Euro 5,,PCDF,4.1e-6
+L-Category,Petrol,NA,Conventional,NA,PCDF,21.2e-6
+L-Category,Petrol,NA,Euro 1,NA,PCDF,19e-6
+L-Category,Petrol,NA,Euro 2,NA,PCDF,19e-6
+L-Category,Petrol,NA,Euro 3,NA,PCDF,4.1e-6
+L-Category,Petrol,NA,Euro 4,NA,PCDF,4.1e-6
+L-Category,Petrol,NA,Euro 5,NA,PCDF,4.1e-6
 ############################################################################
 ###  Brakes
-# Petrol L-Category
-L-Category,Petrol,Conventional,,PM Brakes,3.63e3
-L-Category,Petrol,Euro 1,,PM Brakes,3.63e3
-L-Category,Petrol,Euro 2,,PM Brakes,3.63e3
-L-Category,Petrol,Euro 3,,PM Brakes,3.63e3
-L-Category,Petrol,Euro 4,,PM Brakes,3.63e3
-L-Category,Petrol,Euro 5,,PM Brakes,3.63e3
-# Petrol passenger cars
-Passenger Cars,Petrol,Conventional,,PM Brakes,7.35e3
-Passenger Cars,Petrol,Euro 1,,PM Brakes,7.35e3
-Passenger Cars,Petrol,Euro 2,,PM Brakes,7.35e3
-Passenger Cars,Petrol,Euro 3,,PM Brakes,7.35e3
-Passenger Cars,Petrol,Euro 4,,PM Brakes,7.35e3
-Passenger Cars,Petrol,Euro 5,,PM Brakes,7.35e3
-Passenger Cars,Petrol,Euro 6 up to 2016,,PM Brakes,7.35e3
-Passenger Cars,Petrol,Euro 6 2017-2019,,PM Brakes,7.35e3
-Passenger Cars,Petrol,Euro 6 2020+,,PM Brakes,7.35e3
-# Petrol Light Commercial Vehicles
-Light Commercial Vehicles,Petrol,Conventional,,PM Brakes,11.47e3
-Light Commercial Vehicles,Petrol,Euro 1,,PM Brakes,11.47e3
-Light Commercial Vehicles,Petrol,Euro 2,,PM Brakes,11.47e3
-Light Commercial Vehicles,Petrol,Euro 3,,PM Brakes,11.47e3
-Light Commercial Vehicles,Petrol,Euro 4,,PM Brakes,11.47e3
-Light Commercial Vehicles,Petrol,Euro 5,,PM Brakes,11.47e3
-Light Commercial Vehicles,Petrol,Euro 6 up to 2016,,PM Brakes,11.47e3
-Light Commercial Vehicles,Petrol,Euro 6 2017-2019,,PM Brakes,11.47e3
-Light Commercial Vehicles,Petrol,Euro 6 2020+,,PM Brakes,11.47e3
-# Diesel L-Category
-L-Category,Diesel,Conventional,DI,PM Brakes,3.63e3
-L-Category,Diesel,Conventional,IDI,PM Brakes,3.63e3
-L-Category,Diesel,Euro 2,DI,PM Brakes,3.63e3
-L-Category,Diesel,Euro 2,IDI,PM Brakes,3.63e3
-L-Category,Diesel,Euro 1,DI,PM Brakes,3.63e3
-L-Category,Diesel,Euro 1,IDI,PM Brakes,3.63e3
-L-Category,Diesel,Euro 3,DI,PM Brakes,3.63e3
-L-Category,Diesel,Euro 3,IDI,PM Brakes,3.63e3
-L-Category,Diesel,Euro 4,DI,PM Brakes,3.63e3
-L-Category,Diesel,Euro 4,IDI,PM Brakes,3.63e3
-L-Category,Diesel,Euro 5,DI,PM Brakes,3.63e3
-L-Category,Diesel,Euro 5,IDI,PM Brakes,3.63e3
-# Diesel Passenger Cars
-Passenger Cars,Diesel,Conventional,DI,PM Brakes,7.35e3
-Passenger Cars,Diesel,Conventional,IDI,PM Brakes,7.35e3
-Passenger Cars,Diesel,Euro 1,DI,PM Brakes,7.35e3
-Passenger Cars,Diesel,Euro 1,IDI,PM Brakes,7.35e3
-Passenger Cars,Diesel,Euro 2,DI,PM Brakes,7.35e3
-Passenger Cars,Diesel,Euro 2,IDI,PM Brakes,7.35e3
-Passenger Cars,Diesel,Euro 3,DI,PM Brakes,7.35e3
-Passenger Cars,Diesel,Euro 3,IDI,PM Brakes,7.35e3
-Passenger Cars,Diesel,Euro 4,DI,PM Brakes,7.35e3
-Passenger Cars,Diesel,Euro 4,IDI,PM Brakes,7.35e3
-Passenger Cars,Diesel,Euro 5,DI,PM Brakes,7.35e3
-Passenger Cars,Diesel,Euro 5,IDI,PM Brakes,7.35e3
-Passenger Cars,Diesel,Euro 6 up to 2016,DI,PM Brakes,7.35e3
-Passenger Cars,Diesel,Euro 6 up to 2016,IDI,PM Brakes,7.35e3
-Passenger Cars,Diesel,Euro 6 2017-2019,DI,PM Brakes,7.35e3
-Passenger Cars,Diesel,Euro 6 2017-2019,IDI,PM Brakes,7.35e3
-Passenger Cars,Diesel,Euro 6 2020+,DI,PM Brakes,7.35e3
-Passenger Cars,Diesel,Euro 6 2020+,IDI,PM Brakes,7.35e3
-# Diesel Light Commercial Vehicles
-Light Commercial Vehicles,Diesel,Conventional,DI,PM Brakes,11.47e3
-Light Commercial Vehicles,Diesel,Conventional,IDI,PM Brakes,11.47e3
-Light Commercial Vehicles,Diesel,Euro 1,DI,PM Brakes,11.47e3
-Light Commercial Vehicles,Diesel,Euro 1,IDI,PM Brakes,11.47e3
-Light Commercial Vehicles,Diesel,Euro 2,DI,PM Brakes,11.47e3
-Light Commercial Vehicles,Diesel,Euro 2,IDI,PM Brakes,11.47e3
-Light Commercial Vehicles,Diesel,Euro 3,DI,PM Brakes,11.47e3
-Light Commercial Vehicles,Diesel,Euro 3,IDI,PM Brakes,11.47e3
-Light Commercial Vehicles,Diesel,Euro 4,DI,PM Brakes,11.47e3
-Light Commercial Vehicles,Diesel,Euro 4,IDI,PM Brakes,11.47e3
-Light Commercial Vehicles,Diesel,Euro 5,DI,PM Brakes,11.47e3
-Light Commercial Vehicles,Diesel,Euro 5,IDI,PM Brakes,11.47e3
-Light Commercial Vehicles,Diesel,Euro 6 up to 2016,DI,PM Brakes,11.47e3
-Light Commercial Vehicles,Diesel,Euro 6 up to 2016,IDI,PM Brakes,11.47e3
-Light Commercial Vehicles,Diesel,Euro 6 2017-2019,DI,PM Brakes,11.47e3
-Light Commercial Vehicles,Diesel,Euro 6 2017-2019,IDI,PM Brakes,11.47e3
-Light Commercial Vehicles,Diesel,Euro 6 2020+,DI,PM Brakes,11.47e3
-Light Commercial Vehicles,Diesel,Euro 6 2020+,IDI,PM Brakes,11.47e3
+# Petrol, L-Category
+L-Category,Petrol,NA,Conventional,NA,PM Brakes,3.63e3
+L-Category,Petrol,NA,Euro 1,NA,PM Brakes,3.63e3
+L-Category,Petrol,NA,Euro 2,NA,PM Brakes,3.63e3
+L-Category,Petrol,NA,Euro 3,NA,PM Brakes,3.63e3
+L-Category,Petrol,NA,Euro 4,NA,PM Brakes,3.63e3
+L-Category,Petrol,NA,Euro 5,NA,PM Brakes,3.63e3
+# Petrol, passenger cars
+Passenger Cars,Petrol,NA,Conventional,NA,PM Brakes,7.35e3
+Passenger Cars,Petrol,NA,Euro 1,NA,PM Brakes,7.35e3
+Passenger Cars,Petrol,NA,Euro 2,NA,PM Brakes,7.35e3
+Passenger Cars,Petrol,NA,Euro 3,NA,PM Brakes,7.35e3
+Passenger Cars,Petrol,NA,Euro 4,NA,PM Brakes,7.35e3
+Passenger Cars,Petrol,NA,Euro 5,NA,PM Brakes,7.35e3
+Passenger Cars,Petrol,NA,Euro 6 up to 2016,NA,PM Brakes,7.35e3
+Passenger Cars,Petrol,NA,Euro 6 2017-2019,NA,PM Brakes,7.35e3
+Passenger Cars,Petrol,NA,Euro 6 2020+,NA,PM Brakes,7.35e3
+# Petrol, Light Commercial Vehicles
+Light Commercial Vehicles,Petrol,NA,Conventional,NA,PM Brakes,11.47e3
+Light Commercial Vehicles,Petrol,NA,Euro 1,NA,PM Brakes,11.47e3
+Light Commercial Vehicles,Petrol,NA,Euro 2,NA,PM Brakes,11.47e3
+Light Commercial Vehicles,Petrol,NA,Euro 3,NA,PM Brakes,11.47e3
+Light Commercial Vehicles,Petrol,NA,Euro 4,NA,PM Brakes,11.47e3
+Light Commercial Vehicles,Petrol,NA,Euro 5,NA,PM Brakes,11.47e3
+Light Commercial Vehicles,Petrol,NA,Euro 6 up to 2016,NA,PM Brakes,11.47e3
+Light Commercial Vehicles,Petrol,NA,Euro 6 2017-2019,NA,PM Brakes,11.47e3
+Light Commercial Vehicles,Petrol,NA,Euro 6 2020+,NA,PM Brakes,11.47e3
+# Diesel, L-Category
+L-Category,Diesel,NA,Conventional,DI,PM Brakes,3.63e3
+L-Category,Diesel,NA,Conventional,IDI,PM Brakes,3.63e3
+L-Category,Diesel,NA,Euro 2,DI,PM Brakes,3.63e3
+L-Category,Diesel,NA,Euro 2,IDI,PM Brakes,3.63e3
+L-Category,Diesel,NA,Euro 1,DI,PM Brakes,3.63e3
+L-Category,Diesel,NA,Euro 1,IDI,PM Brakes,3.63e3
+L-Category,Diesel,NA,Euro 3,DI,PM Brakes,3.63e3
+L-Category,Diesel,NA,Euro 3,IDI,PM Brakes,3.63e3
+L-Category,Diesel,NA,Euro 4,DI,PM Brakes,3.63e3
+L-Category,Diesel,NA,Euro 4,IDI,PM Brakes,3.63e3
+L-Category,Diesel,NA,Euro 5,DI,PM Brakes,3.63e3
+L-Category,Diesel,NA,Euro 5,IDI,PM Brakes,3.63e3
+# Diesel, Passenger Cars
+Passenger Cars,Diesel,NA,Conventional,DI,PM Brakes,7.35e3
+Passenger Cars,Diesel,NA,Conventional,IDI,PM Brakes,7.35e3
+Passenger Cars,Diesel,NA,Euro 1,DI,PM Brakes,7.35e3
+Passenger Cars,Diesel,NA,Euro 1,IDI,PM Brakes,7.35e3
+Passenger Cars,Diesel,NA,Euro 2,DI,PM Brakes,7.35e3
+Passenger Cars,Diesel,NA,Euro 2,IDI,PM Brakes,7.35e3
+Passenger Cars,Diesel,NA,Euro 3,DI,PM Brakes,7.35e3
+Passenger Cars,Diesel,NA,Euro 3,IDI,PM Brakes,7.35e3
+Passenger Cars,Diesel,NA,Euro 4,DI,PM Brakes,7.35e3
+Passenger Cars,Diesel,NA,Euro 4,IDI,PM Brakes,7.35e3
+Passenger Cars,Diesel,NA,Euro 5,DI,PM Brakes,7.35e3
+Passenger Cars,Diesel,NA,Euro 5,IDI,PM Brakes,7.35e3
+Passenger Cars,Diesel,NA,Euro 6 up to 2016,DI,PM Brakes,7.35e3
+Passenger Cars,Diesel,NA,Euro 6 up to 2016,IDI,PM Brakes,7.35e3
+Passenger Cars,Diesel,NA,Euro 6 2017-2019,DI,PM Brakes,7.35e3
+Passenger Cars,Diesel,NA,Euro 6 2017-2019,IDI,PM Brakes,7.35e3
+Passenger Cars,Diesel,NA,Euro 6 2020+,DI,PM Brakes,7.35e3
+Passenger Cars,Diesel,NA,Euro 6 2020+,IDI,PM Brakes,7.35e3
+# Diesel, Light Commercial Vehicles
+Light Commercial Vehicles,Diesel,NA,Conventional,DI,PM Brakes,11.47e3
+Light Commercial Vehicles,Diesel,NA,Conventional,IDI,PM Brakes,11.47e3
+Light Commercial Vehicles,Diesel,NA,Euro 1,DI,PM Brakes,11.47e3
+Light Commercial Vehicles,Diesel,NA,Euro 1,IDI,PM Brakes,11.47e3
+Light Commercial Vehicles,Diesel,NA,Euro 2,DI,PM Brakes,11.47e3
+Light Commercial Vehicles,Diesel,NA,Euro 2,IDI,PM Brakes,11.47e3
+Light Commercial Vehicles,Diesel,NA,Euro 3,DI,PM Brakes,11.47e3
+Light Commercial Vehicles,Diesel,NA,Euro 3,IDI,PM Brakes,11.47e3
+Light Commercial Vehicles,Diesel,NA,Euro 4,DI,PM Brakes,11.47e3
+Light Commercial Vehicles,Diesel,NA,Euro 4,IDI,PM Brakes,11.47e3
+Light Commercial Vehicles,Diesel,NA,Euro 5,DI,PM Brakes,11.47e3
+Light Commercial Vehicles,Diesel,NA,Euro 5,IDI,PM Brakes,11.47e3
+Light Commercial Vehicles,Diesel,NA,Euro 6 up to 2016,DI,PM Brakes,11.47e3
+Light Commercial Vehicles,Diesel,NA,Euro 6 up to 2016,IDI,PM Brakes,11.47e3
+Light Commercial Vehicles,Diesel,NA,Euro 6 2017-2019,DI,PM Brakes,11.47e3
+Light Commercial Vehicles,Diesel,NA,Euro 6 2017-2019,IDI,PM Brakes,11.47e3
+Light Commercial Vehicles,Diesel,NA,Euro 6 2020+,DI,PM Brakes,11.47e3
+Light Commercial Vehicles,Diesel,NA,Euro 6 2020+,IDI,PM Brakes,11.47e3
 # Heavy Duty Trucks
-Heavy Duty Trucks,Diesel,Conventional,DI,PM Brakes,32.09e3
-Heavy Duty Trucks,Diesel,Euro I,DI,PM Brakes,32.09e3
-Heavy Duty Trucks,Diesel,Euro II,DI,PM Brakes,32.09e3
-Heavy Duty Trucks,Diesel,Euro III,DI,PM Brakes,32.09e3
-Heavy Duty Trucks,Diesel,Euro IV,DI,PM Brakes,32.09e3
-Heavy Duty Trucks,Diesel,Euro V,DI,PM Brakes,32.09e3
-Heavy Duty Trucks,Diesel,Euro VI,DI,PM Brakes,32.09e3
+Heavy Duty Trucks,Diesel,NA,Conventional,DI,PM Brakes,32.09e3
+Heavy Duty Trucks,Diesel,NA,Euro I,DI,PM Brakes,32.09e3
+Heavy Duty Trucks,Diesel,NA,Euro II,DI,PM Brakes,32.09e3
+Heavy Duty Trucks,Diesel,NA,Euro III,DI,PM Brakes,32.09e3
+Heavy Duty Trucks,Diesel,NA,Euro IV,DI,PM Brakes,32.09e3
+Heavy Duty Trucks,Diesel,NA,Euro V,DI,PM Brakes,32.09e3
+Heavy Duty Trucks,Diesel,NA,Euro VI,DI,PM Brakes,32.09e3
 # Buses
-Buses,Diesel,Conventional,DI,PM Brakes,32.09e3
-Buses,Diesel,Euro I,DI,PM Brakes,32.09e3
-Buses,Diesel,Euro II,DI,PM Brakes,32.09e3
-Buses,Diesel,Euro III,DI,PM Brakes,32.09e3
-Buses,Diesel,Euro IV,DI,PM Brakes,32.09e3
-Buses,Diesel,Euro V,DI,PM Brakes,32.09e3
-Buses,Diesel,Euro VI,DI,PM Brakes,32.09e3
+Buses,Diesel,NA,Conventional,DI,PM Brakes,32.09e3
+Buses,Diesel,NA,Euro I,DI,PM Brakes,32.09e3
+Buses,Diesel,NA,Euro II,DI,PM Brakes,32.09e3
+Buses,Diesel,NA,Euro III,DI,PM Brakes,32.09e3
+Buses,Diesel,NA,Euro IV,DI,PM Brakes,32.09e3
+Buses,Diesel,NA,Euro V,DI,PM Brakes,32.09e3
+Buses,Diesel,NA,Euro VI,DI,PM Brakes,32.09e3
 ############################################################################
 ### PM Road paved
-# Petrol L-Category
-L-Category,Petrol,Conventional,,PM Road paved,3.0e3
-L-Category,Petrol,Euro 1,,PM Road paved,3.0e3
-L-Category,Petrol,Euro 2,,PM Road paved,3.0e3
-L-Category,Petrol,Euro 3,,PM Road paved,3.0e3
-L-Category,Petrol,Euro 4,,PM Road paved,3.0e3
-L-Category,Petrol,Euro 5,,PM Road paved,3.0e3
-# Petrol passenger cars
-Passenger Cars,Petrol,Conventional,,PM Road paved,7.5e3
-Passenger Cars,Petrol,Euro 1,,PM Road paved,7.5e3
-Passenger Cars,Petrol,Euro 2,,PM Road paved,7.5e3
-Passenger Cars,Petrol,Euro 3,,PM Road paved,7.5e3
-Passenger Cars,Petrol,Euro 4,,PM Road paved,7.5e3
-Passenger Cars,Petrol,Euro 5,,PM Road paved,7.5e3
-Passenger Cars,Petrol,Euro 6 up to 2016,,PM Road paved,7.5e3
-Passenger Cars,Petrol,Euro 6 2017-2019,,PM Road paved,7.5e3
-Passenger Cars,Petrol,Euro 6 2020+,,PM Road paved,7.5e3
-# Petrol Light Commercial Vehicles
-Light Commercial Vehicles,Petrol,Conventional,,PM Road paved,7.5e3
-Light Commercial Vehicles,Petrol,Euro 1,,PM Road paved,7.5e3
-Light Commercial Vehicles,Petrol,Euro 2,,PM Road paved,7.5e3
-Light Commercial Vehicles,Petrol,Euro 3,,PM Road paved,7.5e3
-Light Commercial Vehicles,Petrol,Euro 4,,PM Road paved,7.5e3
-Light Commercial Vehicles,Petrol,Euro 5,,PM Road paved,7.5e3
-Light Commercial Vehicles,Petrol,Euro 6 up to 2016,,PM Road paved,7.5e3
-Light Commercial Vehicles,Petrol,Euro 6 2017-2019,,PM Road paved,7.5e3
-Light Commercial Vehicles,Petrol,Euro 6 2020+,,PM Road paved,7.5e3
-# Diesel L-Category
-L-Category,Diesel,Conventional,DI,PM Road paved,3.0e3
-L-Category,Diesel,Conventional,IDI,PM Road paved,3.0e3
-L-Category,Diesel,Euro 2,DI,PM Road paved,3.0e3
-L-Category,Diesel,Euro 2,IDI,PM Road paved,3.0e3
-L-Category,Diesel,Euro 1,DI,PM Road paved,3.0e3
-L-Category,Diesel,Euro 1,IDI,PM Road paved,3.0e3
-L-Category,Diesel,Euro 3,DI,PM Road paved,3.0e3
-L-Category,Diesel,Euro 3,IDI,PM Road paved,3.0e3
-L-Category,Diesel,Euro 4,DI,PM Road paved,3.0e3
-L-Category,Diesel,Euro 4,IDI,PM Road paved,3.0e3
-L-Category,Diesel,Euro 5,DI,PM Road paved,3.0e3
-L-Category,Diesel,Euro 5,IDI,PM Road paved,3.0e3
-# Diesel Passenger Cars
-Passenger Cars,Diesel,Conventional,DI,PM Road paved,7.5e3
-Passenger Cars,Diesel,Conventional,IDI,PM Road paved,7.5e3
-Passenger Cars,Diesel,Euro 1,DI,PM Road paved,7.5e3
-Passenger Cars,Diesel,Euro 1,IDI,PM Road paved,7.5e3
-Passenger Cars,Diesel,Euro 2,DI,PM Road paved,7.5e3
-Passenger Cars,Diesel,Euro 2,IDI,PM Road paved,7.5e3
-Passenger Cars,Diesel,Euro 3,DI,PM Road paved,7.5e3
-Passenger Cars,Diesel,Euro 3,IDI,PM Road paved,7.5e3
-Passenger Cars,Diesel,Euro 4,DI,PM Road paved,7.5e3
-Passenger Cars,Diesel,Euro 4,IDI,PM Road paved,7.5e3
-Passenger Cars,Diesel,Euro 5,DI,PM Road paved,7.5e3
-Passenger Cars,Diesel,Euro 5,IDI,PM Road paved,7.5e3
-Passenger Cars,Diesel,Euro 6 up to 2016,DI,PM Road paved,7.5e3
-Passenger Cars,Diesel,Euro 6 up to 2016,IDI,PM Road paved,7.5e3
-Passenger Cars,Diesel,Euro 6 2017-2019,DI,PM Road paved,7.5e3
-Passenger Cars,Diesel,Euro 6 2017-2019,IDI,PM Road paved,7.5e3
-Passenger Cars,Diesel,Euro 6 2020+,DI,PM Road paved,7.5e3
-Passenger Cars,Diesel,Euro 6 2020+,IDI,PM Road paved,7.5e3
-# Diesel Light Commercial Vehicles
-Light Commercial Vehicles,Diesel,Conventional,DI,PM Road paved,7.5e3
-Light Commercial Vehicles,Diesel,Conventional,IDI,PM Road paved,7.5e3
-Light Commercial Vehicles,Diesel,Euro 1,DI,PM Road paved,7.5e3
-Light Commercial Vehicles,Diesel,Euro 1,IDI,PM Road paved,7.5e3
-Light Commercial Vehicles,Diesel,Euro 2,DI,PM Road paved,7.5e3
-Light Commercial Vehicles,Diesel,Euro 2,IDI,PM Road paved,7.5e3
-Light Commercial Vehicles,Diesel,Euro 3,DI,PM Road paved,7.5e3
-Light Commercial Vehicles,Diesel,Euro 3,IDI,PM Road paved,7.5e3
-Light Commercial Vehicles,Diesel,Euro 4,DI,PM Road paved,7.5e3
-Light Commercial Vehicles,Diesel,Euro 4,IDI,PM Road paved,7.5e3
-Light Commercial Vehicles,Diesel,Euro 5,DI,PM Road paved,7.5e3
-Light Commercial Vehicles,Diesel,Euro 5,IDI,PM Road paved,7.5e3
-Light Commercial Vehicles,Diesel,Euro 6 up to 2016,DI,PM Road paved,7.5e3
-Light Commercial Vehicles,Diesel,Euro 6 up to 2016,IDI,PM Road paved,7.5e3
-Light Commercial Vehicles,Diesel,Euro 6 2017-2019,DI,PM Road paved,7.5e3
-Light Commercial Vehicles,Diesel,Euro 6 2017-2019,IDI,PM Road paved,7.5e3
-Light Commercial Vehicles,Diesel,Euro 6 2020+,DI,PM Road paved,7.5e3
-Light Commercial Vehicles,Diesel,Euro 6 2020+,IDI,PM Road paved,7.5e3
+# Petrol, L-Category
+L-Category,Petrol,NA,Conventional,NA,PM Road paved,3.0e3
+L-Category,Petrol,NA,Euro 1,NA,PM Road paved,3.0e3
+L-Category,Petrol,NA,Euro 2,NA,PM Road paved,3.0e3
+L-Category,Petrol,NA,Euro 3,NA,PM Road paved,3.0e3
+L-Category,Petrol,NA,Euro 4,NA,PM Road paved,3.0e3
+L-Category,Petrol,NA,Euro 5,NA,PM Road paved,3.0e3
+# Petrol, passenger cars
+Passenger Cars,Petrol,NA,Conventional,NA,PM Road paved,7.5e3
+Passenger Cars,Petrol,NA,Euro 1,NA,PM Road paved,7.5e3
+Passenger Cars,Petrol,NA,Euro 2,NA,PM Road paved,7.5e3
+Passenger Cars,Petrol,NA,Euro 3,NA,PM Road paved,7.5e3
+Passenger Cars,Petrol,NA,Euro 4,NA,PM Road paved,7.5e3
+Passenger Cars,Petrol,NA,Euro 5,NA,PM Road paved,7.5e3
+Passenger Cars,Petrol,NA,Euro 6 up to 2016,NA,PM Road paved,7.5e3
+Passenger Cars,Petrol,NA,Euro 6 2017-2019,NA,PM Road paved,7.5e3
+Passenger Cars,Petrol,NA,Euro 6 2020+,NA,PM Road paved,7.5e3
+# Petrol, Light Commercial Vehicles
+Light Commercial Vehicles,Petrol,NA,Conventional,NA,PM Road paved,7.5e3
+Light Commercial Vehicles,Petrol,NA,Euro 1,NA,PM Road paved,7.5e3
+Light Commercial Vehicles,Petrol,NA,Euro 2,NA,PM Road paved,7.5e3
+Light Commercial Vehicles,Petrol,NA,Euro 3,NA,PM Road paved,7.5e3
+Light Commercial Vehicles,Petrol,NA,Euro 4,NA,PM Road paved,7.5e3
+Light Commercial Vehicles,Petrol,NA,Euro 5,NA,PM Road paved,7.5e3
+Light Commercial Vehicles,Petrol,NA,Euro 6 up to 2016,NA,PM Road paved,7.5e3
+Light Commercial Vehicles,Petrol,NA,Euro 6 2017-2019,NA,PM Road paved,7.5e3
+Light Commercial Vehicles,Petrol,NA,Euro 6 2020+,NA,PM Road paved,7.5e3
+# Diesel, L-Category
+L-Category,Diesel,NA,Conventional,DI,PM Road paved,3.0e3
+L-Category,Diesel,NA,Conventional,IDI,PM Road paved,3.0e3
+L-Category,Diesel,NA,Euro 2,DI,PM Road paved,3.0e3
+L-Category,Diesel,NA,Euro 2,IDI,PM Road paved,3.0e3
+L-Category,Diesel,NA,Euro 1,DI,PM Road paved,3.0e3
+L-Category,Diesel,NA,Euro 1,IDI,PM Road paved,3.0e3
+L-Category,Diesel,NA,Euro 3,DI,PM Road paved,3.0e3
+L-Category,Diesel,NA,Euro 3,IDI,PM Road paved,3.0e3
+L-Category,Diesel,NA,Euro 4,DI,PM Road paved,3.0e3
+L-Category,Diesel,NA,Euro 4,IDI,PM Road paved,3.0e3
+L-Category,Diesel,NA,Euro 5,DI,PM Road paved,3.0e3
+L-Category,Diesel,NA,Euro 5,IDI,PM Road paved,3.0e3
+# Diesel, Passenger Cars
+Passenger Cars,Diesel,NA,Conventional,DI,PM Road paved,7.5e3
+Passenger Cars,Diesel,NA,Conventional,IDI,PM Road paved,7.5e3
+Passenger Cars,Diesel,NA,Euro 1,DI,PM Road paved,7.5e3
+Passenger Cars,Diesel,NA,Euro 1,IDI,PM Road paved,7.5e3
+Passenger Cars,Diesel,NA,Euro 2,DI,PM Road paved,7.5e3
+Passenger Cars,Diesel,NA,Euro 2,IDI,PM Road paved,7.5e3
+Passenger Cars,Diesel,NA,Euro 3,DI,PM Road paved,7.5e3
+Passenger Cars,Diesel,NA,Euro 3,IDI,PM Road paved,7.5e3
+Passenger Cars,Diesel,NA,Euro 4,DI,PM Road paved,7.5e3
+Passenger Cars,Diesel,NA,Euro 4,IDI,PM Road paved,7.5e3
+Passenger Cars,Diesel,NA,Euro 5,DI,PM Road paved,7.5e3
+Passenger Cars,Diesel,NA,Euro 5,IDI,PM Road paved,7.5e3
+Passenger Cars,Diesel,NA,Euro 6 up to 2016,DI,PM Road paved,7.5e3
+Passenger Cars,Diesel,NA,Euro 6 up to 2016,IDI,PM Road paved,7.5e3
+Passenger Cars,Diesel,NA,Euro 6 2017-2019,DI,PM Road paved,7.5e3
+Passenger Cars,Diesel,NA,Euro 6 2017-2019,IDI,PM Road paved,7.5e3
+Passenger Cars,Diesel,NA,Euro 6 2020+,DI,PM Road paved,7.5e3
+Passenger Cars,Diesel,NA,Euro 6 2020+,IDI,PM Road paved,7.5e3
+# Diesel, Light Commercial Vehicles
+Light Commercial Vehicles,Diesel,NA,Conventional,DI,PM Road paved,7.5e3
+Light Commercial Vehicles,Diesel,NA,Conventional,IDI,PM Road paved,7.5e3
+Light Commercial Vehicles,Diesel,NA,Euro 1,DI,PM Road paved,7.5e3
+Light Commercial Vehicles,Diesel,NA,Euro 1,IDI,PM Road paved,7.5e3
+Light Commercial Vehicles,Diesel,NA,Euro 2,DI,PM Road paved,7.5e3
+Light Commercial Vehicles,Diesel,NA,Euro 2,IDI,PM Road paved,7.5e3
+Light Commercial Vehicles,Diesel,NA,Euro 3,DI,PM Road paved,7.5e3
+Light Commercial Vehicles,Diesel,NA,Euro 3,IDI,PM Road paved,7.5e3
+Light Commercial Vehicles,Diesel,NA,Euro 4,DI,PM Road paved,7.5e3
+Light Commercial Vehicles,Diesel,NA,Euro 4,IDI,PM Road paved,7.5e3
+Light Commercial Vehicles,Diesel,NA,Euro 5,DI,PM Road paved,7.5e3
+Light Commercial Vehicles,Diesel,NA,Euro 5,IDI,PM Road paved,7.5e3
+Light Commercial Vehicles,Diesel,NA,Euro 6 up to 2016,DI,PM Road paved,7.5e3
+Light Commercial Vehicles,Diesel,NA,Euro 6 up to 2016,IDI,PM Road paved,7.5e3
+Light Commercial Vehicles,Diesel,NA,Euro 6 2017-2019,DI,PM Road paved,7.5e3
+Light Commercial Vehicles,Diesel,NA,Euro 6 2017-2019,IDI,PM Road paved,7.5e3
+Light Commercial Vehicles,Diesel,NA,Euro 6 2020+,DI,PM Road paved,7.5e3
+Light Commercial Vehicles,Diesel,NA,Euro 6 2020+,IDI,PM Road paved,7.5e3
 # Heavy Duty Trucks
-Heavy Duty Trucks,Diesel,Conventional,DI,PM Road paved,38.0e3
-Heavy Duty Trucks,Diesel,Euro I,DI,PM Road paved,38.0e3
-Heavy Duty Trucks,Diesel,Euro II,DI,PM Road paved,38.0e3
-Heavy Duty Trucks,Diesel,Euro III,DI,PM Road paved,38.0e3
-Heavy Duty Trucks,Diesel,Euro IV,DI,PM Road paved,38.0e3
-Heavy Duty Trucks,Diesel,Euro V,DI,PM Road paved,38.0e3
-Heavy Duty Trucks,Diesel,Euro VI,DI,PM Road paved,38.0e3
+Heavy Duty Trucks,Diesel,NA,Conventional,DI,PM Road paved,38.0e3
+Heavy Duty Trucks,Diesel,NA,Euro I,DI,PM Road paved,38.0e3
+Heavy Duty Trucks,Diesel,NA,Euro II,DI,PM Road paved,38.0e3
+Heavy Duty Trucks,Diesel,NA,Euro III,DI,PM Road paved,38.0e3
+Heavy Duty Trucks,Diesel,NA,Euro IV,DI,PM Road paved,38.0e3
+Heavy Duty Trucks,Diesel,NA,Euro V,DI,PM Road paved,38.0e3
+Heavy Duty Trucks,Diesel,NA,Euro VI,DI,PM Road paved,38.0e3
 # Buses
-Buses,Diesel,Conventional,DI,PM Road paved,38.0e3
-Buses,Diesel,Euro I,DI,PM Road paved,38.0e3
-Buses,Diesel,Euro II,DI,PM Road paved,38.0e3
-Buses,Diesel,Euro III,DI,PM Road paved,38.0e3
-Buses,Diesel,Euro IV,DI,PM Road paved,38.0e3
-Buses,Diesel,Euro V,DI,PM Road paved,38.0e3
-Buses,Diesel,Euro VI,DI,PM Road paved,38.0e3
+Buses,Diesel,NA,Conventional,DI,PM Road paved,38.0e3
+Buses,Diesel,NA,Euro I,DI,PM Road paved,38.0e3
+Buses,Diesel,NA,Euro II,DI,PM Road paved,38.0e3
+Buses,Diesel,NA,Euro III,DI,PM Road paved,38.0e3
+Buses,Diesel,NA,Euro IV,DI,PM Road paved,38.0e3
+Buses,Diesel,NA,Euro V,DI,PM Road paved,38.0e3
+Buses,Diesel,NA,Euro VI,DI,PM Road paved,38.0e3
 ############################################################################
 ### PM Tyres
-# Petrol L-Category
-L-Category,Petrol,Conventional,,PM Tyres,2.76e3
-L-Category,Petrol,Euro 1,,PM Tyres,2.76e3
-L-Category,Petrol,Euro 2,,PM Tyres,2.76e3
-L-Category,Petrol,Euro 3,,PM Tyres,2.76e3
-L-Category,Petrol,Euro 4,,PM Tyres,2.76e3
-L-Category,Petrol,Euro 5,,PM Tyres,2.76e3
-# Petrol passenger cars
-Passenger Cars,Petrol,Conventional,,PM Tyres,6.42e3
-Passenger Cars,Petrol,Euro 1,,PM Tyres,6.42e3
-Passenger Cars,Petrol,Euro 2,,PM Tyres,6.42e3
-Passenger Cars,Petrol,Euro 3,,PM Tyres,6.42e3
-Passenger Cars,Petrol,Euro 4,,PM Tyres,6.42e3
-Passenger Cars,Petrol,Euro 5,,PM Tyres,6.42e3
-Passenger Cars,Petrol,Euro 6 up to 2016,,PM Tyres,6.42e3
-Passenger Cars,Petrol,Euro 6 2017-2019,,PM Tyres,6.42e3
-Passenger Cars,Petrol,Euro 6 2020+,,PM Tyres,6.42e3
-# Petrol Light Commercial Vehicles
-Light Commercial Vehicles,Petrol,Conventional,,PM Tyres,10.14e3
-Light Commercial Vehicles,Petrol,Euro 1,,PM Tyres,10.14e3
-Light Commercial Vehicles,Petrol,Euro 2,,PM Tyres,10.14e3
-Light Commercial Vehicles,Petrol,Euro 3,,PM Tyres,10.14e3
-Light Commercial Vehicles,Petrol,Euro 4,,PM Tyres,10.14e3
-Light Commercial Vehicles,Petrol,Euro 5,,PM Tyres,10.14e3
-Light Commercial Vehicles,Petrol,Euro 6 up to 2016,,PM Tyres,10.14e3
-Light Commercial Vehicles,Petrol,Euro 6 2017-2019,,PM Tyres,10.14e3
-Light Commercial Vehicles,Petrol,Euro 6 2020+,,PM Tyres,10.14e3
-# Diesel L-Category
-L-Category,Diesel,Conventional,DI,PM Tyres,2.76e3
-L-Category,Diesel,Conventional,IDI,PM Tyres,2.76e3
-L-Category,Diesel,Euro 2,DI,PM Tyres,2.76e3
-L-Category,Diesel,Euro 2,IDI,PM Tyres,2.76e3
-L-Category,Diesel,Euro 1,DI,PM Tyres,2.76e3
-L-Category,Diesel,Euro 1,IDI,PM Tyres,2.76e3
-L-Category,Diesel,Euro 3,DI,PM Tyres,2.76e3
-L-Category,Diesel,Euro 3,IDI,PM Tyres,2.76e3
-L-Category,Diesel,Euro 4,DI,PM Tyres,2.76e3
-L-Category,Diesel,Euro 4,IDI,PM Tyres,2.76e3
-L-Category,Diesel,Euro 5,DI,PM Tyres,2.76e3
-L-Category,Diesel,Euro 5,IDI,PM Tyres,2.76e3
-# Diesel Passenger Cars
-Passenger Cars,Diesel,Conventional,DI,PM Tyres,6.42e3
-Passenger Cars,Diesel,Conventional,IDI,PM Tyres,6.42e3
-Passenger Cars,Diesel,Euro 1,DI,PM Tyres,6.42e3
-Passenger Cars,Diesel,Euro 1,IDI,PM Tyres,6.42e3
-Passenger Cars,Diesel,Euro 2,DI,PM Tyres,6.42e3
-Passenger Cars,Diesel,Euro 2,IDI,PM Tyres,6.42e3
-Passenger Cars,Diesel,Euro 3,DI,PM Tyres,6.42e3
-Passenger Cars,Diesel,Euro 3,IDI,PM Tyres,6.42e3
-Passenger Cars,Diesel,Euro 4,DI,PM Tyres,6.42e3
-Passenger Cars,Diesel,Euro 4,IDI,PM Tyres,6.42e3
-Passenger Cars,Diesel,Euro 5,DI,PM Tyres,6.42e3
-Passenger Cars,Diesel,Euro 5,IDI,PM Tyres,6.42e3
-Passenger Cars,Diesel,Euro 6 up to 2016,DI,PM Tyres,6.42e3
-Passenger Cars,Diesel,Euro 6 up to 2016,IDI,PM Tyres,6.42e3
-Passenger Cars,Diesel,Euro 6 2017-2019,DI,PM Tyres,6.42e3
-Passenger Cars,Diesel,Euro 6 2017-2019,IDI,PM Tyres,6.42e3
-Passenger Cars,Diesel,Euro 6 2020+,DI,PM Tyres,6.42e3
-Passenger Cars,Diesel,Euro 6 2020+,IDI,PM Tyres,6.42e3
-# Diesel Light Commercial Vehicles
-Light Commercial Vehicles,Diesel,Conventional,DI,PM Tyres,10.14e3
-Light Commercial Vehicles,Diesel,Conventional,IDI,PM Tyres,10.14e3
-Light Commercial Vehicles,Diesel,Euro 1,DI,PM Tyres,10.14e3
-Light Commercial Vehicles,Diesel,Euro 1,IDI,PM Tyres,10.14e3
-Light Commercial Vehicles,Diesel,Euro 2,DI,PM Tyres,10.14e3
-Light Commercial Vehicles,Diesel,Euro 2,IDI,PM Tyres,10.14e3
-Light Commercial Vehicles,Diesel,Euro 3,DI,PM Tyres,10.14e3
-Light Commercial Vehicles,Diesel,Euro 3,IDI,PM Tyres,10.14e3
-Light Commercial Vehicles,Diesel,Euro 4,DI,PM Tyres,10.14e3
-Light Commercial Vehicles,Diesel,Euro 4,IDI,PM Tyres,10.14e3
-Light Commercial Vehicles,Diesel,Euro 5,DI,PM Tyres,10.14e3
-Light Commercial Vehicles,Diesel,Euro 5,IDI,PM Tyres,10.14e3
-Light Commercial Vehicles,Diesel,Euro 6 up to 2016,DI,PM Tyres,10.14e3
-Light Commercial Vehicles,Diesel,Euro 6 up to 2016,IDI,PM Tyres,10.14e3
-Light Commercial Vehicles,Diesel,Euro 6 2017-2019,DI,PM Tyres,10.14e3
-Light Commercial Vehicles,Diesel,Euro 6 2017-2019,IDI,PM Tyres,10.14e3
-Light Commercial Vehicles,Diesel,Euro 6 2020+,DI,PM Tyres,10.14e3
-Light Commercial Vehicles,Diesel,Euro 6 2020+,IDI,PM Tyres,10.14e3
+# Petrol, L-Category
+L-Category,Petrol,NA,Conventional,NA,PM Tyres,2.76e3
+L-Category,Petrol,NA,Euro 1,NA,PM Tyres,2.76e3
+L-Category,Petrol,NA,Euro 2,NA,PM Tyres,2.76e3
+L-Category,Petrol,NA,Euro 3,NA,PM Tyres,2.76e3
+L-Category,Petrol,NA,Euro 4,NA,PM Tyres,2.76e3
+L-Category,Petrol,NA,Euro 5,NA,PM Tyres,2.76e3
+# Petrol, passenger cars
+Passenger Cars,Petrol,NA,Conventional,NA,PM Tyres,6.42e3
+Passenger Cars,Petrol,NA,Euro 1,NA,PM Tyres,6.42e3
+Passenger Cars,Petrol,NA,Euro 2,NA,PM Tyres,6.42e3
+Passenger Cars,Petrol,NA,Euro 3,NA,PM Tyres,6.42e3
+Passenger Cars,Petrol,NA,Euro 4,NA,PM Tyres,6.42e3
+Passenger Cars,Petrol,NA,Euro 5,NA,PM Tyres,6.42e3
+Passenger Cars,Petrol,NA,Euro 6 up to 2016,NA,PM Tyres,6.42e3
+Passenger Cars,Petrol,NA,Euro 6 2017-2019,NA,PM Tyres,6.42e3
+Passenger Cars,Petrol,NA,Euro 6 2020+,NA,PM Tyres,6.42e3
+# Petrol, Light Commercial Vehicles
+Light Commercial Vehicles,Petrol,NA,Conventional,NA,PM Tyres,10.14e3
+Light Commercial Vehicles,Petrol,NA,Euro 1,NA,PM Tyres,10.14e3
+Light Commercial Vehicles,Petrol,NA,Euro 2,NA,PM Tyres,10.14e3
+Light Commercial Vehicles,Petrol,NA,Euro 3,NA,PM Tyres,10.14e3
+Light Commercial Vehicles,Petrol,NA,Euro 4,NA,PM Tyres,10.14e3
+Light Commercial Vehicles,Petrol,NA,Euro 5,NA,PM Tyres,10.14e3
+Light Commercial Vehicles,Petrol,NA,Euro 6 up to 2016,NA,PM Tyres,10.14e3
+Light Commercial Vehicles,Petrol,NA,Euro 6 2017-2019,NA,PM Tyres,10.14e3
+Light Commercial Vehicles,Petrol,NA,Euro 6 2020+,NA,PM Tyres,10.14e3
+# Diesel, L-Category
+L-Category,Diesel,NA,Conventional,DI,PM Tyres,2.76e3
+L-Category,Diesel,NA,Conventional,IDI,PM Tyres,2.76e3
+L-Category,Diesel,NA,Euro 2,DI,PM Tyres,2.76e3
+L-Category,Diesel,NA,Euro 2,IDI,PM Tyres,2.76e3
+L-Category,Diesel,NA,Euro 1,DI,PM Tyres,2.76e3
+L-Category,Diesel,NA,Euro 1,IDI,PM Tyres,2.76e3
+L-Category,Diesel,NA,Euro 3,DI,PM Tyres,2.76e3
+L-Category,Diesel,NA,Euro 3,IDI,PM Tyres,2.76e3
+L-Category,Diesel,NA,Euro 4,DI,PM Tyres,2.76e3
+L-Category,Diesel,NA,Euro 4,IDI,PM Tyres,2.76e3
+L-Category,Diesel,NA,Euro 5,DI,PM Tyres,2.76e3
+L-Category,Diesel,NA,Euro 5,IDI,PM Tyres,2.76e3
+# Diesel, Passenger Cars
+Passenger Cars,Diesel,NA,Conventional,DI,PM Tyres,6.42e3
+Passenger Cars,Diesel,NA,Conventional,IDI,PM Tyres,6.42e3
+Passenger Cars,Diesel,NA,Euro 1,DI,PM Tyres,6.42e3
+Passenger Cars,Diesel,NA,Euro 1,IDI,PM Tyres,6.42e3
+Passenger Cars,Diesel,NA,Euro 2,DI,PM Tyres,6.42e3
+Passenger Cars,Diesel,NA,Euro 2,IDI,PM Tyres,6.42e3
+Passenger Cars,Diesel,NA,Euro 3,DI,PM Tyres,6.42e3
+Passenger Cars,Diesel,NA,Euro 3,IDI,PM Tyres,6.42e3
+Passenger Cars,Diesel,NA,Euro 4,DI,PM Tyres,6.42e3
+Passenger Cars,Diesel,NA,Euro 4,IDI,PM Tyres,6.42e3
+Passenger Cars,Diesel,NA,Euro 5,DI,PM Tyres,6.42e3
+Passenger Cars,Diesel,NA,Euro 5,IDI,PM Tyres,6.42e3
+Passenger Cars,Diesel,NA,Euro 6 up to 2016,DI,PM Tyres,6.42e3
+Passenger Cars,Diesel,NA,Euro 6 up to 2016,IDI,PM Tyres,6.42e3
+Passenger Cars,Diesel,NA,Euro 6 2017-2019,DI,PM Tyres,6.42e3
+Passenger Cars,Diesel,NA,Euro 6 2017-2019,IDI,PM Tyres,6.42e3
+Passenger Cars,Diesel,NA,Euro 6 2020+,DI,PM Tyres,6.42e3
+Passenger Cars,Diesel,NA,Euro 6 2020+,IDI,PM Tyres,6.42e3
+# Diesel, Light Commercial Vehicles
+Light Commercial Vehicles,Diesel,NA,Conventional,DI,PM Tyres,10.14e3
+Light Commercial Vehicles,Diesel,NA,Conventional,IDI,PM Tyres,10.14e3
+Light Commercial Vehicles,Diesel,NA,Euro 1,DI,PM Tyres,10.14e3
+Light Commercial Vehicles,Diesel,NA,Euro 1,IDI,PM Tyres,10.14e3
+Light Commercial Vehicles,Diesel,NA,Euro 2,DI,PM Tyres,10.14e3
+Light Commercial Vehicles,Diesel,NA,Euro 2,IDI,PM Tyres,10.14e3
+Light Commercial Vehicles,Diesel,NA,Euro 3,DI,PM Tyres,10.14e3
+Light Commercial Vehicles,Diesel,NA,Euro 3,IDI,PM Tyres,10.14e3
+Light Commercial Vehicles,Diesel,NA,Euro 4,DI,PM Tyres,10.14e3
+Light Commercial Vehicles,Diesel,NA,Euro 4,IDI,PM Tyres,10.14e3
+Light Commercial Vehicles,Diesel,NA,Euro 5,DI,PM Tyres,10.14e3
+Light Commercial Vehicles,Diesel,NA,Euro 5,IDI,PM Tyres,10.14e3
+Light Commercial Vehicles,Diesel,NA,Euro 6 up to 2016,DI,PM Tyres,10.14e3
+Light Commercial Vehicles,Diesel,NA,Euro 6 up to 2016,IDI,PM Tyres,10.14e3
+Light Commercial Vehicles,Diesel,NA,Euro 6 2017-2019,DI,PM Tyres,10.14e3
+Light Commercial Vehicles,Diesel,NA,Euro 6 2017-2019,IDI,PM Tyres,10.14e3
+Light Commercial Vehicles,Diesel,NA,Euro 6 2020+,DI,PM Tyres,10.14e3
+Light Commercial Vehicles,Diesel,NA,Euro 6 2020+,IDI,PM Tyres,10.14e3
 # Heavy Duty Trucks
-Heavy Duty Trucks,Diesel,Conventional,DI,PM Tyres,26.964e3
-Heavy Duty Trucks,Diesel,Euro I,DI,PM Tyres,26.964e3
-Heavy Duty Trucks,Diesel,Euro II,DI,PM Tyres,26.964e3
-Heavy Duty Trucks,Diesel,Euro III,DI,PM Tyres,26.964e3
-Heavy Duty Trucks,Diesel,Euro IV,DI,PM Tyres,26.964e3
-Heavy Duty Trucks,Diesel,Euro V,DI,PM Tyres,26.964e3
-Heavy Duty Trucks,Diesel,Euro VI,DI,PM Tyres,26.964e3
+Heavy Duty Trucks,Diesel,NA,Conventional,DI,PM Tyres,26.964e3
+Heavy Duty Trucks,Diesel,NA,Euro I,DI,PM Tyres,26.964e3
+Heavy Duty Trucks,Diesel,NA,Euro II,DI,PM Tyres,26.964e3
+Heavy Duty Trucks,Diesel,NA,Euro III,DI,PM Tyres,26.964e3
+Heavy Duty Trucks,Diesel,NA,Euro IV,DI,PM Tyres,26.964e3
+Heavy Duty Trucks,Diesel,NA,Euro V,DI,PM Tyres,26.964e3
+Heavy Duty Trucks,Diesel,NA,Euro VI,DI,PM Tyres,26.964e3
 # Buses
-Buses,Diesel,Conventional,DI,PM Tyres,26.964e3
-Buses,Diesel,Euro I,DI,PM Tyres,26.964e3
-Buses,Diesel,Euro II,DI,PM Tyres,26.964e3
-Buses,Diesel,Euro III,DI,PM Tyres,26.964e3
-Buses,Diesel,Euro IV,DI,PM Tyres,26.964e3
-Buses,Diesel,Euro V,DI,PM Tyres,26.964e3
-Buses,Diesel,Euro VI,DI,PM Tyres,26.964e3
+Buses,Diesel,NA,Conventional,DI,PM Tyres,26.964e3
+Buses,Diesel,NA,Euro I,DI,PM Tyres,26.964e3
+Buses,Diesel,NA,Euro II,DI,PM Tyres,26.964e3
+Buses,Diesel,NA,Euro III,DI,PM Tyres,26.964e3
+Buses,Diesel,NA,Euro IV,DI,PM Tyres,26.964e3
+Buses,Diesel,NA,Euro V,DI,PM Tyres,26.964e3
+Buses,Diesel,NA,Euro VI,DI,PM Tyres,26.964e3
 ############################################################################
 ### CO2 lubricant
-# Petrol L-Category
-# only ATV are Petrol L-Category (Table 3-30, pg 52)
-L-Category,Petrol,Conventional,,CO2 lubricant,0.43e5
-L-Category,Petrol,Euro 1,,CO2 lubricant,0.43e5
-L-Category,Petrol,Euro 2,,CO2 lubricant,0.43e5
-L-Category,Petrol,Euro 3,,CO2 lubricant,0.43e5
-L-Category,Petrol,Euro 4,,CO2 lubricant,0.43e5
-L-Category,Petrol,Euro 5,,CO2 lubricant,0.43e5
-# Petrol passenger cars
+# Petrol, L-Category
+# only ATV are Petrol, L-Category (Table 3-30, pg 52)
+L-Category,Petrol,NA,Conventional,NA,CO2 lubricant,0.43e5
+L-Category,Petrol,NA,Euro 1,NA,CO2 lubricant,0.43e5
+L-Category,Petrol,NA,Euro 2,NA,CO2 lubricant,0.43e5
+L-Category,Petrol,NA,Euro 3,NA,CO2 lubricant,0.43e5
+L-Category,Petrol,NA,Euro 4,NA,CO2 lubricant,0.43e5
+L-Category,Petrol,NA,Euro 5,NA,CO2 lubricant,0.43e5
+# Petrol, passenger cars
 # old: <= Euro 4
 # new: >= Euro 5 (Table 3-30, pg 52)
-Passenger Cars,Petrol,Conventional,,CO2 lubricant,1.45e5
-Passenger Cars,Petrol,Euro 1,,CO2 lubricant,1.45e5
-Passenger Cars,Petrol,Euro 2,,CO2 lubricant,1.45e5
-Passenger Cars,Petrol,Euro 3,,CO2 lubricant,1.45e5
-Passenger Cars,Petrol,Euro 4,,CO2 lubricant,1.45e5
-Passenger Cars,Petrol,Euro 5,,CO2 lubricant,1.28e5
-Passenger Cars,Petrol,Euro 6 up to 2016,,CO2 lubricant,1.28e5
-Passenger Cars,Petrol,Euro 6 2017-2019,,CO2 lubricant,1.28e5
-Passenger Cars,Petrol,Euro 6 2020+,,CO2 lubricant,1.28e5
-# Petrol Light Commercial Vehicles
+Passenger Cars,Petrol,NA,Conventional,NA,CO2 lubricant,1.45e5
+Passenger Cars,Petrol,NA,Euro 1,NA,CO2 lubricant,1.45e5
+Passenger Cars,Petrol,NA,Euro 2,NA,CO2 lubricant,1.45e5
+Passenger Cars,Petrol,NA,Euro 3,NA,CO2 lubricant,1.45e5
+Passenger Cars,Petrol,NA,Euro 4,NA,CO2 lubricant,1.45e5
+Passenger Cars,Petrol,NA,Euro 5,NA,CO2 lubricant,1.28e5
+Passenger Cars,Petrol,NA,Euro 6 up to 2016,NA,CO2 lubricant,1.28e5
+Passenger Cars,Petrol,NA,Euro 6 2017-2019,NA,CO2 lubricant,1.28e5
+Passenger Cars,Petrol,NA,Euro 6 2020+,NA,CO2 lubricant,1.28e5
+# Petrol, Light Commercial Vehicles
 # old: <= Euro 4
 # new: >= Euro 5 (Table 3-30, pg 52)
-Light Commercial Vehicles,Petrol,Conventional,,CO2 lubricant,1.45e5
-Light Commercial Vehicles,Petrol,Euro 1,,CO2 lubricant,1.45e5
-Light Commercial Vehicles,Petrol,Euro 2,,CO2 lubricant,1.45e5
-Light Commercial Vehicles,Petrol,Euro 3,,CO2 lubricant,1.45e5
-Light Commercial Vehicles,Petrol,Euro 4,,CO2 lubricant,1.45e5
-Light Commercial Vehicles,Petrol,Euro 5,,CO2 lubricant,1.28e5
-Light Commercial Vehicles,Petrol,Euro 6 up to 2016,,CO2 lubricant,1.28e5
-Light Commercial Vehicles,Petrol,Euro 6 2017-2019,,CO2 lubricant,1.28e5
-Light Commercial Vehicles,Petrol,Euro 6 2020+,,CO2 lubricant,1.28e5
-# Diesel L-Category
+Light Commercial Vehicles,Petrol,NA,Conventional,NA,CO2 lubricant,1.45e5
+Light Commercial Vehicles,Petrol,NA,Euro 1,NA,CO2 lubricant,1.45e5
+Light Commercial Vehicles,Petrol,NA,Euro 2,NA,CO2 lubricant,1.45e5
+Light Commercial Vehicles,Petrol,NA,Euro 3,NA,CO2 lubricant,1.45e5
+Light Commercial Vehicles,Petrol,NA,Euro 4,NA,CO2 lubricant,1.45e5
+Light Commercial Vehicles,Petrol,NA,Euro 5,NA,CO2 lubricant,1.28e5
+Light Commercial Vehicles,Petrol,NA,Euro 6 up to 2016,NA,CO2 lubricant,1.28e5
+Light Commercial Vehicles,Petrol,NA,Euro 6 2017-2019,NA,CO2 lubricant,1.28e5
+Light Commercial Vehicles,Petrol,NA,Euro 6 2020+,NA,CO2 lubricant,1.28e5
+# Diesel, L-Category
 # maximum of Mopeds, Motorcycles and Mini-cars (Table 3-30, pg 52)
-L-Category,Diesel,Conventional,DI,CO2 lubricant,10.2e5
-L-Category,Diesel,Conventional,IDI,CO2 lubricant,10.2e5
-L-Category,Diesel,Euro 2,DI,CO2 lubricant,10.2e5
-L-Category,Diesel,Euro 2,IDI,CO2 lubricant,10.2e5
-L-Category,Diesel,Euro 1,DI,CO2 lubricant,10.2e5
-L-Category,Diesel,Euro 1,IDI,CO2 lubricant,10.2e5
-L-Category,Diesel,Euro 3,DI,CO2 lubricant,10.2e5
-L-Category,Diesel,Euro 3,IDI,CO2 lubricant,10.2e5
-L-Category,Diesel,Euro 4,DI,CO2 lubricant,10.2e5
-L-Category,Diesel,Euro 4,IDI,CO2 lubricant,10.2e5
-L-Category,Diesel,Euro 5,DI,CO2 lubricant,10.2e5
-L-Category,Diesel,Euro 5,IDI,CO2 lubricant,10.2e5
-# Diesel Passenger Cars
+L-Category,Diesel,NA,Conventional,DI,CO2 lubricant,10.2e5
+L-Category,Diesel,NA,Conventional,IDI,CO2 lubricant,10.2e5
+L-Category,Diesel,NA,Euro 2,DI,CO2 lubricant,10.2e5
+L-Category,Diesel,NA,Euro 2,IDI,CO2 lubricant,10.2e5
+L-Category,Diesel,NA,Euro 1,DI,CO2 lubricant,10.2e5
+L-Category,Diesel,NA,Euro 1,IDI,CO2 lubricant,10.2e5
+L-Category,Diesel,NA,Euro 3,DI,CO2 lubricant,10.2e5
+L-Category,Diesel,NA,Euro 3,IDI,CO2 lubricant,10.2e5
+L-Category,Diesel,NA,Euro 4,DI,CO2 lubricant,10.2e5
+L-Category,Diesel,NA,Euro 4,IDI,CO2 lubricant,10.2e5
+L-Category,Diesel,NA,Euro 5,DI,CO2 lubricant,10.2e5
+L-Category,Diesel,NA,Euro 5,IDI,CO2 lubricant,10.2e5
+# Diesel, Passenger Cars
 # old: <= Euro 4
 # new: >= Euro 5 (Table 3-30, pg 52)
-Passenger Cars,Diesel,Conventional,DI,CO2 lubricant,1.49e5
-Passenger Cars,Diesel,Conventional,IDI,CO2 lubricant,1.49e5
-Passenger Cars,Diesel,Euro 1,DI,CO2 lubricant,1.49e5
-Passenger Cars,Diesel,Euro 1,IDI,CO2 lubricant,1.49e5
-Passenger Cars,Diesel,Euro 2,DI,CO2 lubricant,1.49e5
-Passenger Cars,Diesel,Euro 2,IDI,CO2 lubricant,1.49e5
-Passenger Cars,Diesel,Euro 3,DI,CO2 lubricant,1.49e5
-Passenger Cars,Diesel,Euro 3,IDI,CO2 lubricant,1.49e5
-Passenger Cars,Diesel,Euro 4,DI,CO2 lubricant,1.49e5
-Passenger Cars,Diesel,Euro 4,IDI,CO2 lubricant,1.49e5
-Passenger Cars,Diesel,Euro 5,DI,CO2 lubricant,1.28e5
-Passenger Cars,Diesel,Euro 5,IDI,CO2 lubricant,1.28e5
-Passenger Cars,Diesel,Euro 6 up to 2016,DI,CO2 lubricant,1.28e5
-Passenger Cars,Diesel,Euro 6 up to 2016,IDI,CO2 lubricant,1.28e5
-Passenger Cars,Diesel,Euro 6 2017-2019,DI,CO2 lubricant,1.28e5
-Passenger Cars,Diesel,Euro 6 2017-2019,IDI,CO2 lubricant,1.28e5
-Passenger Cars,Diesel,Euro 6 2020+,DI,CO2 lubricant,1.28e5
-Passenger Cars,Diesel,Euro 6 2020+,IDI,CO2 lubricant,1.28e5
-# Diesel Light Commercial Vehicles
+Passenger Cars,Diesel,NA,Conventional,DI,CO2 lubricant,1.49e5
+Passenger Cars,Diesel,NA,Conventional,IDI,CO2 lubricant,1.49e5
+Passenger Cars,Diesel,NA,Euro 1,DI,CO2 lubricant,1.49e5
+Passenger Cars,Diesel,NA,Euro 1,IDI,CO2 lubricant,1.49e5
+Passenger Cars,Diesel,NA,Euro 2,DI,CO2 lubricant,1.49e5
+Passenger Cars,Diesel,NA,Euro 2,IDI,CO2 lubricant,1.49e5
+Passenger Cars,Diesel,NA,Euro 3,DI,CO2 lubricant,1.49e5
+Passenger Cars,Diesel,NA,Euro 3,IDI,CO2 lubricant,1.49e5
+Passenger Cars,Diesel,NA,Euro 4,DI,CO2 lubricant,1.49e5
+Passenger Cars,Diesel,NA,Euro 4,IDI,CO2 lubricant,1.49e5
+Passenger Cars,Diesel,NA,Euro 5,DI,CO2 lubricant,1.28e5
+Passenger Cars,Diesel,NA,Euro 5,IDI,CO2 lubricant,1.28e5
+Passenger Cars,Diesel,NA,Euro 6 up to 2016,DI,CO2 lubricant,1.28e5
+Passenger Cars,Diesel,NA,Euro 6 up to 2016,IDI,CO2 lubricant,1.28e5
+Passenger Cars,Diesel,NA,Euro 6 2017-2019,DI,CO2 lubricant,1.28e5
+Passenger Cars,Diesel,NA,Euro 6 2017-2019,IDI,CO2 lubricant,1.28e5
+Passenger Cars,Diesel,NA,Euro 6 2020+,DI,CO2 lubricant,1.28e5
+Passenger Cars,Diesel,NA,Euro 6 2020+,IDI,CO2 lubricant,1.28e5
+# Diesel, Light Commercial Vehicles
 # old: <= Euro 4
 # new: >= Euro 5 (Table 3-30, pg 52)
-Light Commercial Vehicles,Diesel,Conventional,DI,CO2 lubricant,1.49e5
-Light Commercial Vehicles,Diesel,Conventional,IDI,CO2 lubricant,1.49e5
-Light Commercial Vehicles,Diesel,Euro 1,DI,CO2 lubricant,1.49e5
-Light Commercial Vehicles,Diesel,Euro 1,IDI,CO2 lubricant,1.49e5
-Light Commercial Vehicles,Diesel,Euro 2,DI,CO2 lubricant,1.49e5
-Light Commercial Vehicles,Diesel,Euro 2,IDI,CO2 lubricant,1.49e5
-Light Commercial Vehicles,Diesel,Euro 3,DI,CO2 lubricant,1.49e5
-Light Commercial Vehicles,Diesel,Euro 3,IDI,CO2 lubricant,1.49e5
-Light Commercial Vehicles,Diesel,Euro 4,DI,CO2 lubricant,1.49e5
-Light Commercial Vehicles,Diesel,Euro 4,IDI,CO2 lubricant,1.49e5
-Light Commercial Vehicles,Diesel,Euro 5,DI,CO2 lubricant,1.28e5
-Light Commercial Vehicles,Diesel,Euro 5,IDI,CO2 lubricant,1.28e5
-Light Commercial Vehicles,Diesel,Euro 6 up to 2016,DI,CO2 lubricant,1.28e5
-Light Commercial Vehicles,Diesel,Euro 6 up to 2016,IDI,CO2 lubricant,1.28e5
-Light Commercial Vehicles,Diesel,Euro 6 2017-2019,DI,CO2 lubricant,1.28e5
-Light Commercial Vehicles,Diesel,Euro 6 2017-2019,IDI,CO2 lubricant,1.28e5
-Light Commercial Vehicles,Diesel,Euro 6 2020+,DI,CO2 lubricant,1.28e5
-Light Commercial Vehicles,Diesel,Euro 6 2020+,IDI,CO2 lubricant,1.28e5
+Light Commercial Vehicles,Diesel,NA,Conventional,DI,CO2 lubricant,1.49e5
+Light Commercial Vehicles,Diesel,NA,Conventional,IDI,CO2 lubricant,1.49e5
+Light Commercial Vehicles,Diesel,NA,Euro 1,DI,CO2 lubricant,1.49e5
+Light Commercial Vehicles,Diesel,NA,Euro 1,IDI,CO2 lubricant,1.49e5
+Light Commercial Vehicles,Diesel,NA,Euro 2,DI,CO2 lubricant,1.49e5
+Light Commercial Vehicles,Diesel,NA,Euro 2,IDI,CO2 lubricant,1.49e5
+Light Commercial Vehicles,Diesel,NA,Euro 3,DI,CO2 lubricant,1.49e5
+Light Commercial Vehicles,Diesel,NA,Euro 3,IDI,CO2 lubricant,1.49e5
+Light Commercial Vehicles,Diesel,NA,Euro 4,DI,CO2 lubricant,1.49e5
+Light Commercial Vehicles,Diesel,NA,Euro 4,IDI,CO2 lubricant,1.49e5
+Light Commercial Vehicles,Diesel,NA,Euro 5,DI,CO2 lubricant,1.28e5
+Light Commercial Vehicles,Diesel,NA,Euro 5,IDI,CO2 lubricant,1.28e5
+Light Commercial Vehicles,Diesel,NA,Euro 6 up to 2016,DI,CO2 lubricant,1.28e5
+Light Commercial Vehicles,Diesel,NA,Euro 6 up to 2016,IDI,CO2 lubricant,1.28e5
+Light Commercial Vehicles,Diesel,NA,Euro 6 2017-2019,DI,CO2 lubricant,1.28e5
+Light Commercial Vehicles,Diesel,NA,Euro 6 2017-2019,IDI,CO2 lubricant,1.28e5
+Light Commercial Vehicles,Diesel,NA,Euro 6 2020+,DI,CO2 lubricant,1.28e5
+Light Commercial Vehicles,Diesel,NA,Euro 6 2020+,IDI,CO2 lubricant,1.28e5
 # Heavy Duty Trucks
-Heavy Duty Trucks,Diesel,Conventional,DI,CO2 lubricant,1.56e5
-Heavy Duty Trucks,Diesel,Euro I,DI,CO2 lubricant,1.56e5
-Heavy Duty Trucks,Diesel,Euro II,DI,CO2 lubricant,1.56e5
-Heavy Duty Trucks,Diesel,Euro III,DI,CO2 lubricant,1.56e5
-Heavy Duty Trucks,Diesel,Euro IV,DI,CO2 lubricant,1.56e5
-Heavy Duty Trucks,Diesel,Euro V,DI,CO2 lubricant,1.56e5
-Heavy Duty Trucks,Diesel,Euro VI,DI,CO2 lubricant,1.56e5
+Heavy Duty Trucks,Diesel,NA,Conventional,DI,CO2 lubricant,1.56e5
+Heavy Duty Trucks,Diesel,NA,Euro I,DI,CO2 lubricant,1.56e5
+Heavy Duty Trucks,Diesel,NA,Euro II,DI,CO2 lubricant,1.56e5
+Heavy Duty Trucks,Diesel,NA,Euro III,DI,CO2 lubricant,1.56e5
+Heavy Duty Trucks,Diesel,NA,Euro IV,DI,CO2 lubricant,1.56e5
+Heavy Duty Trucks,Diesel,NA,Euro V,DI,CO2 lubricant,1.56e5
+Heavy Duty Trucks,Diesel,NA,Euro VI,DI,CO2 lubricant,1.56e5
 # Buses
 # average buses and coaches (Table 3-30, pg 52)
-Buses,Diesel,Conventional,DI,CO2 lubricant,5.205e5
-Buses,Diesel,Euro I,DI,CO2 lubricant,5.205e5
-Buses,Diesel,Euro II,DI,CO2 lubricant,5.205e5
-Buses,Diesel,Euro III,DI,CO2 lubricant,5.205e5
-Buses,Diesel,Euro IV,DI,CO2 lubricant,5.205e5
-Buses,Diesel,Euro V,DI,CO2 lubricant,1.275e5
-Buses,Diesel,Euro VI,DI,CO2 lubricant,1.275e5
+Buses,Diesel,NA,Conventional,DI,CO2 lubricant,5.205e5
+Buses,Diesel,NA,Euro I,DI,CO2 lubricant,5.205e5
+Buses,Diesel,NA,Euro II,DI,CO2 lubricant,5.205e5
+Buses,Diesel,NA,Euro III,DI,CO2 lubricant,5.205e5
+Buses,Diesel,NA,Euro IV,DI,CO2 lubricant,5.205e5
+Buses,Diesel,NA,Euro V,DI,CO2 lubricant,1.275e5
+Buses,Diesel,NA,Euro VI,DI,CO2 lubricant,1.275e5
 ############################################################################

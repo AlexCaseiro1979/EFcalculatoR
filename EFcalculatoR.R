@@ -301,15 +301,17 @@ for (pollutant in pollutants) {
     c_category <- 1
     for (category in categories) {
         # initialize the output data table
-        out_names <- c('Category', 'Fuel', 'Concept', 'Euro.Standard', 'EF',
-                       'Fraction.Fuel', 'Fraction.Concept', 'Fraction.Euro.Standard', 'Fraction')
+        out_names <- c('Category', 'Fuel', 'Segment', 'Concept', 'Euro.Standard', 'EF',
+                       'Fraction.Fuel', 'Fraction.Segment', 'Fraction.Concept', 'Fraction.Euro.Standard', 'Fraction')
         out <- data.frame(
         Category = character(),
         Fuel = character(),
+	Segment = character(),
         Concept = character(),
         Euro.Standard = character(),
         EF = numeric(),
         Fraction.Fuel = numeric(),
+        Fraction.Segment = numeric(),
         Fraction.Concept = numeric(),
         Fraction.Euro.Standard = numeric(),
         Fraction = numeric()
@@ -338,31 +340,62 @@ for (pollutant in pollutants) {
                 concepts[[c_category]] <- unique(subset(d_cat, Category==category & Fuel==fuel)$Concept)
                 concepts_fraction[[c_category]] <- 1
             }
-            # end of the discriminations that can be left empy
-            c_concept <- 1
-            for (concept in concepts[[c_category]]) {
-                c_euro_standard <- 1
-                for (euro_standard in euro_standards[[c_category]]) {
-                    d <- subset(d_cat,
-                        Fuel %in% fuel
-                        & Concept %in% concept
-                        & Euro.Standard %in% euro_standard
-                        )
-                    if (nrow(d)>0) {
-                        outd  <- data.frame(category, fuel, concept, euro_standard, mean(d$EF_ug_km)*1e-6*speed_corr_factor, # convert from ug to g
-                                            fuels_fraction[[c_category]][c_fuel],
-                                            concepts_fraction[[c_category]][c_concept],
-                                            euro_standards_fraction[[c_category]][c_euro_standard],
-                                            fuels_fraction[[c_category]][c_fuel]
-                                                * concepts_fraction[[c_category]][c_concept]
-                                                * euro_standards_fraction[[c_category]][c_euro_standard]
-                                            )
-                        names(outd) <- out_names ; out <- rbind(out, outd)
-                    }
-                    c_euro_standard <- c_euro_standard + 1
-                }
-                c_concept <- c_concept + 1
+	    if (length(segments[[c_category]]) == 0) {
+                segments[[c_category]] <- unique(subset(d_cat, Category==category & Fuel==fuel)$Segment)
+                segments_fraction[[c_category]] <- 1
             }
+            # end of the discriminations that can be left empy
+            c_segment <- 1
+            for (segment in segments[[c_category]]) {
+		    c_concept <- 1
+		    for (concept in concepts[[c_category]]) {
+			c_euro_standard <- 1
+			for (euro_standard in euro_standards[[c_category]]) {
+			    d_fes <- subset(d_cat,
+			        Fuel %in% fuel
+			        & Euro.Standard %in% euro_standard
+			        )
+			    if (nrow(d_fes)>0) {
+				# if the concepts list in the distribution is not empty
+                                # (if it is empty, i.e. '', it has been changed to the list
+                                # of uniques from d_cat, From there it cannot be '', but it can be NA)
+				# but the concepts in the EFperLength is empty
+				if (!is.na(concept) && is.na(unique(d_fes$Concept))) {
+				    concept <- unique(d_fes$Concept)
+				}
+				# if the segments list in the distribution is not empty
+                                # (if it is empty, i.e. '', it has been changed to the list
+                                # of uniques from d_cat. From there it cannot be '', but it can be NA)
+				# but the segments in the EFperLength is empty
+				if (!is.na(segment) && is.na(unique(d_fes$Segment))) {
+				    segment <- unique(d_fes$Segment)
+				}
+				d <- subset(d_fes,
+				    Segment %in% segment
+				    & Concept %in% concept
+				    )
+
+				if (nrow(d)>0) {
+				    outd  <- data.frame(category, fuel, segment, concept, euro_standard,
+                                            mean(d$EF_ug_km)*1e-6*speed_corr_factor, # convert from ug to g
+			    		    fuels_fraction[[c_category]][c_fuel],
+					    segments_fraction[[c_category]][c_segment],
+					    concepts_fraction[[c_category]][c_concept],
+					    euro_standards_fraction[[c_category]][c_euro_standard],
+					    fuels_fraction[[c_category]][c_fuel]
+                                            * segments_fraction[[c_category]][c_fuel]
+					    * concepts_fraction[[c_category]][c_concept]
+					    * euro_standards_fraction[[c_category]][c_euro_standard]
+					    )
+				    names(outd) <- out_names ; out <- rbind(out, outd)
+				}
+			    }
+			    c_euro_standard <- c_euro_standard + 1
+			}
+			c_concept <- c_concept + 1
+		    }
+                    c_segment <- c_segment + 1
+		}
             c_fuel <- c_fuel + 1
         }
         # end the subsetting
@@ -398,7 +431,7 @@ EF_perFuel_pre <- function(roadway, speeds, length, slope, load, pollutants, mod
 EF_perFuel <- function(roadway, speeds, length, slope, load, pollutants, modes, distFile, writeOrNot){
 
 source(distFile)
-df_specEnergy <- read.table('SpecificEnergy.csv', sep=',', header=TRUE, comment.char='#')
+df_specEnergy <- read.table('specificEnergy.csv', sep=',', header=TRUE, comment.char='#')
 
 # get the fuel consumption with the function EF_Group1
 fuelComp <- EF_Group1(roadway, speeds, length, slope, load, c('FC'), modes, distFile, 'noWrite')
@@ -677,14 +710,14 @@ EF_Group1_pre(roadway_name,
 EF_perLength(roadway_name,
         c(speed_PC, speed_LCV, speed_LCat),
         length_km,
-        c('benzo(a)pyrene', 'PCDD', 'PCDF', 'PM Brakes', 'PM Road paved', 'PM Tyres', 'CO2 lubricant'),
+        c('benzo(a)pyrene', 'PCDD', 'PCDF', 'PM Brakes', 'PM Road paved', 'PM Tyres', 'CO2 lubricant', 'NH3 lightweight', 'N2O lightweight'),
         dist_fleet_light,
         'write')
 
 EF_perLength(roadway_name,
         c(speed_HDV, speed_Buses),
         length_km,
-        c('benzo(a)pyrene', 'PCDD', 'PCDF', 'PM Brakes', 'PM Road paved', 'PM Tyres', 'CO2 lubricant'),
+        c('benzo(a)pyrene', 'PCDD', 'PCDF', 'PM Brakes', 'PM Road paved', 'PM Tyres', 'CO2 lubricant', 'NH3 lightweight', 'N2O lightweight'),
         dist_fleet_heavy,
         'write')
 
@@ -706,7 +739,7 @@ EF_perLength(roadway_name,
 EF_perFuel_pre(roadway_name,
         c(speed_PC, speed_LCV, speed_LCat),
         length_km, NA, NA,
-        c('Pb', 'As', 'Cd', 'Ni', 'SO2', 'CO2 fuel', 'NH3 lightweight', 'N2O lightweight'),
+        c('Pb', 'As', 'Cd', 'Ni', 'SO2', 'CO2 fuel'), #, 'NH3 lightweight', 'N2O lightweight'),
         list(c(''),c(''),c('')),
         dist_fleet_light,
         'write')
@@ -714,7 +747,7 @@ EF_perFuel_pre(roadway_name,
 EF_perFuel_pre(roadway_name,
         c(speed_HDV, speed_Buses),
        	length_km, roadway_slope, load_HDV,
-        c('Pb', 'As', 'Cd', 'Ni', 'SO2', 'CO2 fuel', 'NH3 lightweight', 'N2O lightweight'),
+        c('Pb', 'As', 'Cd', 'Ni', 'SO2', 'CO2 fuel'), #, 'NH3 lightweight', 'N2O lightweight'),
         list(c(''),c('')),
         dist_fleet_heavy,
         'write')
