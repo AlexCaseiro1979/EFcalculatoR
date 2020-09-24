@@ -1,6 +1,6 @@
 Roadway,Category,IntegrationTime,Hour,n_vehicles
 # Traffic hourly distribution for the Roadway via01, Light Vehicles
-# the hird field is the integration time in hours
+# the third field is the integration time in hours
 via01,Light Vehicles,1,0,10
 via01,Light Vehicles,1,1,15
 via01,Light Vehicles,1,2,5
