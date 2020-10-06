@@ -210,7 +210,7 @@ for (pollutant in pollutants) {
                             #& Load %in% load
                             )
                         if (nrow(d)>0) {
-			     if (length(unique(d$Load))>1 && !is.na(unique(d$Load))) {
+			    if (length(unique(d$Load))>1 && !is.na(unique(d$Load))) {
 			        d <- subset(d, Load==load)
 			    }
 			    if (length(unique(d$Road.Slope))>1 && !is.na(unique(d$Road.Slope))) {
@@ -435,7 +435,7 @@ df_specEnergy <- read.table('specificEnergy.csv', sep=',', header=TRUE, comment.
 
 # get the fuel consumption with the function EF_Group1
 fuelComp <- EF_Group1(roadway, speeds, length, slope, load, c('FC'), modes, distFile, 'noWrite')
-cat_no_cat(paste("\n", roadway, '----------------------------- finished computing the Fuel consumption...'),1)
+cat_no_cat(paste("\n\n", roadway, '----------------------------- finished computing the Fuel consumption...'),1)
 
 c_pollutant <- 1
 for (pollutant in pollutants) {
@@ -501,10 +501,10 @@ EF_perVOC <- function(roadway, speeds, length, slope, load, pollutants, modesVOC
 
 source(distFile)
 
-# get the VOCs and CH$ EF with the function EF_Group1
+# get the VOCs and CH4 EF with the function EF_Group1
 efVOC <- EF_Group1(roadway, speeds, length, slope, load, c('VOC'), modesVOC, distFile, 'noWrite')
 efCH4 <- EF_Group1(roadway, speeds, length, slope, load, c('CH4'), modesCH4, distFile, 'noWrite')
-cat_no_cat(paste("\n", roadway, '----------------------------- finished computing the VOCs and CH4 EF...'),1)
+cat_no_cat(paste("\n\n", roadway, '----------------------------- finished computing the VOCs and CH4 EF...'),1)
 
 c_pollutant <- 1
 for (pollutant in pollutants) {
@@ -539,10 +539,12 @@ for (pollutant in pollutants) {
                             )
                 if (nrow(d)>0) {
                     # Emission factor computed in g/(Km.vehicle)
-                    EF <- mean(d$percent_wt_NMVOC) / 100
-                          ( mean(subset(efVOC, Category==category & Fuel==fuel & Euro.Standard == euro_standard )$EF) # VOCs
-                          - mean(subset(efCH4, Category==category & Fuel==fuel & Euro.Standard == euro_standard )$EF) # minus CH4
+                    EF <- mean(d$percent_wt_NMVOC) / 100 *
+                          ( mean(subset(efVOC, Category==category & Fuel==fuel & Euro.Standard == euro_standard )$EF, na.rm=TRUE) # VOCs given as CH1.85
+                            * (12+4)/(12+1.85) # convert from CH1.85 to CH4
+                          - mean(subset(efCH4, Category==category & Fuel==fuel & Euro.Standard == euro_standard )$EF, na.rm=TRUE) # minus CH4
                           )
+                    if (is.na(EF) | EF < 0) { EF <- NA }
                     outd  <- data.frame(category, fuel, euro_standard, EF,
                                         fuels_fraction[[c_category]][c_fuel],
                                         euro_standards_fraction[[c_category]][c_euro_standard],
@@ -555,7 +557,7 @@ for (pollutant in pollutants) {
             c_fuel <- c_fuel + 1
         }
         # end the subsetting
-        ef_pol <- c(ef_pol, sum(out$EF*out$Fraction))
+        ef_pol <- c(ef_pol, sum(out$EF*out$Fraction, na.rm=TRUE))
         c_category <- c_category + 1
     }
     # create the strings for the output
@@ -799,7 +801,7 @@ for (row in seq(1, nrow(roadways))) {
 	       roadways[row,2], roadways[row,3], roadways[row,4], roadways[row,5], roadways[row,6], # the speeds
 	       roadways[row,7], roadways[row,8], roadways[row,9], roadways[row,10], # length, slope, load of HDV, mode
 	       dist_fleet_light, dist_fleet_heavy # the fleet distribution files
-               ) 
+               )
 }
 
 
