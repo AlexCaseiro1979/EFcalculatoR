@@ -4,6 +4,7 @@ dúvidas em aberto, primeira prioridade:
 
 adições a realizar:
 - temos dados de distribuição por cilindrada para 8 categorias. Podíamos usar maior detalhe da variável "Segment" para os ligeiros. Usar o máximo detalhe possível.
+- na função EF_perVOC, na parte em que se usa o Tier 2 em vez do Tier 3 (acontece quando o EF_CH4 > EF_VOC), pode-se ir a mais detalhe (o detalhe em Segment e Concept não está a ser usado).
 
 
 ######################################################################
@@ -19,4 +20,4 @@ Estas emissões só são relevantes para veículos "two-strokes", que são uma p
 - o ficheiro de distribuição da frota dos pesados para Portugal considera a distribuição por categorias que se assume no documento do EMEP/EEA (pg 67).
 - as emissoes de PM para "brake wear", "tyre wear" e "road surface wear" foram calculadas usando o documento 1.A.3.b.vi / 1.A.3.b.vii - Road transport: Automobile tyre and brake wear / Road transport: Automobile road abrasion.
 Para as fontes "brake wear" e "tyre wear" assume-se um load factor de 0.5 e um número de eixos igual a 4.
-- no ficheiro Excel do Mod.019 o separados onde se faz a análise do peso dos pesados refere-se à tara, mas a coluna tem o nome de Peso Bruto. Assumi que é de facto o peso bruto.
+- no ficheiro Excel do Mod.019 o separador onde se faz a análise do peso dos pesados refere-se à tara, mas a coluna tem o nome de Peso Bruto. Assumi que é de facto o peso bruto.

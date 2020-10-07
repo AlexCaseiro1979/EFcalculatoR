@@ -306,7 +306,7 @@ for (pollutant in pollutants) {
         out <- data.frame(
         Category = character(),
         Fuel = character(),
-	Segment = character(),
+        Segment = character(),
         Concept = character(),
         Euro.Standard = character(),
         EF = numeric(),
@@ -540,11 +540,16 @@ for (pollutant in pollutants) {
                 if (nrow(d)>0) {
                     # Emission factor computed in g/(Km.vehicle)
                     EF <- mean(d$percent_wt_NMVOC) / 100 *
-                          ( mean(subset(efVOC, Category==category & Fuel==fuel & Euro.Standard == euro_standard )$EF, na.rm=TRUE) # VOCs given as CH1.85
+                          ( mean(subset(efVOC, Category==category & Fuel==fuel & Euro.Standard==euro_standard )$EF, na.rm=TRUE) # VOCs given as CH1.85
                             * (12+4)/(12+1.85) # convert from CH1.85 to CH4
-                          - mean(subset(efCH4, Category==category & Fuel==fuel & Euro.Standard == euro_standard )$EF, na.rm=TRUE) # minus CH4
+                          - mean(subset(efCH4, Category==category & Fuel==fuel & Euro.Standard==euro_standard )$EF, na.rm=TRUE) # minus CH4
                           )
-                    if (is.na(EF) | EF < 0) { EF <- NA }
+                    # if there is no EF or if it is negative (case where EF_CH4 > EF_VOC), use the Tier 2 methodology to get the NMVOCs EF
+                    if (is.na(EF) | EF < 0) {
+                        EF <- mean(subset(df_perLength, Pollutant=='NMVOCs' & Category==category & Fuel==fuel & Euro.Standard==euro_standard)$EF_ug_km, na.rm=TRUE) *
+                              1e-6 * # convert from ug per km to g per km
+                              mean(d$percent_wt_NMVOC) / 100
+                    }
                     outd  <- data.frame(category, fuel, euro_standard, EF,
                                         fuels_fraction[[c_category]][c_fuel],
                                         euro_standards_fraction[[c_category]][c_euro_standard],
@@ -577,7 +582,7 @@ for (pollutant in pollutants) {
 
 # read the EMEP/EEA data
 df_Group1 <- read.table("1.A.3.b.i-iv Road transport hot EFs Annex 2018_Dic.csv", sep=',', header=TRUE)
-df_perLength <- read.table('EFperLength.csv', sep=',', header=TRUE, comment.char='#')
+df_perLength <- read.table('EFperLength.csv', sep=';', header=TRUE, comment.char='#')
 df_perFuel <- read.table('EFperFuel.csv', sep=',', header=TRUE, comment.char='#')
 df_perVOC <- read.table('EFperVOC.csv', sep=',', header=TRUE, comment.char='#')
 
