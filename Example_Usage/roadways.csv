@@ -1,0 +1,5 @@
+Name,speed_LPC,speed_LCV,speed_LCat,speed_HDV,speed_Buses,length_km,slope,load_HDV,mode
+via01,120,90,80,86,86,2,0,0.5,'Highway'
+via02,120,90,80,86,86,2,0.02,0.5,'Highway'
+via03,120,90,80,86,86,2,0.04,0.5,'Highway'
+via04,120,90,80,86,86,2,0.06,0.5,'Highway'

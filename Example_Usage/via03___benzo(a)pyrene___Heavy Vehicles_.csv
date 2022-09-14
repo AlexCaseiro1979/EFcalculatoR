@@ -1,0 +1,25 @@
+Roadway,IntegrationTime,Hour,Heavy Vehicles,Pollutant,Heavy Vehicles_EF_g/vehicle,Heavy Vehicles_E_g/s
+via03,1,0,0,benzo(a)pyrene,2.09011e-06,0
+via03,1,1,0,benzo(a)pyrene,2.09011e-06,0
+via03,1,2,1,benzo(a)pyrene,2.09011e-06,5.80586111111111e-10
+via03,1,3,2,benzo(a)pyrene,2.09011e-06,1.16117222222222e-09
+via03,1,4,3,benzo(a)pyrene,2.09011e-06,1.74175833333333e-09
+via03,1,5,8,benzo(a)pyrene,2.09011e-06,4.64468888888889e-09
+via03,1,6,9,benzo(a)pyrene,2.09011e-06,5.225275e-09
+via03,1,7,15,benzo(a)pyrene,2.09011e-06,8.70879166666667e-09
+via03,1,8,14,benzo(a)pyrene,2.09011e-06,8.12820555555556e-09
+via03,1,9,16,benzo(a)pyrene,2.09011e-06,9.28937777777778e-09
+via03,1,10,22,benzo(a)pyrene,2.09011e-06,1.27728944444444e-08
+via03,1,11,12,benzo(a)pyrene,2.09011e-06,6.96703333333333e-09
+via03,1,12,9,benzo(a)pyrene,2.09011e-06,5.225275e-09
+via03,1,13,7,benzo(a)pyrene,2.09011e-06,4.06410277777778e-09
+via03,1,14,10,benzo(a)pyrene,2.09011e-06,5.80586111111111e-09
+via03,1,15,12,benzo(a)pyrene,2.09011e-06,6.96703333333333e-09
+via03,1,16,11,benzo(a)pyrene,2.09011e-06,6.38644722222222e-09
+via03,1,17,15,benzo(a)pyrene,2.09011e-06,8.70879166666667e-09
+via03,1,18,18,benzo(a)pyrene,2.09011e-06,1.045055e-08
+via03,1,19,21,benzo(a)pyrene,2.09011e-06,1.21923083333333e-08
+via03,1,20,4,benzo(a)pyrene,2.09011e-06,2.32234444444444e-09
+via03,1,21,3,benzo(a)pyrene,2.09011e-06,1.74175833333333e-09
+via03,1,22,2,benzo(a)pyrene,2.09011e-06,1.16117222222222e-09
+via03,1,23,1,benzo(a)pyrene,2.09011e-06,5.80586111111111e-10

@@ -1,0 +1,25 @@
+Roadway,IntegrationTime,Hour,Light Vehicles,Pollutant,Light Vehicles_EF_g/vehicle,Light Vehicles_E_g/s
+via01,1,0,10,benzo(a)pyrene,9.73971e-07,2.705475e-09
+via01,1,1,15,benzo(a)pyrene,9.73971e-07,4.0582125e-09
+via01,1,2,5,benzo(a)pyrene,9.73971e-07,1.3527375e-09
+via01,1,3,7,benzo(a)pyrene,9.73971e-07,1.8938325e-09
+via01,1,4,8,benzo(a)pyrene,9.73971e-07,2.16438e-09
+via01,1,5,11,benzo(a)pyrene,9.73971e-07,2.9760225e-09
+via01,1,6,25,benzo(a)pyrene,9.73971e-07,6.7636875e-09
+via01,1,7,100,benzo(a)pyrene,9.73971e-07,2.705475e-08
+via01,1,8,143,benzo(a)pyrene,9.73971e-07,3.86882925e-08
+via01,1,9,185,benzo(a)pyrene,9.73971e-07,5.00512875e-08
+via01,1,10,198,benzo(a)pyrene,9.73971e-07,5.3568405e-08
+via01,1,11,162,benzo(a)pyrene,9.73971e-07,4.3828695e-08
+via01,1,12,149,benzo(a)pyrene,9.73971e-07,4.03115775e-08
+via01,1,13,122,benzo(a)pyrene,9.73971e-07,3.3006795e-08
+via01,1,14,96,benzo(a)pyrene,9.73971e-07,2.597256e-08
+via01,1,15,85,benzo(a)pyrene,9.73971e-07,2.29965375e-08
+via01,1,16,91,benzo(a)pyrene,9.73971e-07,2.46198225e-08
+via01,1,17,156,benzo(a)pyrene,9.73971e-07,4.220541e-08
+via01,1,18,205,benzo(a)pyrene,9.73971e-07,5.54622375e-08
+via01,1,19,189,benzo(a)pyrene,9.73971e-07,5.11334775e-08
+via01,1,20,94,benzo(a)pyrene,9.73971e-07,2.5431465e-08
+via01,1,21,26,benzo(a)pyrene,9.73971e-07,7.034235e-09
+via01,1,22,18,benzo(a)pyrene,9.73971e-07,4.869855e-09
+via01,1,23,11,benzo(a)pyrene,9.73971e-07,2.9760225e-09

@@ -1,0 +1,56 @@
+
+
+STATEMENT OF NEED
+=================
+
+Air pollution is deemed to be responsible for 8.8 million premature deaths worldwide and 12 \% of the world's cities have air quality measures that meet WHO standards. In Europe, the number of premature deaths is estimated at 790000, associated with an average reduction of 2.2 years in life expectancy, 2.9 years at the global level. The problematic also has a social dimension in its effects, as it is not evenly distributed among the population.
+In cities, vehicular traffic is a very strong source of air pollution, with 8 % of the European (EU-28) urban population exposed to fine particulates levels above the European Union (EU) legal standard, and 77% exposed to levels above the World Health Organization (WHO) standard, before its recent revision.
+
+Air quality modelling (AQM) is primordial to any strategy to improve air quality. It is used to support policies when administrative bodies (e.g. municipalities or regions) plan for better air. It is also used by the industry in the scope of environmental impact assessments in order to assess the impact of new or renewed infrastructure.
+The use of AQM is particularly relevant in a world where traffic patterns are likely to shift in the near future due to the effects of global crisis both on the supply and the demand sides, and particularly in the EU where the air quality standards are subject to debate.
+The inputs of AQM are emission factors (EF), activity (A) and meteorology, the output, after processing the dispersion of pollutants, are the ambient pollutant concentrations.
+
+In the case of vehicular road traffic, the European Monitoring and Evaluation Programme / European Environment Agency (EMEP/EEA) air pollutant emission inventory guidebook can be used as reference for EF.
+However, the EF are listed in the document as a function of single vehicle type (and possibly driving mode and roadway characteristics).
+Oftentimes, what the operator has at disposal is a characterization of the roadways within the domain and a representation (characterization) of the vehicular fleet within the domain (usually country specific).
+What the operator needs, as input to the model, is a roadway (or roadway-chunk) specific EF.
+
+The discrepancy implies lengthy, roadway-specific, calculations which the EFcalculatoR R function can simplify, turning the whole AQM process faster.
+
+
+INSTALLATION INSTRUCTIONS
+=========================
+
+There is no installation required.
+The software consists of:
+- one main script written in R: 'EFcalculatoR.R';
+- five data text (*.csv) files where the data compiled in the EMEP/CORINAIR handbook are transcribed that should not be edited: '1.A.3.b.i-iv Road transport hot EFs Annex 2018_Dic.csv' , 'EFperFuel.csv', 'EFperLength.csv' , 'EFperVOC.csv' and 'specificEnergy.csv' ;
+- one options file written in R: 'EFcalculatoR_options.R';
+- two auxiliary files written in R with the description of the fleet within the domain, one file for the light duty vehicles and one file for the heavy duty vehicles ;
+- one auxiliary text (*.csv) file describing the roadway(s) ;
+- one auxiliary text (*.csv) file describing the activity on the roadways.
+
+In order to run the software, the options file 'EFcalculatoR_options.R' should be edited with the paths to the four auxiliary files: the files containing the description of the characteristics of the lightweight fleet, of the heavyweight fleet and of the roadways and the activity.
+The files containing the description of the characteristics of the lightweight fleet, of the heavyweight fleet, of the roadways and of the activity should be edited. The edition is simple and results from going through the files from beginning to end.
+Once the four auxiliary files and the options files are edited according to the setting which the user wants to model, the program may be called within R with the following command, e.g.: 'source('/path/to/the/main/file/EFcalculatoR.R')'.
+
+
+EXAMPLE USAGE
+=============
+
+The folder 'Example_Usage' contains the software file 'EFcalculatoR.R', the five data files ('1.A.3.b.i-iv Road transport hot EFs Annex 2018_Dic.csv' , 'EFperFuel.csv', 'EFperLength.csv' , 'EFperVOC.csv' and 'specificEnergy.csv') and the options file ('EFcalculatoR_options.R').
+The folder also contains four auxiliary files ('distFleetLightweightPT.R' and 'distFleetHeavyweightPT.R' describe the average lightweight and heavy weight, respectively, vehicular fleet of Portugal).
+The folder contains the file describing the roadways for which we wish to retrieve the emission factors ('roadways.csv') and the file describing the activity on the roadways ('activity.csv').
+Running the software file within R ('source('/path/to/the/main/file/EFcalculatoR.R')') will produce the output: 'xx_EF.csv', where 'xx' is the rootname of the output files (or the project name) to be provided in the options file.
+For each roadway, each pollutant and each vehicles category a text file with partial EFs will be produced, whose name follows the pattern 'rrr__ppp__ccc_.csv', where 'rrr', 'ppp' and 'ccc' are the roadway name, the pollutant name and the vehicle category name, respectively.
+
+COMMUNITY GUIDELINES
+====================
+
+Developers interested in contributing to the software may either contact the author directly (alex DOT caseiro AT gmail DOT com) or fork the repository on GitHub (https://github.com/AlexCaseiro1979/EFcalculatoR).
+Issues or problems with the software may be reported to the author (alex DOT caseiro AT gmail DOT com) or create an issue on GitHub (https://github.com/AlexCaseiro1979/EFcalculatoR/issues).
+Questions about the use of the software may be directed to the author (alex DOT caseiro AT gmail DOT com).
+
+
+TESTS
+=====
