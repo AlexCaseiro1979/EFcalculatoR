@@ -31,16 +31,16 @@ The tool presented in the present paper allows simplify the process and to deriv
 
 # Statement of need
 
-In a world where the most prominent risks are all environmental `[@wef2021a]`, air pollution stands out for being the main global health impacting environmental issue `[@hei2020a]`.
+In a world where the most prominent risks are all environmental [@wef2021a], air pollution stands out for being the main global health impacting environmental issue [@hei2020a].
 Air pollution is deemed to be responsible for 8.8 million premature deaths worldwide and 12 \% of the world's cities have air quality measures that meet WHO standards.
-In Europe, the number of premature deaths is estimated at 790000, associated with an average reduction of 2.2 years in life expectancy, 2.9 years at the global level `[@unep2019a, @lelieveld2020a]`.
-The problematic also has a social dimension in its effects, as it is not evenly distributed among the population `[@wang2016a @fairburn2019a]`.
-In cities, vehicular traffic is a very strong source of air pollution, with 8 % of the european (EU-28) urban population exposed to fine particulates levels above the Eropean Union (EU) legal standard, and 77% exposed to levels above the World Health Organisation (WHO) standard `[@eea2019a]`.
+In Europe, the number of premature deaths is estimated at 790000, associated with an average reduction of 2.2 years in life expectancy, 2.9 years at the global level [@unep2019a, @lelieveld2020a].
+The problematic also has a social dimension in its effects, as it is not evenly distributed among the population [@wang2016a @fairburn2019a].
+In cities, vehicular traffic is a very strong source of air pollution, with 8 % of the european (EU-28) urban population exposed to fine particulates levels above the Eropean Union (EU) legal standard, and 77% exposed to levels above the World Health Organisation (WHO) standard [@eea2019a].
 
 Air quality modelling (AQM) is primordial to any strategy to improve air quality.
-It is used to support policies when administrative bodies (e.g. municipalities or regions) plan for better air `[@eea2018a]`.
+It is used to support policies when administrative bodies (e.g. municipalities or regions) plan for better air [@eea2018a].
 It is also used by the industry in the scope of environmental impact assessments in order to assess the impact of new or renewed infrastructure.
-The use of AQM is particularly relevant in a world where traffic patterns are likely to shift in the near future due to the effects of global crisis both on the supply and the demand sides `[@weo2021a]`, and particularly in the EU where the air quality standards are subject to debate `[@ec2019a, @ec2019b, @ec2020a]`.
+The use of AQM is particularly relevant in a world where traffic patterns are likely to shift in the near future due to the effects of global crisis both on the supply and the demand sides [@weo2021a], and particularly in the EU where the air quality standards are subject to debate [@ec2019a, @ec2019b, @ec2020a].
 The inputs of AQM are emission factors (EF), activity (A) and meteorology, the output, after processing the dispersion of pollutants, are the ambient pollutant concentrations.
 
 In the case of vehicular road traffic, the EMEP/EEA air pollutant emission inventory guidebook can be used as reference for EF.
