@@ -1,0 +1,53 @@
+Roadway,Pollutant,Category,EF,unit
+via01,CO,Light Vehicles,NaN,g/vehicle
+via01,NOx,Light Vehicles,NaN,g/vehicle
+via01,PM Exhaust,Light Vehicles,NaN,g/vehicle
+via01,VOC,Light Vehicles,NaN,g/vehicle
+via01,FC,Light Vehicles,NaN,MJ/vehicle
+via01,CH4,Light Vehicles,NaN,g/vehicle
+via01,CO,Heavy Vehicles,0.5092555,g/vehicle
+via01,NOx,Heavy Vehicles,3.131673,g/vehicle
+via01,VOC,Heavy Vehicles,0.02793095,g/vehicle
+via01,FC,Heavy Vehicles,6.909903,MJ/vehicle
+via01,CH4,Heavy Vehicles,0.07,g/vehicle
+via01,NH3,Heavy Vehicles,0.0029,g/vehicle
+via01,N2O,Heavy Vehicles,0.0114,g/vehicle
+via01,PM Exhaust,Heavy Vehicles,0.02324514,g/vehicle
+via01,benzo(a)pyrene,Light Vehicles,4.869855e-07,g/vehicle
+via01,PCDD,Light Vehicles,5.100452e-12,g/vehicle
+via01,PCDF,Light Vehicles,7.594415e-12,g/vehicle
+via01,PM Brakes,Light Vehicles,0.009403692,g/vehicle
+via01,PM Road paved,Light Vehicles,0.004897155,g/vehicle
+via01,PM Tyres,Light Vehicles,0.006757884,g/vehicle
+via01,CO2 lubricant,Light Vehicles,0.08910228,g/vehicle
+via01,NH3 lightweight,Light Vehicles,0.01785689,g/vehicle
+via01,N2O lightweight,Light Vehicles,0.005324837,g/vehicle
+via01,benzo(a)pyrene,Heavy Vehicles,0,g/vehicle
+via01,PCDD,Heavy Vehicles,0,g/vehicle
+via01,PCDF,Heavy Vehicles,0,g/vehicle
+via01,PM Brakes,Heavy Vehicles,0,g/vehicle
+via01,PM Road paved,Heavy Vehicles,0,g/vehicle
+via01,PM Tyres,Heavy Vehicles,0,g/vehicle
+via01,CO2 lubricant,Heavy Vehicles,0,g/vehicle
+via01,NH3 lightweight,Heavy Vehicles,0,g/vehicle
+via01,N2O lightweight,Heavy Vehicles,0,g/vehicle
+via01,Pb,Light Vehicles,0,g/vehicle
+via01,As,Light Vehicles,0,g/vehicle
+via01,Cd,Light Vehicles,0,g/vehicle
+via01,Ni,Light Vehicles,0,g/vehicle
+via01,SO2,Light Vehicles,0,g/vehicle
+via01,CO2 fuel,Light Vehicles,0,g/vehicle
+via01,Pb,Heavy Vehicles,7.576648e-08,g/vehicle
+via01,As,Heavy Vehicles,1.51533e-08,g/vehicle
+via01,Cd,Heavy Vehicles,7.576648e-09,g/vehicle
+via01,Ni,Heavy Vehicles,3.030659e-08,g/vehicle
+via01,SO2,Heavy Vehicles,0.0009091978,g/vehicle
+via01,CO2 fuel,Heavy Vehicles,476.4196,g/vehicle
+via01,toluene,Light Vehicles,0.03497429,g/vehicle
+via01,mp-xylene,Light Vehicles,0.01758016,g/vehicle
+via01,o-xylene,Light Vehicles,0.00732221,g/vehicle
+via01,benzene,Light Vehicles,0.01941922,g/vehicle
+via01,toluene,Heavy Vehicles,9.928571e-07,g/vehicle
+via01,mp-xylene,Heavy Vehicles,9.73e-05,g/vehicle
+via01,o-xylene,Heavy Vehicles,3.971429e-05,g/vehicle
+via01,benzene,Heavy Vehicles,6.95e-06,g/vehicle

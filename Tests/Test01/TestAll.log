@@ -1,0 +1,273 @@
+
+
+	 via01 CO Passenger Cars Petrol NaN g/km/vehicle
+	 via01 CO Passenger Cars Diesel NaN g/km/vehicle
+	 via01 CO Passenger Cars LPG Bifuel ~ LPG NaN g/km/vehicle
+		 via01 CO Passenger Cars NaN g/km/vehicle
+	 via01 CO Light Commercial Vehicles Petrol NaN g/km/vehicle
+	 via01 CO Light Commercial Vehicles Diesel NaN g/km/vehicle
+		 via01 CO Light Commercial Vehicles NaN g/km/vehicle
+	 via01 CO L-Category Petrol NaN g/km/vehicle
+	 via01 CO L-Category Diesel NaN g/km/vehicle
+		 via01 CO L-Category NaN g/km/vehicle
+ via01 : CO EF for Light Vehicles NaN g/vehicle  
+
+	 via01 NOx Passenger Cars Petrol Inf g/km/vehicle
+	 via01 NOx Passenger Cars Diesel NaN g/km/vehicle
+	 via01 NOx Passenger Cars LPG Bifuel ~ LPG NaN g/km/vehicle
+		 via01 NOx Passenger Cars NaN g/km/vehicle
+	 via01 NOx Light Commercial Vehicles Petrol NaN g/km/vehicle
+	 via01 NOx Light Commercial Vehicles Diesel NaN g/km/vehicle
+		 via01 NOx Light Commercial Vehicles NaN g/km/vehicle
+	 via01 NOx L-Category Petrol NaN g/km/vehicle
+	 via01 NOx L-Category Diesel NaN g/km/vehicle
+		 via01 NOx L-Category NaN g/km/vehicle
+ via01 : NOx EF for Light Vehicles NaN g/vehicle  
+
+	 via01 PM Exhaust Passenger Cars Petrol NaN g/km/vehicle
+	 via01 PM Exhaust Passenger Cars Diesel NaN g/km/vehicle
+	 via01 PM Exhaust Passenger Cars LPG Bifuel ~ LPG NaN g/km/vehicle
+		 via01 PM Exhaust Passenger Cars NaN g/km/vehicle
+	 via01 PM Exhaust Light Commercial Vehicles Petrol NaN g/km/vehicle
+	 via01 PM Exhaust Light Commercial Vehicles Diesel NaN g/km/vehicle
+		 via01 PM Exhaust Light Commercial Vehicles NaN g/km/vehicle
+	 via01 PM Exhaust L-Category Petrol NaN g/km/vehicle
+	 via01 PM Exhaust L-Category Diesel NaN g/km/vehicle
+		 via01 PM Exhaust L-Category NaN g/km/vehicle
+ via01 : PM Exhaust EF for Light Vehicles NaN g/vehicle  
+
+	 via01 VOC Passenger Cars Petrol NaN g/km/vehicle
+	 via01 VOC Passenger Cars Diesel NaN g/km/vehicle
+	 via01 VOC Passenger Cars LPG Bifuel ~ LPG NaN g/km/vehicle
+		 via01 VOC Passenger Cars NaN g/km/vehicle
+	 via01 VOC Light Commercial Vehicles Petrol NaN g/km/vehicle
+	 via01 VOC Light Commercial Vehicles Diesel NaN g/km/vehicle
+		 via01 VOC Light Commercial Vehicles NaN g/km/vehicle
+	 via01 VOC L-Category Petrol NaN g/km/vehicle
+	 via01 VOC L-Category Diesel NaN g/km/vehicle
+		 via01 VOC L-Category NaN g/km/vehicle
+ via01 : VOC EF for Light Vehicles NaN g/vehicle  
+
+	 via01 FC Passenger Cars Petrol NaN g/km/vehicle
+	 via01 FC Passenger Cars Diesel NaN g/km/vehicle
+	 via01 FC Passenger Cars LPG Bifuel ~ LPG NaN g/km/vehicle
+		 via01 FC Passenger Cars NaN g/km/vehicle
+	 via01 FC Light Commercial Vehicles Petrol NaN g/km/vehicle
+	 via01 FC Light Commercial Vehicles Diesel NaN g/km/vehicle
+		 via01 FC Light Commercial Vehicles NaN g/km/vehicle
+	 via01 FC L-Category Petrol NaN g/km/vehicle
+	 via01 FC L-Category Diesel NaN g/km/vehicle
+		 via01 FC L-Category NaN g/km/vehicle
+ via01 : Fuel consumption for Light Vehicles NaN MJ/vehicle  
+
+	 via01 CH4 Passenger Cars Petrol NaN g/km/vehicle
+	 via01 CH4 Passenger Cars Diesel NaN g/km/vehicle
+	 via01 CH4 Passenger Cars LPG Bifuel ~ LPG NaN g/km/vehicle
+		 via01 CH4 Passenger Cars NaN g/km/vehicle
+	 via01 CH4 Light Commercial Vehicles Petrol NaN g/km/vehicle
+	 via01 CH4 Light Commercial Vehicles Diesel NaN g/km/vehicle
+		 via01 CH4 Light Commercial Vehicles NaN g/km/vehicle
+	 via01 CH4 L-Category Petrol NaN g/km/vehicle
+	 via01 CH4 L-Category Diesel NaN g/km/vehicle
+		 via01 CH4 L-Category NaN g/km/vehicle
+ via01 : CH4 EF for Light Vehicles NaN g/vehicle  
+
+	 via01 CO Heavy Duty Trucks Diesel 0.509255452415671 g/km/vehicle
+		 via01 CO Heavy Duty Trucks 0.509255452415671 g/km/vehicle
+ via01 : CO EF for Heavy Vehicles 0.509255452415671 g/vehicle , for slope 0 % and for load 0.5 .
+
+	 via01 NOx Heavy Duty Trucks Diesel 3.13167288724882 g/km/vehicle
+		 via01 NOx Heavy Duty Trucks 3.13167288724882 g/km/vehicle
+ via01 : NOx EF for Heavy Vehicles 3.13167288724882 g/vehicle , for slope 0 % and for load 0.5 .
+
+	 via01 VOC Heavy Duty Trucks Diesel 0.0279309490866057 g/km/vehicle
+		 via01 VOC Heavy Duty Trucks 0.0279309490866057 g/km/vehicle
+ via01 : VOC EF for Heavy Vehicles 0.0279309490866057 g/vehicle , for slope 0 % and for load 0.5 .
+
+	 via01 FC Heavy Duty Trucks Diesel 6.90990321613794 g/km/vehicle
+		 via01 FC Heavy Duty Trucks 6.90990321613794 g/km/vehicle
+ via01 : Fuel consumption for Heavy Vehicles 6.90990321613794 MJ/vehicle , for slope 0 % and for load 0.5 .
+
+	 via01 CH4 Heavy Duty Trucks Diesel 0.07 g/km/vehicle
+		 via01 CH4 Heavy Duty Trucks 0.07 g/km/vehicle
+ via01 : CH4 EF for Heavy Vehicles 0.07 g/vehicle , for slope 0 % and for load 0.5 .
+
+	 via01 NH3 Heavy Duty Trucks Diesel 0.0029 g/km/vehicle
+		 via01 NH3 Heavy Duty Trucks 0.0029 g/km/vehicle
+ via01 : NH3 EF for Heavy Vehicles 0.0029 g/vehicle , for slope 0 % and for load 0.5 .
+
+	 via01 N2O Heavy Duty Trucks Diesel 0.0114 g/km/vehicle
+		 via01 N2O Heavy Duty Trucks 0.0114 g/km/vehicle
+ via01 : N2O EF for Heavy Vehicles 0.0114 g/vehicle , for slope 0 % and for load 0.5 .
+
+	 via01 PM Exhaust Heavy Duty Trucks Diesel 0.0232451363849066 g/km/vehicle
+		 via01 PM Exhaust Heavy Duty Trucks 0.0232451363849066 g/km/vehicle
+ via01 : PM Exhaust EF for Heavy Vehicles 0.0232451363849066 g/vehicle , for slope 0 % and for load 0.5 .
+
+ via01 : benzo(a)pyrene Light Vehicles 4.8698552e-07 g/vehicle 
+
+ via01 : EF for Light Vehicles 4.8698552e-07 g/vehicle
+
+ via01 : PCDD Light Vehicles 5.10045170141823e-12 g/vehicle 
+
+ via01 : EF for Light Vehicles 5.10045170141823e-12 g/vehicle
+
+ via01 : PCDF Light Vehicles 7.59441539307791e-12 g/vehicle 
+
+ via01 : EF for Light Vehicles 7.59441539307791e-12 g/vehicle
+
+ via01 : PM Brakes Light Vehicles 0.009403692345 g/vehicle 
+
+ via01 : EF for Light Vehicles 0.009403692345 g/vehicle
+
+ via01 : PM Road paved Light Vehicles 0.004897155 g/vehicle 
+
+ via01 : EF for Light Vehicles 0.004897155 g/vehicle
+
+ via01 : PM Tyres Light Vehicles 0.0067578838188 g/vehicle 
+
+ via01 : EF for Light Vehicles 0.0067578838188 g/vehicle
+
+ via01 : CO2 lubricant Light Vehicles 0.0891022816487443 g/vehicle 
+
+ via01 : EF for Light Vehicles 0.0891022816487443 g/vehicle
+
+ via01 : NH3 lightweight Light Vehicles 0.0178568861324268 g/vehicle 
+
+ via01 : EF for Light Vehicles 0.0178568861324268 g/vehicle
+
+ via01 : N2O lightweight Light Vehicles 0.00532483741673514 g/vehicle 
+
+ via01 : EF for Light Vehicles 0.00532483741673514 g/vehicle
+
+ via01 : benzo(a)pyrene Heavy Vehicles 0 g/vehicle 
+
+ via01 : EF for Heavy Vehicles 0 g/vehicle
+
+ via01 : PCDD Heavy Vehicles 0 g/vehicle 
+
+ via01 : EF for Heavy Vehicles 0 g/vehicle
+
+ via01 : PCDF Heavy Vehicles 0 g/vehicle 
+
+ via01 : EF for Heavy Vehicles 0 g/vehicle
+
+ via01 : PM Brakes Heavy Vehicles 0 g/vehicle 
+
+ via01 : EF for Heavy Vehicles 0 g/vehicle
+
+ via01 : PM Road paved Heavy Vehicles 0 g/vehicle 
+
+ via01 : EF for Heavy Vehicles 0 g/vehicle
+
+ via01 : PM Tyres Heavy Vehicles 0 g/vehicle 
+
+ via01 : EF for Heavy Vehicles 0 g/vehicle
+
+ via01 : CO2 lubricant Heavy Vehicles 0 g/vehicle 
+
+ via01 : EF for Heavy Vehicles 0 g/vehicle
+
+ via01 : NH3 lightweight Heavy Vehicles 0 g/vehicle 
+
+ via01 : EF for Heavy Vehicles 0 g/vehicle
+
+ via01 : N2O lightweight Heavy Vehicles 0 g/vehicle 
+
+ via01 : EF for Heavy Vehicles 0 g/vehicle
+
+	 via01 FC Passenger Cars Petrol NaN g/km/vehicle
+	 via01 FC Passenger Cars Diesel NaN g/km/vehicle
+	 via01 FC Passenger Cars LPG Bifuel ~ LPG NaN g/km/vehicle
+		 via01 FC Passenger Cars NaN g/km/vehicle
+	 via01 FC Light Commercial Vehicles Petrol NaN g/km/vehicle
+	 via01 FC Light Commercial Vehicles Diesel NaN g/km/vehicle
+		 via01 FC Light Commercial Vehicles NaN g/km/vehicle
+	 via01 FC L-Category Petrol NaN g/km/vehicle
+	 via01 FC L-Category Diesel NaN g/km/vehicle
+		 via01 FC L-Category NaN g/km/vehicle
+ via01 : Fuel consumption for Light Vehicles NaN MJ/vehicle  
+
+ via01 ----------------------------- finished computing the Fuel consumption...
+ via01 : Pb Light Vehicles 0 g/vehicle 
+ via01 : EF for Light Vehicles 0 g/vehicle
+ via01 : As Light Vehicles 0 g/vehicle 
+ via01 : EF for Light Vehicles 0 g/vehicle
+ via01 : Cd Light Vehicles 0 g/vehicle 
+ via01 : EF for Light Vehicles 0 g/vehicle
+ via01 : Ni Light Vehicles 0 g/vehicle 
+ via01 : EF for Light Vehicles 0 g/vehicle
+ via01 : SO2 Light Vehicles 0 g/vehicle 
+ via01 : EF for Light Vehicles 0 g/vehicle
+ via01 : CO2 fuel Light Vehicles 0 g/vehicle 
+ via01 : EF for Light Vehicles 0 g/vehicle
+
+	 via01 FC Heavy Duty Trucks Diesel 6.90990321613794 g/km/vehicle
+		 via01 FC Heavy Duty Trucks 6.90990321613794 g/km/vehicle
+ via01 : Fuel consumption for Heavy Vehicles 6.90990321613794 MJ/vehicle , for slope 0 % and for load 0.5 .
+
+ via01 ----------------------------- finished computing the Fuel consumption...
+ via01 : Pb Heavy Vehicles 7.57664826330915e-08 g/vehicle 
+ via01 : EF for Heavy Vehicles 7.57664826330915e-08 g/vehicle
+ via01 : As Heavy Vehicles 1.51532965266183e-08 g/vehicle 
+ via01 : EF for Heavy Vehicles 1.51532965266183e-08 g/vehicle
+ via01 : Cd Heavy Vehicles 7.57664826330915e-09 g/vehicle 
+ via01 : EF for Heavy Vehicles 7.57664826330915e-09 g/vehicle
+ via01 : Ni Heavy Vehicles 3.03065930532366e-08 g/vehicle 
+ via01 : EF for Heavy Vehicles 3.03065930532366e-08 g/vehicle
+ via01 : SO2 Heavy Vehicles 0.000909197791597098 g/vehicle 
+ via01 : EF for Heavy Vehicles 0.000909197791597098 g/vehicle
+ via01 : CO2 fuel Heavy Vehicles 476.419642796879 g/vehicle 
+ via01 : EF for Heavy Vehicles 476.419642796879 g/vehicle
+
+	 via01 VOC Passenger Cars Petrol NaN g/km/vehicle
+	 via01 VOC Passenger Cars Diesel NaN g/km/vehicle
+	 via01 VOC Passenger Cars LPG Bifuel ~ LPG NaN g/km/vehicle
+		 via01 VOC Passenger Cars NaN g/km/vehicle
+	 via01 VOC Light Commercial Vehicles Petrol NaN g/km/vehicle
+	 via01 VOC Light Commercial Vehicles Diesel NaN g/km/vehicle
+		 via01 VOC Light Commercial Vehicles NaN g/km/vehicle
+	 via01 VOC L-Category Petrol NaN g/km/vehicle
+	 via01 VOC L-Category Diesel NaN g/km/vehicle
+		 via01 VOC L-Category NaN g/km/vehicle
+ via01 : VOC EF for Light Vehicles NaN g/vehicle  
+
+	 via01 CH4 Passenger Cars Petrol NaN g/km/vehicle
+	 via01 CH4 Passenger Cars Diesel NaN g/km/vehicle
+	 via01 CH4 Passenger Cars LPG Bifuel ~ LPG NaN g/km/vehicle
+		 via01 CH4 Passenger Cars NaN g/km/vehicle
+	 via01 CH4 Light Commercial Vehicles Petrol NaN g/km/vehicle
+	 via01 CH4 Light Commercial Vehicles Diesel NaN g/km/vehicle
+		 via01 CH4 Light Commercial Vehicles NaN g/km/vehicle
+	 via01 CH4 L-Category Petrol NaN g/km/vehicle
+	 via01 CH4 L-Category Diesel NaN g/km/vehicle
+		 via01 CH4 L-Category NaN g/km/vehicle
+ via01 : CH4 EF for Light Vehicles NaN g/vehicle  
+
+ via01 ----------------------------- finished computing the VOCs and CH4 EF...
+ via01 : toluene Light Vehicles 0.0349742923510286 g/vehicle 
+ via01 : EF for Light Vehicles 0.0349742923510286 g/vehicle
+ via01 : mp-xylene Light Vehicles 0.0175801629994686 g/vehicle 
+ via01 : EF for Light Vehicles 0.0175801629994686 g/vehicle
+ via01 : o-xylene Light Vehicles 0.00732221005071694 g/vehicle 
+ via01 : EF for Light Vehicles 0.00732221005071694 g/vehicle
+ via01 : benzene Light Vehicles 0.0194192235992182 g/vehicle 
+ via01 : EF for Light Vehicles 0.0194192235992182 g/vehicle
+
+	 via01 VOC Heavy Duty Trucks Diesel 0.0279309490866057 g/km/vehicle
+		 via01 VOC Heavy Duty Trucks 0.0279309490866057 g/km/vehicle
+ via01 : VOC EF for Heavy Vehicles 0.0279309490866057 g/vehicle , for slope 0 % and for load 0.5 .
+
+	 via01 CH4 Heavy Duty Trucks Diesel 0.07 g/km/vehicle
+		 via01 CH4 Heavy Duty Trucks 0.07 g/km/vehicle
+ via01 : CH4 EF for Heavy Vehicles 0.07 g/vehicle , for slope 0 % and for load 0.5 .
+
+ via01 ----------------------------- finished computing the VOCs and CH4 EF...
+ via01 : toluene Heavy Vehicles 9.92857142857143e-07 g/vehicle 
+ via01 : EF for Heavy Vehicles 9.92857142857143e-07 g/vehicle
+ via01 : mp-xylene Heavy Vehicles 9.73e-05 g/vehicle 
+ via01 : EF for Heavy Vehicles 9.73e-05 g/vehicle
+ via01 : o-xylene Heavy Vehicles 3.97142857142857e-05 g/vehicle 
+ via01 : EF for Heavy Vehicles 3.97142857142857e-05 g/vehicle
+ via01 : benzene Heavy Vehicles 6.95e-06 g/vehicle 
+ via01 : EF for Heavy Vehicles 6.95e-06 g/vehicle
