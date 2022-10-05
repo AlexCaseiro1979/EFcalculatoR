@@ -1,4 +1,4 @@
-
+===============================================================================
 
 STATEMENT OF NEED
 =================
@@ -17,6 +17,7 @@ What the operator needs, as input to the model, is a roadway (or roadway-chunk) 
 
 The discrepancy implies lengthy, roadway-specific, calculations which the EFcalculatoR R function can simplify, turning the whole AQM process faster.
 
+===============================================================================
 
 INSTALLATION INSTRUCTIONS
 =========================
@@ -34,15 +35,18 @@ In order to run the software, the options file 'EFcalculatoR_options.R' should b
 The files containing the description of the characteristics of the lightweight fleet, of the heavyweight fleet, of the roadways and of the activity should be edited. The edition is simple and results from going through the files from beginning to end.
 Once the four auxiliary files and the options files are edited according to the setting which the user wants to model, the program may be called within R with the following command, e.g.: 'source('/path/to/the/main/file/EFcalculatoR.R')'.
 
+===============================================================================
 
 EXAMPLE USAGE
 =============
 
-The folder 'Example_Usage' contains the software file 'EFcalculatoR.R', the five data files ('1.A.3.b.i-iv Road transport hot EFs Annex 2018_Dic.csv' , 'EFperFuel.csv', 'EFperLength.csv' , 'EFperVOC.csv' and 'specificEnergy.csv') and the options file ('EFcalculatoR_options.R').
+The directory 'Example_Usage' contains the software file 'EFcalculatoR.R', the five data files ('1.A.3.b.i-iv Road transport hot EFs Annex 2018_Dic.csv' , 'EFperFuel.csv', 'EFperLength.csv' , 'EFperVOC.csv' and 'specificEnergy.csv') and the options file ('EFcalculatoR_options.R').
 The folder also contains four auxiliary files ('distFleetLightweightPT.R' and 'distFleetHeavyweightPT.R' describe the average lightweight and heavy weight, respectively, vehicular fleet of Portugal).
 The folder contains the file describing the roadways for which we wish to retrieve the emission factors ('roadways.csv') and the file describing the activity on the roadways ('activity.csv').
 Running the software file within R ('source('/path/to/the/main/file/EFcalculatoR.R')') will produce the output: 'xx_EF.csv', where 'xx' is the rootname of the output files (or the project name) to be provided in the options file.
 For each roadway, each pollutant and each vehicles category a text file with partial EFs will be produced, whose name follows the pattern 'rrr__ppp__ccc_.csv', where 'rrr', 'ppp' and 'ccc' are the roadway name, the pollutant name and the vehicle category name, respectively.
+
+===============================================================================
 
 COMMUNITY GUIDELINES
 ====================
@@ -51,6 +55,54 @@ Developers interested in contributing to the software may either contact the aut
 Issues or problems with the software may be reported to the author (alex DOT caseiro AT gmail DOT com) or create an issue on GitHub (https://github.com/AlexCaseiro1979/EFcalculatoR/issues).
 Questions about the use of the software may be directed to the author (alex DOT caseiro AT gmail DOT com).
 
+===============================================================================
 
 TESTS
 =====
+
+The directory 'Test' contains three check run of the software.
+
+Test01:
+
+At each hour, there are no leightweight vehichles and only one heavy duty truck (fuel='Diesel', segment='Rigid 14 - 20 t', Euro Standard='Euro IV', Technology='EGR', and Concept='IDI') with 50% load.
+There is only one roadway ('via01', a highway with slope=0 and where the heavy duty vehicles have a speed of 86 km/h).
+
+The document 1.A.3.b.i-iv Road transport hot EFs Annex 2018_Dic.csv lists, for those passenger cars (line 7361), the following parameters:
+Alpha: 0.004542586
+Beta: 0.2191708
+Gamma: 3.486445
+Delta: -9.137764
+Epsilon: 0.001779704
+Zita: 0.05587899
+Hta: -0.1002922
+Thita: 0
+with reduction factors of 0%.
+By applying equation 25 (pg 60 of the document 1.A.3.b.i-iv Road transport 2018.pdf), the Ef is:
+EF = ( 0.004542586 * 86**2 + 0.2191708 * 86 + 3.486445 - 9.137764 / 86 ) / ( 0.001779704 * 86**2 + 0.05587899 * 86 - 0.1002922 ) * (1-0)
+EF =  3.12435 g/km/vehicle
+
+The EFcalculatoR output shows that the NOx EF for havy vehicles is 3.131673 g/vehicle.
+
+
+Test02:
+
+At each hour, there are no heavy duty vehichles and only one passenger car (fuel='Diesel', segment='Medium', Euro Standard='Euro 5', Technology='DPF', and Concept='DI').
+There is only one roadway ('via01', a highway with slope=0 and where the light passenger vehicles have a speed of 100 km/h).
+
+The document 1.A.3.b.i-iv Road transport hot EFs Annex 2018_Dic.csv lists, for those passenger cars (line 1170), the following parameters:
+Alpha: 6.67136e-05
+Beta: -0.01138147
+Gamma: 0.9459517
+Delta: 1.923608
+Epsilon: -5.15046e-05
+Zita: 0.004264272
+Hta: 1
+Thita: 0
+with reduction factors of 0%.
+By applying equation 25 (pg 60 of the document 1.A.3.b.i-iv Road transport 2018.pdf), the Ef is:
+EF = (6.67136e-05 * 100**2 - 0.01138147 * 100 + 0.9459517 + 1.923608/100 ) / (-5.15046e-05 * 100**2 + 0.004264272 * 100 + 1) * (1-0)
+EF = 0.5422284 g/km/vehicle
+
+The EFcalculatoR output shows that the NOx EF for light vehicles is 0.5422288 g/vehicle.
+
+===============================================================================

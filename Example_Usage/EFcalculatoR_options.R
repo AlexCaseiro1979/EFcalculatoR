@@ -4,7 +4,7 @@
 # 0: no outputs
 # 1: basic outputs
 # 2: detailed output
-verbosity_level <- 0
+verbosity_level <- 2
 
 # define the output of the verbosity
 # 'file' or 'console', default is 'console'
