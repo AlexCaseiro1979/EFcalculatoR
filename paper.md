@@ -7,9 +7,10 @@ tags:
   - Road traffic
   - Air pollutants emission factors
 authors:
-  - name: Alexandre Caseiro^[Corresponding author]
+  - name: Alexandre Caseiro
     orcid: 0000-0003-3188-3371
     affiliation: "1, 2" # (Multiple affiliations must be quoted)
+    corresponding: true
   - name: Cristina Monteiro
     affiliation: 2
 affiliations:
@@ -19,6 +20,7 @@ affiliations:
     index: 2
 date: 5 October 2022
 bibliography: paper.bib
+---
 
 # Summary
 Air pollution dispertion modelling is fundamental to many environmental impact assessment studies.
