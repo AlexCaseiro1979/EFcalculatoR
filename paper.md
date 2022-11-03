@@ -41,13 +41,14 @@ Air quality modelling (AQM) is primordial to any strategy to improve air quality
 It is used to support policies when administrative bodies (e.g. municipalities or regions) plan for better air [@eea2018a].
 It is also used by the industry in the scope of environmental impact assessments in order to assess the impact of new or renewed infrastructure.
 The use of AQM is particularly relevant in a world where traffic patterns are likely to shift in the near future due to the effects of global crisis both on the supply and the demand sides [@weo2021a], and particularly in the EU where the air quality standards are subject to debate [@ec2019a, @ec2019b, @ec2020a].
-The inputs of AQM are emission factors (EF), activity (A) and meteorology, the output, after processing the dispersion of pollutants, are the ambient pollutant concentrations.
+The inputs of AQM are emission factors (EF), activity (A), meteorology and topography, the output, after processing the dispersion of pollutants, are the ambient pollutant concentrations.
 
 In the case of vehicular road traffic, the EMEP/EEA air pollutant emission inventory guidebook can be used as reference for EF.
 However, the EF are listed in the document as a function of single vehicle type (and possibly driving mode and roadway characteristics).
 Oftentimes, what the operator has at disposal is a characterization of the roadways within the domain and a representation (characterization) of the vehicular fleet within the domain (usually country specific).
-What the operator needs, as input to the model, is a roadway (or roadway-chunk) specific EF.
+What the operator needs, as input to the model, is a roadway (or roadway-chunk) specific EF, representative of the vehicular fleet.
 
 The discrepancy implies lengthy, roadway-specific, calculations which the EFcalculatoR R function can simplify, turning the whole AQM process faster.
+With the EFcalculatoR R function, the specific EF is easily extracted from the EMEP CORINAIR database taking into consideration the fleet and roadway characteristics.
 
 # References
